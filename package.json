@@ -1,0 +1,10 @@
+{
+  "name": "keg-collars-theme",
+  "version": "1.0.0",
+  "description": "Shopify theme based off of Dawn for kegcollars.net",
+  "main": "index.js",
+  "repository": "git@github.com:davidpanzarella/keg-collars-dawn-theme.git",
+  "author": "David Panzarella <david@deven.io>",
+  "license": "MIT",
+  "private": true
+}
