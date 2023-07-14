@@ -1,4 +1,26 @@
 {
+  "cSpell.words": [
+    "alpinejs",
+    "Boundries",
+    "concat",
+    "describedby",
+    "endcomment",
+    "endform",
+    "endstyle",
+    "endunless",
+    "giftcard",
+    "gtin",
+    "haspopup",
+    "kegcollars",
+    "metafields",
+    "msie",
+    "qrcode",
+    "roledescription",
+    "soldout",
+    "tabindex",
+    "trelliscommerce",
+    "Unsubscriber"
+  ],
   "editor.formatOnSave": false,
   "[javascript]": {
     "editor.formatOnSave": true
@@ -9,7 +31,9 @@
   "[liquid]": {
     "editor.formatOnSave": true
   },
-  "cSpell.words": [
-    "kegcollars"
-  ]
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "tailwindCSS.rootFontSize": 10
 }
+

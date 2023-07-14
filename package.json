@@ -6,5 +6,29 @@
   "repository": "git@github.com:davidpanzarella/keg-collars-dawn-theme.git",
   "author": "David Panzarella <david@deven.io>",
   "license": "MIT",
-  "private": true
+  "private": true,
+  "scripts": {
+    "start": "run-p -sr shopify:dev watch",
+    "shopify:dev": "shopify theme dev --environment dev",
+    "build": "vite build --minify",
+    "watch": "vite build --watch"
+  },
+  "devDependencies": {
+    "@shopify/prettier-plugin-liquid": "^1.2.1",
+    "autoprefixer": "^10.4.14",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.25",
+    "prettier-plugin-tailwindcss": "^0.4.1",
+    "vite": "^4.4.2",
+    "vite-plugin-copy": "^0.1.6"
+  },
+  "dependencies": {
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@tailwindcss/forms": "^0.5.4",
+    "@tailwindcss/typography": "^0.5.9",
+    "swiper": "^10.0.4",
+    "tailwindcss": "^3.3.3",
+    "tailwindcss-base-font-size": "^1.0.0"
+  },
+  "type": "module"
 }
