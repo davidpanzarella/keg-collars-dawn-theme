@@ -1,19 +1,18 @@
 import { defineConfig } from 'vite';
-import { copy } from 'vite-plugin-copy';
+import { viteStaticCopy } from 'vite-plugin-static-copy';
 
 export default defineConfig({
   plugins: [
-    copy({
+    viteStaticCopy({
       targets: [
-        { src: 'node_modules/swiper/swiper-bundle.min.*', dest: 'assets' },
+        { src: 'node_modules/swiper/swiper-bundle.min.*', dest: '' },
         {
           src: 'node_modules/alpinejs/dist/cdn.min.js',
-          dest: 'assets',
-          rename: 'alpinejs.min.js',
-        },
-      ],
-      hook: 'writeBundle', // run the plugin at this stage
-    }),
+          dest: '',
+          rename: 'alpinejs.min.js'
+        }
+      ]
+    })
   ],
   build: {
     outDir: 'assets',
@@ -23,8 +22,8 @@ export default defineConfig({
       input: './assets/base-tailwind.css',
       output: {
         dir: 'assets',
-        assetFileNames: 'styles.css',
-      },
-    },
-  },
+        assetFileNames: 'styles.css'
+      }
+    }
+  }
 });

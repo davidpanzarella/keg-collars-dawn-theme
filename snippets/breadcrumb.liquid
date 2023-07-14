@@ -1,0 +1,64 @@
+{% comment %}
+  Renders a breadcrumb navigation for the current page.
+
+  Accepts:
+  - product: {Object} Product Liquid object
+  - divider: {String} Divider to use (optional)
+
+  Usage:
+  {% render 'breadcrumb', product: product %}
+{% endcomment %}
+
+{%- liquid
+  if divider == null
+    assign divider = '/'
+  endif
+
+  assign product_type = product.metafields.custom['product-type']
+  assign link_start = '/collections/'
+  assign product_type_cleaned = product_type | downcase | replace: ' ', '-' | append: 's'
+  assign link_type = link_start | append: product_type_cleaned
+
+  if product.metafields.custom['product-format'] != blank
+    assign product_format = product.metafields.custom['product-format']
+    assign product_format_cleaned = product_format | downcase | replace: ' ', '-'
+    assign link_format = link_start | append: product_format_cleaned | append: '-' | append: product_type_cleaned
+    if product_format != 'Stock'
+      assign product_format = product_format | append: 's'
+    endif
+  endif
+%}
+
+<nav aria-label="Breadcrumb">
+  <ol role="list" class="tw-flex tw-items-center tw-space-x-1" itemscope itemtype="https://schema.org/BreadcrumbList">
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <div class="tw-flex tw-items-center tw-text-sm">
+        <a href="{{ link_type }}" itemprop="item" class="tw-font-medium tw-text-gray-500 tw-hover:text-gray-900">
+          <span itemprop="name">
+            {{- product_type -}}
+            s</span
+          >
+        </a>
+        <meta itemprop="position" content="1">
+        <svg
+          viewBox="0 0 20 20"
+          fill="currentColor"
+          aria-hidden="true"
+          class="tw-ml-2 tw-h-5 tw-w-5 tw-flex-shrink-0 tw-text-gray-300"
+        >
+          <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z" />
+        </svg>
+      </div>
+    </li>
+    {% if link_format %}
+      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <div class="tw-flex tw-items-center tw-text-sm">
+          <a href="{{ link_format }}" itemprop="item" class="tw-font-medium tw-text-gray-500 tw-hover:text-gray-900">
+            <span itemprop="name">{{- product_format -}}</span>
+          </a>
+          <meta itemprop="position" content="2">
+        </div>
+      </li>
+    {% endif %}
+  </ol>
+</nav>

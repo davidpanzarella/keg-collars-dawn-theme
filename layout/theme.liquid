@@ -261,6 +261,10 @@
       >
     {%- endif -%}
 
+    <script src="{{ 'alpinejs.min.js' | asset_url }}" defer></script>
+    <script src="{{ 'swiper-bundle.min.js' | asset_url }}" defer></script>
+    {{ 'swiper-bundle.min.css' | asset_url | stylesheet_tag }}
+
     <script>
       document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
       if (Shopify.designMode) {

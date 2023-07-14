@@ -1,0 +1,124 @@
+{% assign product_collection = section.settings.product_collection %}
+{% assign collection = collections[product_collection] %}
+{% assign products = collection.products %}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}rem;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}rem;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+
+  .swiper-wrapper {
+    padding-bottom: 1.25rem;
+  }
+
+  .swiper-horizontal > .swiper-scrollbar,
+  .swiper-scrollbar.swiper-scrollbar-horizontal {
+    --swiper-scrollbar-drag-bg-color: {{ shop.brand.colors.primary[0].background }};
+    --swiper-scrollbar-sides-offset: 0% ;
+    --swiper-scrollbar-border-radius: 4px;
+  }
+{%- endstyle -%}
+
+<script>
+  console.log("collection:", {{ collection | json }});
+  console.log("section:", {{ section.settings | json }});
+</script>
+
+{%- if products.size > 0 -%}
+  <div class="color-{{ section.settings.color_scheme }} isolate gradient">
+    <div class="collection section-{{ section.id }}-padding{% if section.settings.full_width %} collection--full-width{% endif %}">
+      <div class="collection__title title-wrapper title-wrapper--no-top-margin page-width{% if show_mobile_slider %} title-wrapper--self-padded-tablet-down{% endif %}{% if show_desktop_slider %} collection__title--desktop-slider{% endif %}">
+        {%- if section.settings.title != blank -%}
+          <h2 class="title inline-richtext {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+            {{ section.settings.title }}
+          </h2>
+        {%- endif -%}
+        {%- if section.settings.description != blank
+          or section.settings.show_description
+          and section.settings.collection.description != empty
+        -%}
+          <div class="collection__description {{ section.settings.description_style }} rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+            {%- if section.settings.show_description -%}
+              {{ section.settings.collection.description }}
+            {%- else -%}
+              {{ section.settings.description -}}
+            {%- endif %}
+          </div>
+        {%- endif -%}
+      </div>
+      <div class="{% if section.settings.full_width %} slider-component-full-width{% endif %} page-width">
+        <div class="swiper {{ section.settings.product_collection }}-swiper hidden">
+          <div class="swiper-wrapper">
+            {%- for product in products -%}
+              <script>
+                console.log("product:", {{ product | json }});
+              </script>
+              <div
+                class="swiper-slide{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                id="Slide-{{ section.id }}-{{ forloop.index }}"
+              >
+                {%
+                  render 'card-product',
+                  card_product: product,
+                  section_id: section.id,
+                  show_secondary_image: section.settings.show_secondary_image,
+                %}
+              </div>
+            {%- endfor -%}
+          </div>
+          <div class="swiper-scrollbar"></div>
+
+          {% comment %}
+            <div class='swiper-button-next'></div>
+            <div class='swiper-button-prev'></div>
+            <div class='swiper-pagination'></div>
+          {% endcomment %}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    window.addEventListener('load', function () {
+      const swiperClass = '.{{ section.settings.product_collection }}-swiper';
+
+      const swiper = new Swiper(swiperClass, {
+        slidesPerView: 1,
+        grabCursor: true,
+        freeMode: {
+          enabled: true,
+        },
+        spaceBetween: '{{ section.settings.space_between }}px',
+        breakpoints: {
+          640: {
+            slidesPerView: 2
+          },
+          768: {
+            slidesPerView: 3
+          },
+          1024: {
+            slidesPerView: {{ section.settings.slides_per_view_desktop }}
+          },
+        },
+        mousewheel: {
+          forceToAxis: true,
+          releaseOnEdges: true,
+        },
+        scrollbar: {
+          el: '.swiper-scrollbar',
+          draggable: true,
+        },
+      });
+
+      document.querySelector(swiperClass).classList.remove('hidden');
+    });
+  </script>
+{%- endif -%}
