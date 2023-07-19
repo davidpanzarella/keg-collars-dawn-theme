@@ -169,6 +169,11 @@
         endif
       endif
     endfor
+
+    assign shapes = shapes | split: ','
+    assign sizes = sizes | split: ','
+    assign colors = colors | split: ','
+    assign templates = templates | split: ','
   %}
 
   <script>
@@ -176,10 +181,6 @@
   </script>
 
   {% comment %} set up arrays for each option set {% endcomment %}
-  {% assign shapes = shapes | split: ',' %}
-  {% assign sizes = sizes | split: ',' %}
-  {% assign colors = colors | split: ',' %}
-  {% assign templates = templates | split: ',' %}
 
   <script>
     console.log("shapes", {{ shapes | json }});
