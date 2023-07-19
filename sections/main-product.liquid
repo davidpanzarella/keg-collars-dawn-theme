@@ -109,11 +109,73 @@
     assign sizes = ''
     assign colors = ''
     assign templates = ''
+
+    for relatedProduct in relatedProductsByType
+      assign sameProduct = false
+      assign relatedProductColor = relatedProduct.metafields.custom.color.value[0]
+      assign relatedProductFormat = relatedProduct.metafields.custom.format.value
+      assign relatedProductShape = relatedProduct.metafields.custom.shape.value
+      assign relatedProductSize = relatedProduct.metafields.custom.size.value
+      assign relatedProductTemplate = relatedProduct.metafields.custom.template_name.value
+      assign relatedProductTemplateOptions = relatedProduct.metafields.custom.template_options.value
+
+      if relatedProductFormat == currentFormat and relatedProductTemplate == currentTemplate
+        assign shape_with_delimiter = relatedProductShape | append: ','
+        unless seen_shapes contains shape_with_delimiter
+          assign sameShape = false
+          if currentShape == relatedProductShape
+            assign sameShape = true
+          endif
+          assign seen_shapes = seen_shapes | append: shape_with_delimiter
+          assign shapes = shapes | append: relatedProductShape | append: '|:|' | append: relatedProduct.url | append: '|:|' | append: sameShape | append: ','
+        endunless
+
+        if relatedProductColor == currentColor and relatedProductShape == currentShape
+          assign size_with_delimiter = relatedProductSize | append: ','
+          unless seen_sizes contains size_with_delimiter
+            assign sameSize = false
+            if currentSize == relatedProductSize
+              assign sameSize = true
+            endif
+            assign seen_sizes = seen_sizes | append: size_with_delimiter
+            assign sizes = sizes | append: relatedProductSize | append: '|:|' | append: relatedProduct.url | append: '|:|' | append: sameSize | append: ','
+          endunless
+        endif
+
+        if relatedProductSize == currentSize and relatedProductShape == currentShape
+          assign color_with_delimiter = relatedProductColor | append: ','
+          unless seen_colors contains color_with_delimiter
+            assign sameColor = false
+            if currentColor == relatedProductColor
+              assign sameColor = true
+            endif
+            assign seen_colors = seen_colors | append: color_with_delimiter
+            assign colors = colors | append: relatedProductColor | append: '|:|' | append: relatedProduct.url | append: '|:|' | append: sameColor | append: ','
+          endunless
+        endif
+
+        if relatedProductColor == currentColor and relatedProductShape == currentShape and relatedProductSize == currentSize
+          assign template_with_delimiter = relatedProductTemplateOptions | append: ','
+          unless seen_templates contains template_with_delimiter
+            assign sameTemplateOptions = false
+            if currentTemplateOptions == relatedProductTemplateOptions
+              assign sameTemplateOptions = true
+            endif
+
+            assign seen_templates = seen_templates | append: template_with_delimiter
+            assign templateImage = relatedProduct.media[1].preview_image | image_url: width: 200
+            assign templates = templates | append: relatedProductTemplateOptions | append: '|:|' | append: relatedProduct.url | append: '|:|' | append: templateImage | append: '|:|' | append: sameTemplateOptions | append: ','
+          endunless
+        endif
+      endif
+    endfor
   %}
 
   <script>
     console.log("relatedProductsByType", {{ relatedProductsByType | json }});
   </script>
+
+  convert this to liquid syntax
 
   {% for relatedProduct in relatedProductsByType %}
     {% assign sameProduct = false %}
