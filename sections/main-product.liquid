@@ -99,7 +99,8 @@
     assign productTitleDisplay = currentSize | append: ' ' | append: currentShape | append: ' ' | append: currentType
 
     comment
-      set default values for the related product display
+      - set default values for the related product display
+      - loop through all related products and set the values for each option set
     endcomment
     assign seen_shapes = ''
     assign seen_sizes = ''
