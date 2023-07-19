@@ -111,7 +111,6 @@
     assign templates = ''
 
     for relatedProduct in relatedProductsByType
-      assign sameProduct = false
       assign relatedProductColor = relatedProduct.metafields.custom.color.value[0]
       assign relatedProductFormat = relatedProduct.metafields.custom.format.value
       assign relatedProductShape = relatedProduct.metafields.custom.shape.value
@@ -178,11 +177,6 @@
 
   <script>
     console.log("relatedProductsByType", {{ relatedProductsByType | json }});
-  </script>
-
-  {% comment %} set up arrays for each option set {% endcomment %}
-
-  <script>
     console.log("shapes", {{ shapes | json }});
     console.log("sizes", {{ sizes | json }});
     console.log("colors", {{ colors | json }});
