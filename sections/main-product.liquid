@@ -70,13 +70,13 @@
       Get all products of the same product type as the current product for the related products section
     endcomment
     assign currentColor = product.metafields.custom.color.value[0]
-    assign currentType = product.metafields.custom['product-type']
+    assign currentFormat = product.metafields.custom.format.value
+    assign currentShape = product.metafields.custom.shape.value
+    assign currentSize = product.metafields.custom.size.value
+    assign currentTemplate = product.metafields.custom.template_name.value
+    assign currentTemplateOptions = product.metafields.custom.template_options.value
+    assign currentType = product.metafields.custom.type
     assign currentTypes = currentType | append: 's'
-    assign currentFormat = product.metafields.custom['product-format'].value
-    assign currentShape = product.metafields.custom['product-shape'].value[0]
-    assign currentSize = product.metafields.custom['product-size'].value[0]
-    assign currentTemplate = product.metafields.custom['product-template-name'].value
-    assign currentTemplateOptions = product.metafields.custom['product-template-options'].value
     assign relatedProductsByType = collections.all.products | where: 'type', currentTypes
 
     comment
@@ -118,11 +118,11 @@
   {% for relatedProduct in relatedProductsByType %}
     {% assign sameProduct = false %}
     {% assign relatedProductColor = relatedProduct.metafields.custom.color.value[0] %}
-    {% assign relatedProductFormat = relatedProduct.metafields.custom['product-format'].value %}
-    {% assign relatedProductTemplate = relatedProduct.metafields.custom['product-template-name'].value %}
-    {% assign relatedProductTemplateOptions = relatedProduct.metafields.custom['product-template-options'].value %}
-    {% assign relatedProductShape = relatedProduct.metafields.custom['product-shape'].value[0] %}
-    {% assign relatedProductSize = relatedProduct.metafields.custom['product-size'].value[0] %}
+    {% assign relatedProductFormat = relatedProduct.metafields.custom.format.value %}
+    {% assign relatedProductShape = relatedProduct.metafields.custom.shape.value %}
+    {% assign relatedProductSize = relatedProduct.metafields.custom.size.value %}
+    {% assign relatedProductTemplate = relatedProduct.metafields.custom.template_name.value %}
+    {% assign relatedProductTemplateOptions = relatedProduct.metafields.custom.template_options.value %}
 
     {% if relatedProductFormat == currentFormat and relatedProductTemplate == currentTemplate %}
       <script>
@@ -301,9 +301,9 @@
 
         {% comment %}
           <p class="tw-text-base">
-            {{ product.metafields.custom['product-size'].value }}
-            {{ product.metafields.custom['product-shape'].value }}
-            {{ product.metafields.custom['product-type'].value }}
+            {{ product.metafields.custom.size.value.value }}
+            {{ product.metafields.custom.shape.value.value }}
+            {{ product.metafields.custom.type.value }}
           </p>
         {% endcomment %}
       </div>

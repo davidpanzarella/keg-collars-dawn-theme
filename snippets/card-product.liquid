@@ -163,8 +163,8 @@
                 endif
 
                 assign productTitle = ''
-                if card_product.metafields.custom['product-template-name'].value
-                  assign productTitle = card_product.metafields.custom['product-template-name'].value | escape
+                if card_product.metafields.custom.template_name.value
+                  assign productTitle = card_product.metafields.custom.template_name.value | escape
                 else
                   assign productTitle = card_product.title | escape
                 endif
@@ -176,8 +176,8 @@
           </h3>
           <div>
             <span class="tw-text-base tw-text-stone-700">
-              {% if card_product.metafields.custom['product-template-options'].value %}
-                <span>{{- card_product.metafields.custom['product-template-options'].value -}}</span>
+              {% if card_product.metafields.custom.template_options.value %}
+                <span>{{- card_product.metafields.custom.template_options.value -}}</span>
               {%- endif -%}
               {% if card_product.metafields.custom.product_template_caption.value %}
                 <span> · </span>
@@ -186,8 +186,8 @@
             </span>
 
             <div class="tw-text-sm tw-text-stone-500">
-              <span>{{ card_product.metafields.custom['product-format'].value -}}</span>
-              <span> · {{ card_product.metafields.custom['product-type'].value }}</span>
+              <span>{{ card_product.metafields.custom.format.value -}}</span>
+              <span> · {{ card_product.metafields.custom.type.value }}</span>
               <span> · {{ card_product.metafields.custom['product-shape'].value }}</span>
               <span> · {{ card_product.metafields.custom['product-size'].value }}</span>
             </div>

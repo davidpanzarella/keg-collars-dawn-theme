@@ -14,13 +14,13 @@
     assign divider = '/'
   endif
 
-  assign product_type = product.metafields.custom['product-type']
+  assign product_type = product.metafields.custom.type
   assign link_start = '/collections/'
   assign product_type_cleaned = product_type | downcase | replace: ' ', '-' | append: 's'
   assign link_type = link_start | append: product_type_cleaned
 
-  if product.metafields.custom['product-format'] != blank
-    assign product_format = product.metafields.custom['product-format']
+  if product.metafields.custom.format != blank
+    assign product_format = product.metafields.custom.format
     assign product_format_cleaned = product_format | downcase | replace: ' ', '-'
     assign link_format = link_start | append: product_format_cleaned | append: '-' | append: product_type_cleaned
     if product_format != 'Stock'
@@ -44,7 +44,7 @@
           viewBox="0 0 20 20"
           fill="currentColor"
           aria-hidden="true"
-          class="tw-ml-2 tw-h-5 tw-w-5 tw-flex-shrink-0 tw-text-gray-300"
+          class="tw-flex-shrink-0 tw-w-5 tw-h-5 tw-ml-2 tw-text-gray-300"
         >
           <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z" />
         </svg>

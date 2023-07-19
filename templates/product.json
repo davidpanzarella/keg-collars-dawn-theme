@@ -6,7 +6,7 @@
         "vendor": {
           "type": "text",
           "settings": {
-            "text": "{{ product.metafields.custom[\"product-format\"].value }}",
+            "text": "{{ product.metafields.custom.format.value }}",
             "text_style": "uppercase"
           }
         },
