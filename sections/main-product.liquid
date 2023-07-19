@@ -62,29 +62,177 @@
   {%- endif -%}
 
   {% assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' %}
-  <div class="product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} product--{{ section.settings.gallery_layout }} product--mobile-{{ section.settings.mobile_thumbnails }} {% if product.media.size > 0 %}{% else %}product--no-media{% endif %}">
+
+  {% liquid
+    assign product_form_id = 'product-form-' | append: section.id
+
+    comment
+      Get all products of the same product type as the current product for the related products section
+    endcomment
+    assign currentColor = product.metafields.custom.color.value[0]
+    assign currentType = product.metafields.custom['product-type']
+    assign currentTypes = currentType | append: 's'
+    assign currentFormat = product.metafields.custom['product-format'].value
+    assign currentShape = product.metafields.custom['product-shape'].value[0]
+    assign currentSize = product.metafields.custom['product-size'].value[0]
+    assign currentTemplate = product.metafields.custom['product-template-name'].value
+    assign currentTemplateOptions = product.metafields.custom['product-template-options'].value
+    assign relatedProductsByType = collections.all.products | where: 'type', currentTypes
+
+    comment
+      set some default values for the product title display
+    endcomment
+    assign colorDisplay = ''
+    if currentColor == 'Black and White'
+      assign colorDisplay = 'B&W'
+    else
+      assign colorDisplay = currentColor
+    endif
+
+    assign productTitle = ''
+    if currentTemplate
+      assign productTitle = currentTemplate
+    else
+      assign productTitle = product.title | escape
+    endif
+
+    assign productTitleDisplay = currentSize | append: ' ' | append: currentShape | append: ' ' | append: currentType
+
+    comment
+      set default values for the related product display
+    endcomment
+    assign seen_shapes = ''
+    assign seen_sizes = ''
+    assign seen_colors = ''
+    assign seen_templates = ''
+    assign shapes = ''
+    assign sizes = ''
+    assign colors = ''
+    assign templates = ''
+  %}
+
+  <script>
+    console.log("relatedProductsByType", {{ relatedProductsByType | json }});
+  </script>
+
+  {% for relatedProduct in relatedProductsByType %}
+    {% assign sameProduct = false %}
+    {% assign relatedProductColor = relatedProduct.metafields.custom.color.value[0] %}
+    {% assign relatedProductFormat = relatedProduct.metafields.custom['product-format'].value %}
+    {% assign relatedProductTemplate = relatedProduct.metafields.custom['product-template-name'].value %}
+    {% assign relatedProductTemplateOptions = relatedProduct.metafields.custom['product-template-options'].value %}
+    {% assign relatedProductShape = relatedProduct.metafields.custom['product-shape'].value[0] %}
+    {% assign relatedProductSize = relatedProduct.metafields.custom['product-size'].value[0] %}
+
+    {% if relatedProductFormat == currentFormat and relatedProductTemplate == currentTemplate %}
+      <script>
+        //console.log("product.id", {{ product.id }});
+        //console.log("relatedProduct.id ", {{ relatedProduct.id }});
+        console.log("relatedProduct", {{ relatedProduct | json }});
+        console.log("sameProduct", {{ sameProduct }});
+      </script>
+
+      {% assign shape_with_delimiter = relatedProductShape | append: ',' %}
+      {% unless seen_shapes contains shape_with_delimiter %}
+        {% assign sameShape = false %}
+        {% if currentShape == relatedProductShape %}
+          {% assign sameShape = true %}
+        {% endif %}
+        {% assign seen_shapes = seen_shapes | append: shape_with_delimiter %}
+        {% assign shapes = shapes
+          | append: relatedProductShape
+          | append: '|:|'
+          | append: relatedProduct.url
+          | append: '|:|'
+          | append: sameShape
+          | append: ','
+        %}
+      {% endunless %}
+
+      {% if relatedProductColor == currentColor and relatedProductShape == currentShape %}
+        {% assign size_with_delimiter = relatedProductSize | append: ',' %}
+        {% unless seen_sizes contains size_with_delimiter %}
+          {% assign sameSize = false %}
+          {% if currentSize == relatedProductSize %}
+            {% assign sameSize = true %}
+          {% endif %}
+          {% assign seen_sizes = seen_sizes | append: size_with_delimiter %}
+          {% assign sizes = sizes
+            | append: relatedProductSize
+            | append: '|:|'
+            | append: relatedProduct.url
+            | append: '|:|'
+            | append: sameSize
+            | append: ','
+          %}
+        {% endunless %}
+      {% endif %}
+
+      {% if relatedProductSize == currentSize and relatedProductShape == currentShape %}
+        {% assign color_with_delimiter = relatedProductColor | append: ',' %}
+        {% unless seen_colors contains color_with_delimiter %}
+          {% assign sameColor = false %}
+          {% if currentColor == relatedProductColor %}
+            {% assign sameColor = true %}
+          {% endif %}
+          {% assign seen_colors = seen_colors | append: color_with_delimiter %}
+          {% assign colors = colors
+            | append: relatedProductColor
+            | append: '|:|'
+            | append: relatedProduct.url
+            | append: '|:|'
+            | append: sameColor
+            | append: ','
+          %}
+        {% endunless %}
+      {% endif %}
+
+      {% if relatedProductColor == currentColor
+        and relatedProductShape == currentShape
+        and relatedProductSize == currentSize
+      %}
+        {% assign template_with_delimiter = relatedProductTemplateOptions | append: ',' %}
+        {% unless seen_templates contains template_with_delimiter %}
+          {% assign sameTemplateOptions = false %}
+          {% if currentTemplateOptions == relatedProductTemplateOptions %}
+            {% assign sameTemplateOptions = true %}
+          {% endif %}
+
+          {% assign seen_templates = seen_templates | append: template_with_delimiter %}
+          {% assign templateImage = relatedProduct.media[1].preview_image | image_url: width: 200 %}
+          {% assign templates = templates
+            | append: relatedProductTemplateOptions
+            | append: '|:|'
+            | append: relatedProduct.url
+            | append: '|:|'
+            | append: templateImage
+            | append: '|:|'
+            | append: sameTemplateOptions
+            | append: ','
+          %}
+        {% endunless %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+
+  {% comment %} set up arrays for each option set {% endcomment %}
+  {% assign shapes = shapes | split: ',' %}
+  {% assign sizes = sizes | split: ',' %}
+  {% assign colors = colors | split: ',' %}
+  {% assign templates = templates | split: ',' %}
+
+  <script>
+    console.log("shapes", {{ shapes | json }});
+    console.log("sizes", {{ sizes | json }});
+    console.log("colors", {{ colors | json }});
+    console.log("templates", {{ templates | json }});
+  </script>
+
+  <div class="product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} product--{{ section.settings.gallery_layout }} product--mobile-{{ section.settings.mobile_thumbnails }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
     <div class="tw-px-4 tw-py-6 tw-mx-auto sm:tw-px-6 sm:tw-py-24 lg:tw-grid lg:tw-grid-cols-2 lg:tw-gap-x-8 lg:tw-px-8">
       <div class="lg:tw-max-w-lg lg:tw-self-end">
         {% render 'breadcrumb', product: product %}
-        {% liquid
-          assign colorDisplay = ''
-          assign color = product.metafields.custom.color.value[0]
 
-          if color == 'Black and White'
-            assign colorDisplay = 'B&W'
-          else
-            assign colorDisplay = color
-          endif
-
-          assign productTitle = ''
-          if product.metafields.custom['product-template-name'].value
-            assign productTitle = product.metafields.custom['product-template-name'].value | escape
-          else
-            assign productTitle = product.title | escape
-          endif
-
-          assign productTypeDisplay = product.metafields.custom['product-size'].value | append: ' ' | append: product.metafields.custom['product-shape'].value | append: ' ' | append: product.metafields.custom['product-type'].value
-        %}
         <div class="tw-mt-4">
           <h1 class="tw-text-3xl tw-font-bold tw-tracking-tight tw-text-gray-900 sm:tw-text-4xl">
             {{ colorDisplay }}
@@ -92,9 +240,7 @@
           </h1>
 
           <p class="tw-text-lg tw-text-gray-900 sm:tw-text-xl">
-            {{ product.metafields.custom['product-size'].value }}
-            {{ product.metafields.custom['product-shape'].value }}
-            {{ product.metafields.custom['product-type'].value }}
+            {{ productTitleDisplay }}
           </p>
         </div>
 
@@ -165,7 +311,9 @@
       <!-- Product image -->
       <div class="tw-mt-10 lg:tw-col-start-2 lg:tw-row-span-2 lg:tw-mt-0 lg:tw-self-center">
         <div class="tw-overflow-hidden tw-rounded-lg tw-aspect-h-1 tw-aspect-w-1">
-          {% render 'product-media-gallery', variant_images: variant_images %}
+          <div class="grid__item product__media-wrapper">
+            {% render 'product-media-gallery', variant_images: variant_images %}
+          </div>
 
           {% comment %}
             <img
@@ -180,30 +328,148 @@
       <!-- Product form -->
       <div class="tw-mt-10 lg:tw-col-start-1 lg:tw-row-start-2 lg:tw-max-w-lg lg:tw-self-start">
         <section aria-labelledby="options-heading">
-          <h2 id="options-heading" class="tw-sr-only">Product options</h2>
-
+          <h2 id="options-heading" class="tw-sr-only">Product Options</h2>
           <form>
-            <div class="sm:tw-flex sm:tw-justify-between">
-              <!-- Size selector -->
+            <!-- shapes picker -->
+            {% if shapes.size > 1 %}
+              <div class="tw-mt-6 sm:tw-flex sm:tw-justify-between">
+                <fieldset>
+                  <legend class="tw-block tw-text-sm tw-font-medium tw-text-gray-700">Shape</legend>
+                  <div class="tw-grid tw-grid-cols-1 tw-gap-4 tw-mt-1 sm:tw-grid-cols-2">
+                    {% for shape in shapes %}
+                      {% assign shape_option = shape | split: '|:|' %}
+                      {% assign shapeName = shape_option[0] %}
+                      {% assign shapeUrl = shape_option[1] %}
+                      {% assign shapeMatch = shape_option[2] %}
+
+                      <script>
+                        console.log("shape_option", {{ shape_option | json }});
+                        console.log("shapeMatch", {{ shapeMatch }});
+                      </script>
+
+                      <div
+                        class="cursor-pointer group"
+                        {% if shapeMatch == 'false' %}
+                          onclick="window.location.href='{{ shapeUrl }}'"
+                        {% endif %}
+                      >
+                        <div class="tw-relative tw-block tw-cursor-pointer tw-rounded-lg tw-border tw-border-gray-300 tw-p-4 tw-focus:outline-none{% if shapeMatch == 'true' %} tw-ring-2 tw-ring-indigo-500 tw-cursor-default{% endif %}">
+                          <p id="shape-choice-0-label" class="tw-text-base tw-font-medium tw-text-gray-900">
+                            {{ shapeName }}
+                          </p>
+                        </div>
+                      </div>
+                    {% endfor %}
+                  </div>
+                </fieldset>
+              </div>
+            {% endif %}
+
+            <!-- Size selector -->
+            {% if sizes.size > 1 %}
+              <div class="tw-mt-6 sm:tw-flex sm:tw-justify-between">
+                <fieldset>
+                  <legend class="tw-block tw-text-sm tw-font-medium tw-text-gray-700">Size</legend>
+                  <div class="tw-grid tw-grid-cols-2 tw-gap-4 tw-mt-1 sm:tw-grid-cols-3">
+                    {% for size in sizes %}
+                      {% assign size_option = size | split: '|:|' %}
+                      {% assign sizeName = size_option[0] %}
+                      {% assign sizeUrl = size_option[1] %}
+                      {% assign sizeMatch = size_option[2] %}
+
+                      <script>
+                        console.log("size_option", {{ size_option | json }});
+                        console.log("sizeMatch", {{ sizeMatch }});
+                      </script>
+
+                      <div
+                        class="cursor-pointer group"
+                        {% if sizeMatch == 'false' %}
+                          onclick="window.location.href='{{ sizeUrl }}'"
+                        {% endif %}
+                      >
+                        <div class="tw-relative tw-block tw-cursor-pointer tw-rounded-lg tw-border tw-border-gray-300 tw-p-4 tw-focus:outline-none{% if sizeMatch == 'true' %} tw-ring-2 tw-ring-indigo-500 tw-cursor-default{% endif %}">
+                          <p id="size-choice-0-label" class="tw-text-base tw-font-medium tw-text-gray-900">
+                            {{ sizeName }}
+                          </p>
+                        </div>
+                      </div>
+                    {% endfor %}
+                  </div>
+                </fieldset>
+              </div>
+            {% endif %}
+
+            <!-- Color selector -->
+            {% if colors.size > 1 %}
+              <div class="tw-mt-6 sm:tw-flex sm:tw-justify-between">
+                <fieldset>
+                  <legend class="tw-block tw-text-sm tw-font-medium tw-text-gray-700">Color</legend>
+                  <div class="tw-grid tw-grid-cols-2 tw-gap-4 tw-mt-1 sm:tw-grid-cols-3">
+                    {% for color in colors %}
+                      {% assign color_option = color | split: '|:|' %}
+                      {% assign colorName = color_option[0] %}
+                      {% assign colorUrl = color_option[1] %}
+                      {% assign colorMatch = color_option[2] %}
+
+                      <script>
+                        console.log("color_option", {{ color_option | json }});
+                        console.log("colorMatch", {{ colorMatch }});
+                      </script>
+
+                      <input
+                        type="radio"
+                        name="color-choice"
+                        value="{{ colorName }}"
+                        class="tw-sr-only"
+                        aria-labelledby="color-choice-0-label"
+                        aria-describedby="color-choice-0-description"
+                      >
+                      <div
+                        class="cursor-pointer group"
+                        {% if colorMatch == 'false' %}
+                          onclick="window.location.href='{{ colorUrl }}'"
+                        {% endif %}
+                      >
+                        <div class="tw-relative tw-block tw-cursor-pointer tw-rounded-lg tw-border tw-border-gray-300 tw-p-4 tw-focus:outline-none{% if colorMatch == 'true' %} tw-ring-2 tw-ring-indigo-500 tw-cursor-default{% endif %}">
+                          <p id="color-choice-0-label" class="tw-text-base tw-font-medium tw-text-gray-900">
+                            {{ colorName }}
+                          </p>
+                        </div>
+                      </div>
+                    {% endfor %}
+                  </div>
+                </fieldset>
+              </div>
+            {% endif %}
+
+            <!-- Template selector -->
+            <div class="tw-mt-6 sm:tw-flex sm:tw-justify-between">
               <fieldset>
-                <legend class="tw-block tw-text-base tw-font-medium tw-text-gray-700">Design Options</legend>
-                <div class="tw-grid tw-grid-cols-1 tw-gap-4 tw-mt-1 sm:tw-grid-cols-3">
-                  {% for related_product in product.metafields.custom.customily_product_equivalents.value %}
-                    {% liquid
-                      assign current_product = false
-                      if product.handle == related_product.handle
-                        assign current_product = true
-                      endif
-                    %}
+                <legend class="tw-block tw-text-sm tw-font-medium tw-text-gray-700">Template</legend>
+                <div class="tw-grid tw-grid-cols-1 tw-gap-4 tw-mt-1 sm:tw-grid-cols-2">
+                  {% for template in templates %}
+                    {% assign template_option = template | split: '|:|' %}
+                    {% assign templateName = template_option[0] %}
+                    {% assign templateUrl = template_option[1] %}
+                    {% assign templateImage = template_option[2] %}
+                    {% assign templateMatch = template_option[3] %}
+
+                    <script>
+                      console.log("template_option", {{ template_option | json }});
+                      console.log("templateMatch", {{ templateMatch }});
+                    </script>
 
                     <div
                       class="cursor-pointer group"
-                      onclick="window.location.href='/products/{{ related_product.handle }}'"
+                      {% if templateMatch == 'false' %}
+                        onclick="window.location.href='{{templateUrl}}'"
+                      {% endif %}
                     >
-                      <div class="tw-relative tw-block tw-cursor-pointer tw-rounded-lg tw-border tw-border-gray-300 tw-p-4 tw-focus:outline-none{% if current_product %} tw-ring-2 tw-ring-indigo-500{% endif %}">
+                      <div class="tw-relative tw-block tw-cursor-pointer tw-rounded-lg tw-border tw-border-gray-300 tw-p-4 tw-focus:outline-none{% if templateMatch == 'true' %} tw-ring-2 tw-ring-indigo-500 tw-cursor-default{% endif %}">
                         <img
-                          src="{{ related_product.media[2].preview_image | image_url: width: 200 }}"
-                          alt="{{ related_product.title }}"
+                          src="{{ templateImage }}"
+                          alt="{{ templateName }}"
                           width="200"
                           height="200"
                           loading="lazy"
@@ -212,58 +478,10 @@
                       </div>
                     </div>
                   {% endfor %}
-
-                  {% comment %}
-                    <!-- Active: "ring-2 ring-indigo-500" -->
-                    <div class="tw-relative tw-block tw-p-4 tw-border tw-border-gray-300 tw-rounded-lg tw-cursor-pointer tw-focus:outline-none">
-                      <input
-                        type="radio"
-                        name="size-choice"
-                        value="18L"
-                        class="tw-sr-only"
-                        aria-labelledby="size-choice-0-label"
-                        aria-describedby="size-choice-0-description"
-                      >
-                      <p id="size-choice-0-label" class="tw-text-base tw-font-medium tw-text-gray-900">5.6345 Inch</p>
-                      <p id="size-choice-0-description" class="tw-mt-1 tw-text-sm tw-text-gray-500">
-                        Perfect for a reasonable amount of snacks.
-                      </p>
-                      <!--
-                        Active: "border", Not Active: "border-2"
-                        Checked: "border-indigo-500", Not Checked: "border-transparent"
-                      -->
-                      <div
-                        class="tw-absolute tw-border-2 tw-rounded-lg tw-pointer-events-none -tw-inset-px"
-                        aria-hidden="true"
-                      ></div>
-                    </div>
-                    <!-- Active: "ring-2 ring-indigo-500" -->
-                    <div class="tw-relative tw-block tw-p-4 tw-border tw-border-gray-300 tw-rounded-lg tw-cursor-pointer tw-focus:outline-none">
-                      <input
-                        type="radio"
-                        name="size-choice"
-                        value="20L"
-                        class="tw-sr-only"
-                        aria-labelledby="size-choice-1-label"
-                        aria-describedby="size-choice-1-description"
-                      >
-                      <p id="size-choice-1-label" class="tw-text-base tw-font-medium tw-text-gray-900">20L</p>
-                      <p id="size-choice-1-description" class="tw-mt-1 tw-text-sm tw-text-gray-500">
-                        Enough room for a serious amount of snacks.
-                      </p>
-                      <!--
-                        Active: "border", Not Active: "border-2"
-                        Checked: "border-indigo-500", Not Checked: "border-transparent"
-                      -->
-                      <div
-                        class="tw-absolute tw-border-2 tw-rounded-lg tw-pointer-events-none -tw-inset-px"
-                        aria-hidden="true"
-                      ></div>
-                    </div>
-                  {% endcomment %}
                 </div>
               </fieldset>
             </div>
+
             <div class="tw-mt-4">
               <a href="#" class="tw-inline-flex tw-text-sm tw-text-gray-500 tw-group hover:tw-text-gray-700">
                 <span>What size should I buy?</span>
@@ -277,6 +495,7 @@
                 </svg>
               </a>
             </div>
+
             <div class="tw-mt-10">
               <button
                 type="submit"
