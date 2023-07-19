@@ -14,13 +14,13 @@
     assign divider = '/'
   endif
 
-  assign product_type = product.metafields.custom.type
+  assign product_type = product.metafields.custom.type.value
   assign link_start = '/collections/'
   assign product_type_cleaned = product_type | downcase | replace: ' ', '-' | append: 's'
   assign link_type = link_start | append: product_type_cleaned
 
   if product.metafields.custom.format != blank
-    assign product_format = product.metafields.custom.format
+    assign product_format = product.metafields.custom.format.value
     assign product_format_cleaned = product_format | downcase | replace: ' ', '-'
     assign link_format = link_start | append: product_format_cleaned | append: '-' | append: product_type_cleaned
     if product_format != 'Stock'
