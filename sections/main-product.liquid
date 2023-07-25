@@ -171,8 +171,8 @@
       endif
     endfor
 
-    assign shapes = shapes | split: ',' | sort_by: 'title'
-    assign sizes = sizes | split: ','
+    assign shapes = shapes | split: ','
+    assign sizes = sizes | split: ',' | sort_by: 'title'
     assign colors = colors | split: ','
     assign templates = templates | split: ','
   %}
