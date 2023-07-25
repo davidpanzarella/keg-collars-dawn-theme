@@ -686,10 +686,6 @@ select {
 .tw-relative {
   position: relative;
 }
-.tw-mx-auto {
-  margin-left: auto;
-  margin-right: auto;
-}
 .tw-ml-2 {
   margin-left: 0.8rem;
 }
@@ -806,10 +802,6 @@ select {
 .tw-p-4 {
   padding: 1.6rem;
 }
-.tw-px-4 {
-  padding-left: 1.6rem;
-  padding-right: 1.6rem;
-}
 .tw-px-8 {
   padding-left: 3.2rem;
   padding-right: 3.2rem;
@@ -817,10 +809,6 @@ select {
 .tw-py-3 {
   padding-top: 1.2rem;
   padding-bottom: 1.2rem;
-}
-.tw-py-6 {
-  padding-top: 2.4rem;
-  padding-bottom: 2.4rem;
 }
 .tw-text-center {
   text-align: center;
@@ -928,16 +916,6 @@ select {
     justify-content: space-between;
   }
 
-  .sm\:tw-px-6 {
-    padding-left: 2.4rem;
-    padding-right: 2.4rem;
-  }
-
-  .sm\:tw-py-24 {
-    padding-top: 9.6rem;
-    padding-bottom: 9.6rem;
-  }
-
   .sm\:tw-text-4xl {
     font-size: 3.6rem;
     line-height: 4rem;
@@ -950,10 +928,6 @@ select {
 }
 @media (min-width: 990px) {
 
-  .lg\:tw-col-start-1 {
-    grid-column-start: 1;
-  }
-
   .lg\:tw-col-start-2 {
     grid-column-start: 2;
   }
@@ -962,45 +936,11 @@ select {
     grid-row: span 2 / span 2;
   }
 
-  .lg\:tw-row-start-2 {
-    grid-row-start: 2;
-  }
-
   .lg\:tw-mt-0 {
     margin-top: 0px;
   }
 
-  .lg\:tw-grid {
-    display: grid;
-  }
-
-  .lg\:tw-max-w-lg {
-    max-width: 51.2rem;
-  }
-
-  .lg\:tw-grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .lg\:tw-gap-x-8 {
-    -moz-column-gap: 3.2rem;
-         column-gap: 3.2rem;
-  }
-
-  .lg\:tw-self-start {
-    align-self: flex-start;
-  }
-
-  .lg\:tw-self-end {
-    align-self: flex-end;
-  }
-
   .lg\:tw-self-center {
     align-self: center;
-  }
-
-  .lg\:tw-px-8 {
-    padding-left: 3.2rem;
-    padding-right: 3.2rem;
   }
 }
