@@ -206,7 +206,36 @@
       <section aria-labelledby="information-heading" class="tw-mt-4">
         <h2 id="information-heading" class="tw-sr-only">Product information</h2>
         <div class="flex items-center">
-          <p class="tw-text-lg tw-text-gray-900 sm:tw-text-xl">$220</p>
+          <div class="tw-text-lg tw-text-gray-900 sm:tw-text-xl">
+            <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
+              {%- render 'price',
+                product: product,
+                use_variant: true,
+                show_badges: true,
+                price_class: 'price--large'
+              -%}
+            </div>
+            {%- if product.quantity_price_breaks_configured? -%}
+              <div class="volume-pricing-note">
+                <span>{{ 'products.product.volume_pricing.note' | t }}</span>
+              </div>
+            {%- endif -%}
+              <div class="product__tax caption rte">
+                {%- if cart.taxes_included -%}
+                  {{ 'products.product.include_taxes' | t }}
+                {%- endif -%}
+                {%- if shop.shipping_policy.body != blank -%}
+                  {{ 'products.product.shipping_policy_html' | t: link: shop.shipping_policy.url }}
+                {%- endif -%}
+              </div>
+            <div {{ block.shopify_attributes }}>
+              {%- assign product_form_installment_id = 'product-form-installment-' | append: section.id -%}
+              {%- form 'product', product, id: product_form_installment_id, class: 'installment caption-large' -%}
+                <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+                {{ form | payment_terms }}
+              {%- endform -%}
+            </div>
+          </div>
         </div>
         {% comment %}
           <div class="flex items-center">
@@ -492,35 +521,7 @@
                   </h2>
                 </a>
               </div>
-            {%- when 'price' -%}
-              <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
-                {%- render 'price',
-                  product: product,
-                  use_variant: true,
-                  show_badges: true,
-                  price_class: 'price--large'
-                -%}
-              </div>
-              {%- if product.quantity_price_breaks_configured? -%}
-                <div class="volume-pricing-note">
-                  <span>{{ 'products.product.volume_pricing.note' | t }}</span>
-                </div>
-              {%- endif -%}
-                <div class="product__tax caption rte">
-                  {%- if cart.taxes_included -%}
-                    {{ 'products.product.include_taxes' | t }}
-                  {%- endif -%}
-                  {%- if shop.shipping_policy.body != blank -%}
-                    {{ 'products.product.shipping_policy_html' | t: link: shop.shipping_policy.url }}
-                  {%- endif -%}
-                </div>
-              <div {{ block.shopify_attributes }}>
-                {%- assign product_form_installment_id = 'product-form-installment-' | append: section.id -%}
-                {%- form 'product', product, id: product_form_installment_id, class: 'installment caption-large' -%}
-                  <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
-                  {{ form | payment_terms }}
-                {%- endform -%}
-              </div>
+              
             {%- when 'inventory' -%}
               <p
                 class="product__inventory no-js-hidden{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}{% if product.selected_or_first_available_variant.inventory_management != 'shopify' %} visibility-hidden{% endif %}"
