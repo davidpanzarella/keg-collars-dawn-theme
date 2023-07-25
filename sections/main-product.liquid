@@ -172,7 +172,7 @@
     endfor
 
     assign shapes = shapes | split: ','
-    assign sizes = sizes | split: ',' | sort_by: 'title'
+    assign sizes = sizes | split: ',' | sort
     assign colors = colors | split: ','
     assign templates = templates | split: ','
   %}
