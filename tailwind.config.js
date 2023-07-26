@@ -1,3 +1,12 @@
+function withOpacity(variableName) {
+  return function ({ opacityValue }) {
+    if (opacityValue !== undefined) {
+      return `rgba(var(${variableName}), ${opacityValue})`;
+    }
+    return `rgb(var(${variableName}))`;
+  };
+}
+
 module.exports = {
   content: ['./layout/*.liquid', './templates/**/*.liquid', './sections/*.liquid', './snippets/*.liquid'],
   prefix: 'tw-',
