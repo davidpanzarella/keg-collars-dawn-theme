@@ -894,4 +894,9 @@ select {
     font-size: 2rem;
     line-height: 2.8rem;
   }
+
+  .sm\:tw-text-2xl {
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+  }
 }

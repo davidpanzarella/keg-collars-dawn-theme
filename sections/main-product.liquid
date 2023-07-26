@@ -194,19 +194,19 @@
 
       <div class="tw-mt-4">
         <h1 class="tw-text-3xl tw-font-bold tw-tracking-tight tw-text-gray-900 sm:tw-text-4xl">
-          {{ productTitleDisplay }}
-        </h1>
-        
-        <p class="tw-text-lg tw-text-gray-900 sm:tw-text-xl">
           {{ colorDisplay }}
           {{ productTitle }}
+        </h1>
+
+        <p class="tw-text-lg tw-text-gray-900 sm:tw-text-xl">
+          {{ productTitleDisplay }}
         </p>
       </div>
 
       <section aria-labelledby="information-heading" class="tw-mt-4">
         <h2 id="information-heading" class="tw-sr-only">Product information</h2>
         <div class="flex items-center">
-          <div class="tw-text-lg tw-text-gray-900 sm:tw-text-xl">
+          <div class="tw-text-lg tw-text-gray-900 sm:tw-text-2xl">
             <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
               {%- render 'price',
                 product: product,
