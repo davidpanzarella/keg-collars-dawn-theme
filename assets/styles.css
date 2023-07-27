@@ -555,6 +555,9 @@ select {
   outline: 1px solid ButtonText;
   outline: 1px auto -webkit-focus-ring-color;
 }
+  :root {
+    --color-primary: var(--color-link);
+  }
 
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
