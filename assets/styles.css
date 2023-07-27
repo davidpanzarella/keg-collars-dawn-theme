@@ -559,6 +559,10 @@ select {
     --color-primary: var(--color-link);
   }
 
+  /* Add the color scheme classes here */
+
+  /* Add more color scheme classes as needed */
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;

@@ -2,9 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
   :root {
     --color-primary: var(--color-link);
   }
+
+  /* Add the color scheme classes here */
+  .color-scheme-1 {
+    --color-foreground: var(--color-foreground-1);
+    --color-background: var(--color-background-1);
+    --color-button: var(--color-button-1);
+    --color-button-text: var(--color-button-text-1);
+    --color-secondary-button: var(--color-secondary-button-1);
+    --color-secondary-button-text: var(--color-secondary-button-text-1);
+    --color-link: var(--color-link-1);
+    --color-shadow: var(--color-shadow-1);
+  }
+
+  .color-scheme-2 {
+    --color-foreground: var(--color-foreground-2);
+    --color-background: var(--color-background-2);
+    --color-button: var(--color-button-2);
+    --color-button-text: var(--color-button-text-2);
+    --color-secondary-button: var(--color-secondary-button-2);
+    --color-secondary-button-text: var(--color-secondary-button-text-2);
+    --color-link: var(--color-link-2);
+    --color-shadow: var(--color-shadow-2);
+  }
+
+  /* Add more color scheme classes as needed */
 }
