@@ -679,14 +679,8 @@ select {
 .tw-ml-2 {
   margin-left: 0.8rem;
 }
-.tw-mr-2 {
-  margin-right: 0.8rem;
-}
 .tw-mt-1 {
   margin-top: 0.4rem;
-}
-.tw-mt-10 {
-  margin-top: 4rem;
 }
 .tw-mt-4 {
   margin-top: 1.6rem;
@@ -700,26 +694,14 @@ select {
 .tw-flex {
   display: flex;
 }
-.tw-inline-flex {
-  display: inline-flex;
-}
 .tw-grid {
   display: grid;
 }
 .tw-h-5 {
   height: 2rem;
 }
-.tw-h-6 {
-  height: 2.4rem;
-}
 .tw-w-5 {
   width: 2rem;
-}
-.tw-w-6 {
-  width: 2.4rem;
-}
-.tw-w-full {
-  width: 100%;
 }
 .tw-flex-shrink-0 {
   flex-shrink: 0;
@@ -739,9 +721,6 @@ select {
 .tw-items-center {
   align-items: center;
 }
-.tw-justify-center {
-  justify-content: center;
-}
 .tw-gap-4 {
   gap: 1.6rem;
 }
@@ -758,9 +737,6 @@ select {
 .tw-rounded-lg {
   border-radius: 0.8rem;
 }
-.tw-rounded-md {
-  border-radius: 0.6rem;
-}
 .tw-border {
   border-width: 1px;
 }
@@ -768,26 +744,8 @@ select {
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
 }
-.tw-border-transparent {
-  border-color: transparent;
-}
-.tw-bg-indigo-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(79 70 229 / var(--tw-bg-opacity));
-}
 .tw-p-4 {
   padding: 1.6rem;
-}
-.tw-px-8 {
-  padding-left: 3.2rem;
-  padding-right: 3.2rem;
-}
-.tw-py-3 {
-  padding-top: 1.2rem;
-  padding-bottom: 1.2rem;
-}
-.tw-text-center {
-  text-align: center;
 }
 .tw-text-3xl {
   font-size: 3rem;
@@ -822,10 +780,6 @@ select {
   --tw-text-opacity: 1;
   color: rgb(209 213 219 / var(--tw-text-opacity));
 }
-.tw-text-gray-400 {
-  --tw-text-opacity: 1;
-  color: rgb(156 163 175 / var(--tw-text-opacity));
-}
 .tw-text-gray-500 {
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity));
@@ -850,10 +804,6 @@ select {
   --tw-text-opacity: 1;
   color: rgb(68 64 60 / var(--tw-text-opacity));
 }
-.tw-text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
 .tw-no-underline {
   text-decoration-line: none;
 }
@@ -866,17 +816,8 @@ select {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(99 102 241 / var(--tw-ring-opacity));
 }
-.hover\:tw-bg-indigo-700:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(67 56 202 / var(--tw-bg-opacity));
-}
-.hover\:tw-text-gray-500:hover {
-  --tw-text-opacity: 1;
-  color: rgb(107 114 128 / var(--tw-text-opacity));
-}
-.hover\:tw-text-gray-700:hover {
-  --tw-text-opacity: 1;
-  color: rgb(55 65 81 / var(--tw-text-opacity));
+select {
+  background-image: none;
 }
 @media (min-width: 640px) {
 
