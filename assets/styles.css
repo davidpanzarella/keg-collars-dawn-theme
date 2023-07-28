@@ -828,6 +828,9 @@ select {
 .tw-ring-\[theme\(\'colors\.link\'\)\] {
   --tw-ring-color: rgb(var(--color-link));
 }
+.tw-ring-\[theme\(\'colors\.text\'\)\] {
+  --tw-ring-color: rgb(var(--color-foreground));
+}
 select {
   background-image: none;
 }
