@@ -744,6 +744,12 @@ select {
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
 }
+.tw-border-\[theme\(\'colors\.button\'\)\] {
+  border-color: rgb(var(--color-button));
+}
+.tw-bg-\[theme\(\'colors\.background\'\)\] {
+  background-color: rgb(var(--color-background));
+}
 .tw-p-4 {
   padding: 1.6rem;
 }
@@ -804,6 +810,9 @@ select {
   --tw-text-opacity: 1;
   color: rgb(68 64 60 / var(--tw-text-opacity));
 }
+.tw-text-\[theme\(\'colors\.text\'\)\] {
+  color: rgb(var(--color-foreground));
+}
 .tw-no-underline {
   text-decoration-line: none;
 }
@@ -815,6 +824,9 @@ select {
 .tw-ring-indigo-500 {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(99 102 241 / var(--tw-ring-opacity));
+}
+.tw-ring-\[theme\(\'colors\.link\'\)\] {
+  --tw-ring-color: rgb(var(--color-link));
 }
 select {
   background-image: none;
