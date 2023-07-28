@@ -432,7 +432,7 @@
                   </script>
 
                   <div
-                    class="cursor-pointer group"
+                    class="{% if templateMatch == 'false' %}cursor-pointer{% endif %} group"
                     {% if templateMatch == 'false' %}
                       onclick="window.location.href='{{templateUrl}}'"
                     {% endif %}
