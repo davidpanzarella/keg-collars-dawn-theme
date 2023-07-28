@@ -676,6 +676,10 @@ select {
 .tw-relative {
   position: relative;
 }
+.tw-my-6 {
+  margin-top: 2.4rem;
+  margin-bottom: 2.4rem;
+}
 .tw-ml-2 {
   margin-left: 0.8rem;
 }
