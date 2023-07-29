@@ -662,6 +662,22 @@ select {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+.btn-blue {
+  border-radius: 0.4rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.btn-blue:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(29 78 216 / var(--tw-bg-opacity));
+}
 .tw-sr-only {
   position: absolute;
   width: 1px;

@@ -35,7 +35,7 @@
 
 @layer components {
   .btn-blue {
-    @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded;
+    @apply tw-bg-blue-500 hover:tw-bg-blue-700 tw-text-white tw-font-bold tw-py-2 tw-px-4 tw-rounded;
   }
 }
 
