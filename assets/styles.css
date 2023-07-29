@@ -662,10 +662,10 @@ select {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
-.btn-blue {
+.btn-orange {
   border-radius: 0.4rem;
   --tw-bg-opacity: 1;
-  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+  background-color: rgb(249 115 22 / var(--tw-bg-opacity));
   padding-top: 0.8rem;
   padding-bottom: 0.8rem;
   padding-left: 1.6rem;
@@ -674,9 +674,9 @@ select {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
-.btn-blue:hover {
+.btn-orange:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(29 78 216 / var(--tw-bg-opacity));
+  background-color: rgb(194 65 12 / var(--tw-bg-opacity));
 }
 .tw-sr-only {
   position: absolute;
