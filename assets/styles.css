@@ -783,6 +783,14 @@ select {
 .tw-p-4 {
   padding: 1.6rem;
 }
+.tw-px-3 {
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+}
+.tw-py-3 {
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+}
 .tw-text-3xl {
   font-size: 3rem;
   line-height: 3.6rem;
