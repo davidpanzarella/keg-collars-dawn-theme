@@ -34,8 +34,11 @@
 }
 
 @layer components {
-  .btn-orange {
-    @apply tw-bg-orange-500 hover:tw-bg-orange-700 tw-text-white tw-font-bold tw-py-2 tw-px-4 tw-rounded;
+  .btn-primary {
+    /* background-color: var(--color-button);
+    color: var(--color-button-text); */
+
+    @apply tw-bg-primary-500 hover:tw-bg-primary-700 tw-text-white tw-font-bold tw-py-2 tw-px-4 tw-rounded;
   }
 }
 
