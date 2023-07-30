@@ -855,6 +855,10 @@ select {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgba(var(--color-button-text), var(--tw-ring-opacity));
 }
+.tw-ring-button {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgba(var(--color-button), var(--tw-ring-opacity));
+}
 select {
   background-image: none;
 }
