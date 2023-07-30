@@ -777,6 +777,10 @@ select {
   --tw-border-opacity: 1;
   border-color: rgb(156 163 175 / var(--tw-border-opacity));
 }
+.tw-border-button {
+  --tw-border-opacity: 1;
+  border-color: rgba(var(--color-button), var(--tw-border-opacity));
+}
 .tw-bg-\[theme\(\'colors\.background\'\)\] {
   background-color: rgb(var(--color-background));
 }
