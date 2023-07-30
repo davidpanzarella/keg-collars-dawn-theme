@@ -795,6 +795,10 @@ select {
   padding-left: 0.8rem;
   padding-right: 0.8rem;
 }
+.tw-py-2 {
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+}
 .tw-text-3xl {
   font-size: 3rem;
   line-height: 3.6rem;
