@@ -38,7 +38,7 @@
     /* background-color: var(--color-button);
     color: var(--color-button-text); */
 
-    @apply tw-bg-button hover:tw-bg-secondary-button tw-text-button-text tw-font-bold tw-py-2 tw-px-4 tw-rounded;
+    @apply tw-bg-button hover:tw-link tw-text-button-text tw-font-bold tw-py-2 tw-px-4 tw-rounded;
   }
 }
 
