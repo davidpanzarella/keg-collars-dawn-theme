@@ -663,19 +663,17 @@ select {
   --tw-backdrop-sepia:  ;
 }
 .btn-orange {
-    /* background-color: var(--color-button);
-    color: var(--color-button-text); */
-    border-radius: 0.4rem;
-    --tw-bg-opacity: 1;
-    background-color: rgba(var(--color-button), var(--tw-bg-opacity));
-    padding-top: 0.8rem;
-    padding-bottom: 0.8rem;
-    padding-left: 1.6rem;
-    padding-right: 1.6rem;
-    font-weight: 700;
-    --tw-text-opacity: 1;
-    color: rgba(var(--color-button-text), var(--tw-text-opacity));
-  }
+  cursor: pointer;
+  --tw-bg-opacity: 1;
+  background-color: rgba(var(--color-button), var(--tw-bg-opacity));
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgba(var(--color-button-text), var(--tw-text-opacity));
+}
 .btn-orange:hover {
   --tw-bg-opacity: 1;
   background-color: rgba(var(--color-link), var(--tw-bg-opacity));
