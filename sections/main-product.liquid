@@ -320,6 +320,24 @@
                       console.log("shapeMatch", {{ shapeMatch }});
                     </script>
 
+                    {% if shapeMatch == 'false' %}
+                      <a href="{{shapeUrl}}"class="cursor-pointer group" title="Learn more about {{shapeName}} shape">
+                        <div class="tw-relative tw-block tw-p-4 tw-border tw-border-gray-300 tw-cursor-default tw-focus:outline-none tw-ring-2 tw-ring-button">
+                        <p id="shape-choice-0-label" class="tw-text-base tw-font-medium tw-text-gray-900">
+                          {{ shapeName }}
+                        </p>
+                      </div>
+                      </a>
+                    {% else %}
+                    <div                      class="cursor-pointer group"                    >
+                      <div class="tw-relative tw-block tw-cursor-pointer tw-rounded-lg tw-border tw-border-gray-300 tw-p-4 tw-focus:outline-none{% if shapeMatch == 'true' %} tw-ring-2 tw-ring-indigo-500 tw-cursor-default{% endif %}">
+                        <p id="shape-choice-0-label" class="tw-text-base tw-font-medium tw-text-gray-900">
+                          {{ shapeName }}
+                        </p>
+                      </div>
+                    </div>
+                    {% endif %}
+
                     <div
                       class="cursor-pointer group"
                       {% if shapeMatch == 'false' %}
@@ -439,7 +457,7 @@
                       onclick="window.location.href='{{templateUrl}}'"
                     {% endif %}
                   >
-                    <div class="tw-relative tw-block tw-cursor-pointer tw-border tw-border-gray-400 tw-focus:outline-none{% if templateMatch == true %} tw-ring-2 tw-ring-button tw-cursor-auto{% endif %}">
+                    <div class="tw-relative tw-block tw-cursor-pointer tw-border tw-border-gray-400 tw-focus:outline-none{% if templateMatch == 'true' %} tw-ring-2 tw-ring-button tw-cursor-default{% endif %}">
                       <img
                         src="{{ templateImage }}"
                         alt="{{ templateName }}"
