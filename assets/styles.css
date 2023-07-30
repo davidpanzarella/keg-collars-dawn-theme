@@ -760,6 +760,9 @@ select {
 .tw-rounded-lg {
   border-radius: 0.8rem;
 }
+.tw-rounded-sm {
+  border-radius: 0.2rem;
+}
 .tw-border {
   border-width: 1px;
 }
