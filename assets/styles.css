@@ -835,6 +835,9 @@ select {
 .tw-font-medium {
   font-weight: 500;
 }
+.tw-font-semibold {
+  font-weight: 600;
+}
 .tw-tracking-tight {
   letter-spacing: -0.025em;
 }
