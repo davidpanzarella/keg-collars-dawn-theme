@@ -678,7 +678,7 @@ select {
   }
 .btn-orange:hover {
   --tw-bg-opacity: 1;
-  background-color: rgba(var(--color-secondary-button), var(--tw-bg-opacity));
+  background-color: rgba(var(--color-link), var(--tw-bg-opacity));
 }
 .tw-sr-only {
   position: absolute;
