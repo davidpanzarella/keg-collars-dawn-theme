@@ -882,6 +882,9 @@ select {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgba(var(--color-button), var(--tw-ring-opacity));
 }
+.tw-ring-offset-2 {
+  --tw-ring-offset-width: 2px;
+}
 select {
   background-image: none;
 }
