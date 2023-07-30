@@ -766,6 +766,9 @@ select {
 .tw-border {
   border-width: 1px;
 }
+.tw-border-2 {
+  border-width: 2px;
+}
 .tw-border-\[theme\(\'colors\.button\'\)\] {
   border-color: rgb(var(--color-button));
 }
