@@ -190,18 +190,6 @@
       </script>
       {% assign feature_text = relatedProductFeature.product_features | metafield_tag %}
       {% assign features = features | append: feature_text | append: ', ' %}
-
-      {% comment %} {% assign featureText = relatedProductFeature.product_features.children[0].children[0] %} {% endcomment %}
-
-      {% comment %}
-        {% for listItem in relatedProductFeature.product_features.children[0].children %}
-          <script>
-            console.log("listItem", {{ listItem | json }});
-          </script>
-          {% assign featureText = listItem.children[0].value %}
-          {% assign features = features | append: featureText | append: ', ' %}
-        {% endfor %}
-      {% endcomment %}
     {% endif %}
   {% endfor %}
 
