@@ -188,7 +188,7 @@
       <script>
         console.log("relatedProductFeature related", {{ relatedProductFeature | json }});
       </script>
-      {% assign features = features | append: relatedProductFeature | append: ', ' %}
+      {% assign features = features | append: relatedProductFeature.product_features | append: ', ' %}
 
       {% comment %} {% assign featureText = relatedProductFeature.product_features.children[0].children[0] %} {% endcomment %}
 
