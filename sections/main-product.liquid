@@ -116,7 +116,7 @@
 
     for relatedProductFeature in relatedProductFeatures
       if relatedProductFeature.related_product_types contains currentTypes
-        assign features = features | append: relatedProductFeature.feature | append: '|:'
+        assign features = features | append: relatedProductFeature.product_features | append: '|:'
       endif
     endfor
 
