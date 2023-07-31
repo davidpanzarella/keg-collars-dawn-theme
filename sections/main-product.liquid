@@ -359,7 +359,7 @@
             <div class="tw-mt-6 sm:tw-flex sm:tw-justify-between">
               <fieldset>
                 <legend class="tw-block tw-text-sm tw-font-semibold tw-text-gray-700">Size</legend>
-                <div class="tw-grid tw-grid-cols-2 tw-gap-4 tw-mt-1 sm:tw-grid-cols-3">
+                <div class="tw-grid tw-grid-cols-2 tw-gap-4 tw-mt-1 tw-text-base tw-font-medium tw-text-gray-900 sm:tw-grid-cols-3">
                   {% for size in sizes %}
                     {% assign size_option = size | split: '|:|' %}
                     {% assign sizeName = size_option[0] %}
@@ -376,10 +376,11 @@
                         href="{{sizeUrl}}"
                         title="View the {{sizeName}} {{ currentType }} size for this {{ colorDisplay }} {{ productTitle }}"
                       >
-                        <div class="tw-relative tw-block tw-px-3 tw-py-2 tw-border-2 tw-border-gray-300 tw-rounded-md border-transparent tw-focus:outline-none hover:tw-bg-gray-50">
-                          <p id="shape-choice-0-label" class="tw-text-base tw-font-medium tw-text-gray-900">
-                            {{ sizeName }}
-                          </p>
+                        <div
+                          id="shape-choice-0-label"
+                          class="tw-relative tw-block tw-px-3 tw-py-2 tw-border-2 tw-border-gray-300 tw-rounded-md border-transparent tw-focus:outline-none hover:tw-bg-gray-50"
+                        >
+                          {{ sizeName }}
                         </div>
                       </a>
                     {% else %}
