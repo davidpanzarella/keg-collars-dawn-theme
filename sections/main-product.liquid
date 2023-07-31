@@ -319,35 +319,25 @@
                     </script>
 
                     {% if shapeMatch == 'false' %}
-                      <a href="{{shapeUrl}}" class="cursor-pointer group" title="Learn more about {{shapeName}} shape">
-                        <div class="tw-relative tw-block tw-p-4 tw-border tw-border-gray-300 tw-focus:outline-none tw-ring-2">
-                          <p id="shape-choice-0-label" class="tw-text-base tw-font-medium tw-text-gray-900">
-                            {{ shapeName }}
-                          </p>
+                      <a
+                        href="{{sizeUrl}}"
+                        title="View the {{sizeName}} {{ currentType }} size for this {{ colorDisplay }} {{ productTitle }}"
+                      >
+                        <div
+                          id="shape-choice-0-label"
+                          class="tw-relative tw-block tw-px-3 tw-py-2 tw-border-2 tw-border-gray-300 tw-rounded-md border-transparent tw-focus:outline-none hover:tw-bg-gray-50"
+                        >
+                          {{ sizeName }}
                         </div>
                       </a>
                     {% else %}
-                      <div class="cursor-pointer group">
-                        <div class="tw-relative tw-block tw-p-4 tw-border tw-border-gray-300 tw-cursor-default tw-focus:outline-none tw-ring-2 tw-ring-button">
-                          <p id="shape-choice-0-label" class="tw-text-base tw-font-medium tw-text-gray-900">
-                            {{ shapeName }}
-                          </p>
-                        </div>
+                      <div
+                        id="shape-choice-0-label"
+                        class="tw-relative tw-block tw-px-3 tw-py-2 tw-border tw-rounded-md tw-cursor-default tw-border-button tw-focus:outline-none tw-ring-1 tw-ring-button"
+                      >
+                        {{ sizeName }}
                       </div>
                     {% endif %}
-
-                    <div
-                      class="cursor-pointer group"
-                      {% if shapeMatch == 'false' %}
-                        onclick="window.location.href='{{ shapeUrl }}'"
-                      {% endif %}
-                    >
-                      <div class="tw-relative tw-block tw-cursor-pointer tw-rounded-lg tw-border tw-border-gray-300 tw-p-4 tw-focus:outline-none{% if shapeMatch == 'true' %} tw-ring-2 tw-ring-indigo-500 tw-cursor-default{% endif %}">
-                        <p id="shape-choice-0-label" class="tw-text-base tw-font-medium tw-text-gray-900">
-                          {{ shapeName }}
-                        </p>
-                      </div>
-                    </div>
                   {% endfor %}
                 </div>
               </fieldset>
@@ -356,7 +346,7 @@
 
           <!-- Size selector -->
           {% if sizes.size > 1 %}
-            <div class="option-set">
+            <div class="tw-mt-6 sm:tw-flex sm:tw-justify-between">
               <fieldset>
                 <legend class="tw-block tw-text-sm tw-font-semibold tw-text-gray-700">Size</legend>
                 <div class="tw-grid tw-grid-cols-2 tw-gap-4 tw-mt-1 tw-text-base tw-font-medium tw-text-gray-900 sm:tw-grid-cols-3">
