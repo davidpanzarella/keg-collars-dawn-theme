@@ -114,15 +114,6 @@
     assign templates = ''
     assign features = ''
 
-    for relatedProductFeature in relatedProductFeatures
-      if relatedProductFeature.related_product_types contains currentTypes
-        for listItem in relatedProductFeature.product_features.children[0].children
-          assign featureText = listItem.children[0].value
-          assign features = features | append: featureText | append: ', '
-        endfor
-      endif
-    endfor
-
     assign features = features | split: ','
 
     for relatedProduct in relatedProductsByType
@@ -189,6 +180,24 @@
     assign colors = colors | split: ','
     assign templates = templates | split: ','
   %}
+
+  {% for relatedProductFeature in relatedProductFeatures %}
+    <script>
+      console.log("relatedProductFeature", {{ relatedProductFeature | json }});
+    </script>
+    {% if relatedProductFeature.related_product_types contains currentTypes %}
+      <script>
+        console.log("relatedProductFeature related", {{ relatedProductFeature | json }});
+      </script>
+      {% for listItem in relatedProductFeature.product_features.children[0].children %}
+        <script>
+          console.log("listItem", {{ listItem | json }});
+        </script>
+        {% assign featureText = listItem.children[0].value %}
+        {% assign features = features | append: featureText | append: ', ' %}
+      {% endfor %}
+    {% endif %}
+  {% endfor %}
 
   <script>
     console.log("relatedProductFeatures", {{ relatedProductFeatures | json }});
