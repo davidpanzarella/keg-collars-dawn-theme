@@ -397,15 +397,26 @@
                       aria-labelledby="color-choice-0-label"
                       aria-describedby="color-choice-0-description"
                     >
-                    <div
-                      class="cursor-pointer group"
                       {% if colorMatch == 'false' %}
-                        onclick="window.location.href='{{ colorUrl }}'"
+                        <a
+                          href="{{colorUrl}}"
+                          title="View the {{colorName}} {{ currentType }} color for this {{ colorDisplay }} {{ productTitle }}"
+                        >
+                          <div
+                            id="color-choice-0-label"
+                            class="tw-relative tw-block tw-px-3 tw-py-2 tw-border-2 tw-border-gray-300 tw-rounded-md border-transparent tw-focus:outline-none hover:tw-bg-gray-50"
+                          >
+                            {{ colorName }}
+                          </div>
+                        </a>
+                      {% else %}
+                        <div
+                          id="color-choice-0-label"
+                          class="tw-relative tw-block tw-px-3 tw-py-2 tw-border tw-rounded-md tw-cursor-default tw-border-button tw-focus:outline-none tw-ring-1 tw-ring-button"
+                        >
+                          {{ colorName }}
+                        </div>
                       {% endif %}
-                    >
-                      <div class="tw-relative tw-block tw-cursor-pointer tw-rounded-lg tw-border tw-border-gray-300 tw-p-4 tw-focus:outline-none{% if colorMatch == 'true' %} tw-ring-2 tw-ring-indigo-500 tw-cursor-default{% endif %}">
-                        {{ colorName }}
-                      </div>
                     </div>
                   {% endfor %}
                 </div>
