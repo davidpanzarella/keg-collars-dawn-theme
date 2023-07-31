@@ -320,14 +320,14 @@
 
                     {% if shapeMatch == 'false' %}
                       <a
-                        href="{{sizeUrl}}"
-                        title="View the {{sizeName}} {{ currentType }} size for this {{ colorDisplay }} {{ productTitle }}"
+                        href="{{shapeUrl}}"
+                        title="View the {{shapeName}} {{ currentType }} shape for this {{ colorDisplay }} {{ productTitle }}"
                       >
                         <div
                           id="shape-choice-0-label"
                           class="tw-relative tw-block tw-px-3 tw-py-2 tw-border-2 tw-border-gray-300 tw-rounded-md border-transparent tw-focus:outline-none hover:tw-bg-gray-50"
                         >
-                          {{ sizeName }}
+                          {{ shapeName }}
                         </div>
                       </a>
                     {% else %}
@@ -335,7 +335,7 @@
                         id="shape-choice-0-label"
                         class="tw-relative tw-block tw-px-3 tw-py-2 tw-border tw-rounded-md tw-cursor-default tw-border-button tw-focus:outline-none tw-ring-1 tw-ring-button"
                       >
-                        {{ sizeName }}
+                        {{ shapeName }}
                       </div>
                     {% endif %}
                   {% endfor %}
