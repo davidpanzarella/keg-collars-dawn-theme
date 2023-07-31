@@ -116,7 +116,10 @@
 
     for relatedProductFeature in relatedProductFeatures
       if relatedProductFeature.related_product_types contains currentTypes
-        assign features = features | append: relatedProductFeature.product_features | append: '|:'
+        for listItem in relatedProductFeature.product_features.children[0].children
+          assign featureText = listItem.children[0].value
+          assign features = features | append: featureText | append: ', '
+        endfor
       endif
     endfor
 
