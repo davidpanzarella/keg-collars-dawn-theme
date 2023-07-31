@@ -184,7 +184,7 @@
   {% for relatedProductFeature in relatedProductFeatures %}
     <script>
       console.log("currentTypes", {{ currentTypes | json }});
-      console.log("relatedProductFeature", {{ relatedProductFeature | json }});
+      console.log("relatedProductFeature", {{ relatedProductFeature.related_product_types.values | json }});
     </script>
     {% if relatedProductFeature.related_product_types.values contains currentTypes %}
       <script>
