@@ -114,8 +114,6 @@
     assign templates = ''
     assign features = ''
 
-    assign features = features | split: ','
-
     for relatedProduct in relatedProductsByType
       assign relatedProductColor = relatedProduct.metafields.custom.color.value[0]
       assign relatedProductFormat = relatedProduct.metafields.custom.format.value
@@ -190,7 +188,7 @@
       <script>
         console.log("relatedProductFeature related", {{ relatedProductFeature | json }});
       </script>
-      {% assign test = relatedProductFeature | metafield_tag %}
+      {% assign features = relatedProductFeature | metafield_tag %}
 
       {% comment %} {% assign featureText = relatedProductFeature.product_features.children[0].children[0] %} {% endcomment %}
 
@@ -205,6 +203,8 @@
       {% endcomment %}
     {% endif %}
   {% endfor %}
+
+  {% assign features = features | split: ',' %}
 
   <script>
     //console.log("relatedProductFeatures", {{ relatedProductFeatures | json }});
@@ -234,7 +234,7 @@
         </p>
       </div>
 
-      <div>{{ test }}</div>
+      <div>{{ features }}</div>
 
       <section aria-labelledby="information-heading" class="tw-mt-4">
         <h2 id="information-heading" class="tw-sr-only">Product information</h2>
