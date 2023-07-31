@@ -79,6 +79,9 @@
     assign currentType = product.metafields.custom.type.value
     assign currentTypes = currentType | append: 's'
     assign relatedProductsByType = collections.all.products | where: 'type', currentTypes
+    assign relatedProductHighlights = product_features | where: 'related_product_types', currentType
+
+    echo related_product_types
 
     comment
       set some default values for the product title display
