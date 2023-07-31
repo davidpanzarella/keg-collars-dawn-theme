@@ -205,6 +205,14 @@
 
       <section aria-labelledby="information-heading" class="tw-mt-4">
         <h2 id="information-heading" class="tw-sr-only">Product information</h2>
+        {%- if product.description != blank -%}
+          <div class="tw-mt-4 tw-space-y-6">
+            <div class="tw-text-lg tw-text-gray-00" {{ block.shopify_attributes }}>
+              {{ product.description }}
+            </div>
+          </div>
+        {%- endif -%}
+
         <div class="flex items-center">
           <div class="tw-text-lg tw-text-gray-900 sm:tw-text-2xl tw-color-primary">
             <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
@@ -272,14 +280,6 @@
             </div>
           </div>
         {% endcomment %}
-
-        {%- if product.description != blank -%}
-          <div class="tw-mt-4 tw-space-y-6">
-            <div class="tw-text-lg tw-text-gray-00" {{ block.shopify_attributes }}>
-              {{ product.description }}
-            </div>
-          </div>
-        {%- endif -%}
 
         {% comment %}
           <div class="flex items-center mt-6">
