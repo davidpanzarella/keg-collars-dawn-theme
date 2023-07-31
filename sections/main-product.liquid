@@ -382,17 +382,12 @@
             <div class="tw-mt-6 sm:tw-flex sm:tw-justify-between">
               <fieldset>
                 <legend class="tw-block tw-text-sm tw-font-medium tw-text-gray-700">Color</legend>
-                <div class="tw-grid tw-grid-cols-2 tw-gap-4 tw-mt-1 sm:tw-grid-cols-3">
+                <div class="tw-grid tw-grid-cols-2 tw-gap-4 tw-mt-1 tw-text-base tw-font-medium tw-text-gray-900 sm:tw-grid-cols-3">
                   {% for color in colors %}
                     {% assign color_option = color | split: '|:|' %}
                     {% assign colorName = color_option[0] %}
                     {% assign colorUrl = color_option[1] %}
                     {% assign colorMatch = color_option[2] %}
-
-                    <script>
-                      console.log("color_option", {{ color_option | json }});
-                      console.log("colorMatch", {{ colorMatch }});
-                    </script>
 
                     <input
                       type="radio"
@@ -409,9 +404,7 @@
                       {% endif %}
                     >
                       <div class="tw-relative tw-block tw-cursor-pointer tw-rounded-lg tw-border tw-border-gray-300 tw-p-4 tw-focus:outline-none{% if colorMatch == 'true' %} tw-ring-2 tw-ring-indigo-500 tw-cursor-default{% endif %}">
-                        <p id="color-choice-0-label" class="tw-text-base tw-font-medium tw-text-gray-900">
-                          {{ colorName }}
-                        </p>
+                        {{ colorName }}
                       </div>
                     </div>
                   {% endfor %}
