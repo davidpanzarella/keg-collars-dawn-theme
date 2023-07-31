@@ -313,11 +313,6 @@
                     {% assign shapeUrl = shape_option[1] %}
                     {% assign shapeMatch = shape_option[2] %}
 
-                    <script>
-                      console.log("shape_option", {{ shape_option | json }});
-                      console.log("shapeMatch", {{ shapeMatch }});
-                    </script>
-
                     {% if shapeMatch == 'false' %}
                       <a
                         href="{{shapeUrl}}"
@@ -356,18 +351,13 @@
                     {% assign sizeUrl = size_option[1] %}
                     {% assign sizeMatch = size_option[2] %}
 
-                    <script>
-                      console.log("size_option", {{ size_option | json }});
-                      console.log("sizeMatch", {{ sizeMatch }});
-                    </script>
-
                     {% if sizeMatch == 'false' %}
                       <a
                         href="{{sizeUrl}}"
                         title="View the {{sizeName}} {{ currentType }} size for this {{ colorDisplay }} {{ productTitle }}"
                       >
                         <div
-                          id="shape-choice-0-label"
+                          id="size-choice-0-label"
                           class="tw-relative tw-block tw-px-3 tw-py-2 tw-border-2 tw-border-gray-300 tw-rounded-md border-transparent tw-focus:outline-none hover:tw-bg-gray-50"
                         >
                           {{ sizeName }}
@@ -375,7 +365,7 @@
                       </a>
                     {% else %}
                       <div
-                        id="shape-choice-0-label"
+                        id="size-choice-0-label"
                         class="tw-relative tw-block tw-px-3 tw-py-2 tw-border tw-rounded-md tw-cursor-default tw-border-button tw-focus:outline-none tw-ring-1 tw-ring-button"
                       >
                         {{ sizeName }}
