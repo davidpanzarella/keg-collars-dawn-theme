@@ -39,10 +39,4 @@
   .btn-orange {
     @apply tw-cursor-pointer tw-bg-button tw-px-4 tw-py-2 tw-font-bold tw-text-button-text hover:tw-bg-link;
   }
-
-  /* Option Sets */
-
-  .option-set {
-    @apply tw-mt-6 sm:tw-flex sm:tw-justify-between;
-  }
 }
