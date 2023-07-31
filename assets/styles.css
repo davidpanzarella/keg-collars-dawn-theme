@@ -665,6 +665,16 @@ select {
   --tw-backdrop-sepia:  ;
 }
 /* Option Sets */
+.option-set {
+  margin-top: 2.4rem;
+}
+@media (min-width: 640px) {
+
+  .option-set {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 .tw-sr-only {
   position: absolute;
   width: 1px;
