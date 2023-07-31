@@ -120,6 +120,8 @@
       endif
     endfor
 
+    assign features = features | split: ','
+
     for relatedProduct in relatedProductsByType
       assign relatedProductColor = relatedProduct.metafields.custom.color.value[0]
       assign relatedProductFormat = relatedProduct.metafields.custom.format.value
@@ -183,7 +185,6 @@
     assign sizes = sizes | split: ',' | sort
     assign colors = colors | split: ','
     assign templates = templates | split: ','
-    assign features = features | split: ','
   %}
 
   <script>
