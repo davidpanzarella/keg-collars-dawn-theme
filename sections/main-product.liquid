@@ -1027,55 +1027,54 @@
           {{ 'products.product.view_full_details' | t }}
           {% render 'icon-arrow' %}
         </a>
-      </product-info>
+        <section aria-labelledby="details-heading" class="tw-mt-12">
+          <h2 id="details-heading" class="tw-sr-only">Additional details</h2>
 
-      <section aria-labelledby="details-heading" class="tw-mt-12">
-        <h2 id="details-heading" class="tw-sr-only">Additional details</h2>
-
-        <div class="tw-border-t tw-divide-y tw-divide-gray-200">
-          <div>
-            <h3>
-              <!-- Expand/collapse question button -->
-              <button
-                type="button"
-                class="tw-relative tw-flex tw-items-center tw-justify-between tw-w-full tw-py-6 tw-text-left tw-group"
-                aria-controls="disclosure-1"
-                aria-expanded="false"
-              >
-                <!-- Open: "tw-text-indigo-600", Closed: "tw-text-gray-900" -->
-                <span class="tw-text-sm tw-font-medium tw-text-gray-900">Features</span>
-                <span class="tw-flex tw-items-center tw-ml-6">
-                  <!-- Open: "tw-hidden", Closed: "tw-block" -->
-                  <svg
-                    class="tw-block tw-w-6 tw-h-6 tw-text-gray-400 tw-group-hover:text-gray-500"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
-                  </svg>
-                  <!-- Open: "tw-block", Closed: "tw-hidden" -->
-                  <svg
-                    class="tw-hidden tw-w-6 tw-h-6 tw-text-indigo-400 tw-group-hover:text-indigo-500"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15" />
-                  </svg>
-                </span>
-              </button>
-            </h3>
-            <div class="tw-pb-6 tw-prose tw-prose-xl" id="disclosure-1">
-              {{ features }}
+          <div class="tw-border-t tw-divide-y tw-divide-gray-200">
+            <div>
+              <h3>
+                <!-- Expand/collapse question button -->
+                <button
+                  type="button"
+                  class="tw-relative tw-flex tw-items-center tw-justify-between tw-w-full tw-py-6 tw-text-left tw-group"
+                  aria-controls="disclosure-1"
+                  aria-expanded="false"
+                >
+                  <!-- Open: "tw-text-indigo-600", Closed: "tw-text-gray-900" -->
+                  <span class="tw-text-sm tw-font-medium tw-text-gray-900">Features</span>
+                  <span class="tw-flex tw-items-center tw-ml-6">
+                    <!-- Open: "tw-hidden", Closed: "tw-block" -->
+                    <svg
+                      class="tw-block tw-w-6 tw-h-6 tw-text-gray-400 tw-group-hover:text-gray-500"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                    </svg>
+                    <!-- Open: "tw-block", Closed: "tw-hidden" -->
+                    <svg
+                      class="tw-hidden tw-w-6 tw-h-6 tw-text-indigo-400 tw-group-hover:text-indigo-500"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15" />
+                    </svg>
+                  </span>
+                </button>
+              </h3>
+              <div class="tw-pb-6 tw-prose tw-prose-xl" id="disclosure-1">
+                {{ features }}
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </product-info>
     </div>
 
     {%- if section.settings.media_position == 'right' -%}
