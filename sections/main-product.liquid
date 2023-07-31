@@ -190,6 +190,10 @@
       <script>
         console.log("relatedProductFeature related", {{ relatedProductFeature | json }});
       </script>
+      {% assign test = relatedProductFeature | metafield_tag %}
+
+      {% comment %} {% assign featureText = relatedProductFeature.product_features.children[0].children[0] %} {% endcomment %}
+
       {% comment %}
         {% for listItem in relatedProductFeature.product_features.children[0].children %}
           <script>
@@ -229,6 +233,8 @@
           {{ currentTemplateOptions }}
         </p>
       </div>
+
+      <div>{{ test }}</div>
 
       <section aria-labelledby="information-heading" class="tw-mt-4">
         <h2 id="information-heading" class="tw-sr-only">Product information</h2>
