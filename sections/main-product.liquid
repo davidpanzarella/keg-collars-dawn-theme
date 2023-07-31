@@ -383,29 +383,12 @@
                         </div>
                       </a>
                     {% else %}
-                      <div class="cursor-pointer group">
-                        <div class="tw-relative tw-block tw-px-3 tw-py-2 tw-border tw-rounded-md tw-cursor-default tw-border-button tw-focus:outline-none tw-ring-1 tw-ring-button">
-                          <p id="shape-choice-0-label" class="tw-text-base tw-font-medium tw-text-gray-900">
-                            {{ sizeName }}
-                          </p>
-                        </div>
+                      <div class="tw-relative tw-block tw-px-3 tw-py-2 tw-border tw-rounded-md tw-cursor-default tw-border-button tw-focus:outline-none tw-ring-1 tw-ring-button">
+                        <p id="shape-choice-0-label" class="tw-text-base tw-font-medium tw-text-gray-900">
+                          {{ sizeName }}
+                        </p>
                       </div>
                     {% endif %}
-
-                    {% comment %}
-                      <div
-                        class="cursor-pointer group"
-                        {% if sizeMatch == 'false' %}
-                          onclick="window.location.href='{{ sizeUrl }}'"
-                        {% endif %}
-                      >
-                        <div class="tw-relative tw-block tw-cursor-pointer tw-rounded-lg tw-border tw-border-gray-300 tw-p-4 tw-focus:outline-none{% if sizeMatch == 'true' %} tw-ring-2 tw-ring-button tw-cursor-default{% endif %}">
-                          <p id="size-choice-0-label" class="tw-text-base tw-font-medium tw-text-gray-900">
-                            {{ sizeName }}
-                          </p>
-                        </div>
-                      </div>
-                    {% endcomment %}
                   {% endfor %}
                 </div>
               </fieldset>
