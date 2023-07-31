@@ -185,18 +185,20 @@
     <script>
       console.log("relatedProductFeature", {{ relatedProductFeature | json }});
     </script>
-    {% if relatedProductFeature.related_product_types contains currentTypes %}
-      <script>
-        console.log("relatedProductFeature related", {{ relatedProductFeature | json }});
-      </script>
-      {% for listItem in relatedProductFeature.product_features.children[0].children %}
+    {% comment %}
+      {% if relatedProductFeature.related_product_types contains currentTypes %}
         <script>
-          console.log("listItem", {{ listItem | json }});
+          console.log("relatedProductFeature related", {{ relatedProductFeature | json }});
         </script>
-        {% assign featureText = listItem.children[0].value %}
-        {% assign features = features | append: featureText | append: ', ' %}
-      {% endfor %}
-    {% endif %}
+        {% for listItem in relatedProductFeature.product_features.children[0].children %}
+          <script>
+            console.log("listItem", {{ listItem | json }});
+          </script>
+          {% assign featureText = listItem.children[0].value %}
+          {% assign features = features | append: featureText | append: ', ' %}
+        {% endfor %}
+      {% endif %}
+    {% endcomment %}
   {% endfor %}
 
   <script>
