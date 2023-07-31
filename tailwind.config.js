@@ -17,11 +17,14 @@ module.exports = {
         heading: 'var(--font-heading-family)'
       },
       colors: {
-        text: 'rgba(var(--color-base-text), <alpha-value>)',
-        accent1: 'rgba(var(--color-base-accent-1), <alpha-value>)',
-        accent2: 'rgba(var(--color-base-accent-2), <alpha-value>)',
-        background1: 'rgba(var(--color-base-background-1), <alpha-value>)',
-        background2: 'rgba(var(--color-base-background-2), <alpha-value>)'
+        text: withOpacity('--color-foreground'),
+        background: withOpacity('--color-background'),
+        button: withOpacity('--color-button'),
+        'button-text': withOpacity('--color-button-text'),
+        'secondary-button': withOpacity('--color-secondary-button'),
+        'secondary-button-text': withOpacity('--color-secondary-button-text'),
+        link: withOpacity('--color-link'),
+        shadow: withOpacity('--color-shadow')
       },
       screens: {
         md: '750px',
