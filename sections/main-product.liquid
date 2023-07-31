@@ -187,6 +187,7 @@
   %}
 
   <script>
+    console.log("relatedProductFeatures", {{ relatedProductFeatures | json }});
     console.log("features", {{ features | json }});
     console.log("shapes", {{ shapes | json }});
     console.log("sizes", {{ sizes | json }});
