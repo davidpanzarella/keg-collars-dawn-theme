@@ -186,7 +186,7 @@
       console.log("currentTypes", {{ currentTypes | json }});
       console.log("relatedProductFeature", {{ relatedProductFeature | json }});
     </script>
-    {% if relatedProductFeature.related_product_types contains currentTypes %}
+    {% if relatedProductFeature.related_product_types.values contains currentTypes %}
       <script>
         console.log("relatedProductFeature related", {{ relatedProductFeature | json }});
       </script>
