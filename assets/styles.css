@@ -1435,8 +1435,8 @@ select {
   --tw-ring-color: rgba(var(--color-button), var(--tw-ring-opacity));
 }
 select {
-                    background-image: none;
-                  }
+  background-image: none;
+}
 .metafield-rich_text_field ul {
   margin: 0;
 }

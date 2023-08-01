@@ -41,9 +41,9 @@
   }
 }
 
-                  select {
-                    background-image: none;
-                  }
+select {
+  background-image: none;
+}
 .metafield-rich_text_field ul {
   margin: 0;
 }
