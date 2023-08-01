@@ -1027,23 +1027,42 @@
         </a>
 
         {% comment %} features & faqs {% endcomment %}
-        <section aria-labelledby="details-heading" class="tw-mt-12">
-          <h2 id="details-heading" class="tw-sr-only">Additional details</h2>
-          <div class="tw-border-t tw-divide-y tw-divide-stone-200">
+        <section aria-labelledby="details-heading" class="mt-12">
+          <h2 id="details-heading" class="sr-only">Additional details</h2>
+
+          <div class="divide-y divide-gray-200 border-t">
             <div x-data="{ open: true }">
+              <div class="prose prose-sm pb-6" id="disclosure-1" x-show="open" style="display: none;">
+                <ul role="list">
+                  <li>Multiple strap configurations</li>
+                  <li>Spacious interior with top zip</li>
+                  <li>Leather handle and tabs</li>
+                  <li>Interior dividers</li>
+                  <li>Stainless strap loops</li>
+                  <li>Double stitched construction</li>
+                  <li>Water-resistant</li>
+                </ul>
+              </div>
               <h3>
-                <button type="button" aria-controls="disclosure-1">
+                <button
+                  type="button"
+                  x-description="Expand/collapse question button"
+                  class="group relative flex w-full items-center justify-between py-6 text-left"
+                  aria-controls="disclosure-1"
+                  @click="open = !open"
+                  aria-expanded="false"
+                  x-bind:aria-expanded="open.toString()"
+                >
                   <span
-                    class="text-sm font-medium"
+                    class="text-sm font-medium text-gray-900"
                     x-state:on="Open"
                     x-state:off="Closed"
                     :class="{ 'text-indigo-600': open, 'text-gray-900': !(open) }"
+                    >Features</span
                   >
-                    Features
-                  </span>
                   <span class="ml-6 flex items-center">
                     <svg
-                      class="h-6 w-6 text-gray-400 group-hover:text-gray-500 hidden"
+                      class="h-6 w-6 text-gray-400 group-hover:text-gray-500 block"
                       x-state:on="Open"
                       x-state:off="Closed"
                       :class="{ 'hidden': open, 'block': !(open) }"
@@ -1056,7 +1075,7 @@
                       <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"></path>
                     </svg>
                     <svg
-                      class="h-6 w-6 text-indigo-400 group-hover:text-indigo-500 block"
+                      class="h-6 w-6 text-indigo-400 group-hover:text-indigo-500 hidden"
                       x-state:on="Open"
                       x-state:off="Closed"
                       :class="{ 'block': open, 'hidden': !(open) }"
@@ -1069,48 +1088,178 @@
                       <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15"></path>
                     </svg>
                   </span>
-                  {% comment %}
-                    <!-- Expand/collapse question button -->
-                    <button
-                      type="button"
-                      x-description="Expand/collapse question button"
-                      class="group relative flex w-full items-center justify-between py-6 text-left"
-                      class="tw-relative tw-flex tw-items-center tw-justify-between tw-w-full tw-py-6 tw-text-left tw-group"
-                      aria-controls="disclosure-1"
-                      aria-expanded="false"
-                      @click="open = !open" aria-expanded="true" x-bind:aria-expanded="open.toString()"
-                    >
-                      <!-- Open: "tw-text-indigo-600", Closed: "tw-text-stone-900" -->
-                      <span class="tw-text-sm tw-font-medium tw-text-stone-900">Features</span>
-                      <span class="tw-flex tw-items-center tw-ml-6">
-                        <!-- Open: "tw-hidden", Closed: "tw-block" -->
-                        <svg
-                          class="tw-block tw-w-6 tw-h-6 tw-text-stone-300 tw-group-hover:text-stone-500"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke-width="1.5"
-                          stroke="currentColor"
-                          aria-hidden="true"
-                        >
-                          <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
-                        </svg>
-                        <!-- Open: "tw-block", Closed: "tw-hidden" -->
-                        <svg
-                          class="tw-hidden tw-w-6 tw-h-6 tw-text-indigo-400 tw-group-hover:text-indigo-500"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke-width="1.5"
-                          stroke="currentColor"
-                          aria-hidden="true"
-                        >
-                          <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15" />
-                        </svg>
-                      </span>
-                  {% endcomment %}
                 </button>
               </h3>
-              <div class="tw-pb-6 tw-prose tw-prose-xl" id="disclosure-1" x-show="open">
-                {{ features }}
+            </div>
+            <div x-data="{ open: false }">
+              <h3>
+                <button
+                  type="button"
+                  x-description="Expand/collapse question button"
+                  class="group relative flex w-full items-center justify-between py-6 text-left"
+                  aria-controls="disclosure-1"
+                  @click="open = !open"
+                  aria-expanded="false"
+                  x-bind:aria-expanded="open.toString()"
+                >
+                  <span
+                    class="text-sm font-medium text-gray-900"
+                    x-state:on="Open"
+                    x-state:off="Closed"
+                    :class="{ 'text-indigo-600': open, 'text-gray-900': !(open) }"
+                    >Care</span
+                  >
+                  <span class="ml-6 flex items-center">
+                    <svg
+                      class="h-6 w-6 text-gray-400 group-hover:text-gray-500 block"
+                      x-state:on="Open"
+                      x-state:off="Closed"
+                      :class="{ 'hidden': open, 'block': !(open) }"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"></path>
+                    </svg>
+                    <svg
+                      class="h-6 w-6 text-indigo-400 group-hover:text-indigo-500 hidden"
+                      x-state:on="Open"
+                      x-state:off="Closed"
+                      :class="{ 'block': open, 'hidden': !(open) }"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15"></path>
+                    </svg>
+                  </span>
+                </button>
+              </h3>
+              <div class="prose prose-sm pb-6" id="disclosure-1" x-show="open" style="display: none;">
+                <ul role="list">
+                  <li>Spot clean as needed</li>
+                  <li>Hand wash with mild soap</li>
+                  <li>Machine wash interior dividers</li>
+                  <li>Treat handle and tabs with leather conditioner</li>
+                </ul>
+              </div>
+            </div>
+            <div x-data="{ open: false }">
+              <h3>
+                <button
+                  type="button"
+                  x-description="Expand/collapse question button"
+                  class="group relative flex w-full items-center justify-between py-6 text-left"
+                  aria-controls="disclosure-1"
+                  @click="open = !open"
+                  aria-expanded="false"
+                  x-bind:aria-expanded="open.toString()"
+                >
+                  <span
+                    class="text-sm font-medium text-gray-900"
+                    x-state:on="Open"
+                    x-state:off="Closed"
+                    :class="{ 'text-indigo-600': open, 'text-gray-900': !(open) }"
+                    >Shipping</span
+                  >
+                  <span class="ml-6 flex items-center">
+                    <svg
+                      class="h-6 w-6 text-gray-400 group-hover:text-gray-500 block"
+                      x-state:on="Open"
+                      x-state:off="Closed"
+                      :class="{ 'hidden': open, 'block': !(open) }"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"></path>
+                    </svg>
+                    <svg
+                      class="h-6 w-6 text-indigo-400 group-hover:text-indigo-500 hidden"
+                      x-state:on="Open"
+                      x-state:off="Closed"
+                      :class="{ 'block': open, 'hidden': !(open) }"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15"></path>
+                    </svg>
+                  </span>
+                </button>
+              </h3>
+              <div class="prose prose-sm pb-6" id="disclosure-1" x-show="open" style="display: none;">
+                <ul role="list">
+                  <li>Free shipping on orders over $300</li>
+                  <li>International shipping available</li>
+                  <li>Expedited shipping options</li>
+                  <li>Signature required upon delivery</li>
+                </ul>
+              </div>
+            </div>
+            <div x-data="{ open: false }">
+              <h3>
+                <button
+                  type="button"
+                  x-description="Expand/collapse question button"
+                  class="group relative flex w-full items-center justify-between py-6 text-left"
+                  aria-controls="disclosure-1"
+                  @click="open = !open"
+                  aria-expanded="false"
+                  x-bind:aria-expanded="open.toString()"
+                >
+                  <span
+                    class="text-gray-900 text-sm font-medium"
+                    x-state:on="Open"
+                    x-state:off="Closed"
+                    :class="{ 'text-indigo-600': open, 'text-gray-900': !(open) }"
+                    >Returns</span
+                  >
+                  <span class="ml-6 flex items-center">
+                    <svg
+                      class="block h-6 w-6 text-gray-400 group-hover:text-gray-500"
+                      x-state:on="Open"
+                      x-state:off="Closed"
+                      :class="{ 'hidden': open, 'block': !(open) }"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"></path>
+                    </svg>
+                    <svg
+                      class="hidden h-6 w-6 text-indigo-400 group-hover:text-indigo-500"
+                      x-state:on="Open"
+                      x-state:off="Closed"
+                      :class="{ 'block': open, 'hidden': !(open) }"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15"></path>
+                    </svg>
+                  </span>
+                </button>
+              </h3>
+              <div class="prose prose-sm pb-6" id="disclosure-1" x-show="open" style="display: none;">
+                <ul role="list">
+                  <li>Easy return requests</li>
+                  <li>Pre-paid shipping label included</li>
+                  <li>10% restocking fee for returns</li>
+                  <li>60 day return window</li>
+                </ul>
               </div>
             </div>
           </div>
