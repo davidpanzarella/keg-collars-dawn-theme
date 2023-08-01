@@ -964,8 +964,7 @@ select {
   --tw-prose-invert-pre-bg: rgb(0 0 0 / 50%);
   --tw-prose-invert-th-borders: #4b5563;
   --tw-prose-invert-td-borders: #374151;
-  font-size: 1.6rem;
-  font-size: [object Object];
+  font-size: 1rem;
   line-height: 1.75;
 }
 .tw-prose :where(video):not(:where([class~="tw-not-prose"] *)) {
@@ -1041,6 +1040,20 @@ select {
 }
 .tw-prose :where(.tw-prose > :last-child):not(:where([class~="tw-not-prose"] *)) {
   margin-bottom: 0;
+}
+.tw-prose {
+  base: 1rem;
+  sm: 0.875rem;
+  lg: 1.125rem;
+  xl: 1.25rem;
+  2xl: 1.5rem;
+  3xl: 1.875rem;
+  4xl: 2.25rem;
+  5xl: 3rem;
+  6xl: 3.75rem;
+  7xl: 4.5rem;
+  8xl: 6rem;
+  9xl: 8rem;
 }
 .tw-prose-xl {
   font-size: 1.25rem;
