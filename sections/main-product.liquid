@@ -1029,7 +1029,7 @@
         {% comment %} features & faqs {% endcomment %}
         <section aria-labelledby="features-heading" class="tw-mt-4">
           <h2 id="features-heading" class="tw-sr-only">Product Features & FAQs</h2>
-          <div class="tw-border-t tw-divide-y tw-divide-gray-200">
+          <div class="tw-border-t tw-divide-y tw-divide-stone-200">
             <div x-data="{ open: false }">
               <h3>
                 <button
@@ -1042,16 +1042,16 @@
                   x-bind:aria-expanded="open.toString()"
                 >
                   <span
-                    class="tw-text-sm tw-font-medium tw-text-gray-900"
+                    class="tw-text-sm tw-font-medium tw-text-stone-900"
                     x-state:on="Open"
                     x-state:off="Closed"
-                    :class="{ 'tw-text-button': open, 'tw-text-gray-900': !(open) }"
+                    :class="{ 'tw-text-button': open, 'tw-text-stone-900': !(open) }"
                   >
                     Features
                   </span>
                   <span class="tw-flex tw-items-center tw-ml-6">
                     <svg
-                      class="tw-block tw-w-6 tw-h-6 tw-text-gray-400 tw-group-hover:text-gray-500"
+                      class="tw-block tw-w-6 tw-h-6 tw-text-stone-400 tw-group-hover:text-stone-500"
                       x-state:on="Open"
                       x-state:off="Closed"
                       :class="{ 'tw-hidden': open, 'tw-block': !(open) }"
@@ -1064,7 +1064,7 @@
                       <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"></path>
                     </svg>
                     <svg
-                      class="tw-hidden tw-w-6 tw-h-6 tw-text-indigo-400 tw-group-hover:text-indigo-500"
+                      class="tw-hidden tw-w-6 tw-h-6 tw-text-button tw-group-hover:text-indigo-500"
                       x-state:on="Open"
                       x-state:off="Closed"
                       :class="{ 'tw-block': open, 'tw-hidden': !(open) }"
@@ -1095,16 +1095,16 @@
                   x-bind:aria-expanded="open.toString()"
                 >
                   <span
-                    class="tw-text-sm tw-font-medium tw-text-gray-900"
+                    class="tw-text-sm tw-font-medium tw-text-stone-900"
                     x-state:on="Open"
                     x-state:off="Closed"
-                    :class="{ 'tw-text-button': open, 'tw-text-gray-900': !(open) }"
+                    :class="{ 'tw-text-button': open, 'tw-text-stone-900': !(open) }"
                   >
-                    Care
+                    FAQs
                   </span>
                   <span class="tw-flex tw-items-center tw-ml-6">
                     <svg
-                      class="tw-block tw-w-6 tw-h-6 tw-text-gray-400 tw-group-hover:text-gray-500"
+                      class="tw-block tw-w-6 tw-h-6 tw-text-stone-400 tw-group-hover:text-stone-500"
                       x-state:on="Open"
                       x-state:off="Closed"
                       :class="{ 'tw-hidden': open, 'tw-block': !(open) }"
@@ -1117,7 +1117,7 @@
                       <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"></path>
                     </svg>
                     <svg
-                      class="tw-hidden tw-w-6 tw-h-6 tw-text-indigo-400 tw-group-hover:text-indigo-500"
+                      class="tw-hidden tw-w-6 tw-h-6 tw-text-button tw-group-hover:text-button-hover"
                       x-state:on="Open"
                       x-state:off="Closed"
                       :class="{ 'tw-block': open, 'tw-hidden': !(open) }"
