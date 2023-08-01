@@ -186,8 +186,9 @@
 
     for relatedProductFaq in relatedProductFaqs
       if relatedProductFaq.related_product_types.value contains currentTypes
-        assign faq_text = relatedProductFaq.product_faqs | metafield_tag
-        assign faqs = faqs | append: faq_text | append: ', '
+        assign faq_question = relatedProductFaq.question.value | metafield_tag
+        assign faq_answer = relatedProductFaq.answer.value | metafield_tag
+        assign faqs = faqs | append: faq_question | append: '|:|' | append: faq_answer | append: ','
       endif
     endfor
 
