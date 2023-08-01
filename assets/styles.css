@@ -1349,6 +1349,10 @@ select {
   --tw-border-opacity: 1;
   border-color: rgb(156 163 175 / var(--tw-border-opacity));
 }
+.tw-border-stone-300 {
+  --tw-border-opacity: 1;
+  border-color: rgb(214 211 209 / var(--tw-border-opacity));
+}
 .tw-bg-\[theme\(\'colors\.background\'\)\] {
   background-color: rgb(var(--color-background));
 }
@@ -1440,6 +1444,10 @@ select {
 .tw-text-stone-700 {
   --tw-text-opacity: 1;
   color: rgb(68 64 60 / var(--tw-text-opacity));
+}
+.tw-text-stone-300 {
+  --tw-text-opacity: 1;
+  color: rgb(214 211 209 / var(--tw-text-opacity));
 }
 .tw-no-underline {
   text-decoration-line: none;
