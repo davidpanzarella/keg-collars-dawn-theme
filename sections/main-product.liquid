@@ -1033,15 +1033,7 @@
           <div class="divide-y divide-gray-200 border-t">
             <div x-data="{ open: true }">
               <div class="prose prose-sm pb-6" id="disclosure-1" x-show="open" style="display: none;">
-                <ul role="list">
-                  <li>Multiple strap configurations</li>
-                  <li>Spacious interior with top zip</li>
-                  <li>Leather handle and tabs</li>
-                  <li>Interior dividers</li>
-                  <li>Stainless strap loops</li>
-                  <li>Double stitched construction</li>
-                  <li>Water-resistant</li>
-                </ul>
+                {{ features }}
               </div>
               <h3>
                 <button
@@ -1221,7 +1213,7 @@
                     x-state:on="Open"
                     x-state:off="Closed"
                     :class="{ 'text-indigo-600': open, 'text-gray-900': !(open) }"
-                    >Returns</span
+                    >Features</span
                   >
                   <span class="ml-6 flex items-center">
                     <svg
@@ -1254,12 +1246,7 @@
                 </button>
               </h3>
               <div class="prose prose-sm pb-6" id="disclosure-1" x-show="open" style="display: none;">
-                <ul role="list">
-                  <li>Easy return requests</li>
-                  <li>Pre-paid shipping label included</li>
-                  <li>10% restocking fee for returns</li>
-                  <li>60 day return window</li>
-                </ul>
+                {{ features }}
               </div>
             </div>
           </div>
