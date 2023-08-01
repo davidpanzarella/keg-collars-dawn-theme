@@ -1438,6 +1438,11 @@ select {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgba(var(--color-button), var(--tw-ring-opacity));
 }
+.metafield-rich_text_field ul {
+  margin: 0px;
+  list-style-position: inside;
+  list-style-type: disc;
+}
 .hover\:tw-bg-stone-50:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(250 250 249 / var(--tw-bg-opacity));

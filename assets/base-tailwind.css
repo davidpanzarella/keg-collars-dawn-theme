@@ -43,9 +43,9 @@
   .tw-prose {
     font-size: 1.6rem;
   }
+  
+}
 
   .metafield-rich_text_field ul {
     @apply tw-m-0 tw-list-disc tw-list-inside;
   }
-
-}
