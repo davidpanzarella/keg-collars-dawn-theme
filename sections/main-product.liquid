@@ -79,6 +79,7 @@
     assign currentType = product.metafields.custom.type.value
     assign currentTypes = currentType | append: 's'
     assign relatedProductsByType = collections.all.products | where: 'type', currentTypes
+    assign relatedProductFaqs = shop.metaobjects.product_faqs.values
     assign relatedProductFeatures = shop.metaobjects.product_features.values
 
     comment
@@ -112,7 +113,6 @@
     assign sizes = ''
     assign colors = ''
     assign templates = ''
-    assign features = ''
 
     for relatedProduct in relatedProductsByType
       assign relatedProductColor = relatedProduct.metafields.custom.color.value[0]
@@ -177,26 +177,34 @@
     assign sizes = sizes | split: ',' | sort
     assign colors = colors | split: ','
     assign templates = templates | split: ','
+
+
+    comment
+      Get all related features and faqs for the current product
+    endcomment    
+    assign faqs = ''
+    assign features = ''
+
+    for relatedProductFeature in relatedProductFeatures
+      if relatedProductFeature.related_product_types.value contains currentTypes
+        assign feature_text = relatedProductFeature.product_features | metafield_tag
+        assign features = features | append: feature_text | append: ', '
+      endif
+    endfor
+    for relatedProductFeature in relatedProductFeatures
+      if relatedProductFeature.related_product_types.value contains currentTypes
+        assign feature_text = relatedProductFeature.product_features | metafield_tag
+        assign features = features | append: feature_text | append: ', '
+      endif
+    endfor
+  
+    assign faqs = faqs | split: ','
+    assign features = features | split: ','
   %}
-
-  {% for relatedProductFeature in relatedProductFeatures %}
-    <script>
-      console.log("currentTypes", {{ currentTypes | json }});
-      console.log("relatedProductFeature", {{ relatedProductFeature.related_product_types.value | json }});
-    </script>
-    {% if relatedProductFeature.related_product_types.value contains currentTypes %}
-      <script>
-        console.log("relatedProductFeature related", {{ relatedProductFeature | json }});
-      </script>
-      {% assign feature_text = relatedProductFeature.product_features | metafield_tag %}
-      {% assign features = features | append: feature_text | append: ', ' %}
-    {% endif %}
-  {% endfor %}
-
-  {% assign features = features | split: ',' %}
 
   <script>
     //console.log("relatedProductFeatures", {{ relatedProductFeatures | json }});
+    console.log("faqs", {{ faqs | json }});
     console.log("features", {{ features | json }});
     //console.log("shapes", {{ shapes | json }});
     //console.log("sizes", {{ sizes | json }});
