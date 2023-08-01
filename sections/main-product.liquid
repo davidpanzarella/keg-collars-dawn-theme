@@ -184,6 +184,14 @@
     assign faqs = ''
     assign features = ''
 
+    for relatedFaq in relatedFaqs
+      if relatedFaq.related_product_types.value contains currentTypes
+        assign faq_question = relatedFaq.question.value
+        assign faq_answer = relatedFaq.answer | metafield_tag
+        assign faqs = faqs | append: faq_question | append: '|:|' | append: faq_answer | append: ','
+      endif
+    endfor
+
     for relatedProductFeature in relatedProductFeatures
       if relatedProductFeature.related_product_types.value contains currentTypes
         assign feature_text = relatedProductFeature.product_features | metafield_tag
@@ -198,7 +206,7 @@
   <script>
     console.log("relatedProductFeatures", {{ relatedFaqs | json }});
     console.log("faqs", {{ faqs | json }});
-    //console.log("features", {{ features | json }});
+    console.log("features", {{ features | json }});
     //console.log("shapes", {{ shapes | json }});
     //console.log("sizes", {{ sizes | json }});
     //console.log("colors", {{ colors | json }});
