@@ -79,7 +79,7 @@
     assign currentType = product.metafields.custom.type.value
     assign currentTypes = currentType | append: 's'
     assign relatedProductsByType = collections.all.products | where: 'type', currentTypes
-    assign relatedProductFaqs = shop.metaobjects.faqs.values
+    assign relatedFaqs = shop.metaobjects.faqs.values
     assign relatedProductFeatures = shop.metaobjects.product_features.values
 
     comment
@@ -184,10 +184,10 @@
     assign faqs = ''
     assign features = ''
 
-    for relatedProductFaq in relatedProductFaqs
-      if relatedProductFaq.related_product_types.value contains currentTypes
-        assign faq_question = relatedProductFaq.question.value | metafield_tag
-        assign faq_answer = relatedProductFaq.answer.value | metafield_tag
+    for relatedFaq in relatedFaqs
+      if relatedFaq.related_product_types.value contains currentTypes
+        assign faq_question = relatedFaq.question.value
+        assign faq_answer = relatedFaq.answer.value | metafield_tag
         assign faqs = faqs | append: faq_question | append: '|:|' | append: faq_answer | append: ','
       endif
     endfor
