@@ -1364,6 +1364,10 @@ select {
   --tw-bg-opacity: 1;
   background-color: rgba(var(--color-foreground), var(--tw-bg-opacity));
 }
+.tw-bg-background {
+  --tw-bg-opacity: 1;
+  background-color: rgba(var(--color-background), var(--tw-bg-opacity));
+}
 .tw-px-3 {
   padding-left: 1.2rem;
   padding-right: 1.2rem;
