@@ -1029,116 +1029,117 @@
         {% comment %} features & faqs {% endcomment %}
         <section aria-labelledby="features-heading" class="tw-mt-4">
           <h2 id="features-heading" class="tw-sr-only">Product Features & FAQs</h2>
-        <div class="tw-border-t tw-divide-y tw-divide-gray-200">
-          <div x-data="{ open: false }">
-            <h3>
-              <button
-                type="button"
-                x-description="Expand/collapse question button"
-                class="tw-relative tw-flex tw-items-center tw-justify-between tw-w-full tw-py-6 tw-text-left tw-group"
-                aria-controls="disclosure-1"
-                @click="open = !open"
-                aria-expanded="false"
-                x-bind:aria-expanded="open.toString()"
-              >
-                <span
-                  class="tw-text-sm tw-font-medium tw-text-gray-900"
-                  x-state:on="Open"
-                  x-state:off="Closed"
-                  :class="{ 'tw-text-indigo-600': open, 'tw-text-gray-900': !(open) }"
+          <div class="tw-border-t tw-divide-y tw-divide-gray-200">
+            <div x-data="{ open: false }">
+              <h3>
+                <button
+                  type="button"
+                  x-description="Expand/collapse question button"
+                  class="tw-relative tw-flex tw-items-center tw-justify-between tw-w-full tw-py-6 tw-text-left tw-group"
+                  aria-controls="disclosure-1"
+                  @click="open = !open"
+                  aria-expanded="false"
+                  x-bind:aria-expanded="open.toString()"
                 >
-                  Features
-                </span>
-                <span class="tw-flex tw-items-center tw-ml-6">
-                  <svg
-                    class="tw-block tw-w-6 tw-h-6 tw-text-gray-400 tw-group-hover:text-gray-500"
+                  <span
+                    class="tw-text-sm tw-font-medium tw-text-gray-900"
                     x-state:on="Open"
                     x-state:off="Closed"
-                    :class="{ 'tw-hidden': open, 'tw-block': !(open) }"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    aria-hidden="true"
+                    :class="{ 'tw-text-indigo-600': open, 'tw-text-gray-900': !(open) }"
                   >
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"></path>
-                  </svg>
-                  <svg
-                    class="tw-hidden tw-w-6 tw-h-6 tw-text-indigo-400 tw-group-hover:text-indigo-500"
-                    x-state:on="Open"
-                    x-state:off="Closed"
-                    :class="{ 'tw-block': open, 'tw-hidden': !(open) }"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15"></path>
-                  </svg>
-                </span>
-              </button>
-            </h3>
-            <div class="tw-pb-6 tw-prose-sm tw-prose" id="disclosure-1" x-show="open" style="display: none;">
-              {{features}}
+                    Features
+                  </span>
+                  <span class="tw-flex tw-items-center tw-ml-6">
+                    <svg
+                      class="tw-block tw-w-6 tw-h-6 tw-text-gray-400 tw-group-hover:text-gray-500"
+                      x-state:on="Open"
+                      x-state:off="Closed"
+                      :class="{ 'tw-hidden': open, 'tw-block': !(open) }"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"></path>
+                    </svg>
+                    <svg
+                      class="tw-hidden tw-w-6 tw-h-6 tw-text-indigo-400 tw-group-hover:text-indigo-500"
+                      x-state:on="Open"
+                      x-state:off="Closed"
+                      :class="{ 'tw-block': open, 'tw-hidden': !(open) }"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15"></path>
+                    </svg>
+                  </span>
+                </button>
+              </h3>
+              <div class="tw-pb-6 tw-prose-sm tw-prose" id="disclosure-1" x-show="open" style="display: none;">
+                {{ features }}
+              </div>
             </div>
-          </div>
-          <div x-data="{ open: false }">
-            <h3>
-              <button
-                type="button"
-                x-description="Expand/collapse question button"
-                class="tw-relative tw-flex tw-items-center tw-justify-between tw-w-full tw-py-6 tw-text-left tw-group"
-                aria-controls="disclosure-1"
-                @click="open = !open"
-                aria-expanded="false"
-                x-bind:aria-expanded="open.toString()"
-              >
-                <span
-                  class="tw-text-sm tw-font-medium tw-text-gray-900"
-                  x-state:on="Open"
-                  x-state:off="Closed"
-                  :class="{ 'tw-text-indigo-600': open, 'tw-text-gray-900': !(open) }"
+            <div x-data="{ open: false }">
+              <h3>
+                <button
+                  type="button"
+                  x-description="Expand/collapse question button"
+                  class="tw-relative tw-flex tw-items-center tw-justify-between tw-w-full tw-py-6 tw-text-left tw-group"
+                  aria-controls="disclosure-1"
+                  @click="open = !open"
+                  aria-expanded="false"
+                  x-bind:aria-expanded="open.toString()"
                 >
-                  Care
-                </span>
-                <span class="tw-flex tw-items-center tw-ml-6">
-                  <svg
-                    class="tw-block tw-w-6 tw-h-6 tw-text-gray-400 tw-group-hover:text-gray-500"
+                  <span
+                    class="tw-text-sm tw-font-medium tw-text-gray-900"
                     x-state:on="Open"
                     x-state:off="Closed"
-                    :class="{ 'tw-hidden': open, 'tw-block': !(open) }"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    aria-hidden="true"
+                    :class="{ 'tw-text-indigo-600': open, 'tw-text-gray-900': !(open) }"
                   >
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"></path>
-                  </svg>
-                  <svg
-                    class="tw-hidden tw-w-6 tw-h-6 tw-text-indigo-400 tw-group-hover:text-indigo-500"
-                    x-state:on="Open"
-                    x-state:off="Closed"
-                    :class="{ 'tw-block': open, 'tw-hidden': !(open) }"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15"></path>
-                  </svg>
-                </span>
-              </button>
-            </h3>
-            <div class="tw-pb-6 tw-prose-sm tw-prose" id="disclosure-1" x-show="open" style="display: none;">
-              <ul role="list">
-                <li>Spot clean as needed</li>
-                <li>Hand wash with mild soap</li>
-                <li>Machine wash interior dividers</li>
-                <li>Treat handle and tabs with leather conditioner</li>
-              </ul>
+                    Care
+                  </span>
+                  <span class="tw-flex tw-items-center tw-ml-6">
+                    <svg
+                      class="tw-block tw-w-6 tw-h-6 tw-text-gray-400 tw-group-hover:text-gray-500"
+                      x-state:on="Open"
+                      x-state:off="Closed"
+                      :class="{ 'tw-hidden': open, 'tw-block': !(open) }"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"></path>
+                    </svg>
+                    <svg
+                      class="tw-hidden tw-w-6 tw-h-6 tw-text-indigo-400 tw-group-hover:text-indigo-500"
+                      x-state:on="Open"
+                      x-state:off="Closed"
+                      :class="{ 'tw-block': open, 'tw-hidden': !(open) }"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15"></path>
+                    </svg>
+                  </span>
+                </button>
+              </h3>
+              <div class="tw-pb-6 tw-prose-sm tw-prose" id="disclosure-1" x-show="open" style="display: none;">
+                <ul role="list">
+                  <li>Spot clean as needed</li>
+                  <li>Hand wash with mild soap</li>
+                  <li>Machine wash interior dividers</li>
+                  <li>Treat handle and tabs with leather conditioner</li>
+                </ul>
+              </div>
             </div>
           </div>
         </section>
