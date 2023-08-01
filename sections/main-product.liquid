@@ -212,12 +212,12 @@
       {% render 'breadcrumb', product: product %}
 
       <div class="tw-mt-4">
-        <h1 class="tw-text-3xl tw-font-bold tw-tracking-tight tw-text-gray-900 sm:tw-text-4xl">
+        <h1 class="tw-text-3xl tw-font-bold tw-tracking-tight tw-text-stone-900 sm:tw-text-4xl">
           {{ colorDisplay }}
           {{ productTitle }}
         </h1>
 
-        <p class="tw-text-lg tw-text-gray-900 sm:tw-text-xl">
+        <p class="tw-text-lg tw-text-stone-900 sm:tw-text-xl">
           {{ productTitleDisplay }}:
           {{ currentTemplateOptions }}
         </p>
@@ -226,7 +226,7 @@
       <section aria-labelledby="information-heading" class="tw-mt-4">
         <h2 id="information-heading" class="tw-sr-only">Product information</h2>
         <div class="flex items-center">
-          <div class="tw-text-lg tw-text-gray-900 sm:tw-text-2xl tw-color-primary">
+          <div class="tw-text-lg tw-text-stone-900 sm:tw-text-2xl tw-color-primary">
             <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
               {%- render 'price',
                 product: product,
@@ -259,14 +259,14 @@
         </div>
         {% comment %}
           <div class="flex items-center">
-            <p class="text-lg text-gray-900 sm:text-xl">$220</p>
+            <p class="text-lg text-stone-900 sm:text-xl">$220</p>
 
-            <div class="pl-4 ml-4 border-l border-gray-300">
+            <div class="pl-4 ml-4 border-l border-stone-300">
               <h2 class="sr-only">Reviews</h2>
               <div class="flex items-center">
                 <div>
                   <div class="flex items-center">
-                    <!-- Active: "text-yellow-400", Default: "text-gray-300" -->
+                    <!-- Active: "text-yellow-400", Default: "text-stone-300" -->
                     <svg class="flex-shrink-0 w-5 h-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                       <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
                     </svg>
@@ -279,13 +279,13 @@
                     <svg class="flex-shrink-0 w-5 h-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                       <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
                     </svg>
-                    <svg class="flex-shrink-0 w-5 h-5 text-gray-300" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <svg class="flex-shrink-0 w-5 h-5 text-stone-300" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                       <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
                     </svg>
                   </div>
                   <p class="sr-only">4 out of 5 stars</p>
                 </div>
-                <p class="ml-2 text-sm text-gray-500">1624 reviews</p>
+                <p class="ml-2 text-sm text-stone-500">1624 reviews</p>
               </div>
             </div>
           </div>
@@ -293,7 +293,7 @@
 
         {%- if product.description != blank -%}
           <div class="tw-mt-4 tw-space-y-6">
-            <div class="tw-text-lg tw-text-gray-00" {{ block.shopify_attributes }}>
+            <div class="tw-text-lg tw-text-stone-00" {{ block.shopify_attributes }}>
               {{ product.description }}
             </div>
           </div>
@@ -304,7 +304,7 @@
             <svg class="flex-shrink-0 w-5 h-5 text-green-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
               <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
             </svg>
-            <p class="ml-2 text-sm text-gray-500">In stock and ready to ship</p>
+            <p class="ml-2 text-sm text-stone-500">In stock and ready to ship</p>
           </div>
         {% endcomment %}
       </section>
@@ -325,7 +325,7 @@
           {% if shapes.size > 1 %}
             <div class="tw-mt-6 sm:tw-flex sm:tw-justify-between">
               <fieldset>
-                <legend class="tw-block tw-text-sm tw-font-semibold tw-text-gray-700">Shape</legend>
+                <legend class="tw-block tw-text-sm tw-font-semibold tw-text-stone-700">Shape</legend>
                 <div class="tw-grid tw-grid-cols-1 tw-gap-4 tw-mt-1 sm:tw-grid-cols-2">
                   {% for shape in shapes %}
                     {% assign shape_option = shape | split: '|:|' %}
@@ -349,7 +349,7 @@
                       >
                         <div
                           id="shape-choice-0-label"
-                          class="tw-relative tw-block tw-px-3 tw-py-2 tw-border-2 tw-rounded-md tw-border-stone-300 tw-focus:outline-none hover:tw-bg-gray-50"
+                          class="tw-relative tw-block tw-px-3 tw-py-2 tw-border-2 tw-rounded-md tw-border-stone-300 tw-focus:outline-none hover:tw-bg-stone-50"
                         >
                           {{ shapeName }}
                         </div>
@@ -372,8 +372,8 @@
           {% if sizes.size > 1 %}
             <div class="tw-mt-6 sm:tw-flex sm:tw-justify-between">
               <fieldset>
-                <legend class="tw-block tw-text-sm tw-font-semibold tw-text-gray-700">Size</legend>
-                <div class="tw-grid tw-grid-cols-2 tw-gap-4 tw-mt-1 tw-text-base tw-font-medium tw-text-gray-900 sm:tw-grid-cols-3">
+                <legend class="tw-block tw-text-sm tw-font-semibold tw-text-stone-700">Size</legend>
+                <div class="tw-grid tw-grid-cols-2 tw-gap-4 tw-mt-1 tw-text-base tw-font-medium tw-text-stone-900 sm:tw-grid-cols-3">
                   {% for size in sizes %}
                     {% assign size_option = size | split: '|:|' %}
                     {% assign sizeName = size_option[0] %}
@@ -396,7 +396,7 @@
                       >
                         <div
                           id="size-choice-0-label"
-                          class="tw-relative tw-block tw-px-3 tw-py-2 tw-border-2 tw-rounded-md tw-border-stone-300 tw-focus:outline-none hover:tw-bg-gray-50"
+                          class="tw-relative tw-block tw-px-3 tw-py-2 tw-border-2 tw-rounded-md tw-border-stone-300 tw-focus:outline-none hover:tw-bg-stone-50"
                         >
                           {{ sizeName }}
                         </div>
@@ -419,8 +419,8 @@
           {% if colors.size > 1 %}
             <div class="tw-mt-6 sm:tw-flex sm:tw-justify-between">
               <fieldset>
-                <legend class="tw-block tw-text-sm tw-font-semibold tw-text-gray-700">Color</legend>
-                <div class="tw-grid tw-grid-cols-2 tw-gap-4 tw-mt-1 tw-text-base tw-font-medium tw-text-gray-900 sm:tw-grid-cols-3">
+                <legend class="tw-block tw-text-sm tw-font-semibold tw-text-stone-700">Color</legend>
+                <div class="tw-grid tw-grid-cols-2 tw-gap-4 tw-mt-1 tw-text-base tw-font-medium tw-text-stone-900 sm:tw-grid-cols-3">
                   {% for color in colors %}
                     {% assign color_option = color | split: '|:|' %}
                     {% assign colorName = color_option[0] %}
@@ -442,7 +442,7 @@
                       >
                         <div
                           id="color-choice-0-label"
-                          class="tw-relative tw-block tw-px-3 tw-py-2 tw-border-2 tw-rounded-md tw-border-stone-300 tw-focus:outline-none hover:tw-bg-gray-50"
+                          class="tw-relative tw-block tw-px-3 tw-py-2 tw-border-2 tw-rounded-md tw-border-stone-300 tw-focus:outline-none hover:tw-bg-stone-50"
                         >
                           {{ colorName }}
                         </div>
@@ -464,7 +464,7 @@
           <!-- Template selector -->
           <div class="tw-my-6 sm:tw-flex sm:tw-justify-between">
             <fieldset>
-              <legend class="tw-block tw-text-sm tw-font-semibold tw-text-gray-700">Template</legend>
+              <legend class="tw-block tw-text-sm tw-font-semibold tw-text-stone-700">Template</legend>
               <div class="tw-grid tw-grid-cols-1 tw-gap-4 tw-mt-1 sm:tw-grid-cols-3">
                 {% for template in templates %}
                   {% assign template_option = template | split: '|:|' %}
@@ -489,7 +489,7 @@
                     >
                       <div
                         id="template-choice-0-label"
-                        class="tw-relative tw-block tw-px-3 tw-py-2 tw-border-2 tw-rounded-md tw-border-stone-300 tw-focus:outline-none hover:tw-bg-gray-50"
+                        class="tw-relative tw-block tw-px-3 tw-py-2 tw-border-2 tw-rounded-md tw-border-stone-300 tw-focus:outline-none hover:tw-bg-stone-50"
                       >
                         <img
                           src="{{ templateImage }}"
@@ -1030,7 +1030,7 @@
         <section aria-labelledby="details-heading" class="tw-mt-12">
           <h2 id="details-heading" class="tw-sr-only">Additional details</h2>
 
-          <div class="tw-border-t tw-divide-y tw-divide-gray-200">
+          <div class="tw-border-t tw-divide-y tw-divide-stone-200">
             <div>
               <h3>
                 <!-- Expand/collapse question button -->
@@ -1040,12 +1040,12 @@
                   aria-controls="disclosure-1"
                   aria-expanded="false"
                 >
-                  <!-- Open: "tw-text-indigo-600", Closed: "tw-text-gray-900" -->
-                  <span class="tw-text-sm tw-font-medium tw-text-gray-900">Features</span>
+                  <!-- Open: "tw-text-indigo-600", Closed: "tw-text-stone-900" -->
+                  <span class="tw-text-sm tw-font-medium tw-text-stone-900">Features</span>
                   <span class="tw-flex tw-items-center tw-ml-6">
                     <!-- Open: "tw-hidden", Closed: "tw-block" -->
                     <svg
-                      class="tw-block tw-w-6 tw-h-6 tw-text-stone-300 tw-group-hover:text-gray-500"
+                      class="tw-block tw-w-6 tw-h-6 tw-text-stone-300 tw-group-hover:text-stone-500"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke-width="1.5"

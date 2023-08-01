@@ -1319,6 +1319,10 @@ select {
   --tw-divide-opacity: 1;
   border-color: rgb(229 231 235 / var(--tw-divide-opacity));
 }
+.tw-divide-stone-200 > :not([hidden]) ~ :not([hidden]) {
+  --tw-divide-opacity: 1;
+  border-color: rgb(231 229 228 / var(--tw-divide-opacity));
+}
 .tw-rounded-lg {
   border-radius: 0.8rem;
 }
@@ -1449,6 +1453,10 @@ select {
   --tw-text-opacity: 1;
   color: rgb(214 211 209 / var(--tw-text-opacity));
 }
+.tw-text-stone-900 {
+  --tw-text-opacity: 1;
+  color: rgb(28 25 23 / var(--tw-text-opacity));
+}
 .tw-no-underline {
   text-decoration-line: none;
 }
@@ -1464,6 +1472,10 @@ select {
 .hover\:tw-bg-gray-50:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(249 250 251 / var(--tw-bg-opacity));
+}
+.hover\:tw-bg-stone-50:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(250 250 249 / var(--tw-bg-opacity));
 }
 @media (min-width: 640px) {
 
