@@ -29,23 +29,21 @@
     --color-link: var(--color-link-2);
     --color-shadow: var(--color-shadow-2);
   }
-
 }
 
 @layer components {
   .btn-orange {
     @apply tw-cursor-pointer tw-bg-button tw-px-4 tw-py-2 tw-font-bold tw-text-button-text hover:tw-bg-link;
   }
-  
+
   .tw-prose {
     font-size: 1.6rem;
   }
-  
 }
 
 select {
   background-image: none;
 }
 .metafield-rich_text_field ul {
-    margin: 0;
-  }
+  margin: 0;
+}
