@@ -1029,9 +1029,8 @@
         {% comment %} features & faqs {% endcomment %}
         <section aria-labelledby="details-heading" class="tw-mt-12">
           <h2 id="details-heading" class="tw-sr-only">Additional details</h2>
-
           <div class="tw-border-t tw-divide-y tw-divide-stone-200">
-            <div>
+            <div x-data="{ open: false }">
               <h3>
                   <button type="button" aria-controls="disclosure-1" >
                     <span class="text-sm font-medium text-indigo-600" x-state:on="Open" x-state:off="Closed" :class="{ 'text-indigo-600': open, 'text-gray-900': !(open) }">Features</span>
