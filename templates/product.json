@@ -15,18 +15,11 @@
             "show_dynamic_checkout": true,
             "show_gift_card_recipient": false
           }
-        },
-        "share": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share"
-          }
         }
       },
       "block_order": [
         "variant_picker",
-        "buy_buttons",
-        "share"
+        "buy_buttons"
       ],
       "settings": {
         "enable_sticky_info": true,
