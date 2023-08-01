@@ -151,7 +151,7 @@
           "text": "#19181d",
           "button": "#f2a100",
           "button_label": "#ffffff",
-          "secondary_button_label": "#19181d",
+          "secondary_button_label": "{{ shop.brand.colors.primary[0].background }}",
           "shadow": "#19181d"
         }
       },
