@@ -1027,6 +1027,8 @@
         </a>
 
         {% comment %} features & faqs {% endcomment %}
+        <section aria-labelledby="features-heading" class="tw-mt-4">
+          <h2 id="features-heading" class="tw-sr-only">Product Features & FAQs</h2>
         <div class="tw-border-t tw-divide-y tw-divide-gray-200">
           <div x-data="{ open: false }">
             <h3>
@@ -1045,7 +1047,7 @@
                   x-state:off="Closed"
                   :class="{ 'tw-text-indigo-600': open, 'tw-text-gray-900': !(open) }"
                 >
-                  Care
+                  Features
                 </span>
                 <span class="tw-flex tw-items-center tw-ml-6">
                   <svg
@@ -1078,12 +1080,7 @@
               </button>
             </h3>
             <div class="tw-pb-6 tw-prose-sm tw-prose" id="disclosure-1" x-show="open" style="display: none;">
-              <ul role="list">
-                <li>Spot clean as needed</li>
-                <li>Hand wash with mild soap</li>
-                <li>Machine wash interior dividers</li>
-                <li>Treat handle and tabs with leather conditioner</li>
-              </ul>
+              {{features}}
             </div>
           </div>
           <div x-data="{ open: false }">
@@ -1144,7 +1141,7 @@
               </ul>
             </div>
           </div>
-        </div>
+        </section>
       </product-info>
     </div>
 
