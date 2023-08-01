@@ -178,26 +178,26 @@
     assign colors = colors | split: ','
     assign templates = templates | split: ','
 
-
     comment
       Get all related features and faqs for the current product
-    endcomment    
+    endcomment
     assign faqs = ''
     assign features = ''
 
+    for relatedProductFaq in relatedProductFaqs
+      if relatedProductFaq.related_product_types.value contains currentTypes
+        assign faq_text = relatedProductFaq.product_faqs | metafield_tag
+        assign faqs = faqs | append: faq_text | append: ', '
+      endif
+    endfor
+
     for relatedProductFeature in relatedProductFeatures
       if relatedProductFeature.related_product_types.value contains currentTypes
         assign feature_text = relatedProductFeature.product_features | metafield_tag
         assign features = features | append: feature_text | append: ', '
       endif
     endfor
-    for relatedProductFeature in relatedProductFeatures
-      if relatedProductFeature.related_product_types.value contains currentTypes
-        assign feature_text = relatedProductFeature.product_features | metafield_tag
-        assign features = features | append: feature_text | append: ', '
-      endif
-    endfor
-  
+
     assign faqs = faqs | split: ','
     assign features = features | split: ','
   %}
