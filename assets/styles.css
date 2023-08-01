@@ -1376,6 +1376,14 @@ select {
   padding-left: 0.8rem;
   padding-right: 0.8rem;
 }
+.tw-px-1 {
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
+}
+.tw-py-1 {
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+}
 .tw-pb-6 {
   padding-bottom: 2.4rem;
 }
