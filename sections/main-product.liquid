@@ -206,7 +206,7 @@
   <script>
     console.log("relatedProductFeatures", {{ relatedFaqs | json }});
     console.log("faqs", {{ faqs | json }});
-    console.log("features", {{ features | json }});
+    //console.log("features", {{ features | json }});
     //console.log("shapes", {{ shapes | json }});
     //console.log("sizes", {{ sizes | json }});
     //console.log("colors", {{ colors | json }});
@@ -1142,7 +1142,7 @@
                 </button>
               </h3>
               <div class="tw-pb-6 tw-prose-sm tw-prose" id="disclosure-1" x-show="open" style="display: none;">
-                {{ faqs }}
+                {% comment %} {{ faqs }} {% endcomment %}
               </div>
             </div>
           </div>
