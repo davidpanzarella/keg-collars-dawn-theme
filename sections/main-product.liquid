@@ -79,7 +79,7 @@
     assign currentType = product.metafields.custom.type.value
     assign currentTypes = currentType | append: 's'
     assign relatedProductsByType = collections.all.products | where: 'type', currentTypes
-    assign relatedProductFaqs = shop.metaobjects.product_faqs.values
+    assign relatedProductFaqs = shop.metaobjects.faqs.values
     assign relatedProductFeatures = shop.metaobjects.product_features.values
 
     comment
