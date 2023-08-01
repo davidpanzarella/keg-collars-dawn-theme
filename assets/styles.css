@@ -1213,6 +1213,9 @@ select {
 .tw-prose-xl :where(.tw-prose-xl > :last-child):not(:where([class~="tw-not-prose"] *)) {
   margin-bottom: 0;
 }
+.tw-prose {
+    font-size: 1.6rem;
+  }
 .tw-sr-only {
   position: absolute;
   width: 1px;

@@ -39,4 +39,8 @@
   .btn-orange {
     @apply tw-cursor-pointer tw-bg-button tw-px-4 tw-py-2 tw-font-bold tw-text-button-text hover:tw-bg-link;
   }
+
+  .tw-prose {
+    font-size: 1.6rem;
+  }
 }
