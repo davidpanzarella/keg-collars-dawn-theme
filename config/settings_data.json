@@ -97,6 +97,8 @@
     "badge_corner_radius": 40,
     "sale_badge_color_scheme": "accent-2",
     "sold_out_badge_color_scheme": "inverse",
+    "brand_description": "<p>Based in scenic Bend, Oregon, KegCollars.net is your trusted partner for high-quality beverage branding products. With over 35 years as a family-owned business, we understand the fast-paced beverage industry and offer a streamlined ordering process for our top-notch products. Experience the personal touch of our small team dedicated to building strong customer relationships and delivering exceptional service.<\/p>",
+    "brand_image": "shopify:\/\/shop_images\/KC_Logo_-_Orange.png",
     "social_facebook_link": "https:\/\/www.facebook.com\/KegCollarsNet",
     "social_instagram_link": "https:\/\/www.instagram.com\/kegcollars\/",
     "social_youtube_link": "",
