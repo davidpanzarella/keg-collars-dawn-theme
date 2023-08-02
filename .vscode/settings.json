@@ -21,19 +21,6 @@
     "trelliscommerce",
     "Unsubscriber"
   ],
-  "editor.formatOnSave": false,
-  "[javascript]": {
-    "editor.formatOnSave": true
-  },
-  "[css]": {
-    "editor.formatOnSave": true
-  },
-  "[liquid]": {
-    "editor.formatOnSave": true
-  },
-  "files.associations": {
-    "*.css": "tailwindcss"
-  },
   "tailwindCSS.rootFontSize": 10
 }
 
