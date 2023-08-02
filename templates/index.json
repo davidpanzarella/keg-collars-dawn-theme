@@ -1,15 +1,5 @@
 {
   "sections": {
-    "9c5e0290-9f6c-4655-bc5e-1f5d781bf522": {
-      "type": "swiper-product-list",
-      "settings": {
-        "title": "Featured Products",
-        "product_collection": "template-keg-collars",
-        "num_products": 10,
-        "slides_per_view_desktop": "4",
-        "space_between": 16
-      }
-    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -52,11 +42,32 @@
         "desktop_content_position": "bottom-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
-        "color_scheme": "accent-2",
+        "color_scheme": "inverse",
         "image_behavior": "none",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": false,
         "show_text_below": false
+      }
+    },
+    "9c5e0290-9f6c-4655-bc5e-1f5d781bf522": {
+      "type": "swiper-product-list",
+      "settings": {
+        "title": "Featured Products",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "product_collection": "template-keg-collars",
+        "num_products": 10,
+        "color_scheme": "",
+        "full_width": false,
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "slides_per_view_desktop": "4",
+        "space_between": 16,
+        "padding_top": 32,
+        "padding_bottom": 32
       }
     },
     "rich_text": {
@@ -266,8 +277,8 @@
     }
   },
   "order": [
-    "9c5e0290-9f6c-4655-bc5e-1f5d781bf522",
     "image_banner",
+    "9c5e0290-9f6c-4655-bc5e-1f5d781bf522",
     "rich_text",
     "featured_collection",
     "collage",
