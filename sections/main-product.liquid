@@ -78,7 +78,7 @@
     assign currentTemplateOptions = product.metafields.custom.template_options.value
     assign currentType = product.metafields.custom.type.value
     assign currentTypes = product.type
-    assign relatedProductsByType = collections.all.products | where: 'type', product.type | where: 'id', '!=', product.id | where: 'available', true | sort: 'title'
+    assign relatedProductsByType = collections.all.products | where: 'type', product.type
     assign relatedFaqs = shop.metaobjects.faqs.values
     assign relatedProductFeatures = shop.metaobjects.product_features.values
 
