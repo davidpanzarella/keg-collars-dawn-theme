@@ -84,7 +84,7 @@
     assign relatedFaqs = shop.metaobjects.faqs.values
     assign relatedProductFeatures = shop.metaobjects.product_features.values
 
-    assign currentProductColors = product.metafields.custom.color
+    assign currentProductColors = product.metafields.custom.color.value | size
 
     comment
       set some default values for the product title display
