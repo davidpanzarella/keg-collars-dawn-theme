@@ -8,16 +8,6 @@
         "color_scheme": "background-1"
       }
     },
-    "690c460f-9a60-4ee0-9705-0ae0d1732d13": {
-      "type": "contact-form",
-      "settings": {
-        "heading": "Interested? Get in touch, and  let us know what you're looking for!",
-        "heading_size": "h2",
-        "color_scheme": "background-1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "product-grid": {
       "type": "main-collection-product-grid",
       "settings": {
@@ -33,14 +23,13 @@
         "filter_type": "horizontal",
         "enable_sorting": true,
         "columns_mobile": "2",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 48,
+        "padding_bottom": 48
       }
     }
   },
   "order": [
     "banner",
-    "690c460f-9a60-4ee0-9705-0ae0d1732d13",
     "product-grid"
   ]
 }
