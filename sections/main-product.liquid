@@ -138,7 +138,7 @@
           assign shapes = shapes | append: relatedProductShape | append: '|:|' | append: relatedProduct.url | append: '|:|' | append: sameShape | append: ','
         endunless
 
-        if relatedProductColor == currentColor and relatedProductShape == currentShape and currentColors <= 1
+        if relatedProductColor == currentColor and relatedProductShape == currentShape
           assign size_with_delimiter = relatedProductSize | append: ','
           unless seen_sizes contains size_with_delimiter
             assign sameSize = false
@@ -150,7 +150,7 @@
           endunless
         endif
 
-        if relatedProductSize == currentSize and relatedProductShape == currentShape
+        if relatedProductSize == currentSize and relatedProductShape == currentShape and currentColors <= 1
           assign color_with_delimiter = relatedProductColor | append: ','
           unless seen_colors contains color_with_delimiter
             assign sameColor = false
