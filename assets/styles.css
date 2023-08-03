@@ -1212,7 +1212,7 @@ select {
 .tw-prose {
     font-size: 1.6rem;
   }
-form__label {
+.form__label {
   display: block;
   font-size: 1.4rem;
   line-height: 2rem;

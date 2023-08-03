@@ -40,7 +40,7 @@
     font-size: 1.6rem;
   }
 
-  form__label {
+  .form__label {
     @apply tw-block tw-text-sm tw-font-semibold tw-text-stone-700;
   }
 
