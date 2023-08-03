@@ -49,6 +49,44 @@
         "show_text_below": false
       }
     },
+    "collage": {
+      "type": "collage",
+      "blocks": {
+        "collection-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "custom-design-keg-collars"
+          }
+        },
+        "collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "stock-keg-collars"
+          }
+        },
+        "5183b4c7-ea72-4f0e-b21b-2ae941383857": {
+          "type": "collection",
+          "settings": {
+            "collection": "template-keg-collars"
+          }
+        }
+      },
+      "block_order": [
+        "collection-0",
+        "collection-1",
+        "5183b4c7-ea72-4f0e-b21b-2ae941383857"
+      ],
+      "settings": {
+        "heading": "Multimedia collage",
+        "heading_size": "h2",
+        "desktop_layout": "left",
+        "mobile_layout": "collage",
+        "card_styles": "product-card-wrapper",
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "rich_text": {
       "type": "rich-text",
       "blocks": {
@@ -125,46 +163,6 @@
         "columns_mobile": "2",
         "swipe_on_mobile": false,
         "padding_top": 28,
-        "padding_bottom": 36
-      }
-    },
-    "collage": {
-      "type": "collage",
-      "disabled": true,
-      "blocks": {
-        "collection-0": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "product": {
-          "type": "product",
-          "settings": {
-            "product": "",
-            "second_image": false
-          }
-        },
-        "collection-1": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
-        }
-      },
-      "block_order": [
-        "collection-0",
-        "product",
-        "collection-1"
-      ],
-      "settings": {
-        "heading": "Multimedia collage",
-        "heading_size": "h2",
-        "desktop_layout": "left",
-        "mobile_layout": "collage",
-        "card_styles": "product-card-wrapper",
-        "color_scheme": "background-1",
-        "padding_top": 36,
         "padding_bottom": 36
       }
     },
@@ -250,10 +248,10 @@
   },
   "order": [
     "image_banner",
+    "collage",
     "rich_text",
     "9c5e0290-9f6c-4655-bc5e-1f5d781bf522",
     "featured_collection",
-    "collage",
     "video",
     "multicolumn"
   ]
