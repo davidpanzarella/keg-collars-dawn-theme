@@ -71,6 +71,7 @@
       Get all products of the same product type as the current product for the related products section
     endcomment
     assign currentColor = product.metafields.custom.color.value[0]
+    assign currentColors = product.metafields.custom.color.value | size
     assign currentFormat = product.metafields.custom.format.value
     assign currentShape = product.metafields.custom.shape.value
     assign currentSize = product.metafields.custom.size.value
@@ -84,13 +85,11 @@
     assign relatedFaqs = shop.metaobjects.faqs.values
     assign relatedProductFeatures = shop.metaobjects.product_features.values
 
-    assign currentProductColors = product.metafields.custom.color.value | size
-
     comment
       set some default values for the product title display
     endcomment
     assign colorDisplay = ''
-    if currentProductColors <= 1
+    if currentColors <= 1
       if currentColor == 'Black and White'
         assign colorDisplay = 'B&W'
       else
@@ -99,7 +98,7 @@
     endif
 
     assign productTitle = ''
-    if currentTemplate and currentProductColors <= 1
+    if currentTemplate and currentColors <= 1
       assign productTitle = currentTemplate
     else
       assign productTitle = product.title | escape
@@ -139,7 +138,7 @@
           assign shapes = shapes | append: relatedProductShape | append: '|:|' | append: relatedProduct.url | append: '|:|' | append: sameShape | append: ','
         endunless
 
-        if relatedProductColor == currentColor and relatedProductShape == currentShape and currentProductColors <= 1
+        if relatedProductColor == currentColor and relatedProductShape == currentShape and currentColors <= 1
           assign size_with_delimiter = relatedProductSize | append: ','
           unless seen_sizes contains size_with_delimiter
             assign sameSize = false
