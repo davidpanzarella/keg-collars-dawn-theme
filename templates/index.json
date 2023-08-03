@@ -121,10 +121,10 @@
       "type": "swiper-product-list",
       "settings": {
         "title": "Template Keg Collars",
-        "heading_size": "h1",
+        "heading_size": "h2",
         "description": "",
         "show_description": true,
-        "description_style": "body",
+        "description_style": "subtitle",
         "product_collection": "template-keg-collars",
         "num_products": 10,
         "color_scheme": "background-2",
