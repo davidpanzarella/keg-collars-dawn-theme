@@ -1434,6 +1434,9 @@ select {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgba(var(--color-button), var(--tw-ring-opacity));
 }
+.header__menu-item span {
+  font-weight: 600;
+}
 select {
   background-image: none;
 }
