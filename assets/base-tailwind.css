@@ -39,14 +39,14 @@
   .tw-prose {
     font-size: 1.6rem;
   }
+}
 
-  .form__label {
-    @apply tw-block tw-text-sm tw-font-semibold tw-text-stone-700;
-  }
+.header__menu-item span {
+  @apply tw-font-semibold;
+}
 
-  .header__menu-item span {
-    @apply tw-font-semibold;
-  }
+.form__label {
+  @apply tw-block tw-text-sm tw-font-semibold tw-text-stone-700;
 }
 
 select {

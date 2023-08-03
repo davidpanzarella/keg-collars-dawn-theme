@@ -1212,17 +1212,6 @@ select {
 .tw-prose {
     font-size: 1.6rem;
   }
-.form__label {
-  display: block;
-  font-size: 1.4rem;
-  line-height: 2rem;
-  font-weight: 600;
-  --tw-text-opacity: 1;
-  color: rgb(68 64 60 / var(--tw-text-opacity));
-}
-.header__menu-item span {
-  font-weight: 600;
-}
 .tw-sr-only {
   position: absolute;
   width: 1px;
@@ -1444,6 +1433,17 @@ select {
 .tw-ring-button {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgba(var(--color-button), var(--tw-ring-opacity));
+}
+.header__menu-item span {
+  font-weight: 600;
+}
+.form__label {
+  display: block;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(68 64 60 / var(--tw-text-opacity));
 }
 select {
   background-image: none;
