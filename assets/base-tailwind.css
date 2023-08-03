@@ -52,3 +52,7 @@ select {
 .metafield-rich_text_field ul {
   margin: 0;
 }
+
+form__label {
+  @apply tw-block tw-text-sm tw-font-semibold tw-text-stone-700;
+}
