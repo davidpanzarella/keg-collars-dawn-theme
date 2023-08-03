@@ -59,7 +59,7 @@
         "description_style": "body",
         "product_collection": "template-keg-collars",
         "num_products": 10,
-        "color_scheme": "",
+        "color_scheme": "background-2",
         "full_width": false,
         "image_ratio": "adapt",
         "image_shape": "default",
