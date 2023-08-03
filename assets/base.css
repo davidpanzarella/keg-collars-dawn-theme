@@ -2834,7 +2834,6 @@ details[open] > .header__submenu {
 
 .header__menu-item span {
   transition: text-decoration var(--duration-short) ease;
-  @apply tw-font-weight-semibold;
 }
 
 .header__menu-item:hover span {

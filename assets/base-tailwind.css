@@ -41,6 +41,10 @@
   }
 }
 
+.header__menu-item span {
+  @apply tw-font-weight-semibold;
+}
+
 select {
   background-image: none;
 }
