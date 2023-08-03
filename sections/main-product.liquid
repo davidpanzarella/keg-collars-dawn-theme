@@ -206,7 +206,7 @@
     assign faqs = faqs | split: ','
     assign features = features | split: ','
     assign equal = true
-    if currentProductColors <= 1
+    if currentProductColors >= 1
       assign equal = false
     endif
   %}
