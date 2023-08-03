@@ -155,11 +155,14 @@
               {% liquid
                 assign colorDisplay = ''
                 assign color = card_product.metafields.custom.color.value[0]
+                assign currentColors = card_product.metafields.custom.color.value | size
 
-                if color == 'Black and White'
-                  assign colorDisplay = 'B&W'
-                else
-                  assign colorDisplay = color
+                if currentColors <= 1
+                  if color == 'Black and White'
+                    assign colorDisplay = 'B&W'
+                  else
+                    assign colorDisplay = color
+                  endif
                 endif
 
                 assign productTitle = ''
