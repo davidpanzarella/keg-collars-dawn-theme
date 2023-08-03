@@ -90,10 +90,12 @@
       set some default values for the product title display
     endcomment
     assign colorDisplay = ''
-    if currentColor == 'Black and White'
-      assign colorDisplay = 'B&W'
-    else
-      assign colorDisplay = currentColor
+    if currentProductColors <= 1
+      if currentColor == 'Black and White'
+        assign colorDisplay = 'B&W'
+      else
+        assign colorDisplay = currentColor
+      endif
     endif
 
     assign productTitle = ''
