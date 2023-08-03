@@ -42,7 +42,7 @@
 }
 
 .header__menu-item span {
-  @apply tw-font-weight-semibold;
+  @apply tw-font-semibold;
 }
 
 select {
