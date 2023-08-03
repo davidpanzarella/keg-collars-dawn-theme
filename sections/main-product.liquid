@@ -84,6 +84,8 @@
     assign relatedFaqs = shop.metaobjects.faqs.values
     assign relatedProductFeatures = shop.metaobjects.product_features.values
 
+    assign currentProductColors = product.metafields.custom.color.size
+
     comment
       set some default values for the product title display
     endcomment
@@ -213,7 +215,7 @@
     //console.log("shapes", {{ shapes | json }});
     //console.log("sizes", {{ sizes | json }});
     //console.log("colors", {{ colors | json }});
-    console.log("templates", {{ templates | json }});
+    console.log("currentProductColors", {{ currentProductColors | json }});
   </script>
 
   <div class="product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} product--{{ section.settings.gallery_layout }} product--mobile-{{ section.settings.mobile_thumbnails }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
