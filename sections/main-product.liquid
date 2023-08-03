@@ -97,7 +97,7 @@
     endif
 
     assign productTitle = ''
-    if currentTemplate
+    if currentTemplate and currentProductColors <= 1
       assign productTitle = currentTemplate
     else
       assign productTitle = product.title | escape
