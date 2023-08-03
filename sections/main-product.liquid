@@ -78,7 +78,7 @@
     assign currentTemplateOptions = product.metafields.custom.template_options.value
     assign currentType = product.metafields.custom.type.value
     assign currentTypes = currentType | append: 's'
-    assign currentTypesHyphenated = currentTypes | kebab_case
+    assign currentTypesHyphenated = currentTypes | replace: ' ', '-' | downcase
     assign allProducts = collections.all.products
     assign relatedProductsByType = collections[currentTypesHyphenated].products | where: 'available'
     assign relatedFaqs = shop.metaobjects.faqs.values
