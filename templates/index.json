@@ -122,7 +122,7 @@
       "settings": {
         "title": "Template Keg Collars",
         "heading_size": "h2",
-        "description": "",
+        "description": "<p>{{ shop.brand.short_description }}<\/p>",
         "show_description": true,
         "description_style": "subtitle",
         "product_collection": "template-keg-collars",
