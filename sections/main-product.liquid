@@ -82,9 +82,9 @@
     assign allProducts = collections.all.products
     assign relatedProductsByType = collections[currentTypesHyphenated].products | where: 'available'
     assign relatedFaqs = shop.metaobjects.faqs.values
-    assign relatedProductFeatures = shop.metaobjects.product_features.value
+    assign relatedProductFeatures = shop.metaobjects.product_features.values
 
-    assign currentProductColors = product.metafields.custom.color.values
+    assign currentProductColors = product.metafields.custom.color.value
 
     comment
       set some default values for the product title display
