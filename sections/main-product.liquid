@@ -205,6 +205,7 @@
   %}
 
   <script>
+    console.log("allProducts", {{ allProducts | json }});
     console.log("relatedProductsByType", {{ relatedProductsByType | json }});
     console.log("currentTypes", {{ currentTypes | json }});
     //console.log("features", {{ features | json }});
