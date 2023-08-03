@@ -188,8 +188,14 @@
             <div class="tw-text-sm tw-text-stone-500">
               <span>{{ card_product.metafields.custom.format.value -}}</span>
               <span> · {{ card_product.metafields.custom.type.value }}</span>
-              <span> · {{ card_product.metafields.custom.shape.value }}</span>
-              <span> · {{ card_product.metafields.custom.size.value }}</span>
+              {% if card_product.metafields.custom.shape.value %}
+                <span> · </span>
+                {{- card_product.metafields.custom.shape.value -}}
+              {%- endif -%}
+              {% if card_product.metafields.custom.size.value %}
+                <span> · </span>
+                {{- card_product.metafields.custom.size.value -}}
+              {%- endif -%}
             </div>
 
             {%- if show_vendor -%}
