@@ -23,7 +23,7 @@
     assign product_format = product.metafields.custom.format.value
     assign product_format_cleaned = product_format | downcase | replace: ' ', '-'
     assign link_format = link_start | append: product_format_cleaned | append: '-' | append: product_type_cleaned
-    if product_format != 'Stock'
+    if product_format != 'Stock' and product_format != 'Custom'
       assign product_format = product_format | append: 's'
     endif
   endif
