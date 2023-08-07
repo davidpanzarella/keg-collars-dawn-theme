@@ -37,7 +37,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/kegwraps.jpg",
         "image_2": "shopify:\/\/shop_images\/Custom-02.jpg",
-        "image_overlay_opacity": 40,
+        "image_overlay_opacity": 60,
         "image_height": "large",
         "desktop_content_position": "bottom-center",
         "show_text_box": false,
