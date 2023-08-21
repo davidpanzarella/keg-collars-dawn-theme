@@ -6,6 +6,9 @@
 {{ 'component-loading-overlay.css' | asset_url | stylesheet_tag }}
 {{ 'quantity-popover.css' | asset_url | stylesheet_tag }}
 
+<script src="{{ 'cart.js' | asset_url }}" defer="defer"></script>
+<script async src="https://cdn.customily.com/shopify/static/customily.shopify.script.unified.js"></script>
+
 {%- style -%}
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
@@ -96,11 +99,32 @@
                   </td>
 
                   <td class="cart-item__details">
-                    {%- if settings.show_vendor -%}
-                      <p class="caption-with-letter-spacing">{{ item.product.vendor }}</p>
+                    <script>
+                      console.log("properties:", {{ item | json }});
+                      console.log("properties:", {{ item.properties | json }});
+                    </script>
+                    {%- if section.settings.show_vendor -%}
+                      <p>{{ item.product.vendor }}</p>
                     {%- endif -%}
 
-                    <a href="{{ item.url }}" class="cart-item__name h4 break">{{ item.product.title | escape }}</a>
+                    {% if item.properties['_customily-customization-url'] %}
+                      <h5 class="h4 cart-item__name animation-underline">
+                        {{- item.product.title | escape -}}
+                      </h5>
+                      {% if item.properties['_customily-customization-url'] %}
+                        <a class="block" href="{{ item.properties['_customily-customization-url'] }}"
+                          >Edit Personalization</a
+                        >
+                      {% endif %}
+
+                    {%- else -%}
+                      <a
+                        href="{{ item.url }}"
+                        class="h4 cart-item__name animation-underline break"
+                      >
+                        {{- item.product.title | escape -}}
+                      </a>
+                    {% endif %}
 
                     {%- if item.original_price != item.final_price -%}
                       <div class="cart-item__discounted-prices">
