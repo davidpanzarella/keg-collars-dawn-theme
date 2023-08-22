@@ -35,8 +35,8 @@
         "button"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/kegwraps.jpg",
-        "image_2": "shopify:\/\/shop_images\/Custom-02.jpg",
+        "image": "shopify:\/\/shop_images\/Coffee-Cartel.png",
+        "image_2": "shopify:\/\/shop_images\/Custom_Design_Keg_Collar_Studio.png",
         "image_overlay_opacity": 60,
         "image_height": "large",
         "desktop_content_position": "bottom-center",
@@ -183,7 +183,6 @@
     },
     "multicolumn": {
       "type": "multicolumn",
-      "disabled": true,
       "blocks": {
         "column1": {
           "type": "column",
@@ -228,6 +227,7 @@
         "column3",
         "c9ae2c70-aa1e-4f47-8e69-de58ee88ed01"
       ],
+      "disabled": true,
       "settings": {
         "title": "",
         "heading_size": "h1",
