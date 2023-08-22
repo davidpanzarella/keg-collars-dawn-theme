@@ -393,14 +393,14 @@
         "template--20079615312182__b4d860ee-52a6-46bc-83ee-eef116d64930-column-3"
       ],
       "settings": {
-        "title": "From Our Customers",
+        "title": "Reviews",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
         "columns_desktop": 3,
         "column_alignment": "center",
         "background_style": "primary",
-        "button_label": "Button label",
+        "button_label": "",
         "button_link": "",
         "color_scheme": "",
         "columns_mobile": "1",
