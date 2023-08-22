@@ -355,6 +355,59 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "b4d860ee-52a6-46bc-83ee-eef116d64930": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--20079615312182__b4d860ee-52a6-46bc-83ee-eef116d64930-column-1": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "<p>Our favorite thing about using<br\/>kegcollars.net is the ease of<br\/>ordering, the superior customer<br\/>service, and most importantly, the quality of the product.<br\/><\/p><p>- Upslope Brewing<br\/><\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--20079615312182__b4d860ee-52a6-46bc-83ee-eef116d64930-column-2": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "<p>We found out about keg collars.net from seeing the quality of work<br\/>they’d done for our friends and their breweries. Keg Collars.net makes it quick, easy and effortless to order.<br\/><\/p><p>-Goodlife Brewing<br\/><\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--20079615312182__b4d860ee-52a6-46bc-83ee-eef116d64930-column-3": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "<p>We love how simple it is to customize the keg collars to fit our needs. The ability to track our orders as it progresses in production is also really neat.<br\/><\/p><p>-Cartel Coffee Lab<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--20079615312182__b4d860ee-52a6-46bc-83ee-eef116d64930-column-1",
+        "template--20079615312182__b4d860ee-52a6-46bc-83ee-eef116d64930-column-2",
+        "template--20079615312182__b4d860ee-52a6-46bc-83ee-eef116d64930-column-3"
+      ],
+      "settings": {
+        "title": "From Our Customers",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -366,6 +419,7 @@
     "featured_collection",
     "video",
     "multicolumn",
-    "47f6c410-1eea-4bc6-bfec-51abae3bd91e"
+    "47f6c410-1eea-4bc6-bfec-51abae3bd91e",
+    "b4d860ee-52a6-46bc-83ee-eef116d64930"
   ]
 }
