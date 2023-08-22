@@ -41,6 +41,7 @@
         },
         "857f37d6-14ee-4427-a512-c657341dc6ee": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/Ready_to_ship_Keg_Collars.jpg",
             "heading": "Ready to Ship",
