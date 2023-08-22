@@ -38,7 +38,7 @@
         "image": "shopify:\/\/shop_images\/Coffee-Cartel.png",
         "image_2": "shopify:\/\/shop_images\/Custom_Design_Keg_Collar_Studio.png",
         "image_overlay_opacity": 60,
-        "image_height": "large",
+        "image_height": "small",
         "desktop_content_position": "bottom-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
