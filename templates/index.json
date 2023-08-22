@@ -285,6 +285,76 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "47f6c410-1eea-4bc6-bfec-51abae3bd91e": {
+      "type": "featured-product",
+      "blocks": {
+        "template--20079615312182__47f6c410-1eea-4bc6-bfec-51abae3bd91e-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "template--20079615312182__47f6c410-1eea-4bc6-bfec-51abae3bd91e-title-1": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "template--20079615312182__47f6c410-1eea-4bc6-bfec-51abae3bd91e-price-1": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "template--20079615312182__47f6c410-1eea-4bc6-bfec-51abae3bd91e-variant_picker-1": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "template--20079615312182__47f6c410-1eea-4bc6-bfec-51abae3bd91e-quantity_selector-1": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "template--20079615312182__47f6c410-1eea-4bc6-bfec-51abae3bd91e-buy_buttons-1": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "template--20079615312182__47f6c410-1eea-4bc6-bfec-51abae3bd91e-share-1": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "template--20079615312182__47f6c410-1eea-4bc6-bfec-51abae3bd91e-text-1",
+        "template--20079615312182__47f6c410-1eea-4bc6-bfec-51abae3bd91e-title-1",
+        "template--20079615312182__47f6c410-1eea-4bc6-bfec-51abae3bd91e-price-1",
+        "template--20079615312182__47f6c410-1eea-4bc6-bfec-51abae3bd91e-variant_picker-1",
+        "template--20079615312182__47f6c410-1eea-4bc6-bfec-51abae3bd91e-quantity_selector-1",
+        "template--20079615312182__47f6c410-1eea-4bc6-bfec-51abae3bd91e-buy_buttons-1",
+        "template--20079615312182__47f6c410-1eea-4bc6-bfec-51abae3bd91e-share-1"
+      ],
+      "settings": {
+        "product": "black-stripe-keg-collar",
+        "color_scheme": "",
+        "secondary_background": false,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -295,6 +365,7 @@
     "9c5e0290-9f6c-4655-bc5e-1f5d781bf522",
     "featured_collection",
     "video",
-    "multicolumn"
+    "multicolumn",
+    "47f6c410-1eea-4bc6-bfec-51abae3bd91e"
   ]
 }
