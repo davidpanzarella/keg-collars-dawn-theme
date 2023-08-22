@@ -49,36 +49,6 @@
         "show_text_below": false
       }
     },
-    "rich_text": {
-      "type": "rich-text",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Need help designing your keg collar?",
-            "heading_size": "h1"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Browse our collection of easy to complete do-it-yourself (DIY) keg collar templates. Simply upload your<br\/>logo and fill in the information fields for a personalized keg collar in matter of minutes.<br\/><\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 48,
-        "padding_bottom": 48
-      }
-    },
     "9eb9690d-003e-48a6-8d25-17cc5e97f5f8": {
       "type": "collection-list",
       "blocks": {
@@ -117,6 +87,36 @@
         "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "rich_text": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Need help designing your keg collar?",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Browse our collection of easy to complete do-it-yourself (DIY) keg collar templates. Simply upload your<br\/>logo and fill in the information fields for a personalized keg collar in matter of minutes.<br\/><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 48,
+        "padding_bottom": 48
       }
     },
     "collage": {
@@ -372,7 +372,7 @@
           "type": "column",
           "settings": {
             "title": "",
-            "text": "<p>We found out about keg collars.net from seeing the quality of work<br\/>they’d done for our friends and their breweries. Keg Collars.net makes it quick, easy and effortless to order.<br\/><\/p><p>-Goodlife Brewing<br\/><\/p>",
+            "text": "<p>We found out about keg collars.net from seeing the quality of work they’d done for our friends and their breweries. Keg Collars.net makes it quick, easy and effortless to order.<br\/><\/p><p>-Goodlife Brewing<br\/><\/p>",
             "link_label": "",
             "link": ""
           }
@@ -408,18 +408,61 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "68684dd1-411b-4c26-a14f-a07231baa480": {
+      "type": "rich-text",
+      "blocks": {
+        "template--20079615312182__68684dd1-411b-4c26-a14f-a07231baa480-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Need Items Quickly?",
+            "heading_size": "h1"
+          }
+        },
+        "template--20079615312182__68684dd1-411b-4c26-a14f-a07231baa480-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Visit our pre-printed stock shop with various ready-to-ship keg collars, keg caps, coasters and required government warning labels.<\/p>"
+          }
+        },
+        "template--20079615312182__68684dd1-411b-4c26-a14f-a07231baa480-button-1": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--20079615312182__68684dd1-411b-4c26-a14f-a07231baa480-heading-1",
+        "template--20079615312182__68684dd1-411b-4c26-a14f-a07231baa480-text-1",
+        "template--20079615312182__68684dd1-411b-4c26-a14f-a07231baa480-button-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
     "image_banner",
-    "rich_text",
     "9eb9690d-003e-48a6-8d25-17cc5e97f5f8",
+    "rich_text",
     "collage",
     "9c5e0290-9f6c-4655-bc5e-1f5d781bf522",
     "featured_collection",
     "video",
     "multicolumn",
     "47f6c410-1eea-4bc6-bfec-51abae3bd91e",
-    "b4d860ee-52a6-46bc-83ee-eef116d64930"
+    "b4d860ee-52a6-46bc-83ee-eef116d64930",
+    "68684dd1-411b-4c26-a14f-a07231baa480"
   ]
 }
