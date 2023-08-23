@@ -29,6 +29,9 @@
         "sections--20079615213878__6097d134-9843-4af7-87aa-4ef82b779e34-paragraph-1",
         "sections--20079615213878__6097d134-9843-4af7-87aa-4ef82b779e34-email_form-1"
       ],
+      "custom_css": [
+        "div {margin-top: 5rem;}"
+      ],
       "settings": {
         "color_scheme": "inverse",
         "full_width": true,
@@ -38,7 +41,6 @@
     },
     "00d34fd5-3615-41da-8aaf-6250d5161ff9": {
       "type": "newsletter",
-      "disabled": true,
       "blocks": {
         "sections--20079615213878__00d34fd5-3615-41da-8aaf-6250d5161ff9-heading-1": {
           "type": "heading",
@@ -64,6 +66,7 @@
         "sections--20079615213878__00d34fd5-3615-41da-8aaf-6250d5161ff9-paragraph-1",
         "sections--20079615213878__00d34fd5-3615-41da-8aaf-6250d5161ff9-email_form-1"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme": "background-2",
         "full_width": true,
