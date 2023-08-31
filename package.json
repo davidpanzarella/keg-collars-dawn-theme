@@ -9,7 +9,7 @@
   "private": true,
   "scripts": {
     "start": "run-p -sr shopify:dev watch",
-    "shopify:dev": "shopify theme dev --environment dev",
+    "shopify:dev": "shopify theme dev",
     "build": "vite build --minify",
     "watch": "vite build --watch"
   },

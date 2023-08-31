@@ -29,6 +29,26 @@
     --color-link: var(--color-link-2);
     --color-shadow: var(--color-shadow-2);
   }
+
+  .btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .btn-success {
+    @apply tw-bg-green-500 tw-text-white;
+  }
+
+  .btn-warning {
+    @apply tw-bg-yellow-500 tw-text-white;
+  }
+
+  .btn-danger {
+    @apply tw-bg-red-500 tw-text-white;
+  }
 }
 
 @layer components {
@@ -55,4 +75,8 @@ select {
 
 .metafield-rich_text_field ul {
   margin: 0;
+}
+
+.pf-pdf-container {
+  height: 60rem;
 }
