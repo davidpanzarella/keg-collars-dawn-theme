@@ -1453,7 +1453,11 @@ select {
   margin: 0;
 }
 .pf-pdf-container {
-  height: 60rem;
+  margin-top: 1.6rem;
+  height: 60rem !important;
+}
+.pf-cards {
+  padding: 0 !important;
 }
 .hover\:tw-bg-stone-50:hover {
   --tw-bg-opacity: 1;

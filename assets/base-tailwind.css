@@ -78,5 +78,10 @@ select {
 }
 
 .pf-pdf-container {
-  height: 60rem;
+  @apply tw-mt-4;
+  height: 60rem !important;
+}
+
+.pf-cards {
+  padding: 0 !important;
 }
