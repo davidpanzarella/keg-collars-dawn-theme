@@ -51,7 +51,7 @@
         "sections--20079615181110__4b68ccd7-b37b-445f-ad77-27031e52dfbc-announcement-1": {
           "type": "announcement",
           "settings": {
-            "text": "Welcome to our new site! If you have questions about your previous orders, please send us a message here.",
+            "text": "Welcome to our NEW site! Click here to REORDER",
             "link": "shopify:\/\/pages\/reorder"
           }
         }
@@ -60,7 +60,7 @@
         "sections--20079615181110__4b68ccd7-b37b-445f-ad77-27031e52dfbc-announcement-1"
       ],
       "settings": {
-        "color_scheme": "",
+        "color_scheme": "accent-1",
         "show_line_separator": true,
         "show_social": false,
         "auto_rotate": false,
