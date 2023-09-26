@@ -4,7 +4,6 @@
   "sections": {
     "announcement-bar": {
       "type": "announcement-bar",
-      "disabled": true,
       "blocks": {
         "announcement-bar-0": {
           "type": "announcement",
@@ -17,6 +16,7 @@
       "block_order": [
         "announcement-bar-0"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme": "",
         "show_line_separator": true,
@@ -44,10 +44,35 @@
         "padding_top": 24,
         "padding_bottom": 24
       }
+    },
+    "4b68ccd7-b37b-445f-ad77-27031e52dfbc": {
+      "type": "announcement-bar",
+      "blocks": {
+        "sections--20079615181110__4b68ccd7-b37b-445f-ad77-27031e52dfbc-announcement-1": {
+          "type": "announcement",
+          "settings": {
+            "text": "Welcome to our new site! If you have questions about your previous orders, please send us a message here.",
+            "link": "shopify:\/\/pages\/reorder"
+          }
+        }
+      },
+      "block_order": [
+        "sections--20079615181110__4b68ccd7-b37b-445f-ad77-27031e52dfbc-announcement-1"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "show_line_separator": true,
+        "show_social": false,
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "enable_country_selector": false,
+        "enable_language_selector": false
+      }
     }
   },
   "order": [
     "announcement-bar",
-    "header"
+    "header",
+    "4b68ccd7-b37b-445f-ad77-27031e52dfbc"
   ]
 }
