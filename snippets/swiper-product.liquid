@@ -27,10 +27,12 @@
   }
 {%- endstyle -%}
 
-<script>
-  console.log("collection:", {{ collection | json }});
-  console.log("section:", {{ section.settings | json }});
-</script>
+{% comment %}
+  <script>
+    console.log("collection:", {{ collection | json }});
+    console.log("section:", {{ section.settings | json }});
+  </script>
+{% endcomment %}
 
 {%- if products.size > 0 -%}
   <div class="color-{{ section.settings.color_scheme }} isolate gradient">
@@ -58,9 +60,11 @@
         <div class="swiper {{ section.settings.product_collection }}-swiper hidden">
           <div class="swiper-wrapper">
             {%- for product in products -%}
-              <script>
-                console.log("product:", {{ product | json }});
-              </script>
+              {% comment %}
+                <script>
+                  console.log("product:", {{ product | json }});
+                </script>
+              {% endcomment %}
               <div
                 class="swiper-slide{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
                 id="Slide-{{ section.id }}-{{ forloop.index }}"

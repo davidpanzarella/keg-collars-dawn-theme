@@ -188,6 +188,15 @@
               {%- endif -%}
             </span>
 
+            {% comment %}
+              {%- if card_product.metafields.custom.template_caption.value -%}
+                <div class="tw-my-5 tw-text-base">
+                  <span class="caption-with-letter-spacing">Caption:</span>
+                  {{ card_product.metafields.custom.template_caption.value }}
+                </div>
+              {%- endif -%}
+            {% endcomment %}
+
             <div class="tw-text-sm tw-text-stone-500">
               <span>{{ card_product.metafields.custom.format.value -}}</span>
               <span> · {{ card_product.metafields.custom.type.value }}</span>
@@ -200,11 +209,6 @@
                 {{- card_product.metafields.custom.size.value -}}
               {%- endif -%}
             </div>
-
-            {%- if show_vendor -%}
-              <span class="visually-hidden">{{ 'accessibility.vendor' | t }}</span>
-              <div class="caption-with-letter-spacing light">{{ card_product.vendor }}</div>
-            {%- endif -%}
 
             <span class="caption-large light">{{ block.settings.description | escape }}</span>
 
