@@ -341,7 +341,7 @@
             <div class="tw-my-6 sm:tw-flex sm:tw-justify-between">
               <fieldset>
                 <legend class="form__label">Shape</legend>
-                <div class="tw-grid tw-grid-cols-1 tw-gap-4 tw-mt-1 sm:tw-grid-cols-2">
+                <div class="tw-grid tw-grid-cols-2 tw-gap-4 tw-mt-1 sm:tw-grid-cols-3">
                   {% for shape in shapes %}
                     {% assign shape_option = shape | split: '|:|' %}
                     {% assign shapeName = shape_option[0] %}
@@ -435,7 +435,7 @@
             <div class="tw-my-6 sm:tw-flex sm:tw-justify-between">
               <fieldset>
                 <legend class="form__label">Color</legend>
-                <div class="tw-grid tw-grid-cols-3 tw-gap-4 tw-mt-1 tw-text-base tw-font-medium tw-text-stone-900 sm:tw-grid-cols-5">
+                <div class="tw-grid tw-grid-cols-3 tw-gap-4 tw-mt-1 tw-text-base tw-font-medium tw-text-stone-900 sm:tw-grid-cols-4">
                   {% for color in colors %}
                     {% assign color_option = color | split: '|:|' %}
                     {% assign colorName = color_option[0] %}
