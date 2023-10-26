@@ -1,0 +1,587 @@
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #000 !important;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+    margin: 0
+}
+
+code {
+    font-family: source-code-pro,Menlo,Monaco,Consolas,Courier New,monospace
+}
+
+#css-backoffice > .MuiBox-root > .MuiBox-root {
+    padding: 0
+}
+
+.navigation-Tabs > .css-1cgx7kx-MuiTabs-scroller > .css-10d9dml-MuiTabs-indicator {
+    background-color: #1565c4 !important
+}
+
+.navigation-Tabs > .css-1cgx7kx-MuiTabs-scroller > .MuiTabs-flexContainer > .css-h0q0iv-MuiButtonBase-root-MuiTab-root.Mui-selected {
+    color: #1565c4 !important
+}
+
+.navigation-Tab.Mui-selected path {
+    fill: #1565c4 !important
+}
+
+.navigation-Tab:not(.Mui-selected):hover {
+    background-color: initial !important;
+    color: #1565c4 !important
+}
+
+    .navigation-Tab:not(.Mui-selected):hover path {
+        fill: #1565c4 !important
+    }
+
+.navigation-Tab {
+    align-items: center !important;
+    border-bottom: 1px solid #ccc !important;
+    display: flex !important;
+    font-size: 13px !important;
+    justify-content: unset !important;
+    text-align: left !important;
+    text-transform: capitalize !important;
+    width: 100% !important
+}
+
+.ST_CS_TableHeading {
+    white-space: nowrap
+}
+
+.ST_ProductTable {
+    max-height: 400px;
+    overflow-y: scroll
+}
+
+.ST_CS_product-label > .MuiFormControlLabel-label {
+    display: contents !important
+}
+
+.ST_CS_ProductDecrementBtn, .ST_CS_ProductIncrementBtn {
+    background-color: initial !important;
+    border: .01rem solid rgba(25,118,210,.5) !important;
+    border-radius: 1rem !important;
+    color: rgba(0,0,0,.26) !important;
+    height: 1.2rem !important;
+    width: 2rem !important
+}
+
+.ST_CS_DeleteConfirmPopup {
+    padding: 15px
+}
+
+.ST_CS_TextRight {
+    align-items: center;
+    display: flex;
+    justify-content: space-between !important;
+    justify-content: right
+}
+
+.ST_CS_CartTextBox {
+    margin-left: .5rem !important;
+    margin-right: .5rem !important;
+    max-width: 5rem !important;
+    min-width: 5rem !important
+}
+
+    .ST_CS_CartTextBox > .MuiInputBase-root {
+        background-color: initial !important;
+        border-radius: 2rem !important;
+        height: 2rem !important
+    }
+
+.ST_CS_CartButtonGroup {
+    align-items: center !important;
+    display: flex
+}
+
+.ST_CI_textfield-details {
+    padding-left: 0 !important;
+    width: 100% !important
+}
+
+.ST_CI_ProductDecrementBtn, .ST_CI_ProductIncrementBtn {
+    background-color: initial !important;
+    border: .01rem solid rgba(25,118,210,.5) !important;
+    border-radius: 1rem !important;
+    color: rgba(0,0,0,.26) !important;
+    height: 1.2rem !important;
+    width: 2rem !important
+}
+
+.scrollableTable {
+    border: 1px solid #bfbfbf;
+    max-height: 400px
+}
+
+@media screen and (min-width:900px) {
+    .ST_CI_responsive-textfield {
+        padding-left: 16px !important
+    }
+}
+
+.ST_CI_product-label > .MuiFormControlLabel-label {
+    display: contents !important
+}
+
+.ST_CI_TableHeading {
+    white-space: nowrap
+}
+
+.ST_CI_ProductDecrementBtn svg, .ST_CI_ProductIncrementBtn svg {
+    margin: 0 !important
+}
+
+.ST_CI_QuantityTextBox {
+    margin-left: .5rem !important;
+    margin-right: .5rem !important;
+    max-width: 5rem !important;
+    min-width: 5rem !important
+}
+
+    .ST_CI_QuantityTextBox > .MuiInputBase-root {
+        background-color: initial !important;
+        border-radius: 2rem !important;
+        height: 2rem !important
+    }
+
+.ST_CI_QuantityButtonGroup {
+    align-items: center !important;
+    display: flex
+}
+
+.ST_DB_Dialog_Box {
+    padding: 24px
+}
+
+.ST_DB_No_Data {
+    color: grey;
+    font-weight: 700;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    white-space: nowrap
+}
+
+.ST_DB_Graph {
+    height: 265px !important
+}
+
+.ST_DB_Min_Class {
+    max-width: 19% !important
+}
+
+.ST_PerformanceDetailsTable {
+    white-space: nowrap
+}
+
+.ST_DB_Hr {
+    margin: 2px !important
+}
+
+.ST_DB_InformationText {
+    margin-right: .5rem !important;
+    margin-top: .5rem !important
+}
+
+.ST_DB_DashboardMsg {
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+    margin-top: .3rem !important
+}
+
+.ST_DB_Dashboard_GraphHeading {
+    font-family: Segoe UI !important;
+    font-size: 1.2rem !important;
+    font-weight: 700 !important;
+    margin: 0 10px !important
+}
+
+@media (max-width:767px) {
+    .ST_DB_Min_Class {
+        margin-bottom: 10px !important;
+        margin-left: 16px !important;
+        max-width: 100% !important
+    }
+}
+
+.ST_DC_Discount_Copied, .ST_DC_Discount_Copy {
+    cursor: pointer;
+    position: absolute;
+    right: 20px
+}
+
+#ST_DC_Discount_Code {
+    display: flex;
+    width: calc(100% - 75px)
+}
+
+::ng-deep .MuiTextField-root {
+    display: flex !important
+}
+
+.ST_DC_Icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    text-align: center
+}
+
+.ST_DC_Discount_Copied {
+    color: #05bf05 !important
+}
+
+.ST_DC_Card_Grid {
+    text-align: right !important
+}
+
+.ST_DC_CouponCopyTextBox {
+    display: flex;
+    width: max-content
+}
+
+@media only screen and (max-width:767px) {
+    .ST_DC_Card_Grid {
+        text-align: left !important
+    }
+
+    .ST_DC_Modal_CSS {
+        width: 75% !important
+    }
+}
+
+@media (device-width:768px) and (device-height:1024px) and (orientation:portrait) {
+    #ST_DC_Discount_Code {
+        width: calc(100% - 75px)
+    }
+}
+
+.ST_DC_Pointer_Events_All {
+    pointer-events: all
+}
+
+.ST_DC_Pointer_Events_None {
+    pointer-events: none
+}
+
+.ST_DC_Thead {
+    white-space: nowrap
+}
+
+.ST_DC_Card1Color {
+    border-bottom: 4px solid #4ed8da !important;
+    margin-bottom: 2rem !important
+}
+
+.ST_DC_Card1Color, .ST_DC_Card2Color {
+    background-color: #fff !important;
+    overflow: hidden !important;
+    padding: 2rem !important;
+    width: 95% !important
+}
+
+.ST_DC_ViewCoupon {
+    height: 40px !important;
+    margin-right: 5rem !important;
+    text-transform: capitalize !important
+}
+
+.ST_DC_DiscountCoupon {
+    background-color: #f5f5f5 !important;
+    border-radius: 10px !important;
+    margin: 20px !important;
+    padding: 15px !important;
+    width: 280px !important
+}
+
+.ST_DC_DiscountCouponBox {
+    align-items: center !important;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-around !important;
+    margin-bottom: 10px !important;
+    width: 100% !important
+}
+
+@media screen and (max-width:750px) {
+    .ST_DC_DiscountCouponBox {
+        flex-direction: column !important
+    }
+
+    .ST_DC_ViewCoupon {
+        margin-bottom: 1rem !important
+    }
+}
+
+.ST_MC_Search_Icon {
+    position: absolute;
+    right: 10px
+}
+
+.ST_MC_Thead TableCell {
+    word-break: break-all
+}
+
+.ST_MC_Dialog_Box {
+    padding: 24px
+}
+
+.ST_MC_Disable_Form {
+    opacity: 1
+}
+
+.ST_MC_No_Pointer {
+    pointer-events: none
+}
+
+.ST_MC_All_Pointer {
+    pointer-events: all
+}
+
+.ST_MC_ErrMsg {
+    color: red;
+    font-size: 12px;
+    position: absolute;
+    right: 32px
+}
+
+.ST_MC_Cursor_CSS {
+    cursor: not-allowed !important
+}
+
+@media only screen and (max-width:767px) {
+    #ST_MC_Search {
+        font-size: 12px !important
+    }
+}
+
+.ST_SOD_Tab_Style {
+    font-size: 15px !important;
+    font-weight: 600 !important;
+    text-transform: capitalize !important;
+    width: 25% !important
+}
+
+.ST_SO_Thead TableCell {
+    word-break: break-all
+}
+
+.ST_SO_Dialog_Box {
+    padding: 24px
+}
+
+.ST_DO_DeleteConfirmPopup {
+    padding: 15px
+}
+
+.ST_DO_TextRight {
+    align-items: center;
+    display: flex;
+    justify-content: right
+}
+
+.ST_DO_ExportCsv {
+    texttransform: "capitalize";
+    whitespace: "nowrap";
+    margintop: 2
+}
+
+:root {
+    --primary: #81ca51;
+    --secondary: #5167ca;
+    --inputBoxBorder: #272886;
+    --inputBoxLabel: #100cf5;
+    --color-background: transparent !important
+}
+
+.ST_Main_Card {
+    background-color: #f6f6f7 !important;
+    overflow: hidden !important;
+    padding: 2rem
+}
+
+.MuiFormLabel-asterisk {
+    color: red
+}
+
+input[type=number] {
+    -moz-appearance: textfield !important
+}
+
+::-webkit-scrollbar-track {
+    background-color: #fff;
+    border-radius: 30px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3)
+}
+
+::-webkit-scrollbar {
+    background-color: #f5f5f5;
+    height: 5px;
+    width: 5px
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #1976d2;
+    border-radius: 30px
+}
+
+.ST_Affiliate_Product_Table tr td {
+    white-space: break-spaces
+}
+
+.MuiBackdrop-root:empty, .css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root:empty {
+    display: block !important
+}
+
+textarea {
+    height: 55px !important;
+    min-height: 55px !important
+}
+
+input {
+    border: none !important;
+    height: auto !important;
+    margin: 0 !important
+}
+
+.ST_SOD_Tab_Style:hover {
+    color: rgba(0,0,0,.6) !important
+}
+
+.MuiLink-button:hover, .ST_SOD_Tab_Style.Mui-selected:hover, .ST_SOD_Tab_Style:hover {
+    background-color: initial !important
+}
+
+.MuiLink-button:hover {
+    color: #1976d2 !important
+}
+
+button {
+    border-radius: 4px !important
+}
+
+table {
+    background-color: #fff !important
+}
+
+.MuiGrid-item div.div {
+    color: red !important;
+    display: none !important
+}
+
+.MuiDrawer-paper {
+    position: relative !important
+}
+
+.ST_Dialog_Box {
+    padding: 24px
+}
+
+.ST_Text_Right {
+    text-align: right;
+    width: 100%
+}
+
+.MuiMenuItem-root.Mui-selected {
+    background-color: #fff !important
+}
+
+.ST_CI_Horizontal_Line {
+    background: #dbdee0 !important;
+    flex-grow: 1 !important;
+    margin-left: 1.4rem !important
+}
+
+.ST_Custom_Number_Input {
+    -moz-appearance: textfield;
+    text-align: center !important
+}
+
+    .ST_Custom_Number_Input::-webkit-inner-spin-button, .ST_Custom_Number_Input::-webkit-outer-spin-button {
+        -webkit-appearance: none !important;
+        margin: 0 !important
+    }
+
+.stickyHeaderRow {
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 2
+}
+
+@media screen and (max-width:750px) {
+    hr {
+        margin: 1.3rem 0 !important
+    }
+}
+
+@media screen and (min-width:749px) {
+    hr {
+        margin: 1.3rem 0 !important
+    }
+}
+
+.ST_DB_capitalizeTabText {
+    font-size: 13px !important;
+    text-transform: capitalize !important
+}
+
+.ST_SoldOut > .MuiBadge-badge {
+    min-width: 4rem !important
+}
+
+.navigation-AppBar {
+    background-color: var(--primary) !important
+}
+
+@media only screen and (min-width:769px) {
+    .mobile-menu {
+        display: none !important
+    }
+}
+
+.mobile-menu {
+    display: block
+}
+
+.ST_CI_Menu_Items:not(.Mui-selected) {
+    padding: 1.5px !important
+}
+
+.ST_CI_Menu {
+    border-bottom: 1px solid #ccc !important
+}
+
+.ST_Login_Grid {
+    background-color: #bbcde2;
+    border-radius: 22px
+}
+
+.ST_CursorCss {
+    cursor: pointer !important
+}
+
+@media only screen and (max-width:767px) {
+    .ST_LC_Video {
+        display: none !important
+    }
+}
+
+.ST_SU_Display {
+    display: flex;
+    justify-content: center;
+    width: 100%
+}
+
+.ST_SU_TextColor {
+    color: grey
+}
+
+.ST_SU_TextField {
+    display: flex;
+    justify-content: center;
+    width: 100%
+}
