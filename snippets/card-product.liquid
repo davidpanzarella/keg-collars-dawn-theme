@@ -25,6 +25,11 @@
 {%- if card_product and card_product != empty -%}
   {%- liquid
     assign ratio = 1
+    assign colorDisplay = ''
+    assign color = card_product.metafields.custom.color.value[0]
+    assign currentColors = card_product.metafields.custom.color.value | size
+    assign product_size = card_product.metafields.custom.size.value
+
     if card_product.featured_media and media_aspect_ratio == 'portrait'
       assign ratio = 0.8
     elsif card_product.featured_media and media_aspect_ratio == 'adapt'
@@ -33,7 +38,23 @@
     if ratio == 0 or ratio == null
       assign ratio = 1
     endif
+
+    if currentColors <= 1
+      if color == 'Black and White'
+        assign colorDisplay = 'B&W'
+      else
+        assign colorDisplay = color
+      endif
+    endif
+
+    assign productTitle = ''
+    if card_product.metafields.custom.template_name.value
+      assign productTitle = card_product.metafields.custom.template_name.value | escape
+    else
+      assign productTitle = card_product.title | escape
+    endif
   -%}
+
   <div class="card-wrapper product-card-wrapper underline-links-hover">
     <div
       class="
@@ -99,6 +120,11 @@
                 >
               {%- endif -%}
             </div>
+            {% if product_size %}
+              <span class="tw-absolute tw-px-3 tw-py-1 tw-text-[20px] tw-font-semibold tw-rounded-sm tw-bottom-1 tw-left-1 tw-bg-button ">
+                {{- product_size -}}
+              </span>
+            {% endif %}
           </div>
         {%- endif -%}
         <div class="card__content">
@@ -152,27 +178,6 @@
               class="tw-text-xl tw-font-bold tw-no-underline tw-text-stone-700"
               aria-labelledby="CardLink-{{ section_id }}-{{ card_product.id }} Badge-{{ section_id }}-{{ card_product.id }}"
             >
-              {% liquid
-                assign colorDisplay = ''
-                assign color = card_product.metafields.custom.color.value[0]
-                assign currentColors = card_product.metafields.custom.color.value | size
-
-                if currentColors <= 1
-                  if color == 'Black and White'
-                    assign colorDisplay = 'B&W'
-                  else
-                    assign colorDisplay = color
-                  endif
-                endif
-
-                assign productTitle = ''
-                if card_product.metafields.custom.template_name.value
-                  assign productTitle = card_product.metafields.custom.template_name.value | escape
-                else
-                  assign productTitle = card_product.title | escape
-                endif
-              %}
-
               {{ colorDisplay }}
               {{ productTitle }}
             </a>

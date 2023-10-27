@@ -210,13 +210,14 @@
   %}
 
   <script>
-    console.log("allProducts", {{ allProducts | json }});
-    console.log("relatedProductsByType", {{ relatedProductsByType | json }});
-    console.log("currentTypesHyphenated", {{ currentTypesHyphenated | json }});
+    {% comment %} console.log("allProducts", {{ allProducts | json }}); {% endcomment %}
+    {% comment %} {% comment %} console.log("relatedProductsByType", {{ relatedProductsByType | json }}); {% endcomment %} {% endcomment %}
+    {% comment %} console.log("currentTypesHyphenated", {{ currentTypesHyphenated | json }}); {% endcomment %}
     //console.log("features", {{ features | json }});
-    //console.log("shapes", {{ shapes | json }});
-    //console.log("sizes", {{ sizes | json }});
-    //console.log("colors", {{ colors | json }});
+    {% comment %} console.log("shapes", {{ shapes | json }}); {% endcomment %}
+    {% comment %} console.log("sizes", {{ sizes | json }}); {% endcomment %}
+    {% comment %} console.log("colors", {{ colors | json }}); {% endcomment %}
+    {% comment %} console.log("templates", {{ templates | json }}); {% endcomment %}
   </script>
 
   <div class="product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} product--{{ section.settings.gallery_layout }} product--mobile-{{ section.settings.mobile_thumbnails }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
@@ -359,8 +360,8 @@
 
                     {% if shapeMatch == 'false' %}
                       <a
-                        href="{{shapeUrl}}"
-                        title="View the {{shapeName}} {{ currentType }} shape for this {{ colorDisplay }} {{ productTitle }}"
+                        href="{{ shapeUrl }}"
+                        title="View the {{ shapeName }} {{ currentType }} shape for this {{ colorDisplay }} {{ productTitle }}"
                       >
                         <div
                           id="shape-choice-0-label"
