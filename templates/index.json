@@ -311,7 +311,7 @@
         "template--20079615312182__68684dd1-411b-4c26-a14f-a07231baa480-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Visit our pre-printed stock shop with various ready-to-ship keg collars, keg caps, coasters and required government warning labels.<\/p>"
+            "text": "<p>Visit our pre-printed stock shop with various ready-to-ship keg collars, keg caps, coasters and required government health warning labels.<\/p>"
           }
         },
         "template--20079615312182__68684dd1-411b-4c26-a14f-a07231baa480-button-1": {
@@ -334,7 +334,7 @@
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "color_scheme": "accent-2",
+        "color_scheme": "neutral",
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 52
