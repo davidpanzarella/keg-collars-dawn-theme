@@ -6,10 +6,8 @@
       "type": "apps",
       "blocks": {
         "292577cd-42c1-4114-be56-c732dc28f2a0": {
-          "type": "shopify:\/\/apps\/instafeed-instagram-feed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
           "settings": {
-            "heading_size": 30,
-            "feed_width": 100,
             "html_area": ""
           }
         }
@@ -102,25 +100,25 @@
             "show_social": true
           }
         },
-        "footer-0": {
-          "type": "link_list",
-          "settings": {
-            "heading": "Our Products",
-            "menu": "primary-nav-1"
-          }
-        },
         "57f36aca-0567-4d71-852d-c03cc8105d63": {
           "type": "link_list",
           "settings": {
             "heading": "Quick links",
             "menu": "aux-nav"
           }
+        },
+        "67dd0072-2dba-431f-88f6-d9cd9798fb85": {
+          "type": "text",
+          "settings": {
+            "heading": "Contact Us",
+            "subtext": "<p><strong>Email<\/strong><\/p><p>cheers@kegcollars.net<\/p><p> .<\/p><p><strong>Phone<\/strong><\/p><p>(877) 803-5277<\/p><p>.<\/p><p><strong>Address<\/strong><\/p><p>20700 Carmen Loop, Ste 110<\/p><p>Bend, OR 97702 <\/p><p><\/p><p><\/p>"
+          }
         }
       },
       "block_order": [
         "e15f2d24-11cc-40b7-baee-6ebf40297556",
-        "footer-0",
-        "57f36aca-0567-4d71-852d-c03cc8105d63"
+        "57f36aca-0567-4d71-852d-c03cc8105d63",
+        "67dd0072-2dba-431f-88f6-d9cd9798fb85"
       ],
       "settings": {
         "color_scheme": "background-2",
