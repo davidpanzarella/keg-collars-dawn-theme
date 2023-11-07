@@ -166,6 +166,48 @@
         "padding_bottom": 36
       }
     },
+    "403150a4-ccdc-4263-b4dd-4b9fb9cab59d": {
+      "type": "rich-text",
+      "blocks": {
+        "template--20079615312182__403150a4-ccdc-4263-b4dd-4b9fb9cab59d-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "ReOrder Here",
+            "heading_size": "hxl"
+          }
+        },
+        "template--20079615312182__403150a4-ccdc-4263-b4dd-4b9fb9cab59d-text-1": {
+          "type": "text",
+          "settings": {
+            "text": ""
+          }
+        },
+        "template--20079615312182__403150a4-ccdc-4263-b4dd-4b9fb9cab59d-button-1": {
+          "type": "button",
+          "settings": {
+            "button_label": "Place a ReOrder",
+            "button_link": "shopify:\/\/pages\/reorder",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--20079615312182__403150a4-ccdc-4263-b4dd-4b9fb9cab59d-heading-1",
+        "template--20079615312182__403150a4-ccdc-4263-b4dd-4b9fb9cab59d-text-1",
+        "template--20079615312182__403150a4-ccdc-4263-b4dd-4b9fb9cab59d-button-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-2",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "rich_text": {
       "type": "rich-text",
       "blocks": {
@@ -761,6 +803,7 @@
     "44ab272c-9ffe-4cf6-9d0d-cee3ac2041cd",
     "image_banner",
     "9eb9690d-003e-48a6-8d25-17cc5e97f5f8",
+    "403150a4-ccdc-4263-b4dd-4b9fb9cab59d",
     "rich_text",
     "collage",
     "9c5e0290-9f6c-4655-bc5e-1f5d781bf522",
