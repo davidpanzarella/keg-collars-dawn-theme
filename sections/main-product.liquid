@@ -1233,6 +1233,11 @@
       document.querySelector('#Variants-{{ section.id }}').addEventListener('change', function (event) {
         hiddenInput.value = event.currentTarget.value;
       });
+
+      const inputs = document.querySelectorAll('input[accept=".eps, .pdf, .svg"]');
+      inputs.forEach((input) => {
+        input.setAttribute('accept', '.eps, .pdf, .svg, .ai');
+      });
     });
   </script>
 
