@@ -265,12 +265,14 @@
     <script src="{{ 'swiper-bundle.min.js' | asset_url }}" defer></script>
     {{ 'swiper-bundle.min.css' | asset_url | stylesheet_tag }}
 
-    <script
-      id="hs-script-loader"
-      async
-      defer
-      src="//js.hs-scripts.com/44707895.js"
-    ></script>
+    {% comment %}
+      <script
+        id="hs-script-loader"
+        async
+        defer
+        src="//js.hs-scripts.com/44707895.js"
+      ></script>
+    {% endcomment %}
     <script
       async
       src="https://tag.clearbitscripts.com/v1/pk_97f3ebd2b9d19a285aa3ba468a1d4154/tags.js"
