@@ -147,6 +147,26 @@
     "content_for_index": [
 
     ],
+    "blocks": {
+      "15683396631634586217": {
+        "type": "shopify:\/\/apps\/inbox\/blocks\/chat\/841fc607-4181-4ad1-842d-e24d7f8bad6b",
+        "disabled": false,
+        "settings": {
+          "button_color": "#f2a100",
+          "button_icon": "hand_wave",
+          "button_text": "need_help",
+          "button_horizontal_position": "bottom_right",
+          "button_vertical_position": "lowest",
+          "greeting_message": "👋 Hi! Welcome to KegCollars.net! How can we help?"
+        }
+      },
+      "5453348510459557781": {
+        "type": "shopify:\/\/apps\/avada-seo-suite\/blocks\/avada-seo\/15507c6e-1aa3-45d3-b698-7e175e033440",
+        "disabled": true,
+        "settings": {
+        }
+      }
+    },
     "color_schemes": {
       "background-1": {
         "settings": {
@@ -223,20 +243,6 @@
           "button_label": "#ffffff",
           "secondary_button_label": "#19181d",
           "shadow": "#19181d"
-        }
-      }
-    },
-    "blocks": {
-      "15683396631634586217": {
-        "type": "shopify:\/\/apps\/inbox\/blocks\/chat\/841fc607-4181-4ad1-842d-e24d7f8bad6b",
-        "disabled": false,
-        "settings": {
-          "button_color": "#f2a100",
-          "button_icon": "hand_wave",
-          "button_horizontal_position": "bottom_right",
-          "button_vertical_position": "lowest",
-          "button_text": "need_help",
-          "greeting_message": "👋 Hi! Welcome to KegCollars.net! How can we help?"
         }
       }
     }
