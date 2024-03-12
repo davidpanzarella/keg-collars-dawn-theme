@@ -167,6 +167,45 @@
           "button_vertical_position": "lowest",
           "greeting_message": "👋 Hi! Welcome to KegCollars.net! How can we help?"
         }
+      },
+      "3838990611052461119": {
+        "type": "shopify:\/\/apps\/customerhub\/blocks\/app-embed\/0fb3ba0b-4c65-4919-a85a-48bc2d368e9c",
+        "disabled": false,
+        "settings": {
+          "account_primary_page": "",
+          "main_element": "",
+          "custom_element": "",
+          "page_element": "",
+          "proxy_element": "",
+          "mount_json_code": ""
+        }
+      },
+      "15773640700261759505": {
+        "type": "shopify:\/\/apps\/customerhub\/blocks\/mini-hub\/0fb3ba0b-4c65-4919-a85a-48bc2d368e9c",
+        "disabled": true,
+        "settings": {
+          "primary_color": "#f2a100",
+          "secondary_color": "#fff",
+          "text_color": "#fff",
+          "background_color": "#fff",
+          "minihub_position": "left",
+          "minihub_load_from": "always_visible",
+          "show_recently_viewed": "yes",
+          "show_reorder": "yes",
+          "reorder_action": "checkout",
+          "hide_minihub_on_mobile": "show",
+          "hide_minihub_in_account": "show",
+          "show_paynow_button": "show",
+          "start_shopping_link": "",
+          "custom_css": "",
+          "url_override": ""
+        }
+      },
+      "341186785192672687": {
+        "type": "shopify:\/\/apps\/seal-subscriptions\/blocks\/subscription-script-append\/13b25004-a140-4ab7-b5fe-29918f759699",
+        "disabled": false,
+        "settings": {
+        }
       }
     },
     "color_schemes": {
