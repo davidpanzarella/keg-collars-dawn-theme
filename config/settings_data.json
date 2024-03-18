@@ -94,9 +94,9 @@
     "drawer_shadow_horizontal_offset": 0,
     "drawer_shadow_vertical_offset": 4,
     "drawer_shadow_blur": 5,
-    "badge_position": "top right",
+    "badge_position": "top left",
     "badge_corner_radius": 40,
-    "sale_badge_color_scheme": "accent-1",
+    "sale_badge_color_scheme": "scheme-410f4729-0a93-44a0-a1a5-15b01e63cece",
     "sold_out_badge_color_scheme": "inverse",
     "brand_headline": "Quality Beverage Branding Products",
     "brand_description": "<p>KegCollars.net, based in Bend, Oregon, is a family-owned business with 35+ years of experience. We offer easy ordering for top-notch products. Our small team is dedicated to exceptional service and strong customer relationships.<\/p>",
@@ -277,7 +277,7 @@
       },
       "scheme-410f4729-0a93-44a0-a1a5-15b01e63cece": {
         "settings": {
-          "background": "#ffffff",
+          "background": "#dd1d1d",
           "background_gradient": "",
           "text": "#19181d",
           "button": "#f2a100",
