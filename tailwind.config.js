@@ -8,7 +8,13 @@ function withOpacity(variableName) {
 }
 
 module.exports = {
-  content: ['./layout/*.liquid', './templates/**/*.liquid', './sections/*.liquid', './snippets/*.liquid'],
+  content: [
+    './layout/*.liquid',
+    './templates/**/*.liquid',
+    './sections/*.liquid',
+    './snippets/*.liquid',
+    './assets/**/product-switcher.js'
+  ],
   prefix: 'tw-',
   theme: {
     extend: {

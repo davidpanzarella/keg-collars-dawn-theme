@@ -29,6 +29,8 @@
     }
   {%- endstyle -%}
 
+  <script src="{{ 'product-switcher.js' | asset_url }}" defer="defer"></script>
+
   <script src="{{ 'product-info.js' | asset_url }}" defer="defer"></script>
   <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
   {%- if product.quantity_price_breaks_configured? -%}
@@ -68,7 +70,7 @@
     assign product_form_id = 'product-form-' | append: section.id
 
     comment
-      Get all products of the same product type as the current product for the related products section
+      set some default variables for the current product
     endcomment
     assign currentColor = product.metafields.custom.color.value[0]
     assign currentColors = product.metafields.custom.color.value | size
@@ -80,9 +82,9 @@
     assign currentType = product.metafields.custom.type.value
     assign currentTypes = currentType | append: 's'
     assign currentTypesHyphenated = currentTypes | replace: ' ', '-' | downcase
-    assign currentFormatTypes = currentFormat | append: '-' | append: currentTypesHyphenated | downcase
-    assign relatedFaqs = shop.metaobjects.faqs.values
-    assign relatedProductFeatures = shop.metaobjects.product_features.values
+    assign currentCollection = currentFormat | append: '-' | append: currentTypesHyphenated | downcase
+    assign currentTemplateOptionsHyphenated = currentTemplateOptions | replace: ' ', '-' | downcase
+    assign currentProductByTemplateOption = currentTemplateOptionsHyphenated | append: '-' | append: currentFormat | append: '-' | append: currentTypesHyphenated | downcase
 
     comment
       set some default values for the product title display
@@ -106,6 +108,96 @@
     assign productTitleDisplay = currentSize | append: ' ' | append: currentShape | append: ' ' | append: currentType
 
     comment
+      get related faqs and product features for the current product
+    endcomment
+    assign relatedFaqs = shop.metaobjects.faqs.values
+    assign relatedProductFeatures = shop.metaobjects.product_features.values
+  %}
+
+  {% comment %}
+    <script>
+
+      document.addEventListener('DOMContentLoaded', function () {
+        const currentFormat = '{{ currentFormat }}';
+        const currentType = '{{ currentType }}';
+        console.log(`currentCollection:, {{ currentCollection | json }}`);
+
+        // Get all products of the same product type as the current product
+        fetch('https://keg-collars-shop.myshopify.com/api/2024-01/graphql.json', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'X-Shopify-Storefront-Access-Token': '5368142c7175d20d92779a18bc0a0649'
+          },
+          body: JSON.stringify({
+            query: `{
+              collection(handle: {{currentCollection | json}}) {
+                handle
+                products(first: 200) {
+                  edges {
+                    node {
+                      id
+                      title
+                      handle
+                      metafields(
+                        identifiers: [
+                          {key: "color", namespace: "custom"},
+                          {key: "format", namespace: "custom"},
+                          {key: "shape", namespace: "custom"},
+                          {key: "size", namespace: "custom"},
+                          {key: "template_name", namespace: "custom"},
+                          {key: "template_options", namespace: "custom"}
+                          {key: "type", namespace: "custom"},
+                        ]
+                      ) {
+                        value
+                        key
+                      }
+                      images(first: 2) {
+                        nodes {
+                          transformedSrc( maxWidth: 250)
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }`
+          })
+        })
+          .then((res) => res.json())
+          .then((res) => {
+            // set the related products to a variable and reduce the data to only the necessary fields
+            const removeEdgeNodes = res.data.collection.products.edges.map((edge) => edge.node);
+
+            const flattenMetafields = (metafields) => {
+              return metafields.reduce((acc, metafield) => {
+                acc[metafield.key] = metafield.value;
+                return acc;
+              }, {});
+            };
+
+            const transformProductData = (product) => {
+              return {
+                id: product.id,
+                title: product.title,
+                handle: product.handle,
+                ...flattenMetafields(product.metafields),
+                images: product.images.nodes.map((node) => node.transformedSrc)
+              };
+            };
+
+            const relatedProducts = removeEdgeNodes.map(transformProductData);
+          });
+        });
+
+      {% assign relatedProductsTest = relatedProducts %}
+      console.log("relatedProductsTest", {{ relatedProductsTest | json }});
+    </script>
+  {% endcomment %}
+
+  {% liquid
+    comment
       - set default values for the related product display
       - loop through all related products and set the values for each option set
     endcomment
@@ -118,66 +210,64 @@
     assign colors = ''
     assign templates = ''
 
-    paginate collections[currentFormatTypes].products by 250
-      for relatedProduct in collections[currentFormatTypes].products
-        assign relatedProductColor = relatedProduct.metafields.custom.color.value[0]
-        assign relatedProductFormat = relatedProduct.metafields.custom.format.value
-        assign relatedProductShape = relatedProduct.metafields.custom.shape.value
-        assign relatedProductSize = relatedProduct.metafields.custom.size.value
-        assign relatedProductTemplate = relatedProduct.metafields.custom.template_name.value
-        assign relatedProductTemplateOptions = relatedProduct.metafields.custom.template_options.value
+    for relatedProduct in relatedProductsVariations
+      assign relatedProductColor = relatedProduct.metafields.custom.color.value[0]
+      assign relatedProductFormat = relatedProduct.metafields.custom.format.value
+      assign relatedProductShape = relatedProduct.metafields.custom.shape.value
+      assign relatedProductSize = relatedProduct.metafields.custom.size.value
+      assign relatedProductTemplate = relatedProduct.metafields.custom.template_name.value
+      assign relatedProductTemplateOptions = relatedProduct.metafields.custom.template_options.value
 
-        if relatedProductFormat == currentFormat and relatedProductTemplate == currentTemplate
-          assign shape_with_delimiter = relatedProductShape | append: ','
-          unless seen_shapes contains shape_with_delimiter
-            assign sameShape = false
-            if currentShape == relatedProductShape
-              assign sameShape = true
+      if relatedProductFormat == currentFormat and relatedProductTemplate == currentTemplate
+        assign shape_with_delimiter = relatedProductShape | append: ','
+        unless seen_shapes contains shape_with_delimiter
+          assign sameShape = false
+          if currentShape == relatedProductShape
+            assign sameShape = true
+          endif
+          assign seen_shapes = seen_shapes | append: shape_with_delimiter
+          assign shapes = shapes | append: relatedProductShape | append: '|:|' | append: relatedProduct.url | append: '|:|' | append: sameShape | append: ','
+        endunless
+
+        if relatedProductColor == currentColor and relatedProductShape == currentShape
+          assign size_with_delimiter = relatedProductSize | append: ','
+          unless seen_sizes contains size_with_delimiter
+            assign sameSize = false
+            if currentSize == relatedProductSize
+              assign sameSize = true
             endif
-            assign seen_shapes = seen_shapes | append: shape_with_delimiter
-            assign shapes = shapes | append: relatedProductShape | append: '|:|' | append: relatedProduct.url | append: '|:|' | append: sameShape | append: ','
+            assign seen_sizes = seen_sizes | append: size_with_delimiter
+            assign sizes = sizes | append: relatedProductSize | append: '|:|' | append: relatedProduct.url | append: '|:|' | append: sameSize | append: ','
           endunless
-
-          if relatedProductColor == currentColor and relatedProductShape == currentShape
-            assign size_with_delimiter = relatedProductSize | append: ','
-            unless seen_sizes contains size_with_delimiter
-              assign sameSize = false
-              if currentSize == relatedProductSize
-                assign sameSize = true
-              endif
-              assign seen_sizes = seen_sizes | append: size_with_delimiter
-              assign sizes = sizes | append: relatedProductSize | append: '|:|' | append: relatedProduct.url | append: '|:|' | append: sameSize | append: ','
-            endunless
-          endif
-
-          if relatedProductSize == currentSize and relatedProductShape == currentShape and currentColors <= 1
-            assign color_with_delimiter = relatedProductColor | append: ','
-            unless seen_colors contains color_with_delimiter
-              assign sameColor = false
-              if currentColor == relatedProductColor
-                assign sameColor = true
-              endif
-              assign seen_colors = seen_colors | append: color_with_delimiter
-              assign colors = colors | append: relatedProductColor | append: '|:|' | append: relatedProduct.url | append: '|:|' | append: sameColor | append: ','
-            endunless
-          endif
-
-          if relatedProductColor == currentColor and relatedProductShape == currentShape and relatedProductSize == currentSize
-            assign template_with_delimiter = relatedProductTemplateOptions | append: ','
-            unless seen_templates contains template_with_delimiter
-              assign sameTemplateOptions = false
-              if currentTemplateOptions == relatedProductTemplateOptions
-                assign sameTemplateOptions = true
-              endif
-
-              assign seen_templates = seen_templates | append: template_with_delimiter
-              assign templateImage = relatedProduct.media[1].preview_image | image_url: width: 200
-              assign templates = templates | append: relatedProductTemplateOptions | append: '|:|' | append: relatedProduct.url | append: '|:|' | append: templateImage | append: '|:|' | append: sameTemplateOptions | append: ','
-            endunless
-          endif
         endif
-      endfor
-    endpaginate
+
+        if relatedProductSize == currentSize and relatedProductShape == currentShape and currentColors <= 1
+          assign color_with_delimiter = relatedProductColor | append: ','
+          unless seen_colors contains color_with_delimiter
+            assign sameColor = false
+            if currentColor == relatedProductColor
+              assign sameColor = true
+            endif
+            assign seen_colors = seen_colors | append: color_with_delimiter
+            assign colors = colors | append: relatedProductColor | append: '|:|' | append: relatedProduct.url | append: '|:|' | append: sameColor | append: ','
+          endunless
+        endif
+
+        if relatedProductColor == currentColor and relatedProductShape == currentShape and relatedProductSize == currentSize
+          assign template_with_delimiter = relatedProductTemplateOptions | append: ','
+          unless seen_templates contains template_with_delimiter
+            assign sameTemplateOptions = false
+            if currentTemplateOptions == relatedProductTemplateOptions
+              assign sameTemplateOptions = true
+            endif
+
+            assign seen_templates = seen_templates | append: template_with_delimiter
+            assign templateImage = relatedProduct.media[1].preview_image | image_url: width: 200
+            assign templates = templates | append: relatedProductTemplateOptions | append: '|:|' | append: relatedProduct.url | append: '|:|' | append: templateImage | append: '|:|' | append: sameTemplateOptions | append: ','
+          endunless
+        endif
+      endif
+    endfor
 
     assign shapes = shapes | split: ',' | sort
     assign sizes = sizes | split: ',' | sort
@@ -207,12 +297,13 @@
 
     assign faqs = faqs | split: ','
     assign features = features | split: ','
-    assign test = ''
-    assign equal = true
   %}
+
   <script>
-    {% comment %} console.log("allProducts", {{ allProducts | json }}); {% endcomment %}
-    console.log("currentFormatTypes", {{ currentFormatTypes | json }});
+    console.log("product", {{ product | json }});
+    console.log("product", {{ product.handle | json }});
+    console.log("currentProductByTemplateOption", {{ currentProductByTemplateOption | json }});
+    {% comment %} console.log("relatedProductsVariations", {{ relatedProductsVariations | json }}); {% endcomment %}
     {% comment %} console.log("features", {{ features | json }}); {% endcomment %}
     {% comment %} console.log("shapes", {{ shapes | json }}); {% endcomment %}
     {% comment %} console.log("sizes", {{ sizes | json }}); {% endcomment %}
@@ -337,176 +428,196 @@
       <section aria-labelledby="options-heading">
         <h2 id="options-heading" class="tw-sr-only">Product Options</h2>
         <form>
-          <!-- shapes picker -->
-          {% if shapes.size > 1 %}
-            <div class="tw-my-6 sm:tw-flex sm:tw-justify-between">
-              <fieldset>
-                <legend class="form__label">Shape</legend>
-                <div class="tw-grid tw-grid-cols-2 tw-gap-4 tw-mt-1 sm:tw-grid-cols-3">
-                  {% for shape in shapes %}
-                    {% assign shape_option = shape | split: '|:|' %}
-                    {% assign shapeName = shape_option[0] %}
-                    {% assign shapeUrl = shape_option[1] %}
-                    {% assign shapeMatch = shape_option[2] %}
+          <product-switcher
+            data-collection="{{ currentCollection }}"
+            data-handle="{{ product.handle  }}"
+          ></product-switcher>
 
-                    <input
-                      type="radio"
-                      name="shape-choice"
-                      value="{{ shapeName }}"
-                      class="tw-sr-only"
-                      aria-labelledby="shape-choice-0-label"
-                      aria-describedby="shape-choice-0-description"
-                    >
+          {% comment %}
+            <!-- shapes picker -->
+            {% if shapes.size > 1 %}
+              <div class="tw-my-6 sm:tw-flex sm:tw-justify-between">
+                <fieldset>
+                  <legend class="form__label">Shape</legend>
+                  <div class="tw-grid tw-grid-cols-2 tw-gap-4 tw-mt-1 sm:tw-grid-cols-3">
+                    {% for shape in shapes %}
+                      {% assign shape_option = shape | split: '|:|' %}
+                      {% assign shapeName = shape_option[0] %}
+                      {% assign shapeUrl = shape_option[1] %}
+                      {% assign shapeMatch = shape_option[2] %}
 
-                    {% if shapeMatch == 'false' %}
-                      <a
-                        href="{{ shapeUrl }}"
-                        title="View the {{ shapeName }} {{ currentType }} shape for this {{ colorDisplay }} {{ productTitle }}"
+                      <input
+                        type="radio"
+                        name="shape-choice"
+                        value="{{ shapeName }}"
+                        class="tw-sr-only"
+                        aria-labelledby="shape-choice-0-label"
+                        aria-describedby="shape-choice-0-description"
                       >
+
+                      {% if shapeMatch == 'false' %}
+                        <a
+                          href="{{ shapeUrl }}"
+                          title="View the {{ shapeName }} {{ currentType }} shape for this {{ colorDisplay }} {{ productTitle }}"
+                        >
+                          <div
+                            id="shape-choice-0-label"
+                            class="tw-relative tw-block tw-px-3 tw-py-2 tw-border-2 tw-rounded-md tw-border-stone-300 tw-focus:outline-none hover:tw-bg-stone-50"
+                          >
+                            {{ shapeName }}
+                          </div>
+                        </a>
+                      {% else %}
                         <div
                           id="shape-choice-0-label"
-                          class="tw-relative tw-block tw-px-3 tw-py-2 tw-border-2 tw-rounded-md tw-border-stone-300 tw-focus:outline-none hover:tw-bg-stone-50"
+                          class="tw-relative tw-block tw-px-3 tw-py-2 tw-border tw-rounded-md tw-cursor-default tw-border-button tw-focus:outline-none tw-ring-1 tw-ring-button"
                         >
                           {{ shapeName }}
                         </div>
-                      </a>
-                    {% else %}
-                      <div
-                        id="shape-choice-0-label"
-                        class="tw-relative tw-block tw-px-3 tw-py-2 tw-border tw-rounded-md tw-cursor-default tw-border-button tw-focus:outline-none tw-ring-1 tw-ring-button"
+                      {% endif %}
+                    {% endfor %}
+                  </div>
+                </fieldset>
+              </div>
+            {% endif %}
+            <!-- Size selector -->
+            {% if sizes.size > 1 %}
+              <div class="tw-my-6 sm:tw-flex sm:tw-justify-between">
+                <fieldset>
+                  <legend class="form__label">Size</legend>
+                  <div class="tw-grid tw-grid-cols-2 tw-gap-4 tw-mt-1 tw-text-base tw-font-medium tw-text-stone-900 sm:tw-grid-cols-3">
+                    {% for size in sizes %}
+                      {% assign size_option = size | split: '|:|' %}
+                      {% assign sizeName = size_option[0] %}
+                      {% assign sizeUrl = size_option[1] %}
+                      {% assign sizeMatch = size_option[2] %}
+
+                      <input
+                        type="radio"
+                        name="size-choice"
+                        value="{{ sizeName }}"
+                        class="tw-sr-only"
+                        aria-labelledby="size-choice-0-label"
+                        aria-describedby="size-choice-0-description"
                       >
-                        {{ shapeName }}
-                      </div>
-                    {% endif %}
-                  {% endfor %}
-                </div>
-              </fieldset>
-            </div>
-          {% endif %}
 
-          <!-- Size selector -->
-          {% if sizes.size > 1 %}
-            <div class="tw-my-6 sm:tw-flex sm:tw-justify-between">
-              <fieldset>
-                <legend class="form__label">Size</legend>
-                <div class="tw-grid tw-grid-cols-2 tw-gap-4 tw-mt-1 tw-text-base tw-font-medium tw-text-stone-900 sm:tw-grid-cols-3">
-                  {% for size in sizes %}
-                    {% assign size_option = size | split: '|:|' %}
-                    {% assign sizeName = size_option[0] %}
-                    {% assign sizeUrl = size_option[1] %}
-                    {% assign sizeMatch = size_option[2] %}
-
-                    <input
-                      type="radio"
-                      name="size-choice"
-                      value="{{ sizeName }}"
-                      class="tw-sr-only"
-                      aria-labelledby="size-choice-0-label"
-                      aria-describedby="size-choice-0-description"
-                    >
-
-                    {% if sizeMatch == 'false' %}
-                      <a
-                        href="{{sizeUrl}}"
-                        title="View the {{sizeName}} size for this {{ colorDisplay }} {{ productTitle }} {{ currentType }}"
-                      >
+                      {% if sizeMatch == 'false' %}
+                        <a
+                          href="{{sizeUrl}}"
+                          title="View the {{sizeName}} size for this {{ colorDisplay }} {{ productTitle }} {{ currentType }}"
+                        >
+                          <div
+                            id="size-choice-0-label"
+                            class="tw-relative tw-block tw-px-3 tw-py-2 tw-border-2 tw-rounded-md tw-border-stone-300 tw-focus:outline-none hover:tw-bg-stone-50"
+                          >
+                            {{ sizeName }}
+                          </div>
+                        </a>
+                      {% else %}
                         <div
                           id="size-choice-0-label"
-                          class="tw-relative tw-block tw-px-3 tw-py-2 tw-border-2 tw-rounded-md tw-border-stone-300 tw-focus:outline-none hover:tw-bg-stone-50"
+                          class="tw-relative tw-block tw-px-3 tw-py-2 tw-border tw-rounded-md tw-cursor-default tw-border-button tw-focus:outline-none tw-ring-1 tw-ring-button"
                         >
                           {{ sizeName }}
                         </div>
-                      </a>
-                    {% else %}
-                      <div
-                        id="size-choice-0-label"
-                        class="tw-relative tw-block tw-px-3 tw-py-2 tw-border tw-rounded-md tw-cursor-default tw-border-button tw-focus:outline-none tw-ring-1 tw-ring-button"
-                      >
-                        {{ sizeName }}
-                      </div>
-                    {% endif %}
-                  {% endfor %}
-                </div>
-              </fieldset>
-            </div>
-          {% endif %}
+                      {% endif %}
+                    {% endfor %}
+                  </div>
+                </fieldset>
+              </div>
+            {% endif %}
 
-          <!-- Color selector -->
-          {% if colors.size > 1 %}
-            <div class="tw-my-6 sm:tw-flex sm:tw-justify-between">
-              <fieldset>
-                <legend class="form__label">Color</legend>
-                <div class="tw-grid tw-grid-cols-3 tw-gap-4 tw-mt-1 tw-text-base tw-font-medium tw-text-stone-900 sm:tw-grid-cols-4">
-                  {% for color in colors %}
-                    {% assign color_option = color | split: '|:|' %}
-                    {% assign colorName = color_option[0] %}
-                    {% assign colorUrl = color_option[1] %}
-                    {% assign colorMatch = color_option[2] %}
+            <!-- Color selector -->
+            {% if colors.size > 1 %}
+              <div class="tw-my-6 sm:tw-flex sm:tw-justify-between">
+                <fieldset>
+                  <legend class="form__label">Color</legend>
+                  <div class="tw-grid tw-grid-cols-3 tw-gap-4 tw-mt-1 tw-text-base tw-font-medium tw-text-stone-900 sm:tw-grid-cols-4">
+                    {% for color in colors %}
+                      {% assign color_option = color | split: '|:|' %}
+                      {% assign colorName = color_option[0] %}
+                      {% assign colorUrl = color_option[1] %}
+                      {% assign colorMatch = color_option[2] %}
 
-                    <input
-                      type="radio"
-                      name="color-choice"
-                      value="{{ colorName }}"
-                      class="tw-sr-only"
-                      aria-labelledby="color-choice-0-label"
-                      aria-describedby="color-choice-0-description"
-                    >
-                    {% if colorMatch == 'false' %}
-                      <a
-                        href="{{colorUrl}}"
-                        title="View the {{colorName}} version of this {{ productTitle }} {{ currentType }}"
+                      <input
+                        type="radio"
+                        name="color-choice"
+                        value="{{ colorName }}"
+                        class="tw-sr-only"
+                        aria-labelledby="color-choice-0-label"
+                        aria-describedby="color-choice-0-description"
                       >
+                      {% if colorMatch == 'false' %}
+                        <a
+                          href="{{colorUrl}}"
+                          title="View the {{colorName}} version of this {{ productTitle }} {{ currentType }}"
+                        >
+                          <div
+                            id="color-choice-0-label"
+                            class="tw-relative tw-block tw-px-3 tw-py-2 tw-border-2 tw-rounded-md tw-border-stone-300 tw-focus:outline-none hover:tw-bg-stone-50"
+                          >
+                            {{ colorName }}
+                          </div>
+                        </a>
+                      {% else %}
                         <div
                           id="color-choice-0-label"
-                          class="tw-relative tw-block tw-px-3 tw-py-2 tw-border-2 tw-rounded-md tw-border-stone-300 tw-focus:outline-none hover:tw-bg-stone-50"
+                          class="tw-relative tw-block tw-px-3 tw-py-2 tw-border tw-rounded-md tw-cursor-default tw-border-button tw-focus:outline-none tw-ring-1 tw-ring-button"
                         >
                           {{ colorName }}
                         </div>
-                      </a>
-                    {% else %}
-                      <div
-                        id="color-choice-0-label"
-                        class="tw-relative tw-block tw-px-3 tw-py-2 tw-border tw-rounded-md tw-cursor-default tw-border-button tw-focus:outline-none tw-ring-1 tw-ring-button"
+                      {% endif %}
+                    {% endfor %}
+                  </div>
+                </fieldset>
+              </div>
+            {% endif %}
+
+            <!-- Template selector -->
+            {% if templates.size > 1 %}
+              <div class="tw-my-6 sm:tw-flex sm:tw-justify-between">
+                <fieldset>
+                  <legend class="form__label">Template</legend>
+                  <div class="tw-grid tw-grid-cols-1 tw-gap-4 tw-mt-1 sm:tw-grid-cols-3">
+                    {% for template in templates %}
+                      {% assign template_option = template | split: '|:|' %}
+                      {% assign templateName = template_option[0] %}
+                      {% assign templateUrl = template_option[1] %}
+                      {% assign templateImage = template_option[2] %}
+                      {% assign templateMatch = template_option[3] %}
+
+                      <input
+                        type="radio"
+                        name="template-choice"
+                        value="{{ templateName }}"
+                        class="tw-sr-only"
+                        aria-labelledby="template-choice-0-label"
+                        aria-describedby="template-choice-0-description"
                       >
-                        {{ colorName }}
-                      </div>
-                    {% endif %}
-                  {% endfor %}
-                </div>
-              </fieldset>
-            </div>
-          {% endif %}
 
-          <!-- Template selector -->
-          {% if templates.size > 1 %}
-            <div class="tw-my-6 sm:tw-flex sm:tw-justify-between">
-              <fieldset>
-                <legend class="form__label">Template</legend>
-                <div class="tw-grid tw-grid-cols-1 tw-gap-4 tw-mt-1 sm:tw-grid-cols-3">
-                  {% for template in templates %}
-                    {% assign template_option = template | split: '|:|' %}
-                    {% assign templateName = template_option[0] %}
-                    {% assign templateUrl = template_option[1] %}
-                    {% assign templateImage = template_option[2] %}
-                    {% assign templateMatch = template_option[3] %}
-
-                    <input
-                      type="radio"
-                      name="template-choice"
-                      value="{{ templateName }}"
-                      class="tw-sr-only"
-                      aria-labelledby="template-choice-0-label"
-                      aria-describedby="template-choice-0-description"
-                    >
-
-                    {% if templateMatch == 'false' %}
-                      <a
-                        href="{{templateUrl}}"
-                        title="View the {{templateName}} version of this {{ productTitle }} {{ currentType }}"
-                      >
+                      {% if templateMatch == 'false' %}
+                        <a
+                          href="{{templateUrl}}"
+                          title="View the {{templateName}} version of this {{ productTitle }} {{ currentType }}"
+                        >
+                          <div
+                            id="template-choice-0-label"
+                            class="tw-relative tw-block tw-px-1 tw-py-1 tw-border-2 tw-rounded-md tw-border-stone-300 tw-focus:outline-none hover:tw-bg-stone-50"
+                          >
+                            <img
+                              src="{{ templateImage }}"
+                              alt="{{ templateName }}"
+                              width="200"
+                              height="200"
+                              loading="lazy"
+                              class="tw-rounded-md object-cover w-full h-full tw-bg-background"
+                            >
+                          </div>
+                        </a>
+                      {% else %}
                         <div
                           id="template-choice-0-label"
-                          class="tw-relative tw-block tw-px-1 tw-py-1 tw-border-2 tw-rounded-md tw-border-stone-300 tw-focus:outline-none hover:tw-bg-stone-50"
+                          class="tw-relative tw-block tw-px-1 tw-py-1 tw-border tw-rounded-md tw-cursor-default tw-border-button tw-focus:outline-none tw-ring-1 tw-ring-button"
                         >
                           <img
                             src="{{ templateImage }}"
@@ -517,27 +628,13 @@
                             class="tw-rounded-md object-cover w-full h-full tw-bg-background"
                           >
                         </div>
-                      </a>
-                    {% else %}
-                      <div
-                        id="template-choice-0-label"
-                        class="tw-relative tw-block tw-px-1 tw-py-1 tw-border tw-rounded-md tw-cursor-default tw-border-button tw-focus:outline-none tw-ring-1 tw-ring-button"
-                      >
-                        <img
-                          src="{{ templateImage }}"
-                          alt="{{ templateName }}"
-                          width="200"
-                          height="200"
-                          loading="lazy"
-                          class="tw-rounded-md object-cover w-full h-full tw-bg-background"
-                        >
-                      </div>
-                    {% endif %}
-                  {% endfor %}
-                </div>
-              </fieldset>
-            </div>
-          {% endif %}
+                      {% endif %}
+                    {% endfor %}
+                  </div>
+                </fieldset>
+              </div>
+            {% endif %}
+          {% endcomment %}
         </form>
       </section>
 

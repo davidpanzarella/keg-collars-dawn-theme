@@ -2,7 +2,3 @@ MatchingTranslations:
   enabled: false
 TemplateLength:
   enabled: false
-PaginationSize:
-  enabled: true
-  min_size: 1
-  max_size: 250
