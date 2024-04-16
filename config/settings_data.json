@@ -121,6 +121,8 @@
     "checkout_logo_image": "shopify:\/\/shop_images\/logo-inverted_ee1f575e-bef2-4b0e-9196-f5a32e4e27fd.png",
     "checkout_logo_position": "left",
     "checkout_logo_size": "large",
+    "checkout_heading_font": "Source Sans Pro",
+    "checkout_body_font": "Source Sans Pro",
     "checkout_accent_color": "#f2a100",
     "checkout_button_color": "#f2a100",
     "colors_solid_button_labels": "#FFFFFF",
