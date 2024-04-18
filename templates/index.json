@@ -517,6 +517,52 @@
         "padding_bottom": 36
       }
     },
+    "image_with_text_rnLqHj": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_wFUhmD": {
+          "type": "heading",
+          "settings": {
+            "heading": "Paperboard Coasters",
+            "heading_size": "h1"
+          }
+        },
+        "text_y98Jt4": {
+          "type": "text",
+          "settings": {
+            "text": "<p>A lightweight and eco-friendly solution to the traditional expensive coarkboard coaster<\/p>",
+            "text_style": "body"
+          }
+        },
+        "button_teHqAW": {
+          "type": "button",
+          "settings": {
+            "button_label": "Learn More",
+            "button_link": "shopify:\/\/collections\/coasters",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_wFUhmD",
+        "text_y98Jt4",
+        "button_teHqAW"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Papercoasters_1_ba80463b-0531-4d1e-a4ef-3967de07c2f7.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "f4cfd689-94a4-48e2-bec3-09d1d9ef3453": {
       "type": "featured-collection",
       "settings": {
@@ -812,6 +858,7 @@
     "video",
     "multicolumn",
     "47f6c410-1eea-4bc6-bfec-51abae3bd91e",
+    "image_with_text_rnLqHj",
     "f4cfd689-94a4-48e2-bec3-09d1d9ef3453",
     "bad565bd-53f5-495d-8785-f50f064f2671",
     "8a7ec4c7-e647-4a13-91a0-eccf92b4f18c",
