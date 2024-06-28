@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "name": "t:sections.footer.name",
   "type": "footer",
@@ -8,6 +17,9 @@
         "292577cd-42c1-4114-be56-c732dc28f2a0": {
           "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
           "settings": {
+            "title": "",
+            "title_color": "",
+            "alignment": "center",
             "html_area": ""
           }
         }
@@ -54,41 +66,6 @@
         "full_width": true,
         "padding_top": 60,
         "padding_bottom": 60
-      }
-    },
-    "00d34fd5-3615-41da-8aaf-6250d5161ff9": {
-      "type": "newsletter",
-      "blocks": {
-        "sections--20079615213878__00d34fd5-3615-41da-8aaf-6250d5161ff9-heading-1": {
-          "type": "heading",
-          "settings": {
-            "heading": "Subscribe to our emails",
-            "heading_size": "h1"
-          }
-        },
-        "sections--20079615213878__00d34fd5-3615-41da-8aaf-6250d5161ff9-paragraph-1": {
-          "type": "paragraph",
-          "settings": {
-            "text": "<p>Be the first to know about new collections and exclusive offers.<\/p>"
-          }
-        },
-        "sections--20079615213878__00d34fd5-3615-41da-8aaf-6250d5161ff9-email_form-1": {
-          "type": "email_form",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "sections--20079615213878__00d34fd5-3615-41da-8aaf-6250d5161ff9-heading-1",
-        "sections--20079615213878__00d34fd5-3615-41da-8aaf-6250d5161ff9-paragraph-1",
-        "sections--20079615213878__00d34fd5-3615-41da-8aaf-6250d5161ff9-email_form-1"
-      ],
-      "disabled": true,
-      "settings": {
-        "color_scheme": "background-2",
-        "full_width": true,
-        "padding_top": 48,
-        "padding_bottom": 48
       }
     },
     "footer": {
@@ -139,7 +116,6 @@
   "order": [
     "1692824378c7a89bb3",
     "6097d134-9843-4af7-87aa-4ef82b779e34",
-    "00d34fd5-3615-41da-8aaf-6250d5161ff9",
     "footer"
   ]
 }
