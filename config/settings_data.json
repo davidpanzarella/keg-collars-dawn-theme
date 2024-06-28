@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "current": {
     "logo": "shopify:\/\/shop_images\/logo-inverted_811e4869-b770-49b5-93cd-599d9c7a5643.png",
@@ -189,13 +198,13 @@
         }
       },
       "15773640700261759505": {
-        "type": "shopify:\/\/apps\/customerhub\/blocks\/mini-hub\/0fb3ba0b-4c65-4919-a85a-48bc2d368e9c",
+        "type": "shopify:\/\/apps\/customer-accounts-hub\/blocks\/mini-hub\/0fb3ba0b-4c65-4919-a85a-48bc2d368e9c",
         "disabled": true,
         "settings": {
           "primary_color": "#f2a100",
-          "secondary_color": "#fff",
-          "text_color": "#fff",
-          "background_color": "#fff",
+          "secondary_color": "#ffffff",
+          "text_color": "#ffffff",
+          "background_color": "#ffffff",
           "minihub_position": "left",
           "minihub_load_from": "always_visible",
           "show_recently_viewed": "yes",
@@ -209,10 +218,23 @@
           "url_override": ""
         }
       },
-      "341186785192672687": {
-        "type": "shopify:\/\/apps\/seal-subscriptions\/blocks\/subscription-script-append\/13b25004-a140-4ab7-b5fe-29918f759699",
-        "disabled": false,
+      "3842503713604335150": {
+        "type": "shopify:\/\/apps\/vify-order-printer\/blocks\/invoice_download_embed\/8e413796-b0ed-4419-ae4e-893123b931a9",
+        "disabled": true,
         "settings": {
+          "icon": true,
+          "label": "Download PDF Invoice",
+          "fontSize": 16,
+          "align": "center",
+          "singleLine": false,
+          "autoDetectLanguage": false,
+          "language": "en",
+          "color": "#ffffff",
+          "bgColor": "#1A7BFF",
+          "marginTop": 10,
+          "marginBottom": 10,
+          "marginLeft": 10,
+          "marginRight": 10
         }
       }
     },
