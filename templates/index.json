@@ -237,7 +237,7 @@
         "button_MdArFr": {
           "type": "button",
           "settings": {
-            "button_label": "Get Started",
+            "button_label": "Get Started!",
             "button_link": "",
             "button_style_secondary": false
           }
