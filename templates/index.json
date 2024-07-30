@@ -237,7 +237,7 @@
         "button_MdArFr": {
           "type": "button",
           "settings": {
-            "button_label": "Get Started!",
+            "button_label": "Browse Templates",
             "button_link": "shopify:\/\/collections\/template-keg-collars",
             "button_style_secondary": false
           }
