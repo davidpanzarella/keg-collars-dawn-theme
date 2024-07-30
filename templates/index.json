@@ -868,6 +868,52 @@
       "settings": {
         "include_margins": true
       }
+    },
+    "image_with_text_tixXBB": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_A7LFwE": {
+          "type": "heading",
+          "settings": {
+            "heading": "Let's be unique!",
+            "heading_size": "h1"
+          }
+        },
+        "text_ypFjrL": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Enhance your brand with our unique keg collars, available in a variety of shapes at no extra charge! Make your kegs stand out with custom shapes that reflect your style and catch customers' eyes. Choose from an array of shapes and elevate your branding effortlessly. Stand out from the competition with our distinctive and customizable keg collars. All starting at a 100 piece minimum. <\/p>",
+            "text_style": "body"
+          }
+        },
+        "button_pbdig4": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_A7LFwE",
+        "text_ypFjrL",
+        "button_pbdig4"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Keg_Collar_Shapes_and_Sizes_Square_Image.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -890,6 +936,7 @@
     "b4d860ee-52a6-46bc-83ee-eef116d64930",
     "8b753705-6866-48b2-9370-b5edcb0b31c1",
     "fa6d8063-4741-4d16-83e1-222216208a6e",
-    "1692824105dbecaf09"
+    "1692824105dbecaf09",
+    "image_with_text_tixXBB"
   ]
 }
