@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "44ab272c-9ffe-4cf6-9d0d-cee3ac2041cd": {
@@ -208,34 +217,50 @@
         "padding_bottom": 52
       }
     },
-    "rich_text": {
-      "type": "rich-text",
+    "image_with_text_e8NDih": {
+      "type": "image-with-text",
       "blocks": {
-        "heading": {
+        "heading_ex9qGQ": {
           "type": "heading",
           "settings": {
             "heading": "Need help designing your keg collar?",
             "heading_size": "h1"
           }
         },
-        "text": {
+        "text_WQbLM6": {
           "type": "text",
           "settings": {
-            "text": "<p>Browse our collection of easy to complete do-it-yourself (DIY) keg collar templates. Simply upload your<br\/>logo and fill in the information fields for a personalized keg collar in matter of minutes.<br\/><\/p>"
+            "text": "<p>Browse our collection of easy to complete do-it-yourself (DIY) keg collar templates. Simply upload your logo and fill in the information fields for a personalized keg collar in matter of minutes.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "button_MdArFr": {
+          "type": "button",
+          "settings": {
+            "button_label": "Get Started",
+            "button_link": "",
+            "button_style_secondary": false
           }
         }
       },
       "block_order": [
-        "heading",
-        "text"
+        "heading_ex9qGQ",
+        "text_WQbLM6",
+        "button_MdArFr"
       ],
       "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "accent-2",
-        "full_width": true,
-        "padding_top": 48,
-        "padding_bottom": 48
+        "image": "shopify:\/\/shop_images\/design_your_own_Instagram_Post.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "collage": {
@@ -850,7 +875,7 @@
     "image_banner",
     "9eb9690d-003e-48a6-8d25-17cc5e97f5f8",
     "403150a4-ccdc-4263-b4dd-4b9fb9cab59d",
-    "rich_text",
+    "image_with_text_e8NDih",
     "collage",
     "9c5e0290-9f6c-4655-bc5e-1f5d781bf522",
     "68684dd1-411b-4c26-a14f-a07231baa480",
