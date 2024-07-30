@@ -295,10 +295,56 @@
         "button_pbdig4"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Keg_Collar_Shapes_and_Sizes_Square_Image.png",
+        "image": "shopify:\/\/shop_images\/Keg_Collar_Shapes_and_Sizes_Square_Image_1.png",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_rnLqHj": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_wFUhmD": {
+          "type": "heading",
+          "settings": {
+            "heading": "Paperboard Coasters",
+            "heading_size": "h1"
+          }
+        },
+        "text_y98Jt4": {
+          "type": "text",
+          "settings": {
+            "text": "<p>A lightweight and eco-friendly solution to the traditional expensive coarkboard coaster<\/p>",
+            "text_style": "body"
+          }
+        },
+        "button_teHqAW": {
+          "type": "button",
+          "settings": {
+            "button_label": "Learn More",
+            "button_link": "shopify:\/\/collections\/coasters",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_wFUhmD",
+        "text_y98Jt4",
+        "button_teHqAW"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Papercoasters_1_ba80463b-0531-4d1e-a4ef-3967de07c2f7.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
@@ -617,52 +663,6 @@
         "padding_bottom": 36
       }
     },
-    "image_with_text_rnLqHj": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_wFUhmD": {
-          "type": "heading",
-          "settings": {
-            "heading": "Paperboard Coasters",
-            "heading_size": "h1"
-          }
-        },
-        "text_y98Jt4": {
-          "type": "text",
-          "settings": {
-            "text": "<p>A lightweight and eco-friendly solution to the traditional expensive coarkboard coaster<\/p>",
-            "text_style": "body"
-          }
-        },
-        "button_teHqAW": {
-          "type": "button",
-          "settings": {
-            "button_label": "Learn More",
-            "button_link": "shopify:\/\/collections\/coasters",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_wFUhmD",
-        "text_y98Jt4",
-        "button_teHqAW"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/Papercoasters_1_ba80463b-0531-4d1e-a4ef-3967de07c2f7.jpg",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "8a7ec4c7-e647-4a13-91a0-eccf92b4f18c": {
       "type": "featured-collection",
       "settings": {
@@ -924,6 +924,7 @@
     "403150a4-ccdc-4263-b4dd-4b9fb9cab59d",
     "image_with_text_e8NDih",
     "image_with_text_tixXBB",
+    "image_with_text_rnLqHj",
     "collage",
     "9c5e0290-9f6c-4655-bc5e-1f5d781bf522",
     "68684dd1-411b-4c26-a14f-a07231baa480",
@@ -932,7 +933,6 @@
     "multicolumn",
     "47f6c410-1eea-4bc6-bfec-51abae3bd91e",
     "f4cfd689-94a4-48e2-bec3-09d1d9ef3453",
-    "image_with_text_rnLqHj",
     "8a7ec4c7-e647-4a13-91a0-eccf92b4f18c",
     "bad565bd-53f5-495d-8785-f50f064f2671",
     "b4d860ee-52a6-46bc-83ee-eef116d64930",
