@@ -889,8 +889,8 @@
         "button_pbdig4": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
-            "button_link": "",
+            "button_label": "Shop Keg Collars",
+            "button_link": "shopify:\/\/collections\/custom-design-keg-collars",
             "button_style_secondary": false
           }
         }
