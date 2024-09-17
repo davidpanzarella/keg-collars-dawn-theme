@@ -14,9 +14,8 @@
       "blocks": {
         "template--20079615312182__44ab272c-9ffe-4cf6-9d0d-cee3ac2041cd-slide-1": {
           "type": "slide",
-          "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/Coffee_Growler_Tags_Homepage.jpg",
+            "image": "shopify:\/\/shop_images\/Coffee_Homepage.svg",
             "heading": "<strong>New Cold Brew Coffee <\/strong>",
             "heading_size": "h0",
             "subheading": "<strong>Growler Tags<\/strong>",
