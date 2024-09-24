@@ -15,12 +15,12 @@
         "template--20079615312182__44ab272c-9ffe-4cf6-9d0d-cee3ac2041cd-slide-1": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Coffee_Homepage.svg",
-            "heading": "<strong>New Cold Brew<\/strong>",
+            "image": "shopify://shop_images/Coffee_Growler_TagsSVG.svg",
+            "heading": "<strong>SALE: Growler Tags</strong>",
             "heading_size": "h0",
-            "subheading": "<strong>Growler Tags<\/strong>",
+            "subheading": "<strong>Use Code Growler15</strong>",
             "button_label": "Shop Now",
-            "link": "shopify:\/\/collections\/coffee-collars-caps",
+            "link": "shopify://collections/coffee-collars-caps",
             "button_style_secondary": false,
             "box_align": "middle-center",
             "show_text_box": true,
@@ -33,12 +33,12 @@
         "template--20079615312182__44ab272c-9ffe-4cf6-9d0d-cee3ac2041cd-slide-2": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/KegCollars_Custom_Upload.png",
+            "image": "shopify://shop_images/KegCollars_Custom_Upload.png",
             "heading": "Design Your Own",
             "heading_size": "h1",
             "subheading": "Using one of our easy-to-use templates",
             "button_label": "Start Designing",
-            "link": "shopify:\/\/collections\/template-keg-collars",
+            "link": "shopify://collections/template-keg-collars",
             "button_style_secondary": false,
             "box_align": "top-right",
             "show_text_box": true,
@@ -51,12 +51,12 @@
         "857f37d6-14ee-4427-a512-c657341dc6ee": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Ready_to_ship_Keg_Collars.jpg",
+            "image": "shopify://shop_images/Ready_to_ship_Keg_Collars.jpg",
             "heading": "Ready to Ship",
             "heading_size": "h1",
             "subheading": "Stock collars, caps and labels ready to get to you FAST!",
             "button_label": "Order Now",
-            "link": "shopify:\/\/collections",
+            "link": "shopify://collections",
             "button_style_secondary": false,
             "box_align": "middle-center",
             "show_text_box": true,
@@ -104,10 +104,10 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "Shop all",
-            "button_link_1": "shopify:\/\/collections\/all",
+            "button_link_1": "shopify://collections/all",
             "button_style_secondary_1": false,
             "button_label_2": "Design Your Own!",
-            "button_link_2": "shopify:\/\/collections\/template-keg-collars",
+            "button_link_2": "shopify://collections/template-keg-collars",
             "button_style_secondary_2": false
           }
         }
@@ -119,8 +119,8 @@
       ],
       "disabled": true,
       "settings": {
-        "image": "shopify:\/\/shop_images\/Coffee-Cartel.png",
-        "image_2": "shopify:\/\/shop_images\/Custom_Design_Keg_Collar_Studio.png",
+        "image": "shopify://shop_images/Coffee-Cartel.png",
+        "image_2": "shopify://shop_images/Custom_Design_Keg_Collar_Studio.png",
         "image_overlay_opacity": 60,
         "image_height": "small",
         "desktop_content_position": "bottom-center",
@@ -193,7 +193,7 @@
           "type": "button",
           "settings": {
             "button_label": "Place a ReOrder",
-            "button_link": "shopify:\/\/pages\/reorder",
+            "button_link": "shopify://pages/reorder",
             "button_style_secondary": false,
             "button_label_2": "",
             "button_link_2": "",
@@ -228,7 +228,7 @@
         "text_WQbLM6": {
           "type": "text",
           "settings": {
-            "text": "<p>Browse our collection of easy to complete do-it-yourself (DIY) keg collar templates. Simply upload your logo and fill in the information fields for a personalized keg collar in matter of minutes.<\/p>",
+            "text": "<p>Browse our collection of easy to complete do-it-yourself (DIY) keg collar templates. Simply upload your logo and fill in the information fields for a personalized keg collar in matter of minutes.</p>",
             "text_style": "body"
           }
         },
@@ -236,7 +236,7 @@
           "type": "button",
           "settings": {
             "button_label": "Browse Templates",
-            "button_link": "shopify:\/\/collections\/template-keg-collars",
+            "button_link": "shopify://collections/template-keg-collars",
             "button_style_secondary": false
           }
         }
@@ -247,7 +247,7 @@
         "button_MdArFr"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/design_your_own_Instagram_Post.png",
+        "image": "shopify://shop_images/design_your_own_Instagram_Post.png",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -274,7 +274,7 @@
         "text_ypFjrL": {
           "type": "text",
           "settings": {
-            "text": "<p>You'll only find these here! <\/p><p>Enhance your brand with our unique keg collars, available in a variety of shapes at no extra charge! Make your kegs stand out with custom shapes that reflect your style and catch customers' eyes. Choose from an array of shapes and elevate your branding effortlessly. Stand out from the competition with our distinctive and customizable keg collars. All starting at a 100 piece minimum. <\/p>",
+            "text": "<p>You'll only find these here! </p><p>Enhance your brand with our unique keg collars, available in a variety of shapes at no extra charge! Make your kegs stand out with custom shapes that reflect your style and catch customers' eyes. Choose from an array of shapes and elevate your branding effortlessly. Stand out from the competition with our distinctive and customizable keg collars. All starting at a 100 piece minimum. </p>",
             "text_style": "body"
           }
         },
@@ -282,7 +282,7 @@
           "type": "button",
           "settings": {
             "button_label": "Shop Custom Keg Collars",
-            "button_link": "shopify:\/\/collections\/custom-design-keg-collars",
+            "button_link": "shopify://collections/custom-design-keg-collars",
             "button_style_secondary": false
           }
         }
@@ -293,7 +293,7 @@
         "button_pbdig4"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Keg_Collar_Shapes_and_Sizes_Square_Image_1.png",
+        "image": "shopify://shop_images/Keg_Collar_Shapes_and_Sizes_Square_Image_1.png",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
@@ -320,7 +320,7 @@
         "text_y98Jt4": {
           "type": "text",
           "settings": {
-            "text": "<p>A lightweight and eco-friendly solution to the traditional expensive coarkboard coaster<\/p>",
+            "text": "<p>A lightweight and eco-friendly solution to the traditional expensive coarkboard coaster</p>",
             "text_style": "body"
           }
         },
@@ -328,7 +328,7 @@
           "type": "button",
           "settings": {
             "button_label": "Learn More",
-            "button_link": "shopify:\/\/collections\/coasters",
+            "button_link": "shopify://collections/coasters",
             "button_style_secondary": false
           }
         }
@@ -339,7 +339,7 @@
         "button_teHqAW"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Papercoasters_1_ba80463b-0531-4d1e-a4ef-3967de07c2f7.jpg",
+        "image": "shopify://shop_images/Papercoasters_1_ba80463b-0531-4d1e-a4ef-3967de07c2f7.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -398,7 +398,7 @@
       "settings": {
         "title": "Template Keg Collars",
         "heading_size": "h2",
-        "description": "<p>{{ shop.brand.short_description }}<\/p>",
+        "description": "<p>{{ shop.brand.short_description }}</p>",
         "show_description": true,
         "description_style": "subtitle",
         "product_collection": "template-keg-collars",
@@ -427,14 +427,14 @@
         "template--20079615312182__68684dd1-411b-4c26-a14f-a07231baa480-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Visit our pre-printed stock shop with various ready-to-ship keg collars, keg caps, coasters and required government health warning labels.<\/p>"
+            "text": "<p>Visit our pre-printed stock shop with various ready-to-ship keg collars, keg caps, coasters and required government health warning labels.</p>"
           }
         },
         "template--20079615312182__68684dd1-411b-4c26-a14f-a07231baa480-button-1": {
           "type": "button",
           "settings": {
             "button_label": "Shop Now",
-            "button_link": "shopify:\/\/collections\/stock-keg-collars",
+            "button_link": "shopify://collections/stock-keg-collars",
             "button_style_secondary": false,
             "button_label_2": "",
             "button_link_2": "",
@@ -461,7 +461,7 @@
       "settings": {
         "title": "Featured Stock Keg Collars",
         "heading_size": "h2",
-        "description": "<p>All items are printed and ready to ship!<\/p>",
+        "description": "<p>All items are printed and ready to ship!</p>",
         "show_description": false,
         "description_style": "body",
         "collection": "stock-keg-collars",
@@ -491,7 +491,7 @@
         "heading": "",
         "heading_size": "h1",
         "enable_video_looping": false,
-        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "description": "",
         "full_width": false,
         "color_scheme": "background-1",
@@ -506,7 +506,7 @@
           "type": "column",
           "settings": {
             "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
             "link": ""
           }
@@ -515,7 +515,7 @@
           "type": "column",
           "settings": {
             "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
             "link": ""
           }
@@ -524,7 +524,7 @@
           "type": "column",
           "settings": {
             "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
             "link": ""
           }
@@ -533,7 +533,7 @@
           "type": "column",
           "settings": {
             "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
             "link": ""
           }
@@ -724,7 +724,7 @@
           "type": "column",
           "settings": {
             "title": "",
-            "text": "<p>Our favorite thing about using kegcollars.net is the ease of ordering, the superior customer service, and most importantly, the quality of the product.<br\/><\/p><p>- Upslope Brewing<br\/><\/p>",
+            "text": "<p>Our favorite thing about using kegcollars.net is the ease of ordering, the superior customer service, and most importantly, the quality of the product.<br/></p><p>- Upslope Brewing<br/></p>",
             "link_label": "",
             "link": ""
           }
@@ -733,7 +733,7 @@
           "type": "column",
           "settings": {
             "title": "",
-            "text": "<p>We found out about keg collars.net from seeing the quality of work they’d done for our friends and their breweries. Keg Collars.net makes it quick, easy and effortless to order.<br\/><\/p><p>-Goodlife Brewing<br\/><\/p>",
+            "text": "<p>We found out about keg collars.net from seeing the quality of work they’d done for our friends and their breweries. Keg Collars.net makes it quick, easy and effortless to order.<br/></p><p>-Goodlife Brewing<br/></p>",
             "link_label": "",
             "link": ""
           }
@@ -742,7 +742,7 @@
           "type": "column",
           "settings": {
             "title": "",
-            "text": "<p>We love how simple it is to customize the keg collars to fit our needs. The ability to track our orders as it progresses in production is also really neat.<br\/><\/p><p>-Cartel Coffee Lab<\/p>",
+            "text": "<p>We love how simple it is to customize the keg collars to fit our needs. The ability to track our orders as it progresses in production is also really neat.<br/></p><p>-Cartel Coffee Lab</p>",
             "link_label": "",
             "link": ""
           }
@@ -776,7 +776,7 @@
         "template--20079615312182__8b753705-6866-48b2-9370-b5edcb0b31c1-slide-1": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Keg_Collars_Coasters.jpg",
+            "image": "shopify://shop_images/Keg_Collars_Coasters.jpg",
             "heading": "Image slide",
             "heading_size": "h1",
             "subheading": "Tell your brand's story through images",
@@ -794,7 +794,7 @@
         "template--20079615312182__8b753705-6866-48b2-9370-b5edcb0b31c1-slide-2": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Keg_Wraps.jpg",
+            "image": "shopify://shop_images/Keg_Wraps.jpg",
             "heading": "Image slide",
             "heading_size": "h1",
             "subheading": "Tell your brand's story through images",
@@ -812,7 +812,7 @@
         "04d81600-df6e-4f69-8607-65ba45c93163": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Design_Keg_Collars_Online.jpg",
+            "image": "shopify://shop_images/Design_Keg_Collars_Online.jpg",
             "heading": "Image slide",
             "heading_size": "h1",
             "subheading": "Tell your brand's story through images",
@@ -852,7 +852,7 @@
           "type": "column",
           "settings": {
             "title": "Are your collars TTB approved?",
-            "text": "<p>We can provide information and tips for TTB compliance and regulation.<\/p>",
+            "text": "<p>We can provide information and tips for TTB compliance and regulation.</p>",
             "link_label": "",
             "link": ""
           }
@@ -861,7 +861,7 @@
           "type": "column",
           "settings": {
             "title": "What do you print your collars on?",
-            "text": "<p>Our house stock is a 12pt, C1S paperboard that is 30% post consumer recucled material.<\/p>",
+            "text": "<p>Our house stock is a 12pt, C1S paperboard that is 30% post consumer recucled material.</p>",
             "link_label": "",
             "link": ""
           }
@@ -870,7 +870,7 @@
           "type": "column",
           "settings": {
             "title": "Can you design my keg collar?",
-            "text": "<p>We do not design collars but we do have easy to complete keg collar templates. We can also recoment a wonderful graphic artist if you would like.<\/p>",
+            "text": "<p>We do not design collars but we do have easy to complete keg collar templates. We can also recoment a wonderful graphic artist if you would like.</p>",
             "link_label": "",
             "link": ""
           }
@@ -879,7 +879,7 @@
           "type": "column",
           "settings": {
             "title": "Where are items shipped from?",
-            "text": "<p>We are located in the beautiful Pacific Northwest. Bend, Oregon to be exact!<\/p>",
+            "text": "<p>We are located in the beautiful Pacific Northwest. Bend, Oregon to be exact!</p>",
             "link_label": "",
             "link": ""
           }
