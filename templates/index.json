@@ -951,10 +951,11 @@
         "column_kgKHiA": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
+            "image": "shopify://shop_images/BlueGreenGradient_f9e62877-42b7-41eb-ab8e-156c9da12df4.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "Blue-Green Gradient Stock Collar",
+            "link": "shopify://products/blue-green-gradient-keg-collars"
           }
         },
         "column_RDWEMU": {
