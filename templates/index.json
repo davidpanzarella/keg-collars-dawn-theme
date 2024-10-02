@@ -234,6 +234,73 @@
         "padding_bottom": 52
       }
     },
+    "multicolumn_n6zGe3": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_H3HXWc": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/PurplePinkGradient.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "Purple-Pink Gradient Stock Collar",
+            "link": "shopify://products/purple-pink-gradient-keg-collars"
+          }
+        },
+        "column_kgKHiA": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/BlueGreenGradient_f9e62877-42b7-41eb-ab8e-156c9da12df4.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "Blue-Green Gradient Stock Collar",
+            "link": "shopify://products/blue-green-gradient-keg-collars"
+          }
+        },
+        "column_RDWEMU": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/YellowOrangeGradient_7f2c3730-be14-42ef-a9e1-0a9aa18d6c83.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "Yellow-Orange Gradient Keg Collar",
+            "link": "shopify://products/yellow-orange-gradient-keg-collars"
+          }
+        },
+        "column_NRwHHb": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/BrownGradient_ea2549a9-efe2-45e6-809e-eb000995f586.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "Brown-Tan Gradient Keg Collar",
+            "link": "shopify://products/brown-tan-gradient-keg-collars-copy"
+          }
+        }
+      },
+      "block_order": [
+        "column_H3HXWc",
+        "column_kgKHiA",
+        "column_RDWEMU",
+        "column_NRwHHb"
+      ],
+      "settings": {
+        "title": "NEW! Gradient Stock Collars - Ready to Ship!",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "image_with_text_e8NDih": {
       "type": "image-with-text",
       "blocks": {
@@ -445,8 +512,8 @@
         "show_description": false,
         "description_style": "body",
         "collection": "stock-keg-collars",
-        "products_to_show": 8,
-        "columns_desktop": 4,
+        "products_to_show": 5,
+        "columns_desktop": 5,
         "full_width": false,
         "show_view_all": false,
         "view_all_style": "solid",
@@ -892,73 +959,6 @@
       "type": "apps",
       "settings": {
         "include_margins": true
-      }
-    },
-    "multicolumn_n6zGe3": {
-      "type": "multicolumn",
-      "blocks": {
-        "column_H3HXWc": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/PurplePinkGradient.jpg",
-            "title": "",
-            "text": "",
-            "link_label": "Purple-Pink Gradient Stock Collar",
-            "link": "shopify://products/purple-pink-gradient-keg-collars"
-          }
-        },
-        "column_kgKHiA": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/BlueGreenGradient_f9e62877-42b7-41eb-ab8e-156c9da12df4.jpg",
-            "title": "",
-            "text": "",
-            "link_label": "Blue-Green Gradient Stock Collar",
-            "link": "shopify://products/blue-green-gradient-keg-collars"
-          }
-        },
-        "column_RDWEMU": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/YellowOrangeGradient_7f2c3730-be14-42ef-a9e1-0a9aa18d6c83.jpg",
-            "title": "",
-            "text": "",
-            "link_label": "Yellow-Orange Gradient Keg Collar",
-            "link": "shopify://products/yellow-orange-gradient-keg-collars"
-          }
-        },
-        "column_NRwHHb": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/BrownGradient_ea2549a9-efe2-45e6-809e-eb000995f586.jpg",
-            "title": "",
-            "text": "",
-            "link_label": "Brown-Tan Gradient Keg Collar",
-            "link": "shopify://products/brown-tan-gradient-keg-collars-copy"
-          }
-        }
-      },
-      "block_order": [
-        "column_H3HXWc",
-        "column_kgKHiA",
-        "column_RDWEMU",
-        "column_NRwHHb"
-      ],
-      "settings": {
-        "title": "NEW! Gradient Stock Collars - Ready to Ship!",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 4,
-        "column_alignment": "left",
-        "background_style": "primary",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
       }
     }
   },
