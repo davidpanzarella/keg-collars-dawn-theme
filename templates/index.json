@@ -326,6 +326,47 @@
         "padding_bottom": 36
       }
     },
+    "collage": {
+      "type": "collage",
+      "blocks": {
+        "product_rbHPfY": {
+          "type": "product",
+          "settings": {
+            "product": "blue-green-gradient-keg-collars",
+            "second_image": false
+          }
+        },
+        "product_bn7DpJ": {
+          "type": "product",
+          "settings": {
+            "product": "purple-pink-gradient-keg-collars",
+            "second_image": false
+          }
+        },
+        "product_6rEJU8": {
+          "type": "product",
+          "settings": {
+            "product": "yellow-orange-gradient-keg-collars",
+            "second_image": false
+          }
+        }
+      },
+      "block_order": [
+        "product_rbHPfY",
+        "product_bn7DpJ",
+        "product_6rEJU8"
+      ],
+      "settings": {
+        "heading": "NEW! Gradient Stock Collars - Ready to Ship!",
+        "heading_size": "h1",
+        "desktop_layout": "left",
+        "mobile_layout": "column",
+        "card_styles": "none",
+        "color_scheme": "background-2",
+        "padding_top": 48,
+        "padding_bottom": 48
+      }
+    },
     "image_with_text_rnLqHj": {
       "type": "image-with-text",
       "blocks": {
@@ -370,47 +411,6 @@
         "mobile_content_alignment": "left",
         "padding_top": 36,
         "padding_bottom": 36
-      }
-    },
-    "collage": {
-      "type": "collage",
-      "blocks": {
-        "product_rbHPfY": {
-          "type": "product",
-          "settings": {
-            "product": "blue-green-gradient-keg-collars",
-            "second_image": false
-          }
-        },
-        "product_bn7DpJ": {
-          "type": "product",
-          "settings": {
-            "product": "purple-pink-gradient-keg-collars",
-            "second_image": false
-          }
-        },
-        "product_6rEJU8": {
-          "type": "product",
-          "settings": {
-            "product": "yellow-orange-gradient-keg-collars",
-            "second_image": false
-          }
-        }
-      },
-      "block_order": [
-        "product_rbHPfY",
-        "product_bn7DpJ",
-        "product_6rEJU8"
-      ],
-      "settings": {
-        "heading": "NEW! Gradient Stock Collars - Ready to Ship!",
-        "heading_size": "h1",
-        "desktop_layout": "left",
-        "mobile_layout": "column",
-        "card_styles": "none",
-        "color_scheme": "background-2",
-        "padding_top": 48,
-        "padding_bottom": 48
       }
     },
     "9c5e0290-9f6c-4655-bc5e-1f5d781bf522": {
@@ -934,6 +934,60 @@
       "settings": {
         "include_margins": true
       }
+    },
+    "multicolumn_n6zGe3": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_H3HXWc": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/PurplePinkGradient.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "Purple-Pink Gradient Stock Collar",
+            "link": "shopify://products/purple-pink-gradient-keg-collars"
+          }
+        },
+        "column_kgKHiA": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_RDWEMU": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_H3HXWc",
+        "column_kgKHiA",
+        "column_RDWEMU"
+      ],
+      "settings": {
+        "title": "NEW! Gradient Stock Collars - Ready to Ship!",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -957,6 +1011,7 @@
     "b4d860ee-52a6-46bc-83ee-eef116d64930",
     "8b753705-6866-48b2-9370-b5edcb0b31c1",
     "fa6d8063-4741-4d16-83e1-222216208a6e",
-    "1692824105dbecaf09"
+    "1692824105dbecaf09",
+    "multicolumn_n6zGe3"
   ]
 }
