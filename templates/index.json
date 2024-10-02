@@ -375,36 +375,38 @@
     "collage": {
       "type": "collage",
       "blocks": {
-        "collection-0": {
-          "type": "collection",
+        "product_rbHPfY": {
+          "type": "product",
           "settings": {
-            "collection": "custom-design-keg-collars"
+            "product": "blue-green-gradient-keg-collars",
+            "second_image": false
           }
         },
-        "collection-1": {
-          "type": "collection",
+        "product_bn7DpJ": {
+          "type": "product",
           "settings": {
-            "collection": "stock-keg-collars"
+            "product": "purple-pink-gradient-keg-collars",
+            "second_image": false
           }
         },
-        "5183b4c7-ea72-4f0e-b21b-2ae941383857": {
-          "type": "collection",
+        "product_6rEJU8": {
+          "type": "product",
           "settings": {
-            "collection": "template-keg-collars"
+            "product": "yellow-orange-gradient-keg-collars",
+            "second_image": false
           }
         }
       },
       "block_order": [
-        "collection-0",
-        "collection-1",
-        "5183b4c7-ea72-4f0e-b21b-2ae941383857"
+        "product_rbHPfY",
+        "product_bn7DpJ",
+        "product_6rEJU8"
       ],
-      "disabled": true,
       "settings": {
-        "heading": "Find the Perfect Keg Collar for Every Requirement",
-        "heading_size": "h2",
-        "desktop_layout": "right",
-        "mobile_layout": "collage",
+        "heading": "NEW! Gradient Stock Collars - Ready to Ship!",
+        "heading_size": "h1",
+        "desktop_layout": "left",
+        "mobile_layout": "column",
         "card_styles": "none",
         "color_scheme": "background-2",
         "padding_top": 48,
@@ -941,8 +943,8 @@
     "403150a4-ccdc-4263-b4dd-4b9fb9cab59d",
     "image_with_text_e8NDih",
     "image_with_text_tixXBB",
-    "image_with_text_rnLqHj",
     "collage",
+    "image_with_text_rnLqHj",
     "9c5e0290-9f6c-4655-bc5e-1f5d781bf522",
     "68684dd1-411b-4c26-a14f-a07231baa480",
     "featured_collection",
