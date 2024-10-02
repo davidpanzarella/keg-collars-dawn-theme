@@ -503,6 +503,84 @@
         "padding_bottom": 52
       }
     },
+    "multicolumn_hJPMb7": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_HH8PBi": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/KegMaintenanceYellowRepeat.jpg",
+            "title": "Maintenance Needed",
+            "text": "<p>5.6in Keg Collar</p>",
+            "link_label": "Ready to Ship",
+            "link": "shopify://products/maintenance-needed-black-and-white-collar-copy"
+          }
+        },
+        "column_iJGCBa": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/NewMaintenaceYellowCheckBoxes.jpg",
+            "title": "Checkboxes Maintenance",
+            "text": "<p>5.6in Keg Collar</p>",
+            "link_label": "Ready to Ship",
+            "link": "shopify://products/maintenance-needed-yellow-collar-copy"
+          }
+        },
+        "column_jbE8QD": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/MaintenanceNeededBlackandWhite.jpg",
+            "title": "Maintenance Write On",
+            "text": "<p>5.6in Keg Collar</p>",
+            "link_label": "Ready to Ship",
+            "link": "shopify://products/maintenance-needed-black-and-white-collar"
+          }
+        },
+        "column_pjzcFJ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Sold.jpg",
+            "title": "Sold",
+            "text": "<p>Hexagon</p>",
+            "link_label": "Ready to Ship",
+            "link": "shopify://products/red-sold-hexagon-keg-collar"
+          }
+        },
+        "column_hUxTAX": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/YellowReserved-02.jpg",
+            "title": "Reserved",
+            "text": "<p>6.5 in Keg Collar</p>",
+            "link_label": "Ready to Ship",
+            "link": "shopify://products/yellow-reserved-keg-collar"
+          }
+        }
+      },
+      "block_order": [
+        "column_HH8PBi",
+        "column_iJGCBa",
+        "column_jbE8QD",
+        "column_pjzcFJ",
+        "column_hUxTAX"
+      ],
+      "settings": {
+        "title": "Brewery Management Keg Collars",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 5,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
@@ -973,6 +1051,7 @@
     "image_with_text_rnLqHj",
     "9c5e0290-9f6c-4655-bc5e-1f5d781bf522",
     "68684dd1-411b-4c26-a14f-a07231baa480",
+    "multicolumn_hJPMb7",
     "featured_collection",
     "video",
     "multicolumn",
