@@ -32,6 +32,7 @@
         },
         "template--20079615312182__44ab272c-9ffe-4cf6-9d0d-cee3ac2041cd-slide-1": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Coffee_Growler_TagsSVG.svg",
             "heading": "<strong>SALE: Growler Tags</strong>",
@@ -96,7 +97,7 @@
         "slide_height": "small",
         "slider_visual": "counter",
         "auto_rotate": false,
-        "change_slides_speed": 5,
+        "change_slides_speed": 3,
         "image_behavior": "none",
         "show_text_below": true,
         "accessibility_info": "Slideshow about our brand"
