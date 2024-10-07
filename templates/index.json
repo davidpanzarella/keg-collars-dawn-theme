@@ -14,6 +14,7 @@
       "blocks": {
         "slide_k38Jci": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Turn_Time_Slide4.jpg",
             "heading": "",
@@ -71,9 +72,9 @@
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/Ready_to_ship_Keg_Collars.jpg",
-            "heading": "Ready to Ship",
+            "heading": "Ships in 2 Days!",
             "heading_size": "h1",
-            "subheading": "Stock collars, caps and labels ready to get to you FAST!",
+            "subheading": "After Artwork Approval. **Excludes adhesive products**",
             "button_label": "Order Now",
             "link": "shopify://collections",
             "button_style_secondary": false,
