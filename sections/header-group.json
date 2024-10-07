@@ -61,12 +61,20 @@
           "type": "announcement",
           "settings": {
             "text": "Click here to REORDER",
-            "link": "shopify:\/\/pages\/reorder"
+            "link": "shopify://pages/reorder"
+          }
+        },
+        "announcement_PnxpQY": {
+          "type": "announcement",
+          "settings": {
+            "text": "🍻 Great American Beer Festival Deals Straight to your INBOX! Sign Up Now! 📧",
+            "link": ""
           }
         }
       },
       "block_order": [
-        "sections--20079615181110__4b68ccd7-b37b-445f-ad77-27031e52dfbc-announcement-1"
+        "sections--20079615181110__4b68ccd7-b37b-445f-ad77-27031e52dfbc-announcement-1",
+        "announcement_PnxpQY"
       ],
       "settings": {
         "color_scheme": "accent-1",
