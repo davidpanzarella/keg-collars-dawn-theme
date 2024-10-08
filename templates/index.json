@@ -66,6 +66,23 @@
             "text_alignment_mobile": "center"
           }
         },
+        "slide_HhJGdd": {
+          "type": "slide",
+          "settings": {
+            "heading": "Image slide",
+            "heading_size": "h1",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "Button label",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
+          }
+        },
         "slide_gxy3nN": {
           "type": "slide",
           "settings": {
@@ -89,6 +106,7 @@
         "template--20079615312182__44ab272c-9ffe-4cf6-9d0d-cee3ac2041cd-slide-2",
         "857f37d6-14ee-4427-a512-c657341dc6ee",
         "slide_f8Jy44",
+        "slide_HhJGdd",
         "slide_gxy3nN"
       ],
       "settings": {
@@ -572,8 +590,8 @@
         "columns_desktop": 5,
         "column_alignment": "left",
         "background_style": "primary",
-        "button_label": "",
-        "button_link": "",
+        "button_label": "Shop Collection",
+        "button_link": "shopify://collections/maintenance-organization",
         "color_scheme": "",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
