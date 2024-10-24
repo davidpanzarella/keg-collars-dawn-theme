@@ -1,53 +1,17 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "44ab272c-9ffe-4cf6-9d0d-cee3ac2041cd": {
       "type": "slideshow",
       "blocks": {
-        "template--20079615312182__44ab272c-9ffe-4cf6-9d0d-cee3ac2041cd-slide-2": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/KegCollars_Custom_Upload.png",
-            "heading": "Design Your Own",
-            "heading_size": "h1",
-            "subheading": "Using one of our easy-to-use templates",
-            "button_label": "Start Designing",
-            "link": "shopify://collections/template-keg-collars",
-            "button_style_secondary": false,
-            "box_align": "top-right",
-            "show_text_box": true,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "inverse",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "857f37d6-14ee-4427-a512-c657341dc6ee": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/Ready_to_ship_Keg_Collars.jpg",
-            "heading": "Ships in 2 Days!",
-            "heading_size": "h1",
-            "subheading": "After Artwork Approval. **Excludes adhesive products**",
-            "button_label": "Order Now",
-            "link": "shopify://collections",
-            "button_style_secondary": false,
-            "box_align": "middle-center",
-            "show_text_box": true,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "background-1",
-            "text_alignment_mobile": "center"
-          }
-        },
         "slide_f8Jy44": {
           "type": "slide",
           "settings": {
@@ -83,13 +47,49 @@
             "color_scheme": "neutral",
             "text_alignment_mobile": "center"
           }
+        },
+        "template--20079615312182__44ab272c-9ffe-4cf6-9d0d-cee3ac2041cd-slide-2": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/KegCollars_Custom_Upload.png",
+            "heading": "Design Your Own",
+            "heading_size": "h1",
+            "subheading": "Using one of our easy-to-use templates",
+            "button_label": "Start Designing",
+            "link": "shopify://collections/template-keg-collars",
+            "button_style_secondary": false,
+            "box_align": "top-right",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "inverse",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "857f37d6-14ee-4427-a512-c657341dc6ee": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Ready_to_ship_Keg_Collars.jpg",
+            "heading": "Ships in 2 Days!",
+            "heading_size": "h1",
+            "subheading": "After Artwork Approval. **Excludes adhesive products**",
+            "button_label": "Order Now",
+            "link": "shopify://collections",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
+          }
         }
       },
       "block_order": [
-        "template--20079615312182__44ab272c-9ffe-4cf6-9d0d-cee3ac2041cd-slide-2",
-        "857f37d6-14ee-4427-a512-c657341dc6ee",
         "slide_f8Jy44",
-        "slide_gxy3nN"
+        "slide_gxy3nN",
+        "template--20079615312182__44ab272c-9ffe-4cf6-9d0d-cee3ac2041cd-slide-2",
+        "857f37d6-14ee-4427-a512-c657341dc6ee"
       ],
       "settings": {
         "layout": "full_bleed",
