@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "name": "t:sections.header.name",
   "type": "header",
@@ -63,18 +63,10 @@
             "text": "Click here to REORDER",
             "link": "shopify://pages/reorder"
           }
-        },
-        "announcement_PnxpQY": {
-          "type": "announcement",
-          "settings": {
-            "text": "🍻 Great American Beer Festival Deals Straight to your INBOX! Sign Up Now! 📧",
-            "link": ""
-          }
         }
       },
       "block_order": [
-        "sections--20079615181110__4b68ccd7-b37b-445f-ad77-27031e52dfbc-announcement-1",
-        "announcement_PnxpQY"
+        "sections--20079615181110__4b68ccd7-b37b-445f-ad77-27031e52dfbc-announcement-1"
       ],
       "settings": {
         "color_scheme": "accent-1",
