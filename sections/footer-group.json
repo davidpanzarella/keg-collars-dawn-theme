@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "name": "t:sections.footer.name",
   "type": "footer",
@@ -15,11 +15,12 @@
       "type": "apps",
       "blocks": {
         "292577cd-42c1-4114-be56-c732dc28f2a0": {
-          "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "type": "shopify://apps/instafeed/blocks/app-block/c447db20-095d-4a10-9725-b5977662c9d5",
           "settings": {
             "title": "",
             "title_color": "",
             "alignment": "center",
+            "background_color": "",
             "html_area": ""
           }
         }
@@ -44,7 +45,7 @@
         "sections--20079615213878__6097d134-9843-4af7-87aa-4ef82b779e34-paragraph-1": {
           "type": "paragraph",
           "settings": {
-            "text": "<p>Be the first to know about new collections and exclusive offers.<\/p>"
+            "text": "<p>Be the first to know about new collections and exclusive offers.</p>"
           }
         },
         "sections--20079615213878__6097d134-9843-4af7-87aa-4ef82b779e34-email_form-1": {
@@ -80,7 +81,7 @@
         "57f36aca-0567-4d71-852d-c03cc8105d63": {
           "type": "link_list",
           "settings": {
-            "heading": "Quick links",
+            "heading": "Quick Links",
             "menu": "aux-nav"
           }
         },
@@ -88,7 +89,7 @@
           "type": "text",
           "settings": {
             "heading": "Contact Us",
-            "subtext": "<p><strong>Email<\/strong><\/p><p>cheers@kegcollars.net<\/p><p> .<\/p><p><strong>Phone<\/strong><\/p><p>(877) 803-5277<\/p><p>.<\/p><p><strong>Address<\/strong><\/p><p>20700 Carmen Loop, Ste 110<\/p><p>Bend, OR 97702 <\/p><p><\/p><p><\/p>"
+            "subtext": "<p><strong>Email</strong></p><p>cheers@kegcollars.net</p><p> .</p><p><strong>Phone</strong></p><p>(877) 803-5277</p><p>.</p><p><strong>Address</strong></p><p>20700 Carmen Loop, Ste 110</p><p>Bend, OR 97702 </p><p></p><p></p>"
           }
         }
       },
