@@ -300,9 +300,9 @@
   %}
 
   <script>
-    console.log("product", {{ product | json }});
-    console.log("product", {{ product.handle | json }});
-    console.log("currentProductByTemplateOption", {{ currentProductByTemplateOption | json }});
+    {% comment %} console.log("product", {{ product | json }});{% endcomment %}
+    {% comment %} console.log("product", {{ product.handle | json }});{% endcomment %}
+    {% comment %} console.log("currentProductByTemplateOption", {{ currentProductByTemplateOption | json }});{% endcomment %}
     {% comment %} console.log("relatedProductsVariations", {{ relatedProductsVariations | json }}); {% endcomment %}
     {% comment %} console.log("features", {{ features | json }}); {% endcomment %}
     {% comment %} console.log("shapes", {{ shapes | json }}); {% endcomment %}
