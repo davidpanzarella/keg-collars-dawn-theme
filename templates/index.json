@@ -12,6 +12,24 @@
     "44ab272c-9ffe-4cf6-9d0d-cee3ac2041cd": {
       "type": "slideshow",
       "blocks": {
+        "slide_VTAEYB": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/On_ALL_7_Various_Shapes_or_Sizes_1.png",
+            "heading": "<strong>Custom Keg Collars Shipped in 3 Days</strong>",
+            "heading_size": "h1",
+            "subheading": "<strong>From art approval</strong>",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "top-left",
+            "show_text_box": true,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "left"
+          }
+        },
         "slide_f8Jy44": {
           "type": "slide",
           "settings": {
@@ -86,6 +104,7 @@
         }
       },
       "block_order": [
+        "slide_VTAEYB",
         "slide_f8Jy44",
         "slide_gxy3nN",
         "template--20079615312182__44ab272c-9ffe-4cf6-9d0d-cee3ac2041cd-slide-2",
@@ -706,8 +725,7 @@
         },
         "template--20079615312182__47f6c410-1eea-4bc6-bfec-51abae3bd91e-price-1": {
           "type": "price",
-          "settings": {
-          }
+          "settings": {}
         },
         "template--20079615312182__47f6c410-1eea-4bc6-bfec-51abae3bd91e-variant_picker-1": {
           "type": "variant_picker",
@@ -717,8 +735,7 @@
         },
         "template--20079615312182__47f6c410-1eea-4bc6-bfec-51abae3bd91e-quantity_selector-1": {
           "type": "quantity_selector",
-          "settings": {
-          }
+          "settings": {}
         },
         "template--20079615312182__47f6c410-1eea-4bc6-bfec-51abae3bd91e-buy_buttons-1": {
           "type": "buy_buttons",
