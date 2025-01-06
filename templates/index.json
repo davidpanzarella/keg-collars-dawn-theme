@@ -15,7 +15,7 @@
         "slide_wNfzhK": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/New_Year_Sale_2025_V2_Facebook_Cover.jpg",
+            "image": "shopify://shop_images/New_Year_Sale_2025_V2_Facebook_Cover.png",
             "heading": "Our Biggest Sale!",
             "heading_size": "h1",
             "subheading": "25% off Printed Paper Products",
@@ -111,7 +111,6 @@
         "template--20079615312182__44ab272c-9ffe-4cf6-9d0d-cee3ac2041cd-slide-2",
         "857f37d6-14ee-4427-a512-c657341dc6ee"
       ],
-      "disabled": true,
       "settings": {
         "layout": "full_bleed",
         "slide_height": "small",
