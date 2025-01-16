@@ -1,17 +1,17 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "current": {
-    "logo": "shopify:\/\/shop_images\/logo-inverted_811e4869-b770-49b5-93cd-599d9c7a5643.png",
+    "logo": "shopify://shop_images/logo-inverted_811e4869-b770-49b5-93cd-599d9c7a5643.png",
     "logo_width": 180,
-    "favicon": "shopify:\/\/shop_images\/center-disc_0a682e99-7322-4b86-83ca-70a02826e75e.png",
+    "favicon": "shopify://shop_images/center-disc_0a682e99-7322-4b86-83ca-70a02826e75e.png",
     "type_header_font": "source_sans_pro_n6",
     "heading_scale": 100,
     "type_body_font": "source_sans_pro_n4",
@@ -108,15 +108,15 @@
     "sale_badge_color_scheme": "scheme-410f4729-0a93-44a0-a1a5-15b01e63cece",
     "sold_out_badge_color_scheme": "inverse",
     "brand_headline": "Quality Beverage Branding Products",
-    "brand_description": "<p>KegCollars.net, based in Bend, Oregon, is a family-owned business with 35+ years of experience. We offer easy ordering for top-notch products. Our small team is dedicated to exceptional service and strong customer relationships.<\/p>",
-    "brand_image": "shopify:\/\/shop_images\/KC_Logo_-_Orange.png",
-    "social_facebook_link": "https:\/\/www.facebook.com\/KegCollarsNet",
-    "social_instagram_link": "https:\/\/www.instagram.com\/kegcollars\/",
+    "brand_description": "<p>KegCollars.net, based in Bend, Oregon, is a family-owned business with 35+ years of experience. We offer easy ordering for top-notch products. Our small team is dedicated to exceptional service and strong customer relationships.</p>",
+    "brand_image": "shopify://shop_images/KC_Logo_-_Orange.png",
+    "social_facebook_link": "https://www.facebook.com/KegCollarsNet",
+    "social_instagram_link": "https://www.instagram.com/kegcollars/",
     "social_youtube_link": "",
     "social_tiktok_link": "",
-    "social_twitter_link": "https:\/\/twitter.com\/kegcollars",
+    "social_twitter_link": "https://twitter.com/kegcollars",
     "social_snapchat_link": "",
-    "social_pinterest_link": "https:\/\/www.pinterest.com\/kegcollars\/",
+    "social_pinterest_link": "https://www.pinterest.com/kegcollars/",
     "social_tumblr_link": "",
     "social_vimeo_link": "",
     "predictive_search_enabled": true,
@@ -127,7 +127,7 @@
     "show_vendor": false,
     "show_cart_note": true,
     "cart_drawer_collection": "",
-    "checkout_logo_image": "shopify:\/\/shop_images\/logo-inverted_ee1f575e-bef2-4b0e-9196-f5a32e4e27fd.png",
+    "checkout_logo_image": "shopify://shop_images/logo-inverted_ee1f575e-bef2-4b0e-9196-f5a32e4e27fd.png",
     "checkout_logo_position": "left",
     "checkout_logo_size": "large",
     "checkout_sidebar_background_color": "#f3f3f3",
@@ -161,18 +161,15 @@
         }
       }
     },
-    "content_for_index": [
-
-    ],
+    "content_for_index": [],
     "blocks": {
       "5453348510459557781": {
-        "type": "shopify:\/\/apps\/avada-seo-suite\/blocks\/avada-seo\/15507c6e-1aa3-45d3-b698-7e175e033440",
+        "type": "shopify://apps/avada-seo-suite/blocks/avada-seo/15507c6e-1aa3-45d3-b698-7e175e033440",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "15683396631634586217": {
-        "type": "shopify:\/\/apps\/inbox\/blocks\/chat\/841fc607-4181-4ad1-842d-e24d7f8bad6b",
+        "type": "shopify://apps/inbox/blocks/chat/841fc607-4181-4ad1-842d-e24d7f8bad6b",
         "disabled": false,
         "settings": {
           "button_color": "#f2a100",
@@ -186,7 +183,7 @@
         }
       },
       "3838990611052461119": {
-        "type": "shopify:\/\/apps\/customerhub\/blocks\/app-embed\/0fb3ba0b-4c65-4919-a85a-48bc2d368e9c",
+        "type": "shopify://apps/customerhub/blocks/app-embed/0fb3ba0b-4c65-4919-a85a-48bc2d368e9c",
         "disabled": false,
         "settings": {
           "account_primary_page": "",
@@ -197,29 +194,8 @@
           "mount_json_code": ""
         }
       },
-      "15773640700261759505": {
-        "type": "shopify:\/\/apps\/customer-accounts-hub\/blocks\/mini-hub\/0fb3ba0b-4c65-4919-a85a-48bc2d368e9c",
-        "disabled": true,
-        "settings": {
-          "primary_color": "#f2a100",
-          "secondary_color": "#ffffff",
-          "text_color": "#ffffff",
-          "background_color": "#ffffff",
-          "minihub_position": "left",
-          "minihub_load_from": "always_visible",
-          "show_recently_viewed": "yes",
-          "show_reorder": "yes",
-          "reorder_action": "checkout",
-          "hide_minihub_on_mobile": "show",
-          "hide_minihub_in_account": "show",
-          "show_paynow_button": "show",
-          "start_shopping_link": "",
-          "custom_css": "",
-          "url_override": ""
-        }
-      },
       "3842503713604335150": {
-        "type": "shopify:\/\/apps\/vify-order-printer\/blocks\/invoice_download_embed\/8e413796-b0ed-4419-ae4e-893123b931a9",
+        "type": "shopify://apps/vify-order-printer/blocks/invoice_download_embed/8e413796-b0ed-4419-ae4e-893123b931a9",
         "disabled": true,
         "settings": {
           "icon": true,
