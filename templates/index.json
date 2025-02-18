@@ -14,6 +14,7 @@
       "blocks": {
         "slide_wNfzhK": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Valentines_BOGOG_1.png",
             "heading": "",
@@ -27,6 +28,24 @@
             "text_alignment": "center",
             "image_overlay_opacity": 0,
             "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "template--20079615312182__44ab272c-9ffe-4cf6-9d0d-cee3ac2041cd-slide-2": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/KegCollars_Custom_Upload.png",
+            "heading": "Design Your Own",
+            "heading_size": "h1",
+            "subheading": "Using one of our easy-to-use templates",
+            "button_label": "Start Designing",
+            "link": "shopify://collections/template-keg-collars",
+            "button_style_secondary": false,
+            "box_align": "top-right",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "inverse",
             "text_alignment_mobile": "center"
           }
         },
@@ -66,24 +85,6 @@
             "text_alignment_mobile": "center"
           }
         },
-        "template--20079615312182__44ab272c-9ffe-4cf6-9d0d-cee3ac2041cd-slide-2": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/KegCollars_Custom_Upload.png",
-            "heading": "Design Your Own",
-            "heading_size": "h1",
-            "subheading": "Using one of our easy-to-use templates",
-            "button_label": "Start Designing",
-            "link": "shopify://collections/template-keg-collars",
-            "button_style_secondary": false,
-            "box_align": "top-right",
-            "show_text_box": true,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "inverse",
-            "text_alignment_mobile": "center"
-          }
-        },
         "857f37d6-14ee-4427-a512-c657341dc6ee": {
           "type": "slide",
           "disabled": true,
@@ -106,9 +107,9 @@
       },
       "block_order": [
         "slide_wNfzhK",
+        "template--20079615312182__44ab272c-9ffe-4cf6-9d0d-cee3ac2041cd-slide-2",
         "slide_VTAEYB",
         "slide_f8Jy44",
-        "template--20079615312182__44ab272c-9ffe-4cf6-9d0d-cee3ac2041cd-slide-2",
         "857f37d6-14ee-4427-a512-c657341dc6ee"
       ],
       "settings": {
