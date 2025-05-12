@@ -15,6 +15,7 @@
         "slide_VPwUzg": {
           "type": "slide",
           "name": "CBC Sale",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/2025_Craft_Beer_Conference_Deals_from.png",
             "heading": "",
