@@ -55,9 +55,9 @@
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/KegCollars_Custom_Upload.png",
-            "heading": "Design Your Own",
-            "heading_size": "h1",
-            "subheading": "Using one of our easy-to-use templates",
+            "heading": "Easy Custom Keg Collars",
+            "heading_size": "h2",
+            "subheading": "TTB Compliant, Low Minimums, Quick Turn Time",
             "button_label": "Start Designing",
             "link": "shopify://collections/template-keg-collars",
             "button_style_secondary": false,
