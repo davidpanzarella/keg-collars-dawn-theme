@@ -14,10 +14,9 @@
       "blocks": {
         "slide_VPwUzg": {
           "type": "slide",
-          "name": "CBC Sale",
-          "disabled": true,
+          "name": "Sale",
           "settings": {
-            "image": "shopify://shop_images/2025_Craft_Beer_Conference_Deals_from.png",
+            "image": "shopify://shop_images/Festival_Season_is_here_1800_x_700_px.png",
             "heading": "",
             "heading_size": "h2",
             "subheading": "",
