@@ -15,6 +15,7 @@
         "slide_VPwUzg": {
           "type": "slide",
           "name": "Sale",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Festival_Season_is_here_1800_x_700_px.png",
             "heading": "",
@@ -112,6 +113,7 @@
         "slide_VTAEYB",
         "slide_f8Jy44"
       ],
+      "disabled": true,
       "settings": {
         "layout": "grid",
         "slide_height": "adapt_image",
