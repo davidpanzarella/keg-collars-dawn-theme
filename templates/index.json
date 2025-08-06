@@ -15,9 +15,8 @@
         "slide_VPwUzg": {
           "type": "slide",
           "name": "Sale",
-          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/Festival_Season_is_here_1800_x_700_px.png",
+            "image": "shopify://shop_images/FALL15_1920_x_800_px.png",
             "heading": "",
             "heading_size": "h2",
             "subheading": "",
@@ -53,6 +52,7 @@
         },
         "template--20079615312182__44ab272c-9ffe-4cf6-9d0d-cee3ac2041cd-slide-2": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/KegCollars_Custom_Upload.png",
             "heading": "Easy Custom Keg Collars",
@@ -71,6 +71,7 @@
         },
         "slide_VTAEYB": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/On_ALL_7_Various_Shapes_or_Sizes_1.png",
             "heading": "<strong>Custom Keg Collars Shipped in 3 Days</strong>",
@@ -89,6 +90,7 @@
         },
         "slide_f8Jy44": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Maintenance.jpg",
             "heading": "NEW Brewery Organization",
@@ -113,7 +115,6 @@
         "slide_VTAEYB",
         "slide_f8Jy44"
       ],
-      "disabled": true,
       "settings": {
         "layout": "grid",
         "slide_height": "adapt_image",
