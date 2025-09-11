@@ -265,11 +265,11 @@
         "column_H3HXWc": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/PurplePinkGradient.jpg",
+            "image": "shopify://shop_images/KC_72_K_Kombucha_5.6875in_source.png",
             "title": "",
             "text": "",
-            "link_label": "Purple-Pink Gradient Stock Collar",
-            "link": "shopify://products/purple-pink-gradient-keg-collars"
+            "link_label": "Black Kombucha Keg Collar",
+            "link": "shopify://products/kombucha-black-eco-5-6875-keg-collars"
           }
         },
         "column_kgKHiA": {
@@ -310,7 +310,7 @@
         "column_NRwHHb"
       ],
       "settings": {
-        "title": "NEW! Gradient Stock Collars - Ready to Ship!",
+        "title": "NEW! Kombucha Products- Ready to Ship!",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
