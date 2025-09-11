@@ -275,31 +275,31 @@
         "column_kgKHiA": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/BlueGreenGradient_f9e62877-42b7-41eb-ab8e-156c9da12df4.jpg",
+            "image": "shopify://shop_images/KC_45_CMYK_Kombucha_Front_GT_source_PNG.png",
             "title": "",
             "text": "",
-            "link_label": "Blue-Green Gradient Stock Collar",
-            "link": "shopify://products/blue-green-gradient-keg-collars"
+            "link_label": "Pink Kombucha Growler Tag",
+            "link": "shopify://products/kombucha-yellow-growler-tag-copy"
           }
         },
         "column_RDWEMU": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/YellowOrangeGradient_7f2c3730-be14-42ef-a9e1-0a9aa18d6c83.jpg",
+            "image": "shopify://shop_images/KC_68_CMYK_Kombucha_5.6875in_source.png",
             "title": "",
             "text": "",
-            "link_label": "Yellow-Orange Gradient Keg Collar",
-            "link": "shopify://products/yellow-orange-gradient-keg-collars"
+            "link_label": "Purple Kombucha Keg Collar",
+            "link": "shopify://products/kombucha-purple-eco-5-6875-keg-collars"
           }
         },
         "column_NRwHHb": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/BrownGradient_ea2549a9-efe2-45e6-809e-eb000995f586.jpg",
+            "image": "shopify://shop_images/KC_41_CMYK_Kombucha_Front_GT_PNG.png",
             "title": "",
             "text": "",
-            "link_label": "Brown-Tan Gradient Keg Collar",
-            "link": "shopify://products/brown-tan-gradient-keg-collars-copy"
+            "link_label": "Modern Terrazzo Kombucha Growler Tag",
+            "link": "shopify://products/kombucha-pink-growler-tag-copy"
           }
         }
       },
