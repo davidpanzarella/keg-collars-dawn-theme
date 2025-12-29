@@ -15,8 +15,9 @@
         "slide_VPwUzg": {
           "type": "slide",
           "name": "Sale",
+          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/LaborDay2025.png",
+            "image": "shopify://shop_images/Fresh_Start_Sale_-_Shopify.jpg",
             "heading": "",
             "heading_size": "h2",
             "subheading": "",
@@ -115,7 +116,6 @@
         "slide_VTAEYB",
         "slide_f8Jy44"
       ],
-      "disabled": true,
       "settings": {
         "layout": "grid",
         "slide_height": "adapt_image",
