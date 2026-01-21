@@ -15,6 +15,7 @@
         "slide_VPwUzg": {
           "type": "slide",
           "name": "Sale",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Fresh_Start_Sale_-_Shopify.jpg",
             "heading": "",
