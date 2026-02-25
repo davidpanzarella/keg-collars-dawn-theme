@@ -34,6 +34,7 @@
         },
         "slide_wNfzhK": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Valentines_BOGOG_3.png",
             "heading": "",
