@@ -115,6 +115,7 @@
         "slide_VTAEYB",
         "slide_f8Jy44"
       ],
+      "disabled": true,
       "settings": {
         "layout": "grid",
         "slide_height": "adapt_image",
