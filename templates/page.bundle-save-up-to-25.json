@@ -23,21 +23,21 @@
         "heading_tzK3LT": {
           "type": "heading",
           "settings": {
-            "heading": "More Products. More Savings",
-            "heading_size": "h1"
+            "heading": "<strong>More Products. More Savings</strong>",
+            "heading_size": "h0"
           }
         },
         "text_Gb4MLk": {
           "type": "text",
           "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text": "Mix, match and save on the printed products your taproom, brewery or restaurant uses most.",
             "text_style": "body"
           }
         },
         "buttons_DBPiGh": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "BUNDLE & S",
+            "button_label_1": "BUNDLE & SAVE TODAY",
             "button_link_1": "",
             "button_style_secondary_1": false,
             "button_label_2": "",
@@ -59,16 +59,143 @@
         "desktop_content_position": "middle-left",
         "show_text_box": true,
         "desktop_content_alignment": "left",
-        "color_scheme": "background-2",
+        "color_scheme": "scheme-baeacad9-994c-4ac3-b193-a04074a21cc0",
         "image_behavior": "none",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": true
       }
+    },
+    "multicolumn_iCUAp3": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_mFYBFK": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_Jul_15_2026_09_26_17_PM_f3a60e21-88ae-411e-b1ba-aa2c4988ca0b.png",
+            "title": "<strong>KEG COLLARS</strong>",
+            "text": "<p>Let you craft beverage stand out with professionally printed custom keg collars.</p>",
+            "link_label": "SHOP NOW",
+            "link": ""
+          }
+        },
+        "column_H64yjP": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_Jul_15_2026_09_29_52_PM.png",
+            "title": "<strong>GROWLER TAGS</strong>",
+            "text": "<p>Add a professional finishing touch while clearly identifying every beer, cider or beverage.</p>",
+            "link_label": "SHOP NOW",
+            "link": ""
+          }
+        },
+        "column_6AWWVp": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_Jul_15_2026_10_03_55_PM.png",
+            "title": "<strong>COASTERS</strong>",
+            "text": "<p>Protect tables, promote your brand and keep your business in front of every customer.</p>",
+            "link_label": "SHOP NOW",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_mFYBFK",
+        "column_H64yjP",
+        "column_6AWWVp"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "<strong>THE ESSENTIALS YOUR BREWERY & TAPROOM NEED</strong>",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 12
+      }
+    },
+    "multicolumn_nedn3p": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_TxK3r9": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_Jul_17_2026_03_22_40_PM.png",
+            "title": "<strong>FLIGHT CARDS</strong>",
+            "text": "<p>Help guests identify, compare and remember every beverage in their tasting flight.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_NnHWLV": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_Jul_17_2026_02_54_45_PM.png",
+            "title": "<strong>DISPLAY INSERTS</strong>",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_bj6zXz": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_Jul_17_2026_03_01_23_PM.png",
+            "title": "<strong>MENUS & ACTIVITY SHEETS</strong>",
+            "text": "<p>Professionally printed food, drink and taproom menus that make your offerings easy to explore. </p>",
+            "link_label": "SHOP NOW",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_TxK3r9",
+        "column_NnHWLV",
+        "column_bj6zXz"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 12,
+        "padding_bottom": 36
+      }
+    },
+    "custom_liquid_9C36yn": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<div class=\"bundle-discount-section\" id=\"bundle-discounts\">\n  <div class=\"bundle-discount-inner\">\n    <p class=\"bundle-eyebrow\">MIX. MATCH. SAVE.</p>\n\n    <h2>Bundle &amp; Save More</h2>\n\n    <p class=\"bundle-intro\">\n      Choose eligible products from different categories. Your discount increases\n      as you add more product categories to your order.\n    </p>\n\n    <div class=\"bundle-discount-grid\">\n      <div class=\"bundle-discount-card\">\n        <div class=\"bundle-number\">2</div>\n        <div class=\"bundle-label\">PRODUCTS</div>\n        <div class=\"bundle-percent\">10% OFF</div>\n      </div>\n\n      <div class=\"bundle-discount-card\">\n        <div class=\"bundle-number\">3</div>\n        <div class=\"bundle-label\">PRODUCTS</div>\n        <div class=\"bundle-percent\">15% OFF</div>\n      </div>\n\n      <div class=\"bundle-discount-card\">\n        <div class=\"bundle-number\">4</div>\n        <div class=\"bundle-label\">PRODUCTS</div>\n        <div class=\"bundle-percent\">20% OFF</div>\n      </div>\n\n      <div class=\"bundle-discount-card bundle-discount-card--featured\">\n        <div class=\"bundle-best\">BEST VALUE</div>\n        <div class=\"bundle-number\">5</div>\n        <div class=\"bundle-label\">PRODUCTS</div>\n        <div class=\"bundle-percent\">25% OFF</div>\n      </div>\n    </div>\n\n    <p class=\"bundle-note\">\n      Mix and match Keg Collars, Growler Tags, Coasters, Flight Cards and Menus.\n    </p>\n\n    <a class=\"bundle-button\" href=\"/collections/bundle-and-save\">\n      START YOUR BUNDLE\n    </a>\n  </div>\n</div>\n\n<style>\n  .bundle-discount-section {\n    background: #f7f3ea;\n    padding: 72px 20px;\n  }\n\n  .bundle-discount-inner {\n    max-width: 1200px;\n    margin: 0 auto;\n    text-align: center;\n  }\n\n  .bundle-eyebrow {\n    margin: 0 0 10px;\n    color: #a77b2e;\n    font-size: 14px;\n    font-weight: 700;\n    letter-spacing: 0.16em;\n  }\n\n  .bundle-discount-inner h2 {\n    margin: 0;\n    color: #172f28;\n    font-size: clamp(34px, 5vw, 56px);\n    line-height: 1;\n  }\n\n  .bundle-intro {\n    max-width: 720px;\n    margin: 20px auto 38px;\n    font-size: 18px;\n    line-height: 1.6;\n  }\n\n  .bundle-discount-grid {\n    display: grid;\n    grid-template-columns: repeat(4, 1fr);\n    gap: 18px;\n  }\n\n  .bundle-discount-card {\n    position: relative;\n    background: #ffffff;\n    border: 1px solid #c9ad78;\n    border-radius: 4px;\n    padding: 34px 20px;\n    box-shadow: 0 8px 22px rgba(23, 47, 40, 0.08);\n  }\n\n  .bundle-discount-card--featured {\n    border: 3px solid #a77b2e;\n    padding-top: 31px;\n  }\n\n  .bundle-best {\n    position: absolute;\n    top: -14px;\n    left: 50%;\n    transform: translateX(-50%);\n    background: #a77b2e;\n    color: #ffffff;\n    padding: 6px 14px;\n    border-radius: 30px;\n    font-size: 11px;\n    font-weight: 700;\n    letter-spacing: 0.1em;\n    white-space: nowrap;\n  }\n\n  .bundle-number {\n    display: flex;\n    width: 68px;\n    height: 68px;\n    margin: 0 auto 18px;\n    align-items: center;\n    justify-content: center;\n    border-radius: 50%;\n    background: #172f28;\n    color: #ffffff;\n    font-size: 36px;\n    font-weight: 700;\n  }\n\n  .bundle-label {\n    color: #172f28;\n    font-size: 16px;\n    font-weight: 700;\n    letter-spacing: 0.06em;\n  }\n\n  .bundle-percent {\n    margin-top: 10px;\n    color: #a77b2e;\n    font-size: clamp(28px, 3vw, 42px);\n    font-weight: 800;\n    line-height: 1;\n  }\n\n  .bundle-note {\n    margin: 30px auto 24px;\n    font-size: 15px;\n    font-weight: 600;\n  }\n\n  .bundle-button {\n    display: inline-block;\n    background: #a77b2e;\n    color: #ffffff;\n    padding: 16px 28px;\n    text-decoration: none;\n    font-size: 15px;\n    font-weight: 700;\n    letter-spacing: 0.06em;\n    transition: transform 0.2s ease, opacity 0.2s ease;\n  }\n\n  .bundle-button:hover {\n    color: #ffffff;\n    opacity: 0.92;\n    transform: translateY(-2px);\n  }\n\n  @media screen and (max-width: 900px) {\n    .bundle-discount-grid {\n      grid-template-columns: repeat(2, 1fr);\n    }\n  }\n\n  @media screen and (max-width: 549px) {\n    .bundle-discount-section {\n      padding: 52px 16px;\n    }\n\n    .bundle-discount-grid {\n      grid-template-columns: 1fr;\n    }\n\n    .bundle-discount-card {\n      padding: 28px 16px;\n    }\n\n    .bundle-discount-card--featured {\n      padding-top: 28px;\n    }\n  }\n</style>",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
     "main",
-    "image_banner_XpXpfy"
+    "image_banner_XpXpfy",
+    "multicolumn_iCUAp3",
+    "multicolumn_nedn3p",
+    "custom_liquid_9C36yn"
   ]
 }
