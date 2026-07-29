@@ -50,7 +50,13 @@
         "featured_collection_yNfF7L": {
           "type": "featured_collection",
           "settings": {
-            "collection": "dome-keg-collars-copy"
+            "collection": "tasting-flight-cards-copy"
+          }
+        },
+        "featured_collection_RDEaUc": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "menu-printing-restaurant-materials-copy"
           }
         }
       },
@@ -58,7 +64,8 @@
         "featured_collection_8XCegX",
         "featured_collection_jcT4Xx",
         "featured_collection_qWMARW",
-        "featured_collection_yNfF7L"
+        "featured_collection_yNfF7L",
+        "featured_collection_RDEaUc"
       ],
       "name": "t:sections.collection-list.presets.name",
       "settings": {
