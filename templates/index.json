@@ -15,6 +15,7 @@
         "slide_VPwUzg": {
           "type": "slide",
           "name": "Sale",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Copy_of_Festival_Ready_10_off_2000_x_900_px_1.png",
             "heading": "",
