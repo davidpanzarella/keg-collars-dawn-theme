@@ -108,8 +108,51 @@
         "show_view_all": false,
         "columns_mobile": "1",
         "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 24,
+        "padding_bottom": 24
+      }
+    },
+    "rich_text_mEH4KQ": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_xjYmKB": {
+          "type": "heading",
+          "settings": {
+            "heading": "SERIOUSLY SIMPLE",
+            "heading_size": "h1"
+          }
+        },
+        "text_T3DxRU": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>3 Easy Ways to Order Keg Collars</strong></p>"
+          }
+        },
+        "button_KtTBfT": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_xjYmKB",
+        "text_T3DxRU",
+        "button_KtTBfT"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 24,
+        "padding_bottom": 12
       }
     },
     "collection_list_HPtdUH": {
@@ -141,7 +184,7 @@
       ],
       "name": "t:sections.collection-list.presets.name",
       "settings": {
-        "title": "<strong>3 Easy Ways to Order Keg Collars</strong>",
+        "title": "",
         "heading_size": "h2",
         "image_ratio": "adapt",
         "columns_desktop": 3,
@@ -149,7 +192,7 @@
         "show_view_all": false,
         "columns_mobile": "1",
         "swipe_on_mobile": false,
-        "padding_top": 36,
+        "padding_top": 12,
         "padding_bottom": 36
       }
     },
@@ -529,6 +572,7 @@
   "order": [
     "image_banner_CyNpEU",
     "collection_list_47Teny",
+    "rich_text_mEH4KQ",
     "collection_list_HPtdUH",
     "featured_collection_UzcKj9",
     "image_with_text_dxB9g9",
