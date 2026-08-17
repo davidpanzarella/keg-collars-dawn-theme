@@ -40,7 +40,7 @@
       "type": "header",
       "settings": {
         "logo_position": "middle-left",
-        "menu": "2nd-nav",
+        "menu": "primary-nav-1",
         "menu_type_desktop": "dropdown",
         "sticky_header_type": "on-scroll-up",
         "show_line_separator": true,
