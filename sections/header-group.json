@@ -17,15 +17,14 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "SAVE UP TO 25%   BUNDLE & SAVE",
-            "link": "shopify://collections/bundle-save-on-brewery-taproom-essentials"
+            "text": "DESIGN ASSISTANCE  •  LOW MINIMUMS •  CUSTOM PRINTED ESSENTIALS",
+            "link": ""
           }
         }
       },
       "block_order": [
         "announcement-bar-0"
       ],
-      "disabled": true,
       "settings": {
         "color_scheme": "",
         "show_line_separator": true,
@@ -40,11 +39,11 @@
       "type": "header",
       "settings": {
         "logo_position": "middle-left",
-        "menu": "primary-nav-1",
+        "menu": "2nd-nav",
         "menu_type_desktop": "dropdown",
         "sticky_header_type": "on-scroll-up",
         "show_line_separator": true,
-        "color_scheme": "inverse",
+        "color_scheme": "background-1",
         "menu_color_scheme": "background-1",
         "enable_country_selector": false,
         "enable_language_selector": false,
