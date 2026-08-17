@@ -77,12 +77,26 @@
           "settings": {
             "collection": "growler-tags"
           }
+        },
+        "featured_collection_ipTAhK": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "coasters"
+          }
+        },
+        "featured_collection_yqXCLt": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "keg-caps"
+          }
         }
       },
       "block_order": [
         "featured_collection_beh9GX",
         "featured_collection_ywqYRf",
-        "featured_collection_DRgQd9"
+        "featured_collection_DRgQd9",
+        "featured_collection_ipTAhK",
+        "featured_collection_yqXCLt"
       ],
       "name": "t:sections.collection-list.presets.name",
       "settings": {
@@ -94,8 +108,87 @@
         "show_view_all": false,
         "columns_mobile": "1",
         "swipe_on_mobile": false,
-        "padding_top": 12,
-        "padding_bottom": 12
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_8mpLKx": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_cjQx73": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/low-tide-seaside-rocks.jpg",
+            "title": "Low Minimus",
+            "text": "<p>Order what you need.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_ykwGhE": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/low-tide-seaside-rocks.jpg",
+            "title": "Desing Help",
+            "text": "<p>We make setup simple.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_AhcNKy": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/low-tide-seaside-rocks.jpg",
+            "title": "Pro Quality",
+            "text": "<p>Made to look sharp.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_jNbkKi": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/low-tide-seaside-rocks.jpg",
+            "title": "Quick ReOrders",
+            "text": "<p>Easy repeat ordering.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_eVa7Tz": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/low-tide-seaside-rocks.jpg",
+            "title": "Real Support",
+            "text": "<p>We're here for you.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_cjQx73",
+        "column_ykwGhE",
+        "column_AhcNKy",
+        "column_jNbkKi",
+        "column_eVa7Tz"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "Why KegCollars.Net",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "square",
+        "columns_desktop": 5,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "main": {
@@ -109,6 +202,7 @@
   "order": [
     "image_banner_CyNpEU",
     "collection_list_47Teny",
+    "multicolumn_8mpLKx",
     "main"
   ]
 }
