@@ -112,6 +112,76 @@
         "padding_bottom": 36
       }
     },
+    "collection_list_HPtdUH": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_DVPEac": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "custom-design-keg-collars"
+          }
+        },
+        "featured_collection_pwr7kP": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "template-keg-collars"
+          }
+        },
+        "featured_collection_HdDTVE": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "stock-keg-collars"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_DVPEac",
+        "featured_collection_pwr7kP",
+        "featured_collection_HdDTVE"
+      ],
+      "name": "t:sections.collection-list.presets.name",
+      "settings": {
+        "title": "<strong>3 Easy Ways to Order Keg Collars</strong>",
+        "heading_size": "h2",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_UzcKj9": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "title": "<strong>Ready to Ship</strong>",
+        "heading_size": "h2",
+        "description": "<p>In a pinch and need something, like yesterday.  Browse our stock items that are ready to shipped when you need them.</p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "stock-paper-products",
+        "products_to_show": 5,
+        "columns_desktop": 5,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "multicolumn_8mpLKx": {
       "type": "multicolumn",
       "blocks": {
@@ -175,7 +245,7 @@
       ],
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
-        "title": "Why KegCollars.Net",
+        "title": "<strong>Why KegCollars.Net</strong>",
         "heading_size": "h2",
         "image_width": "full",
         "image_ratio": "square",
@@ -306,6 +376,8 @@
   "order": [
     "image_banner_CyNpEU",
     "collection_list_47Teny",
+    "collection_list_HPtdUH",
+    "featured_collection_UzcKj9",
     "multicolumn_8mpLKx",
     "main",
     "image_banner_NdTHKV",
