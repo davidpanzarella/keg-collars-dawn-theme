@@ -182,6 +182,52 @@
         "padding_bottom": 36
       }
     },
+    "image_with_text_dxB9g9": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_YwTwk6": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Looking to ReOrder?</strong>",
+            "heading_size": "h2"
+          }
+        },
+        "text_A4PrtK": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_WRhNPq": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_YwTwk6",
+        "text_A4PrtK",
+        "button_WRhNPq"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "right",
+        "content_layout": "no-overlap",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "multicolumn_8mpLKx": {
       "type": "multicolumn",
       "blocks": {
@@ -371,6 +417,113 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "rich_text_AwxUB3": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_9VA7jn": {
+          "type": "heading",
+          "settings": {
+            "heading": "FROM OUR CUSTOMERS",
+            "heading_size": "h2"
+          }
+        },
+        "text_HP7eQe": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Trusted by people who make phenomenal beverages</strong></p>"
+          }
+        },
+        "button_Tx8RkE": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_9VA7jn",
+        "text_HP7eQe",
+        "button_Tx8RkE"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "accent-1",
+        "full_width": true,
+        "padding_top": 36,
+        "padding_bottom": 12
+      }
+    },
+    "multicolumn_YUHmVT": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_rq4Uxe": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>★★★★★</strong>",
+            "text": "<p>Our favorite thing about using kegcollars.net is the ease of ordering, the superior customer service, and most importantly, the quality of the product.<br/>- Upslope Brewing -</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_N8mKQh": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>★★★★★</strong>",
+            "text": "<ul><li>We love how simple it is to customize the keg collars to fit our needs. The ability to track our orders as it progresses in production is also really neat.<br/>- Cartel Coffee Lab -</li></ul>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_Y4FgkU": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>★★★★★</strong>",
+            "text": "<p>What we like most about using KegCollars.net is the easy process, great pricing, friendly customer service, very quick responses and turnaround time.</p><p>- Double Shovel Cider Company -</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_G4AtFJ": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>★★★★★</strong>",
+            "text": "<p>We found out about keg collars.net from seeing the quality of work they’d done for our friends and their breweries. Keg Collars.net makes it quick, easy and effortless to order.<br/>- Goodlife Brewing -</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_rq4Uxe",
+        "column_N8mKQh",
+        "column_Y4FgkU",
+        "column_G4AtFJ"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "square",
+        "columns_desktop": 4,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "accent-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -378,9 +531,12 @@
     "collection_list_47Teny",
     "collection_list_HPtdUH",
     "featured_collection_UzcKj9",
+    "image_with_text_dxB9g9",
     "multicolumn_8mpLKx",
     "main",
     "image_banner_NdTHKV",
-    "collection_list_GqNJpE"
+    "collection_list_GqNJpE",
+    "rich_text_AwxUB3",
+    "multicolumn_YUHmVT"
   ]
 }
