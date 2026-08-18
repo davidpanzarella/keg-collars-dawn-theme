@@ -67,8 +67,15 @@
         "heading_ebRmMW": {
           "type": "heading",
           "settings": {
-            "heading": "From Production to Pour, We Print It All.",
+            "heading": "From Production to Pour,",
             "heading_size": "h0"
+          }
+        },
+        "heading_bLJc64": {
+          "type": "heading",
+          "settings": {
+            "heading": "We Print It All.",
+            "heading_size": "h1"
           }
         },
         "text_988JEY": {
@@ -80,11 +87,13 @@
       },
       "block_order": [
         "heading_ebRmMW",
+        "heading_bLJc64",
         "text_988JEY"
       ],
       "custom_css": [
-        "h2 {max-width: 900px; margin-left: auto; margin-right: auto; font-size: 42px; line-height: 1.15; white-space: pre-line;}",
-        "@media screen and (max-width: 749px) {h2 {max-width: 100%; font-size: 32px; white-space: normal; }}"
+        "h2 {font-size: 42px; line-height: 1.15; margin-top: 0; margin-bottom: 0;}",
+        "h2 + h2 {margin-top: 0;}",
+        "@media screen and (max-width: 749px) {h2 {font-size: 32px; }}"
       ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
