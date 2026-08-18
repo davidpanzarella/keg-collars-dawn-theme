@@ -67,38 +67,26 @@
         "heading_ebRmMW": {
           "type": "heading",
           "settings": {
-            "heading": "Talk about your brand",
-            "heading_size": "h1"
+            "heading": "From Production to Pour,We Print It All.",
+            "heading_size": "h0"
           }
         },
         "text_988JEY": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
-          }
-        },
-        "button_fa77mc": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "text": "<p>From keg room essentials to taproom touchpoints, KegCollars.net helps beverage and hospitality businesses bring their brands to life with custom printed products made for the way they work.</p>"
           }
         }
       },
       "block_order": [
         "heading_ebRmMW",
-        "text_988JEY",
-        "button_fa77mc"
+        "text_988JEY"
       ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "color_scheme": "",
+        "color_scheme": "background-2",
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 52
