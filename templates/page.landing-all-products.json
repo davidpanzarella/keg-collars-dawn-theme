@@ -83,7 +83,8 @@
         "text_988JEY"
       ],
       "custom_css": [
-        "h2 {max-width: 760px; margin-left: auto; margin-right: auto; font-size: 42px; line-height: 1.15;}"
+        "h2 {max-width: 760px; margin-left: auto; margin-right: auto; font-size: 42px; line-height: 1.15;}",
+        "@media screen and (max-width: 749px) {h2 {max-width: 100%; font-size: 32px; }}"
       ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
@@ -92,7 +93,7 @@
         "color_scheme": "background-2",
         "full_width": true,
         "padding_top": 40,
-        "padding_bottom": 52
+        "padding_bottom": 40
       }
     },
     "collection_list_MipBxD": {
