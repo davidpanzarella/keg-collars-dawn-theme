@@ -16,7 +16,7 @@
           "type": "heading",
           "settings": {
             "heading": "Custom Print for Every Part of the Pour",
-            "heading_size": "h2"
+            "heading_size": "h1"
           }
         },
         "text_h9LVAf": {
@@ -44,7 +44,7 @@
         "buttons_EkTe4B"
       ],
       "custom_css": [
-        "@media screen and (min-width: 750px) {.banner__box {max-width: 48rem; }}"
+        "@media screen and (min-width: 750px) {.banner__box {max-width: 63rem; }}"
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
@@ -134,7 +134,7 @@
       ],
       "name": "t:sections.collection-list.presets.name",
       "settings": {
-        "title": "Collections",
+        "title": "Shop by Product",
         "heading_size": "h1",
         "image_ratio": "square",
         "columns_desktop": 3,
