@@ -68,6 +68,7 @@
       "block_order": [
         "sections--20079615181110__4b68ccd7-b37b-445f-ad77-27031e52dfbc-announcement-1"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme": "accent-1",
         "show_line_separator": true,
