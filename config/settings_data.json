@@ -229,11 +229,11 @@
         "settings": {
           "background": "#ffffff",
           "background_gradient": "",
-          "text": "#19181d",
-          "button": "#f2a100",
+          "text": "#202328",
+          "button": "#202328",
           "button_label": "#ffffff",
-          "secondary_button_label": "#19181d",
-          "shadow": "#19181d"
+          "secondary_button_label": "#202328",
+          "shadow": "#000000"
         }
       },
       "background-2": {
