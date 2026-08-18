@@ -82,6 +82,9 @@
         "heading_ebRmMW",
         "text_988JEY"
       ],
+      "custom_css": [
+        "h2 {max-width: 760px; margin-left: auto; margin-right: auto; font-size: 42px; line-height: 1.15;}"
+      ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
         "desktop_content_position": "center",
