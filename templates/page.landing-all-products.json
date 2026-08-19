@@ -424,11 +424,15 @@
         "text_Q4wDbM",
         "button_eWkc3W"
       ],
+      "custom_css": [
+        ".button {background: #f5a000; color: #20252b; opacity: 1;}",
+        ".button:after {box-shadow: none;}"
+      ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "color_scheme": "accent-1",
+        "color_scheme": "scheme-6a152767-33f3-4f11-89f5-2b3073014e44",
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 52

@@ -22,7 +22,7 @@
     "spacing_grid_vertical": 12,
     "animations_reveal_on_scroll": true,
     "animations_hover_elements": "default",
-    "buttons_border_thickness": 2,
+    "buttons_border_thickness": 4,
     "buttons_border_opacity": 100,
     "buttons_radius": 4,
     "buttons_shadow_opacity": 0,
@@ -274,7 +274,7 @@
           "background": "#20252B",
           "background_gradient": "",
           "text": "#FFFFFF",
-          "button": "#F3A000",
+          "button": "#F5A000",
           "button_label": "#20252B",
           "secondary_button_label": "#F3A000",
           "shadow": "#000000"
