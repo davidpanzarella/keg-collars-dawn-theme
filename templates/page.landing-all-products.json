@@ -194,7 +194,7 @@
         "text_wJqdPe": {
           "type": "text",
           "settings": {
-            "text": "<p>Keep every keg identified, organized and ready to move with custom printed essentials built for beverage production.</p>",
+            "text": "<p>Keep products identified, organized and ready to move with custom printed essentials made for beverage production.</p>",
             "text_style": "body"
           }
         },
@@ -214,7 +214,8 @@
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "height": "adapt",
+        "image": "shopify://shop_images/production_essentials_image.png",
+        "height": "medium",
         "desktop_image_width": "medium",
         "layout": "image_first",
         "desktop_content_position": "middle",
@@ -224,6 +225,53 @@
         "image_behavior": "none",
         "mobile_content_alignment": "left",
         "padding_top": 36,
+        "padding_bottom": 0
+      }
+    },
+    "image_with_text_JzPif9": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_9Viz8h": {
+          "type": "heading",
+          "settings": {
+            "heading": "Made for the Taproom",
+            "heading_size": "h1"
+          }
+        },
+        "text_mHVYmc": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Turn all your guest collateral into a brand experience with custom printed essentials made for the taproom and beyond.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_DxRreX": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Taproom Essentials",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_9Viz8h",
+        "text_mHVYmc",
+        "button_DxRreX"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/ChatGPT_Image_Jul_14_2026_04_10_01_PM.png",
+        "height": "medium",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-2",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
         "padding_bottom": 36
       }
     },
@@ -264,52 +312,6 @@
         "show_view_all": false,
         "columns_mobile": "1",
         "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "image_with_text_JzPif9": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_9Viz8h": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image with text",
-            "heading_size": "h1"
-          }
-        },
-        "text_mHVYmc": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "text_style": "body"
-          }
-        },
-        "button_DxRreX": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_9Viz8h",
-        "text_mHVYmc",
-        "button_DxRreX"
-      ],
-      "name": "t:sections.image-with-text.presets.name",
-      "settings": {
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -425,8 +427,8 @@
     "rich_text_zjkaYB",
     "collection_list_MipBxD",
     "image_with_text_iqfwcz",
-    "collection_list_JBqYA9",
     "image_with_text_JzPif9",
+    "collection_list_JBqYA9",
     "multicolumn_E6hDVV",
     "rich_text_zzA6bj",
     "main"
