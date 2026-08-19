@@ -275,55 +275,14 @@
         "padding_bottom": 36
       }
     },
-    "collection_list_JBqYA9": {
-      "type": "collection-list",
-      "blocks": {
-        "featured_collection_prrUGn": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "featured_collection_m3bEVR": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "featured_collection_cg8m7t": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": ""
-          }
-        }
-      },
-      "block_order": [
-        "featured_collection_prrUGn",
-        "featured_collection_m3bEVR",
-        "featured_collection_cg8m7t"
-      ],
-      "name": "t:sections.collection-list.presets.name",
-      "settings": {
-        "title": "Collections",
-        "heading_size": "h1",
-        "image_ratio": "square",
-        "columns_desktop": 3,
-        "color_scheme": "",
-        "show_view_all": false,
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "multicolumn_E6hDVV": {
       "type": "multicolumn",
       "blocks": {
         "column_emnLJa": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "title": "<strong>Have Print-Ready Artwork?</strong>",
+            "text": "<p>Upload your finished artwork and we'll take it from there.</p>",
             "link_label": "",
             "link": ""
           }
@@ -331,8 +290,8 @@
         "column_UNtQGL": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "title": "<strong>Need Help With Design?</strong>",
+            "text": "<p>Have a logo and an idea? We'll help you create a product that's ready to print.</p><p></p>",
             "link_label": "",
             "link": ""
           }
@@ -340,8 +299,8 @@
         "column_TdAWzj": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "title": "Want to See Samples First?",
+            "text": "<p>See our materials, print quality and product options before placing your order.</p>",
             "link_label": "",
             "link": ""
           }
@@ -354,17 +313,79 @@
       ],
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
-        "title": "Multicolumn",
+        "title": "How Can We Help?",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
         "columns_desktop": 3,
         "column_alignment": "left",
         "background_style": "primary",
-        "button_label": "Button label",
+        "button_label": "",
         "button_link": "",
         "color_scheme": "",
         "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collection_list_JBqYA9": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_ytkiC7": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "beer"
+          }
+        },
+        "featured_collection_9EyiJ4": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "cider"
+          }
+        },
+        "featured_collection_ewKraR": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "kombucha"
+          }
+        },
+        "featured_collection_prrUGn": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "cold-brew-coffee"
+          }
+        },
+        "featured_collection_m3bEVR": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "wine"
+          }
+        },
+        "featured_collection_cg8m7t": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "non-alcoholic-products"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_ytkiC7",
+        "featured_collection_9EyiJ4",
+        "featured_collection_ewKraR",
+        "featured_collection_prrUGn",
+        "featured_collection_m3bEVR",
+        "featured_collection_cg8m7t"
+      ],
+      "name": "t:sections.collection-list.presets.name",
+      "settings": {
+        "title": "Shop by Industry",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "2",
         "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
@@ -428,8 +449,8 @@
     "collection_list_MipBxD",
     "image_with_text_iqfwcz",
     "image_with_text_JzPif9",
-    "collection_list_JBqYA9",
     "multicolumn_E6hDVV",
+    "collection_list_JBqYA9",
     "rich_text_zzA6bj",
     "main"
   ]
