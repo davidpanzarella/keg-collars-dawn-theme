@@ -22,7 +22,7 @@
         "text_h9LVAf": {
           "type": "text",
           "settings": {
-            "text": "Custom print for breweries, beverage brands and hospitality, from production to the taproom.",
+            "text": "Custom printing for breweries, beverage brands and hospitality businesses. From production to the taproom.",
             "text_style": "body"
           }
         },
@@ -30,7 +30,7 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "Shop All Products",
-            "button_link_1": "",
+            "button_link_1": "shopify://collections",
             "button_style_secondary_1": false,
             "button_label_2": "",
             "button_link_2": "",
@@ -44,7 +44,9 @@
         "buttons_EkTe4B"
       ],
       "custom_css": [
-        "@media screen and (min-width: 750px) {.banner__box {max-width: 63rem; }}"
+        "@media screen and (min-width: 750px) {.banner__box {max-width: 63rem; }}",
+        ".button {background: #f5a000; color: #20252b; opacity: 1;}",
+        ".button:after {box-shadow: none;}"
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
@@ -101,8 +103,8 @@
         "content_alignment": "center",
         "color_scheme": "background-2",
         "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 40
+        "padding_top": 52,
+        "padding_bottom": 52
       }
     },
     "collection_list_MipBxD": {
