@@ -282,7 +282,7 @@
           "type": "column",
           "settings": {
             "title": "<strong>Have Print-Ready Artwork?</strong>",
-            "text": "<p>Upload your finished artwork and we'll take it from there.</p>",
+            "text": "<p>Start Your Order</p>",
             "link_label": "",
             "link": ""
           }
@@ -291,7 +291,7 @@
           "type": "column",
           "settings": {
             "title": "<strong>Need Help With Design?</strong>",
-            "text": "<p>Have a logo and an idea? We'll help you create a product that's ready to print.</p><p></p>",
+            "text": "<p>Get Design Help</p>",
             "link_label": "",
             "link": ""
           }
@@ -299,8 +299,8 @@
         "column_TdAWzj": {
           "type": "column",
           "settings": {
-            "title": "Want to See Samples First?",
-            "text": "<p>See our materials, print quality and product options before placing your order.</p>",
+            "title": "<strong>Have Questions?</strong>",
+            "text": "<p>Talk With Our Team</p>",
             "link_label": "",
             "link": ""
           }
@@ -397,23 +397,23 @@
         "heading_aENqbe": {
           "type": "heading",
           "settings": {
-            "heading": "Talk about your brand",
+            "heading": "Not Sure Where to Start?",
             "heading_size": "h1"
           }
         },
         "text_Q4wDbM": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+            "text": "<p>Tell us what you need and we'll help you find the right product, print option and quantity for your business.</p>"
           }
         },
         "button_eWkc3W": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
+            "button_label": "Request Samples",
             "button_link": "",
             "button_style_secondary": false,
-            "button_label_2": "",
+            "button_label_2": "Contact Us",
             "button_link_2": "",
             "button_style_secondary_2": false
           }
@@ -428,7 +428,7 @@
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "color_scheme": "",
+        "color_scheme": "accent-1",
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 52
