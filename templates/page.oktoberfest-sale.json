@@ -15,21 +15,21 @@
         "heading_fEJGVn": {
           "type": "heading",
           "settings": {
-            "heading": "Custom Print for Every Part of the Pour",
+            "heading": "GET READY FOR OKTOBERFEST",
             "heading_size": "h1"
           }
         },
         "text_h9LVAf": {
           "type": "text",
           "settings": {
-            "text": "Custom printing for breweries, beverage brands and hospitality businesses. From production to the taproom.",
+            "text": "Save 10% on custom printed keg collars, growler tags & coasters through September 4. No design? No problem. We can help bring your Oktoberfest branding to life.",
             "text_style": "body"
           }
         },
         "buttons_EkTe4B": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Shop All Products",
+            "button_label_1": "SHOP THE SALE",
             "button_link_1": "shopify://collections/all",
             "button_style_secondary_1": false,
             "button_label_2": "",
@@ -50,7 +50,7 @@
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "image": "shopify://shop_images/all_products_hero_image_4cf672e3-aa4f-4d99-b09e-52e1a4b20974.png",
+        "image": "shopify://shop_images/oktoberfest_hero_image.png",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-left",
