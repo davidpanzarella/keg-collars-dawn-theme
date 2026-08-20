@@ -23,7 +23,7 @@
           "type": "text",
           "settings": {
             "text": "Save 10% on custom printed keg collars, growler tags & coasters through September 4. No design? No problem. We can help bring your Oktoberfest branding to life.",
-            "text_style": "body"
+            "text_style": "subtitle"
           }
         },
         "buttons_EkTe4B": {
@@ -69,12 +69,13 @@
         "heading_ebRmMW": {
           "type": "heading",
           "settings": {
-            "heading": "From Production to Pour,",
+            "heading": "Your Oktoberfest Rush Starts Now!",
             "heading_size": "h0"
           }
         },
         "heading_bLJc64": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "We Print It All.",
             "heading_size": "h1"
@@ -83,7 +84,7 @@
         "text_988JEY": {
           "type": "text",
           "settings": {
-            "text": "<p>From keg room essentials to taproom touchpoints, KegCollars.net helps beverage and hospitality businesses bring their brands to life with custom printed products made for the way they work.</p>"
+            "text": "<p>Breweries are gearing up for one of the busiest beer seasons of the year. Get your kegs, taproom and take-home pours ready with custom printed essentials designed around your brand.</p>"
           }
         }
       },
@@ -101,7 +102,7 @@
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "color_scheme": "background-2",
+        "color_scheme": "scheme-6a152767-33f3-4f11-89f5-2b3073014e44",
         "full_width": true,
         "padding_top": 52,
         "padding_bottom": 52
@@ -130,30 +131,35 @@
         },
         "featured_collection_x9Eqjx": {
           "type": "featured_collection",
+          "disabled": true,
           "settings": {
             "collection": "tasting-flight-cards"
           }
         },
         "featured_collection_9XXjnD": {
           "type": "featured_collection",
+          "disabled": true,
           "settings": {
             "collection": "menu-printing-restaurant-materials"
           }
         },
         "featured_collection_3KNGbG": {
           "type": "featured_collection",
+          "disabled": true,
           "settings": {
             "collection": "keg-caps"
           }
         },
         "featured_collection_XVjXHH": {
           "type": "featured_collection",
+          "disabled": true,
           "settings": {
             "collection": "keg-wraps"
           }
         },
         "featured_collection_thPdkA": {
           "type": "featured_collection",
+          "disabled": true,
           "settings": {
             "collection": "labels"
           }
@@ -171,10 +177,10 @@
       ],
       "name": "t:sections.collection-list.presets.name",
       "settings": {
-        "title": "Shop by Product",
-        "heading_size": "h1",
+        "title": "SHOP CUSTOM PRINTED ESSENTIALS",
+        "heading_size": "h2",
         "image_ratio": "square",
-        "columns_desktop": 4,
+        "columns_desktop": 3,
         "color_scheme": "",
         "show_view_all": false,
         "columns_mobile": "2",
