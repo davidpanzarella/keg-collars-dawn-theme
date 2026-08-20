@@ -195,22 +195,22 @@
         "heading_M8imHX": {
           "type": "heading",
           "settings": {
-            "heading": "Made for Production",
+            "heading": "Get Your Oktoberfest Kegs Ready",
             "heading_size": "h1"
           }
         },
         "text_wJqdPe": {
           "type": "text",
           "settings": {
-            "text": "<p>Keep products identified, organized and ready to move with custom printed essentials made for beverage production.</p>",
+            "text": "<p>Keep seasonal releases identified, organized and ready to move with custom printed keg collars built for busy production schedules.</p><p></p>",
             "text_style": "body"
           }
         },
         "button_NBDxtr": {
           "type": "button",
           "settings": {
-            "button_label": "Shop Production Essentials",
-            "button_link": "",
+            "button_label": "Custom Keg Collars",
+            "button_link": "shopify://collections/custom-design-keg-collars-oktoberfest",
             "button_style_secondary": false
           }
         }
@@ -222,14 +222,14 @@
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "image": "shopify://shop_images/production_essentials_image.png",
+        "image": "shopify://shop_images/image-with-text_kegs-oktoberfest.png",
         "height": "medium",
         "desktop_image_width": "medium",
         "layout": "image_first",
         "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
-        "color_scheme": "background-2",
+        "color_scheme": "background-1",
         "image_behavior": "none",
         "mobile_content_alignment": "left",
         "padding_top": 36,
@@ -242,21 +242,21 @@
         "heading_9Viz8h": {
           "type": "heading",
           "settings": {
-            "heading": "Made for the Taproom",
+            "heading": "Carry Oktoberfest to the Taproom",
             "heading_size": "h1"
           }
         },
         "text_mHVYmc": {
           "type": "text",
           "settings": {
-            "text": "<p>Turn all your guest collateral into a brand experience with custom printed essentials made for the taproom and beyond.</p>",
+            "text": "<p>Keep the celebration going beyond the keg with custom coasters and growler tags designed to carry your seasonal branding from the taproom to take-home pours.</p><p></p>",
             "text_style": "body"
           }
         },
         "button_DxRreX": {
           "type": "button",
           "settings": {
-            "button_label": "Shop Taproom Essentials",
+            "button_label": "Custom Coasters & Growler Tags",
             "button_link": "",
             "button_style_secondary": false
           }
@@ -269,14 +269,14 @@
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "image": "shopify://shop_images/ChatGPT_Image_Jul_14_2026_04_10_01_PM.png",
+        "image": "shopify://shop_images/image-with-text-growler-tags-oktoberfest.png",
         "height": "medium",
         "desktop_image_width": "medium",
         "layout": "text_first",
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
-        "color_scheme": "background-2",
+        "color_scheme": "background-1",
         "image_behavior": "none",
         "mobile_content_alignment": "left",
         "padding_top": 0,
