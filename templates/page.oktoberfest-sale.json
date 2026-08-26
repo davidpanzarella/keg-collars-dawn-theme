@@ -290,7 +290,7 @@
           "type": "column",
           "settings": {
             "title": "<strong>Need Help With Design?</strong>",
-            "text": "<p>Get Design Help</p>",
+            "text": "<p>No finished artwork? No problem. We can help bring your Oktoberfest idea to life.</p>",
             "link_label": "Talk to Our Team",
             "link": ""
           }
@@ -299,7 +299,7 @@
           "type": "column",
           "settings": {
             "title": "<strong>Download Design Templates</strong>",
-            "text": "",
+            "text": "<p>Designing it yourself? Start with the correct size and setup for your product.</p>",
             "link_label": "Download Here",
             "link": ""
           }
@@ -308,7 +308,7 @@
           "type": "column",
           "settings": {
             "title": "<strong>Have Print-Ready Artwork?</strong>",
-            "text": "",
+            "text": "<p>Already have your design ready to go? Choose your product and start your order.</p>",
             "link_label": "Start Your Order",
             "link": "shopify://collections/custom-design-keg-collars-oktoberfest"
           }
@@ -385,6 +385,7 @@
         "featured_collection_m3bEVR",
         "featured_collection_cg8m7t"
       ],
+      "disabled": true,
       "name": "t:sections.collection-list.presets.name",
       "settings": {
         "title": "Shop by Industry",
