@@ -59,10 +59,75 @@
         "padding_top": 60,
         "padding_bottom": 60
       }
+    },
+    "multicolumn_LgKtFW": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_98nBNg": {
+          "type": "column",
+          "settings": {
+            "title": "KEG COLLARS",
+            "text": "<p>5.6875\", 6.5\", 7\", Hexagon, Rectangle & Dome Keg Collars.<br/></p>",
+            "link_label": "View Templates",
+            "link": ""
+          }
+        },
+        "column_Xj4rGk": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>GROWLER TAGS</strong>",
+            "text": "<p>Our Signature 5.5\" x 2.5\" Growler Tag.</p>",
+            "link_label": "View Template",
+            "link": ""
+          }
+        },
+        "column_PftwUk": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>COASTERS</strong>",
+            "text": "<p>3.75\" x 3.75\" Circle and Square (rounded corners) Coasters.</p>",
+            "link_label": "View Templates",
+            "link": ""
+          }
+        },
+        "column_6L343B": {
+          "type": "column",
+          "settings": {
+            "title": "FLIGHT CARDS",
+            "text": "<p>3.5\" x 4\", 3.5\" x 6\", 3.5\" x 12\", 3.75\" Circle & Square, 6.5\" & 7\" Circle Flight Cards.</p>",
+            "link_label": "View Templates",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_98nBNg",
+        "column_Xj4rGk",
+        "column_PftwUk",
+        "column_6L343B"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "background-2",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main",
-    "rich_text_bJH7Mb"
+    "rich_text_bJH7Mb",
+    "multicolumn_LgKtFW"
   ]
 }
