@@ -286,6 +286,24 @@
     "multicolumn_E6hDVV": {
       "type": "multicolumn",
       "blocks": {
+        "column_UNtQGL": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>Need Help With Design?</strong>",
+            "text": "<p>Get Design Help</p>",
+            "link_label": "Talk to Our Team",
+            "link": ""
+          }
+        },
+        "column_TdAWzj": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>Download Design Templates</strong>",
+            "text": "",
+            "link_label": "Download Here",
+            "link": ""
+          }
+        },
         "column_emnLJa": {
           "type": "column",
           "settings": {
@@ -294,30 +312,12 @@
             "link_label": "Start Your Order",
             "link": "shopify://collections/custom-design-keg-collars-oktoberfest"
           }
-        },
-        "column_UNtQGL": {
-          "type": "column",
-          "settings": {
-            "title": "<strong>Need Help With Design?</strong>",
-            "text": "<p>Get Design Help</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_TdAWzj": {
-          "type": "column",
-          "settings": {
-            "title": "<strong>Have Questions?</strong>",
-            "text": "<p>Talk With Our Team</p>",
-            "link_label": "",
-            "link": ""
-          }
         }
       },
       "block_order": [
-        "column_emnLJa",
         "column_UNtQGL",
-        "column_TdAWzj"
+        "column_TdAWzj",
+        "column_emnLJa"
       ],
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
