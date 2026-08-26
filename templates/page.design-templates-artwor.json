@@ -11,13 +11,58 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "rich_text_bJH7Mb": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_dFiVGc": {
+          "type": "heading",
+          "settings": {
+            "heading": "Design Templates & Artwork Guidelines",
+            "heading_size": "h2"
+          }
+        },
+        "text_9MdM4H": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Start with the right setup. Download the template for your product, add your artwork and send us your finished file. Need help? Our team can assist with artwork setup and design.</p>"
+          }
+        },
+        "button_bVJhFC": {
+          "type": "button",
+          "settings": {
+            "button_label": "Need Design Help?",
+            "button_link": "mailto:mike@kegcollars.net?subject=KegCollars.net%20-%20Design%20Help",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_dFiVGc",
+        "text_9MdM4H",
+        "button_bVJhFC"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "rich_text_bJH7Mb"
   ]
 }
