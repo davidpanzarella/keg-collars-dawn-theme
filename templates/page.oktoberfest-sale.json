@@ -292,7 +292,7 @@
             "title": "<strong>Need Help With Design?</strong>",
             "text": "<p>No finished artwork? No problem. We can help bring your Oktoberfest idea to life.</p>",
             "link_label": "Talk to Our Team",
-            "link": ""
+            "link": "mailto:mike@kegcollars.net?subject=KegCollars.net%20-%20Oktoberfest%20Design%20Help"
           }
         },
         "column_TdAWzj": {
@@ -406,23 +406,23 @@
         "heading_aENqbe": {
           "type": "heading",
           "settings": {
-            "heading": "Not Sure Where to Start?",
+            "heading": "<strong>READY FOR OKTOBERFEST?</strong>",
             "heading_size": "h1"
           }
         },
         "text_Q4wDbM": {
           "type": "text",
           "settings": {
-            "text": "<p>Tell us what you need and we'll help you find the right product, print option and quantity for your business.</p>"
+            "text": "<p>Save 10% on custom printed keg collars, growler tags and coasters during our Oktoberfest promotion.</p>"
           }
         },
         "button_eWkc3W": {
           "type": "button",
           "settings": {
-            "button_label": "Request Samples",
+            "button_label": "SHOP THE OKTOBERFEST SALE →",
             "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "Contact Us",
+            "button_style_secondary": true,
+            "button_label_2": "",
             "button_link_2": "",
             "button_style_secondary_2": false
           }
@@ -441,7 +441,7 @@
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "color_scheme": "scheme-6a152767-33f3-4f11-89f5-2b3073014e44",
+        "color_scheme": "inverse",
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 52
