@@ -103,8 +103,8 @@
           "type": "column",
           "settings": {
             "title": "MENUS",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
+            "text": "<p>Templates for our most popular flat, drink and folded menu sizes.</p>",
+            "link_label": "View Templates",
             "link": ""
           }
         },
@@ -112,8 +112,8 @@
           "type": "column",
           "settings": {
             "title": "KEG WRAPS",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
+            "text": "<p>Artwork templates for custom printed keg wraps.</p>",
+            "link_label": "View Templates",
             "link": ""
           }
         },
@@ -121,8 +121,8 @@
           "type": "column",
           "settings": {
             "title": "LABELS",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
+            "text": "<p>Artwork setup and templates for custom printed labels.</p>",
+            "link_label": "View Templates",
             "link": ""
           }
         },
@@ -130,8 +130,8 @@
           "type": "column",
           "settings": {
             "title": "CUP SLEEVES",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
+            "text": "<p>Artwork templates for custom printed coffee cup sleeves.</p>",
+            "link_label": "View Templates",
             "link": ""
           }
         }
