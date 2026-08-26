@@ -24,7 +24,7 @@
           "type": "heading",
           "settings": {
             "heading": "Design Templates & Artwork Guidelines",
-            "heading_size": "h2"
+            "heading_size": "h1"
           }
         },
         "text_9MdM4H": {
@@ -52,12 +52,12 @@
       ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
+        "desktop_content_position": "left",
+        "content_alignment": "left",
         "color_scheme": "",
         "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
+        "padding_top": 60,
+        "padding_bottom": 60
       }
     }
   },
