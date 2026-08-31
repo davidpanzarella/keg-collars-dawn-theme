@@ -283,6 +283,75 @@
         "padding_bottom": 36
       }
     },
+    "featured_product_FA7UAD": {
+      "type": "featured-product",
+      "blocks": {
+        "text_mFk96J": {
+          "type": "text",
+          "settings": {
+            "text": "FUN FOR ALL AGES",
+            "text_style": "uppercase"
+          }
+        },
+        "title_BtrXD9": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "price_G7KXmX": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker_3KPrgF": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "quantity_selector_9gPBbK": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons_jDncNG": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": true
+          }
+        },
+        "share_xTEVxX": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "text_mFk96J",
+        "title_BtrXD9",
+        "price_G7KXmX",
+        "variant_picker_3KPrgF",
+        "quantity_selector_9gPBbK",
+        "buy_buttons_jDncNG",
+        "share_xTEVxX"
+      ],
+      "name": "t:sections.featured-product.presets.name",
+      "settings": {
+        "product": "oktoberfest-activity-sheets-100-pack",
+        "color_scheme": "",
+        "secondary_background": false,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "multicolumn_E6hDVV": {
       "type": "multicolumn",
       "blocks": {
@@ -462,6 +531,7 @@
     "collection_list_MipBxD",
     "image_with_text_iqfwcz",
     "image_with_text_JzPif9",
+    "featured_product_FA7UAD",
     "multicolumn_E6hDVV",
     "collection_list_JBqYA9",
     "rich_text_zzA6bj",
