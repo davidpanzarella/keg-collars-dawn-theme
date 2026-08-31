@@ -34,18 +34,17 @@
         },
         "slide_wNfzhK": {
           "type": "slide",
-          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/March_Madness.png",
-            "heading": "",
+            "image": "shopify://shop_images/ChatGPT_Image_Aug_31_2026_06_48_33_AM.png",
+            "heading": "Get Oktoberfest Ready",
             "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "",
+            "subheading": "Save 10% on custom printed keg collars, growler tags & coasters for your fall releases, festivals and taproom events.",
+            "button_label": "Shop Oktoberfest",
+            "link": "shopify://collections/bundle-save-on-brewery-taproom-essentials-copy",
             "button_style_secondary": false,
             "box_align": "middle-left",
-            "show_text_box": true,
-            "text_alignment": "center",
+            "show_text_box": false,
+            "text_alignment": "left",
             "image_overlay_opacity": 0,
             "color_scheme": "background-1",
             "text_alignment_mobile": "center"
@@ -72,7 +71,6 @@
         },
         "slide_VTAEYB": {
           "type": "slide",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/On_ALL_7_Various_Shapes_or_Sizes_1.png",
             "heading": "<strong>Custom Keg Collars Shipped in 3 Days</strong>",
@@ -117,8 +115,8 @@
         "slide_f8Jy44"
       ],
       "settings": {
-        "layout": "grid",
-        "slide_height": "adapt_image",
+        "layout": "full_bleed",
+        "slide_height": "medium",
         "slider_visual": "dots",
         "auto_rotate": false,
         "change_slides_speed": 3,
