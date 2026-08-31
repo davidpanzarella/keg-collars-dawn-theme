@@ -420,7 +420,7 @@
           "type": "button",
           "settings": {
             "button_label": "SHOP THE OKTOBERFEST SALE →",
-            "button_link": "",
+            "button_link": "shopify://collections/bundle-save-on-brewery-taproom-essentials-copy",
             "button_style_secondary": true,
             "button_label_2": "",
             "button_link_2": "",
