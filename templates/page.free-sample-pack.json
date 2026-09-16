@@ -67,7 +67,7 @@
         "column_wTRCDF": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Request_aac8870a-6188-4116-850e-e47c1e12c4dc.png",
+            "image": "shopify://shop_images/Select_a9bf94bb-eda9-41e1-9eff-c49d3830005e.png",
             "title": "CHOOSE SAMPLES",
             "text": "<p>Select the sample pack that fits your business.</p>",
             "link_label": "",
@@ -77,7 +77,7 @@
         "column_BywHiM": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Verify_310ea7f3-31c7-40db-a97b-985e50e3f741.png",
+            "image": "shopify://shop_images/ship_6645618c-d3b1-444f-900f-64fb6e195b38.png",
             "title": "WE SHIP",
             "text": "<p>We'll put together a selection of printed samples.</p>",
             "link_label": "",
@@ -87,7 +87,7 @@
         "column_ygaMwY": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Approve_59b05834-459b-46cb-869d-0f3606bcc078.png",
+            "image": "shopify://shop_images/decide_68e7d4fc-597c-451f-9146-f284a950b61e.png",
             "title": "YOU DECIDE",
             "text": "<p>See the quality firsthand before placing an order.</p>",
             "link_label": "",
