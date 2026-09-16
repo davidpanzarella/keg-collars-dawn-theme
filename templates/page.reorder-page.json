@@ -77,6 +77,7 @@
         "column_BywHiM": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/Verify_310ea7f3-31c7-40db-a97b-985e50e3f741.png",
             "title": "VERIFY",
             "text": "<p>We verify the items request and gather artwork. </p>",
             "link_label": "",
@@ -86,6 +87,7 @@
         "column_ygaMwY": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/Approve_59b05834-459b-46cb-869d-0f3606bcc078.png",
             "title": "APPROVE",
             "text": "<p>You approve your proof and we'll print it. </p>",
             "link_label": "",
