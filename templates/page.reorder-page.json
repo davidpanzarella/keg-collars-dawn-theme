@@ -67,7 +67,7 @@
         "column_wTRCDF": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Request_1211c127-e15e-4c62-aeec-1d419d1239ca.png",
+            "image": "shopify://shop_images/Request_aac8870a-6188-4116-850e-e47c1e12c4dc.png",
             "title": "REQUEST",
             "text": "<p>Tell us what you'd like to reOrder. </p>",
             "link_label": "",
@@ -109,7 +109,7 @@
         "background_style": "none",
         "button_label": "",
         "button_link": "",
-        "color_scheme": "accent-1",
+        "color_scheme": "scheme-b96d41d0-abd3-4109-8296-95b6acc2520c",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 36,
