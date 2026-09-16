@@ -114,8 +114,8 @@
         "color_scheme": "scheme-b96d41d0-abd3-4109-8296-95b6acc2520c",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 12,
+        "padding_bottom": 12
       }
     },
     "main": {
