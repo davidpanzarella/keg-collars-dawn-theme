@@ -238,11 +238,11 @@
       },
       "background-2": {
         "settings": {
-          "background": "#F5F1E9",
+          "background": "#f5f1e9",
           "background_gradient": "",
           "text": "#252525",
           "button": "#252525",
-          "button_label": "#FFFFFF",
+          "button_label": "#ffffff",
           "secondary_button_label": "#252525",
           "shadow": "#000000"
         }
@@ -252,7 +252,7 @@
           "background": "#202328",
           "background_gradient": "",
           "text": "#ffffff",
-          "button": "#FFFFFF",
+          "button": "#ffffff",
           "button_label": "#202328",
           "secondary_button_label": "#ffffff",
           "shadow": "#000000"
@@ -260,23 +260,34 @@
       },
       "accent-1": {
         "settings": {
-          "background": "#F3A000",
+          "background": "#f3a000",
           "background_gradient": "",
           "text": "#ffffff",
-          "button": "#20252B",
-          "button_label": "#FFFFFF",
-          "secondary_button_label": "#20252B",
+          "button": "#20252b",
+          "button_label": "#ffffff",
+          "secondary_button_label": "#20252b",
           "shadow": "#000000"
         }
       },
       "scheme-6a152767-33f3-4f11-89f5-2b3073014e44": {
         "settings": {
-          "background": "#20252B",
+          "background": "#20252b",
           "background_gradient": "",
-          "text": "#FFFFFF",
-          "button": "#F5A000",
-          "button_label": "#20252B",
-          "secondary_button_label": "#F3A000",
+          "text": "#ffffff",
+          "button": "#f5a000",
+          "button_label": "#20252b",
+          "secondary_button_label": "#f3a000",
+          "shadow": "#000000"
+        }
+      },
+      "scheme-b96d41d0-abd3-4109-8296-95b6acc2520c": {
+        "settings": {
+          "background": "#F3A000",
+          "background_gradient": "",
+          "text": "#000000",
+          "button": "#202328",
+          "button_label": "#ffffff",
+          "secondary_button_label": "#202328",
           "shadow": "#000000"
         }
       }
