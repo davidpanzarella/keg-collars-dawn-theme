@@ -13,7 +13,7 @@
       "type": "image-banner",
       "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "image": "shopify://shop_images/Collection_Banner_-_Distro_0dec75a8-564e-40e2-942d-460347965bdc.png",
+        "image": "shopify://shop_images/collection_image_-_all_products.png",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "desktop_content_position": "top-left",
@@ -32,25 +32,25 @@
         "featured_collection_8XCegX": {
           "type": "featured_collection",
           "settings": {
-            "collection": "custom-design-keg-collars-copy-1"
+            "collection": "keg-collars"
           }
         },
         "featured_collection_jcT4Xx": {
           "type": "featured_collection",
           "settings": {
-            "collection": "circle-keg-collars-copy"
+            "collection": "growler-tags"
           }
         },
         "featured_collection_qWMARW": {
           "type": "featured_collection",
           "settings": {
-            "collection": "hexagon-keg-collars-copy"
+            "collection": "keg-caps"
           }
         },
         "featured_collection_yNfF7L": {
           "type": "featured_collection",
           "settings": {
-            "collection": "dome-keg-collars-copy"
+            "collection": "keg-wraps"
           }
         }
       },
