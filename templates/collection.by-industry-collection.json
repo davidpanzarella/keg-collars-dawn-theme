@@ -13,7 +13,7 @@
       "type": "image-banner",
       "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "image": "shopify://shop_images/collection_image_-_all_products.png",
+        "image": "shopify://shop_images/Collection_Banner_-_Distro_1.png",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "desktop_content_position": "top-left",
@@ -32,47 +32,47 @@
         "column_cTwCNz": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/custom_keg_collars_c1c26b90-5e7c-4e73-a5eb-ca871c691095.png",
+            "image": "shopify://shop_images/ChatGPT_Image_Sep_16_2026_03_36_01_PM.png",
             "title": "",
             "text": "",
             "link_label": "",
-            "link": "shopify://collections/keg-collars"
+            "link": "shopify://collections/beer"
           }
         },
         "column_8eVcn9": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/ChatGPT_Image_Sep_16_2026_02_31_00_PM.png",
+            "image": "shopify://shop_images/ChatGPT_Image_Sep_16_2026_03_35_51_PM.png",
             "title": "",
             "text": "",
             "link_label": "",
-            "link": "shopify://collections/growler-tags"
+            "link": "shopify://collections/cider"
           }
         },
         "column_6Nbygh": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/ChatGPT_Image_Sep_16_2026_02_42_44_PM.png",
+            "image": "shopify://shop_images/ChatGPT_Image_Sep_16_2026_03_38_43_PM.png",
             "title": "",
             "text": "",
             "link_label": "",
-            "link": "shopify://collections/custom-coasters"
+            "link": "shopify://collections/cold-brew-coffee"
           }
         },
         "column_bUUjk7": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/ChatGPT_Image_Sep_16_2026_02_54_12_PM.png",
+            "image": "shopify://shop_images/ChatGPT_Image_Sep_16_2026_03_40_44_PM.png",
             "title": "",
             "text": "",
             "link_label": "",
-            "link": "shopify://collections/keg-wraps"
+            "link": "shopify://collections/kombucha"
           }
         },
         "column_9X9jaq": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/ChatGPT_Image_Sep_16_2026_02_57_51_PM.png",
+            "image": "shopify://shop_images/ChatGPT_Image_Sep_16_2026_03_43_10_PM.png",
             "title": "",
             "text": "",
             "link_label": "",
