@@ -26,6 +26,85 @@
         "show_text_below": true
       }
     },
+    "multicolumn_7WWRBe": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_cTwCNz": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/custom_keg_collars_c1c26b90-5e7c-4e73-a5eb-ca871c691095.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://collections/keg-collars"
+          }
+        },
+        "column_8eVcn9": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_Sep_16_2026_02_31_00_PM.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://collections/growler-tags"
+          }
+        },
+        "column_6Nbygh": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_Sep_16_2026_02_42_44_PM.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://collections/custom-coasters"
+          }
+        },
+        "column_bUUjk7": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_Sep_16_2026_02_54_12_PM.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://collections/keg-wraps"
+          }
+        },
+        "column_9X9jaq": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_Sep_16_2026_02_57_51_PM.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://collections/keg-caps"
+          }
+        }
+      },
+      "block_order": [
+        "column_cTwCNz",
+        "column_8eVcn9",
+        "column_6Nbygh",
+        "column_bUUjk7",
+        "column_9X9jaq"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 5,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "shopify://collections/keg-collars",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "collection_list_iXmC9g": {
       "type": "collection-list",
       "blocks": {
@@ -60,6 +139,7 @@
         "featured_collection_qWMARW",
         "featured_collection_yNfF7L"
       ],
+      "disabled": true,
       "name": "t:sections.collection-list.presets.name",
       "settings": {
         "title": "",
@@ -105,6 +185,7 @@
   },
   "order": [
     "image_banner_gRGN7M",
+    "multicolumn_7WWRBe",
     "collection_list_iXmC9g",
     "banner",
     "product-grid"
