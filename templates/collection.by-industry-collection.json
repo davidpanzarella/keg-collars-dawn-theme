@@ -98,7 +98,7 @@
         "background_style": "none",
         "button_label": "",
         "button_link": "shopify://collections/keg-collars",
-        "color_scheme": "",
+        "color_scheme": "background-1",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 36,
