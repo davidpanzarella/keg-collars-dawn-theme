@@ -70,13 +70,13 @@
           "type": "heading",
           "settings": {
             "heading": "Choose the Keg Collar That's Right for You",
-            "heading_size": "h1"
+            "heading_size": "h2"
           }
         },
         "text_yRHmde": {
           "type": "text",
           "settings": {
-            "text": "<h5>Whether your artwork is ready to go or you just need a simple stock collar, we've made ordering easy.</h5>"
+            "text": "<h6>Whether your artwork is ready to go or you just need a simple stock collar, we've made ordering easy.</h6>"
           }
         },
         "button_FQKT7K": {
