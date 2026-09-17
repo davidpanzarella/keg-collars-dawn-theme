@@ -15,26 +15,26 @@
         "heading_fEJGVn": {
           "type": "heading",
           "settings": {
-            "heading": "Custom Print for Every Part of the Pour",
+            "heading": "Custom Keg Collars for Every Pour",
             "heading_size": "h1"
           }
         },
         "text_h9LVAf": {
           "type": "text",
           "settings": {
-            "text": "Custom printing for breweries, beverage brands and hospitality businesses. From production to the taproom.",
+            "text": "From a micro-brewery taproom to a full scale barrel house and distribution. We have the keg collars to fit your need.  Custom, template or stock, we've got you covered.",
             "text_style": "body"
           }
         },
         "buttons_EkTe4B": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Shop All Products",
-            "button_link_1": "shopify://collections/all",
+            "button_label_1": "Already Have Artwork! START HERE",
+            "button_link_1": "shopify://collections/custom-design-keg-collars",
             "button_style_secondary_1": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "button_label_2": "Explore Templates",
+            "button_link_2": "shopify://collections/template-keg-collars",
+            "button_style_secondary_2": true
           }
         }
       },
