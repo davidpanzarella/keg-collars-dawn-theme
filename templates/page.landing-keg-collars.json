@@ -445,28 +445,28 @@
         "column_emnLJa": {
           "type": "column",
           "settings": {
-            "title": "<strong>Have Print-Ready Artwork?</strong>",
-            "text": "<p>Start Your Order</p>",
-            "link_label": "",
-            "link": ""
+            "title": "<strong>Need Help With Design?</strong>",
+            "text": "<p>Need assistance with your artwork? No problem. We can help bring your keg collar idea to life.</p>",
+            "link_label": "Talk To Our Team",
+            "link": "mailto:mike@kegcollars.net"
           }
         },
         "column_UNtQGL": {
           "type": "column",
           "settings": {
-            "title": "<strong>Need Help With Design?</strong>",
-            "text": "<p>Get Design Help</p>",
-            "link_label": "",
-            "link": ""
+            "title": "<strong>Download Design Templates</strong>",
+            "text": "<p>Designing it yourself? Start with the correct size and setup for your product.</p>",
+            "link_label": "Download Templates",
+            "link": "shopify://pages/print-guidelines-templates"
           }
         },
         "column_TdAWzj": {
           "type": "column",
           "settings": {
-            "title": "<strong>Have Questions?</strong>",
-            "text": "<p>Talk With Our Team</p>",
-            "link_label": "",
-            "link": ""
+            "title": "<strong>Have Print-Ready Artwork</strong>",
+            "text": "<p>Already have your design ready to go? Choose your product and start your order.</p>",
+            "link_label": "Start Your ORder",
+            "link": "shopify://collections/all"
           }
         }
       },
@@ -486,7 +486,7 @@
         "background_style": "primary",
         "button_label": "",
         "button_link": "",
-        "color_scheme": "",
+        "color_scheme": "scheme-b96d41d0-abd3-4109-8296-95b6acc2520c",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 36,
