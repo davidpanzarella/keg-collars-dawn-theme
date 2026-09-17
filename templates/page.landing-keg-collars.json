@@ -154,7 +154,7 @@
         "columns_desktop": 3,
         "column_alignment": "center",
         "background_style": "none",
-        "button_label": "Button label",
+        "button_label": "",
         "button_link": "",
         "color_scheme": "",
         "columns_mobile": "1",
@@ -198,7 +198,7 @@
       "settings": {
         "image": "shopify://shop_images/ChatGPT_Image_Sep_17_2026_03_25_53_PM.png",
         "height": "adapt",
-        "desktop_image_width": "medium",
+        "desktop_image_width": "large",
         "layout": "image_first",
         "desktop_content_position": "middle",
         "desktop_content_alignment": "center",
