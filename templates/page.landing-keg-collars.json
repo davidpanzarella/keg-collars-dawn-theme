@@ -332,7 +332,7 @@
       "name": "t:sections.collection-list.presets.name",
       "settings": {
         "title": "What Shape Fits Your Brand?",
-        "heading_size": "h2",
+        "heading_size": "h1",
         "image_ratio": "square",
         "columns_desktop": 4,
         "color_scheme": "",
