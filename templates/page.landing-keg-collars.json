@@ -493,6 +493,70 @@
         "padding_bottom": 36
       }
     },
+    "multicolumn_9YU7JJ": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_BpRwpi": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>★★★★★</strong>",
+            "text": "<p>Our favorite thing about using kegcollars.net is the ease of ordering, the superior customer service, and most importantly, the quality of the product.<br/>- Upslope Brewing -</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_VGiwL6": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>★★★★★</strong>",
+            "text": "<p>We love how simple it is to customize the keg collars to fit our needs. The ability to track our orders as it progresses in production is also really neat.<br/>- Cartel Coffee Lab -</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_9CrBab": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>★★★★★</strong>",
+            "text": "<p>We found out about keg collars.net from seeing the quality of work they’d done for our friends and their breweries. Keg Collars.net makes it quick, easy and effortless to order.<br/>- Goodlife Brewing -</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_VmQpzf": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>★★★★★</strong>",
+            "text": "<p>What we like most about using KegCollars.net is the easy process, great pricing, friendly customer service, very quick responses and turnaround time.</p><p>- Double Shovel Cider Company -</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_BpRwpi",
+        "column_VGiwL6",
+        "column_9CrBab",
+        "column_VmQpzf"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "Real Brands. Real Results.",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "accent-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "collection_list_JBqYA9": {
       "type": "collection-list",
       "blocks": {
@@ -556,60 +620,6 @@
         "padding_bottom": 36
       }
     },
-    "slideshow_p9xUw9": {
-      "type": "slideshow",
-      "blocks": {
-        "slide_ybnbMr": {
-          "type": "slide",
-          "settings": {
-            "heading": "Image slide",
-            "heading_size": "h1",
-            "subheading": "Tell your brand's story through images",
-            "button_label": "Button label",
-            "link": "",
-            "button_style_secondary": false,
-            "box_align": "middle-center",
-            "show_text_box": true,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "slide_bTaQrR": {
-          "type": "slide",
-          "settings": {
-            "heading": "Image slide",
-            "heading_size": "h1",
-            "subheading": "Tell your brand's story through images",
-            "button_label": "Button label",
-            "link": "",
-            "button_style_secondary": false,
-            "box_align": "middle-center",
-            "show_text_box": true,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "",
-            "text_alignment_mobile": "center"
-          }
-        }
-      },
-      "block_order": [
-        "slide_ybnbMr",
-        "slide_bTaQrR"
-      ],
-      "name": "t:sections.slideshow.presets.name",
-      "settings": {
-        "layout": "full_bleed",
-        "slide_height": "adapt_image",
-        "slider_visual": "counter",
-        "auto_rotate": false,
-        "change_slides_speed": 5,
-        "image_behavior": "none",
-        "show_text_below": true,
-        "accessibility_info": "Slideshow about our brand"
-      }
-    },
     "rich_text_zzA6bj": {
       "type": "rich-text",
       "blocks": {
@@ -651,7 +661,7 @@
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "color_scheme": "scheme-6a152767-33f3-4f11-89f5-2b3073014e44",
+        "color_scheme": "inverse",
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 52
@@ -676,8 +686,8 @@
     "image_with_text_iqfwcz",
     "image_with_text_JzPif9",
     "multicolumn_E6hDVV",
+    "multicolumn_9YU7JJ",
     "collection_list_JBqYA9",
-    "slideshow_p9xUw9",
     "rich_text_zzA6bj",
     "main"
   ]
