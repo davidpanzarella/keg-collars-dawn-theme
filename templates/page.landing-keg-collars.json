@@ -106,6 +106,63 @@
         "padding_bottom": 52
       }
     },
+    "multicolumn_tKwqNK": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_fX4cta": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_Sep_17_2026_02_32_05_PM.png",
+            "title": "<strong>Have Print-Ready Artwork?</strong>",
+            "text": "<p>Upload your finished artwork and we'll take care of the rest.  </p>",
+            "link_label": "Custom Keg Collars",
+            "link": ""
+          }
+        },
+        "column_6t3mww": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_Sep_17_2026_02_49_16_PM.png",
+            "title": "<strong>Need Help Getting Started?</strong>",
+            "text": "<p>Choose a professionally designed layout and customize it with your brewery name logo and details.  </p>",
+            "link_label": "Explore Templates",
+            "link": ""
+          }
+        },
+        "column_GxThfk": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_Sep_17_2026_03_09_24_PM.png",
+            "title": "Need Something Quick?",
+            "text": "<p>Ready-to-ship keg collars for identification, distribution and everyday keg management.  </p>",
+            "link_label": "Shop Stock",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_fX4cta",
+        "column_6t3mww",
+        "column_GxThfk"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "rich_text_zjkaYB": {
       "type": "rich-text",
       "blocks": {
@@ -157,60 +214,6 @@
         "full_width": true,
         "padding_top": 52,
         "padding_bottom": 52
-      }
-    },
-    "multicolumn_tKwqNK": {
-      "type": "multicolumn",
-      "blocks": {
-        "column_fX4cta": {
-          "type": "column",
-          "settings": {
-            "title": "<strong>Have Print-Ready Artwork?</strong>",
-            "text": "<p>Upload your finished artwork and we'll take care of the rest.  </p>",
-            "link_label": "Custom Keg Collars",
-            "link": ""
-          }
-        },
-        "column_6t3mww": {
-          "type": "column",
-          "settings": {
-            "title": "<strong>Need Help Getting Started?</strong>",
-            "text": "<p>Choose a professionally designed layout and customize it with your brewery name logo and details.  </p>",
-            "link_label": "Explore Templates",
-            "link": ""
-          }
-        },
-        "column_GxThfk": {
-          "type": "column",
-          "settings": {
-            "title": "Need Something Quick?",
-            "text": "<p>Ready-to-ship keg collars for identification, distribution and everyday keg management.  </p>",
-            "link_label": "Shop Stock",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_fX4cta",
-        "column_6t3mww",
-        "column_GxThfk"
-      ],
-      "name": "t:sections.multicolumn.presets.name",
-      "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "square",
-        "columns_desktop": 3,
-        "column_alignment": "center",
-        "background_style": "none",
-        "button_label": "Button label",
-        "button_link": "",
-        "color_scheme": "",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
       }
     },
     "collection_list_MipBxD": {
@@ -558,8 +561,8 @@
   "order": [
     "image_banner_CwRHka",
     "rich_text_qehtnk",
-    "rich_text_zjkaYB",
     "multicolumn_tKwqNK",
+    "rich_text_zjkaYB",
     "collection_list_MipBxD",
     "image_with_text_iqfwcz",
     "image_with_text_JzPif9",
