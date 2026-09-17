@@ -22,7 +22,7 @@
         "text_h9LVAf": {
           "type": "text",
           "settings": {
-            "text": "From first keg to full-scale distribution, we make it easy to get the keg collars you need. Choose custom printed, customizable templates, or ready-to-ship stock collars.",
+            "text": "Professional keg collars built for breweries of every size. Upload your artwork, customize one of our templates, or grab stock collars when you need them fast.",
             "text_style": "body"
           }
         },
@@ -61,6 +61,60 @@
         "mobile_content_alignment": "left",
         "stack_images_on_mobile": true,
         "show_text_below": true
+      }
+    },
+    "multicolumn_tKwqNK": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_fX4cta": {
+          "type": "column",
+          "settings": {
+            "title": "CUSTOM",
+            "text": "<p>upload your artwork </p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_6t3mww": {
+          "type": "column",
+          "settings": {
+            "title": "TEMPLATE",
+            "text": "<p>place logo or brewery name on keg collar templates</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_GxThfk": {
+          "type": "column",
+          "settings": {
+            "title": "STOCK",
+            "text": "<p>ready-to-ship collars for distribution and maintence.  </p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_fX4cta",
+        "column_6t3mww",
+        "column_GxThfk"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "3 Easy Ways to Order Keg Collars",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "rich_text_zjkaYB": {
@@ -460,6 +514,7 @@
   },
   "order": [
     "image_banner_CwRHka",
+    "multicolumn_tKwqNK",
     "rich_text_zjkaYB",
     "collection_list_MipBxD",
     "image_with_text_iqfwcz",
