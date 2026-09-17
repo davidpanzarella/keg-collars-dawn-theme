@@ -359,7 +359,7 @@
           "type": "column",
           "settings": {
             "title": "<strong>Need Help With Design?</strong>",
-            "text": "<p>No finished artwork? No problem. We can help bring your Oktoberfest idea to life.</p>",
+            "text": "<p>Need assistance with your artwork? No problem. We can help bring your Oktoberfest idea to life.</p>",
             "link_label": "Talk to Our Team",
             "link": "mailto:mike@kegcollars.net?subject=KegCollars.net%20-%20Oktoberfest%20Design%20Help"
           }
