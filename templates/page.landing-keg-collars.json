@@ -22,17 +22,17 @@
         "text_h9LVAf": {
           "type": "text",
           "settings": {
-            "text": "From a micro-brewery taproom to a full scale barrel house and distribution. We have the keg collars to fit your need.  Custom, template or stock, we've got you covered.",
+            "text": "From first keg to full-scale distribution, we make it easy to get the keg collars you need. Choose custom printed, customizable templates, or ready-to-ship stock collars.",
             "text_style": "body"
           }
         },
         "buttons_EkTe4B": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Already Have Artwork! START HERE",
+            "button_label_1": "Have Print-Ready Artwork",
             "button_link_1": "shopify://collections/custom-design-keg-collars",
             "button_style_secondary_1": false,
-            "button_label_2": "Explore Templates",
+            "button_label_2": "Customize a Templates",
             "button_link_2": "shopify://collections/template-keg-collars",
             "button_style_secondary_2": true
           }
@@ -66,28 +66,37 @@
     "rich_text_zjkaYB": {
       "type": "rich-text",
       "blocks": {
+        "caption_XWiR8M": {
+          "type": "caption",
+          "settings": {
+            "caption": "small detail. big impact.",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
         "heading_ebRmMW": {
           "type": "heading",
           "settings": {
-            "heading": "From Production to Pour,",
+            "heading": "More Than A Label",
             "heading_size": "h0"
           }
         },
         "heading_bLJc64": {
           "type": "heading",
           "settings": {
-            "heading": "We Print It All.",
+            "heading": "Create a Lasting Impression",
             "heading_size": "h1"
           }
         },
         "text_988JEY": {
           "type": "text",
           "settings": {
-            "text": "<p>From keg room essentials to taproom touchpoints, KegCollars.net helps beverage and hospitality businesses bring their brands to life with custom printed products made for the way they work.</p>"
+            "text": "<p>Keg collars do more than indentify your craft beverage. They showcase your brand, tell your story and make your kegs stand out to buyers, and in crowded distribution hubs, coolers and at events.   </p>"
           }
         }
       },
       "block_order": [
+        "caption_XWiR8M",
         "heading_ebRmMW",
         "heading_bLJc64",
         "text_988JEY"
