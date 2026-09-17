@@ -170,7 +170,7 @@
           "type": "heading",
           "settings": {
             "heading": "ReOrder Here",
-            "heading_size": "h0"
+            "heading_size": "h1"
           }
         },
         "text_mNape4": {
@@ -259,8 +259,8 @@
         "content_alignment": "center",
         "color_scheme": "background-2",
         "full_width": true,
-        "padding_top": 52,
-        "padding_bottom": 52
+        "padding_top": 80,
+        "padding_bottom": 80
       }
     },
     "collection_list_MipBxD": {
@@ -269,47 +269,51 @@
         "featured_collection_jbPwHe": {
           "type": "featured_collection",
           "settings": {
-            "collection": "keg-collars"
+            "collection": "custom-design-keg-collars-copy-1"
           }
         },
         "featured_collection_q7ekVe": {
           "type": "featured_collection",
           "settings": {
-            "collection": "growler-tags"
+            "collection": "circle-keg-collars-copy"
           }
         },
         "featured_collection_76t6Wd": {
           "type": "featured_collection",
           "settings": {
-            "collection": "coasters"
+            "collection": "hexagon-keg-collars-copy"
           }
         },
         "featured_collection_x9Eqjx": {
           "type": "featured_collection",
           "settings": {
-            "collection": "tasting-flight-cards"
+            "collection": "dome-keg-collars-copy"
           }
         },
         "featured_collection_9XXjnD": {
           "type": "featured_collection",
+          "disabled": true,
           "settings": {
             "collection": "menu-printing-restaurant-materials"
           }
         },
         "featured_collection_3KNGbG": {
           "type": "featured_collection",
+          "disabled": true,
           "settings": {
             "collection": "keg-caps"
           }
         },
         "featured_collection_XVjXHH": {
           "type": "featured_collection",
+          "disabled": true,
           "settings": {
             "collection": "keg-wraps"
           }
         },
         "featured_collection_thPdkA": {
           "type": "featured_collection",
+          "disabled": true,
           "settings": {
             "collection": "labels"
           }
@@ -328,7 +332,7 @@
       "name": "t:sections.collection-list.presets.name",
       "settings": {
         "title": "What Shape Fits Your Brand?",
-        "heading_size": "h1",
+        "heading_size": "h2",
         "image_ratio": "square",
         "columns_desktop": 4,
         "color_scheme": "",
@@ -370,6 +374,7 @@
         "text_wJqdPe",
         "button_NBDxtr"
       ],
+      "disabled": true,
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
         "image": "shopify://shop_images/production_essentials_image.png",
@@ -417,6 +422,7 @@
         "text_mHVYmc",
         "button_DxRreX"
       ],
+      "disabled": true,
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
         "image": "shopify://shop_images/ChatGPT_Image_Jul_14_2026_04_10_01_PM.png",
