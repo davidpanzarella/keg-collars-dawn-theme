@@ -75,36 +75,40 @@
         "column_78XdQA": {
           "type": "column",
           "settings": {
-            "title": "Round Keg Collars",
+            "image": "shopify://shop_images/ChatGPT_Image_Sep_21_2026_02_59_13_PM.png",
+            "title": "",
             "text": "",
-            "link_label": "",
+            "link_label": "Round Keg Collars",
             "link": "shopify://collections/round-keg-collars"
           }
         },
         "column_9BzVbM": {
           "type": "column",
           "settings": {
-            "title": "Hexagon Keg Collars",
+            "image": "shopify://shop_images/ChatGPT_Image_Sep_21_2026_03_03_35_PM.png",
+            "title": "",
             "text": "",
-            "link_label": "",
+            "link_label": "Hexagon Keg Collars",
             "link": "shopify://collections/hexagon-keg-collars"
           }
         },
         "column_7hnWBY": {
           "type": "column",
           "settings": {
-            "title": "Dome Keg Collars",
+            "image": "shopify://shop_images/ChatGPT_Image_Sep_21_2026_03_19_40_PM.png",
+            "title": "",
             "text": "",
-            "link_label": "",
+            "link_label": "Dome Keg Collars",
             "link": "shopify://collections/hexagon-keg-collars-copy"
           }
         },
         "column_nKT7FH": {
           "type": "column",
           "settings": {
-            "title": "Rectangle Keg Collars",
+            "image": "shopify://shop_images/ChatGPT_Image_Sep_21_2026_03_15_45_PM.png",
+            "title": "",
             "text": "",
-            "link_label": "",
+            "link_label": "Rectangle Keg Collars",
             "link": "shopify://collections/dome-keg-collars-copy"
           }
         }
@@ -122,9 +126,9 @@
         "image_width": "full",
         "image_ratio": "adapt",
         "columns_desktop": 4,
-        "column_alignment": "left",
-        "background_style": "primary",
-        "button_label": "Button label",
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
         "button_link": "",
         "color_scheme": "",
         "columns_mobile": "1",
