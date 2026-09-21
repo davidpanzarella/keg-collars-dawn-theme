@@ -25,7 +25,7 @@
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "image": "shopify://shop_images/Banner_Image_2400_x_500_2400_x_250_px_2.png",
+        "image": "shopify://shop_images/Banner_Image_2400_x_500_2400_x_250_px_3.png",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "desktop_content_position": "bottom-right",
