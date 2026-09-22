@@ -1,0 +1,194 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_banner_gRGN7M": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_b8DmYP": {
+          "type": "heading",
+          "settings": {
+            "heading": "All Keg Collars",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_b8DmYP"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Banner_Image_2400_x_500_2400_x_250_px_3.png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "bottom-right",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-baeacad9-994c-4ac3-b193-a04074a21cc0",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "multicolumn_jGgHW7": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_TbHLCQ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_Sep_21_2026_01_38_48_PM.png",
+            "title": "Shop by Style",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://collections/keg-collars-by-format"
+          }
+        },
+        "column_x8cbVf": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_Sep_21_2026_01_48_42_PM.png",
+            "title": "Shop by Size",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://collections/keg-collars-by-size"
+          }
+        },
+        "column_kdHQFw": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_Sep_21_2026_02_19_39_PM.png",
+            "title": "Shop by Shape",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://collections/keg-collars-by-shape"
+          }
+        },
+        "column_pnaEin": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_Sep_21_2026_02_32_10_PM.png",
+            "title": "Shop by Industry",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://collections/keg-collars-by-industry"
+          }
+        }
+      },
+      "block_order": [
+        "column_TbHLCQ",
+        "column_x8cbVf",
+        "column_kdHQFw",
+        "column_pnaEin"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collection_list_iXmC9g": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_8XCegX": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "custom-design-keg-collars-copy-1"
+          }
+        },
+        "featured_collection_jcT4Xx": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "circle-keg-collars-copy"
+          }
+        },
+        "featured_collection_qWMARW": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "hexagon-keg-collars-copy"
+          }
+        },
+        "featured_collection_yNfF7L": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "dome-keg-collars-copy"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_8XCegX",
+        "featured_collection_jcT4Xx",
+        "featured_collection_qWMARW",
+        "featured_collection_yNfF7L"
+      ],
+      "disabled": true,
+      "name": "t:sections.collection-list.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "color_scheme": "background-1",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "banner": {
+      "type": "main-collection-banner",
+      "disabled": true,
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": true,
+        "color_scheme": "background-1"
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 12,
+        "columns_desktop": 4,
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "enable_filtering": true,
+        "filter_type": "horizontal",
+        "enable_sorting": true,
+        "columns_mobile": "2",
+        "padding_top": 12,
+        "padding_bottom": 12
+      }
+    }
+  },
+  "order": [
+    "image_banner_gRGN7M",
+    "multicolumn_jGgHW7",
+    "collection_list_iXmC9g",
+    "banner",
+    "product-grid"
+  ]
+}
