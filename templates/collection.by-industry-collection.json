@@ -11,13 +11,25 @@
   "sections": {
     "image_banner_gRGN7M": {
       "type": "image-banner",
+      "blocks": {
+        "heading_6YMPWm": {
+          "type": "heading",
+          "settings": {
+            "heading": "Shop by Industry",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_6YMPWm"
+      ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
         "image": "shopify://shop_images/Collection_Banner_-_Distro_1.png",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "desktop_content_position": "top-left",
-        "show_text_box": true,
+        "show_text_box": false,
         "desktop_content_alignment": "center",
         "color_scheme": "scheme-baeacad9-994c-4ac3-b193-a04074a21cc0",
         "image_behavior": "none",
