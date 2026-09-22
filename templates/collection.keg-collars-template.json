@@ -103,6 +103,7 @@
         "column_JnJcgT",
         "column_QM9ArL"
       ],
+      "disabled": true,
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
         "title": "",
