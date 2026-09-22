@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "banner": {
@@ -6,6 +15,121 @@
         "show_collection_description": true,
         "show_collection_image": false,
         "color_scheme": "background-1"
+      }
+    },
+    "image_banner_6ehaLx": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_pHrPLn": {
+          "type": "heading",
+          "settings": {
+            "heading": "Stock Keg Collars",
+            "heading_size": "h1"
+          }
+        },
+        "text_LUagtd": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "buttons_zN7rUY": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_pHrPLn",
+        "text_LUagtd",
+        "buttons_zN7rUY"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Banner_Image_2400_x_500_2400_x_250_px_3.png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "bottom-right",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "multicolumn_aiJJUD": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_jB4FkK": {
+          "type": "column",
+          "settings": {
+            "title": "Beer & Cider",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_8qNWEU": {
+          "type": "column",
+          "settings": {
+            "title": "Cold Brew",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_XBNPQh": {
+          "type": "column",
+          "settings": {
+            "title": "Kombucha",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_LrzWcT": {
+          "type": "column",
+          "settings": {
+            "title": "Keg Maintenance",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_jB4FkK",
+        "column_8qNWEU",
+        "column_XBNPQh",
+        "column_LrzWcT"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "product-grid": {
@@ -30,6 +154,8 @@
   },
   "order": [
     "banner",
+    "image_banner_6ehaLx",
+    "multicolumn_aiJJUD",
     "product-grid"
   ]
 }
