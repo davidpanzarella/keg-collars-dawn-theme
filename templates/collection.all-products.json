@@ -16,7 +16,7 @@
           "type": "heading",
           "settings": {
             "heading": "All Products",
-            "heading_size": "h2"
+            "heading_size": "h1"
           }
         }
       },
