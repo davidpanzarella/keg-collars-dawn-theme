@@ -44,20 +44,20 @@
         "column_cTwCNz": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/custom_keg_collars_c1c26b90-5e7c-4e73-a5eb-ca871c691095.png",
+            "image": "shopify://shop_images/ChatGPT_Image_Sep_22_2026_02_26_22_PM.png",
             "title": "",
             "text": "",
-            "link_label": "",
+            "link_label": "Keg Collars",
             "link": "shopify://collections/keg-collars"
           }
         },
         "column_8eVcn9": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/ChatGPT_Image_Sep_16_2026_02_31_00_PM.png",
+            "image": "shopify://shop_images/ChatGPT_Image_Sep_22_2026_02_30_59_PM.png",
             "title": "",
             "text": "",
-            "link_label": "",
+            "link_label": "Growler Tags",
             "link": "shopify://collections/growler-tags"
           }
         },
