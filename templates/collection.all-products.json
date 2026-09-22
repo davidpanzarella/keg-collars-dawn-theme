@@ -13,10 +13,10 @@
       "type": "image-banner",
       "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "image": "shopify://shop_images/collection_image_-_all_products.png",
+        "image": "shopify://shop_images/Banner_Image_2400_x_500_2400_x_250_px_3.png",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
-        "desktop_content_position": "top-left",
+        "desktop_content_position": "bottom-right",
         "show_text_box": true,
         "desktop_content_alignment": "center",
         "color_scheme": "scheme-baeacad9-994c-4ac3-b193-a04074a21cc0",

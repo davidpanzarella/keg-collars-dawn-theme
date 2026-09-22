@@ -67,6 +67,60 @@
         "show_text_below": true
       }
     },
+    "multicolumn_VzRFHp": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_c9MNCw": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "link_label": "Blank",
+            "link": ""
+          }
+        },
+        "column_JnJcgT": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "link_label": "Single Name",
+            "link": ""
+          }
+        },
+        "column_QM9ArL": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "",
+            "link_label": "Checkboxes",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_c9MNCw",
+        "column_JnJcgT",
+        "column_QM9ArL"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "product-grid": {
       "type": "main-collection-product-grid",
       "settings": {
@@ -90,6 +144,7 @@
   "order": [
     "banner",
     "image_banner_RBgTdg",
+    "multicolumn_VzRFHp",
     "product-grid"
   ]
 }
