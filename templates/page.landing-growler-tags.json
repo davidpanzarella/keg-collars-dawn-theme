@@ -1,0 +1,463 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_banner_CwRHka": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_fEJGVn": {
+          "type": "heading",
+          "settings": {
+            "heading": "Custom Print for Every Part of the Pour",
+            "heading_size": "h1"
+          }
+        },
+        "text_h9LVAf": {
+          "type": "text",
+          "settings": {
+            "text": "Custom printing for breweries, beverage brands and hospitality businesses. From production to the taproom.",
+            "text_style": "body"
+          }
+        },
+        "buttons_EkTe4B": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Shop All Products",
+            "button_link_1": "shopify://collections/all",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_fEJGVn",
+        "text_h9LVAf",
+        "buttons_EkTe4B"
+      ],
+      "custom_css": [
+        "@media screen and (min-width: 750px) {.banner__box {max-width: 63rem; }}",
+        ".button {background: #f5a000; color: #20252b; opacity: 1;}",
+        ".button:after {box-shadow: none;}"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/all_products_hero_image_4cf672e3-aa4f-4d99-b09e-52e1a4b20974.png",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-left",
+        "show_text_box": false,
+        "desktop_content_alignment": "left",
+        "color_scheme": "background-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "rich_text_zjkaYB": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_ebRmMW": {
+          "type": "heading",
+          "settings": {
+            "heading": "From Production to Pour,",
+            "heading_size": "h0"
+          }
+        },
+        "heading_bLJc64": {
+          "type": "heading",
+          "settings": {
+            "heading": "We Print It All.",
+            "heading_size": "h1"
+          }
+        },
+        "text_988JEY": {
+          "type": "text",
+          "settings": {
+            "text": "<p>From keg room essentials to taproom touchpoints, KegCollars.net helps beverage and hospitality businesses bring their brands to life with custom printed products made for the way they work.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_ebRmMW",
+        "heading_bLJc64",
+        "text_988JEY"
+      ],
+      "custom_css": [
+        "h2 {font-size: 42px; line-height: 1.15; margin-top: 0; margin-bottom: 0;}",
+        "h2 + h2 {margin-top: 0;}",
+        "@media screen and (max-width: 749px) {h2 {font-size: 32px; }}"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-2",
+        "full_width": true,
+        "padding_top": 52,
+        "padding_bottom": 52
+      }
+    },
+    "collection_list_MipBxD": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_jbPwHe": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "keg-collars"
+          }
+        },
+        "featured_collection_q7ekVe": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "growler-tags"
+          }
+        },
+        "featured_collection_76t6Wd": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "coasters"
+          }
+        },
+        "featured_collection_x9Eqjx": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "tasting-flight-cards"
+          }
+        },
+        "featured_collection_9XXjnD": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "menu-printing-restaurant-materials"
+          }
+        },
+        "featured_collection_3KNGbG": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "keg-caps"
+          }
+        },
+        "featured_collection_XVjXHH": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "keg-wraps"
+          }
+        },
+        "featured_collection_thPdkA": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "labels"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_jbPwHe",
+        "featured_collection_q7ekVe",
+        "featured_collection_76t6Wd",
+        "featured_collection_x9Eqjx",
+        "featured_collection_9XXjnD",
+        "featured_collection_3KNGbG",
+        "featured_collection_XVjXHH",
+        "featured_collection_thPdkA"
+      ],
+      "name": "t:sections.collection-list.presets.name",
+      "settings": {
+        "title": "Shop by Product",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 4,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_iqfwcz": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_M8imHX": {
+          "type": "heading",
+          "settings": {
+            "heading": "Made for Production",
+            "heading_size": "h1"
+          }
+        },
+        "text_wJqdPe": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Keep products identified, organized and ready to move with custom printed essentials made for beverage production.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_NBDxtr": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Production Essentials",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_M8imHX",
+        "text_wJqdPe",
+        "button_NBDxtr"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/production_essentials_image.png",
+        "height": "medium",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-2",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 0
+      }
+    },
+    "image_with_text_JzPif9": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_9Viz8h": {
+          "type": "heading",
+          "settings": {
+            "heading": "Made for the Taproom",
+            "heading_size": "h1"
+          }
+        },
+        "text_mHVYmc": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Turn all your guest collateral into a brand experience with custom printed essentials made for the taproom and beyond.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_DxRreX": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Taproom Essentials",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_9Viz8h",
+        "text_mHVYmc",
+        "button_DxRreX"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/ChatGPT_Image_Jul_14_2026_04_10_01_PM.png",
+        "height": "medium",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-2",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_E6hDVV": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_emnLJa": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>Have Print-Ready Artwork?</strong>",
+            "text": "<p>Start Your Order</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_UNtQGL": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>Need Help With Design?</strong>",
+            "text": "<p>Get Design Help</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_TdAWzj": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>Have Questions?</strong>",
+            "text": "<p>Talk With Our Team</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_emnLJa",
+        "column_UNtQGL",
+        "column_TdAWzj"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "How Can We Help?",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collection_list_JBqYA9": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_ytkiC7": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "beer"
+          }
+        },
+        "featured_collection_9EyiJ4": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "cider"
+          }
+        },
+        "featured_collection_ewKraR": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "kombucha"
+          }
+        },
+        "featured_collection_prrUGn": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "cold-brew-coffee"
+          }
+        },
+        "featured_collection_m3bEVR": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "wine"
+          }
+        },
+        "featured_collection_cg8m7t": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "non-alcoholic-products"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_ytkiC7",
+        "featured_collection_9EyiJ4",
+        "featured_collection_ewKraR",
+        "featured_collection_prrUGn",
+        "featured_collection_m3bEVR",
+        "featured_collection_cg8m7t"
+      ],
+      "name": "t:sections.collection-list.presets.name",
+      "settings": {
+        "title": "Shop by Industry",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_zzA6bj": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_aENqbe": {
+          "type": "heading",
+          "settings": {
+            "heading": "Not Sure Where to Start?",
+            "heading_size": "h1"
+          }
+        },
+        "text_Q4wDbM": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Tell us what you need and we'll help you find the right product, print option and quantity for your business.</p>"
+          }
+        },
+        "button_eWkc3W": {
+          "type": "button",
+          "settings": {
+            "button_label": "Request Samples",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "Contact Us",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_aENqbe",
+        "text_Q4wDbM",
+        "button_eWkc3W"
+      ],
+      "custom_css": [
+        ".button {background: #f5a000; color: #20252b; opacity: 1;}",
+        ".button:after {box-shadow: none;}"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-6a152767-33f3-4f11-89f5-2b3073014e44",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    }
+  },
+  "order": [
+    "image_banner_CwRHka",
+    "rich_text_zjkaYB",
+    "collection_list_MipBxD",
+    "image_with_text_iqfwcz",
+    "image_with_text_JzPif9",
+    "multicolumn_E6hDVV",
+    "collection_list_JBqYA9",
+    "rich_text_zzA6bj",
+    "main"
+  ]
+}
