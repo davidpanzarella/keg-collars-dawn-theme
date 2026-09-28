@@ -125,7 +125,7 @@
             "title": "<strong>Have Print-Ready Artwork?</strong>",
             "text": "<p>Upload your finished artwork and we'll take care of the rest. &nbsp;</p>",
             "link_label": "Custom Keg Collars",
-            "link": "shopify://collections/custom-design-keg-collars-copy"
+            "link": "shopify://collections/custom-design-keg-collars"
           }
         },
         "column_6t3mww": {
@@ -133,9 +133,9 @@
           "settings": {
             "image": "shopify://shop_images/ChatGPT_Image_Sep_17_2026_02_49_16_PM.png",
             "title": "<strong>Need Help Getting Started?</strong>",
-            "text": "<p>Choose a professionally designed layout and customize it with your brewery name logo and details.  </p>",
+            "text": "<p>Choose a professionally designed layout and customize it with your brewery name logo and details. &nbsp;</p>",
             "link_label": "Explore Templates",
-            "link": ""
+            "link": "shopify://collections/template-keg-collars"
           }
         },
         "column_GxThfk": {
@@ -145,7 +145,7 @@
             "title": "Need Something Quick?",
             "text": "<p>Ready-to-ship keg collars for identification, distribution and everyday keg management. &nbsp;</p>",
             "link_label": "Shop Stock",
-            "link": ""
+            "link": "shopify://collections/stock-keg-collars"
           }
         }
       },

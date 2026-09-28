@@ -29,12 +29,12 @@
         "buttons_EkTe4B": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Shop All Products",
-            "button_link_1": "shopify://collections/all",
+            "button_label_1": "Custom Growler Tags",
+            "button_link_1": "shopify://collections/growler-tags",
             "button_style_secondary_1": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "button_label_2": "Stock Growler Tags",
+            "button_link_2": "shopify://collections/stock-growler-tags",
+            "button_style_secondary_2": true
           }
         }
       },
@@ -50,13 +50,13 @@
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "image": "shopify://shop_images/all_products_hero_image_4cf672e3-aa4f-4d99-b09e-52e1a4b20974.png",
+        "image": "shopify://shop_images/ChatGPT_Image_Sep_28_2026_04_07_11_PM.png",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-left",
         "show_text_box": false,
         "desktop_content_alignment": "left",
-        "color_scheme": "background-1",
+        "color_scheme": "inverse",
         "image_behavior": "none",
         "mobile_content_alignment": "left",
         "stack_images_on_mobile": true,
@@ -214,6 +214,7 @@
         "text_wJqdPe",
         "button_NBDxtr"
       ],
+      "disabled": true,
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
         "image": "shopify://shop_images/production_essentials_image.png",
@@ -261,6 +262,7 @@
         "text_mHVYmc",
         "button_DxRreX"
       ],
+      "disabled": true,
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
         "image": "shopify://shop_images/ChatGPT_Image_Jul_14_2026_04_10_01_PM.png",
@@ -379,6 +381,7 @@
         "featured_collection_m3bEVR",
         "featured_collection_cg8m7t"
       ],
+      "disabled": true,
       "name": "t:sections.collection-list.presets.name",
       "settings": {
         "title": "Shop by Industry",
