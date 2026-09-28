@@ -66,10 +66,18 @@
     "rich_text_qehtnk": {
       "type": "rich-text",
       "blocks": {
+        "caption_VcieYr": {
+          "type": "caption",
+          "settings": {
+            "caption": "multiple shapes and sizes to fit your brand",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
         "heading_niJjMB": {
           "type": "heading",
           "settings": {
-            "heading": "Choose the Keg Collar That's Right for You",
+            "heading": "<strong>Choose the Keg Collar That's Right for You</strong>",
             "heading_size": "h1"
           }
         },
@@ -92,6 +100,7 @@
         }
       },
       "block_order": [
+        "caption_VcieYr",
         "heading_niJjMB",
         "text_yRHmde",
         "button_FQKT7K"
@@ -100,7 +109,7 @@
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "color_scheme": "",
+        "color_scheme": "background-2",
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 52
@@ -114,9 +123,9 @@
           "settings": {
             "image": "shopify://shop_images/ChatGPT_Image_Sep_21_2026_11_30_41_AM.png",
             "title": "<strong>Have Print-Ready Artwork?</strong>",
-            "text": "<p>Upload your finished artwork and we'll take care of the rest.  </p>",
+            "text": "<p>Upload your finished artwork and we'll take care of the rest. &nbsp;</p>",
             "link_label": "Custom Keg Collars",
-            "link": ""
+            "link": "shopify://collections/custom-design-keg-collars-copy"
           }
         },
         "column_6t3mww": {
@@ -134,7 +143,7 @@
           "settings": {
             "image": "shopify://shop_images/ChatGPT_Image_Sep_17_2026_03_09_24_PM.png",
             "title": "Need Something Quick?",
-            "text": "<p>Ready-to-ship keg collars for identification, distribution and everyday keg management.  </p>",
+            "text": "<p>Ready-to-ship keg collars for identification, distribution and everyday keg management. &nbsp;</p>",
             "link_label": "Shop Stock",
             "link": ""
           }
@@ -206,8 +215,8 @@
         "color_scheme": "inverse",
         "image_behavior": "none",
         "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 12,
+        "padding_bottom": 0
       }
     },
     "rich_text_zjkaYB": {
@@ -224,15 +233,15 @@
         "heading_ebRmMW": {
           "type": "heading",
           "settings": {
-            "heading": "More Than A Label",
-            "heading_size": "h2"
+            "heading": "<strong>More Than A Label</strong>",
+            "heading_size": "h1"
           }
         },
         "heading_bLJc64": {
           "type": "heading",
           "settings": {
-            "heading": "Create a Lasting Impression",
-            "heading_size": "h2"
+            "heading": "<strong>Create a Lasting Impression</strong>",
+            "heading_size": "h1"
           }
         },
         "text_988JEY": {
@@ -259,8 +268,8 @@
         "content_alignment": "center",
         "color_scheme": "background-2",
         "full_width": true,
-        "padding_top": 80,
-        "padding_bottom": 80
+        "padding_top": 24,
+        "padding_bottom": 24
       }
     },
     "collection_list_MipBxD": {
@@ -331,7 +340,7 @@
       ],
       "name": "t:sections.collection-list.presets.name",
       "settings": {
-        "title": "What Shape Fits Your Brand?",
+        "title": "<strong>What Shape Fits Your Brand?</strong>",
         "heading_size": "h1",
         "image_ratio": "square",
         "columns_desktop": 4,
@@ -339,7 +348,7 @@
         "show_view_all": false,
         "columns_mobile": "2",
         "swipe_on_mobile": false,
-        "padding_top": 36,
+        "padding_top": 24,
         "padding_bottom": 36
       }
     },
