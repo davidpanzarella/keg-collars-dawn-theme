@@ -170,10 +170,10 @@
         "column_emnLJa": {
           "type": "column",
           "settings": {
-            "title": "<strong>Have Print-Ready Artwork?</strong>",
-            "text": "<p>Start Your Order</p>",
-            "link_label": "",
-            "link": ""
+            "title": "<strong>Need Help With Design?</strong>",
+            "text": "<p>Need assistance with your artwork? No problem. We can help bring your growler tag idea to life.</p>",
+            "link_label": "Talk To Our Team",
+            "link": "mailto:mike@kegcollars.net"
           }
         },
         "column_UNtQGL": {
@@ -375,7 +375,7 @@
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "image": "shopify://shop_images/ChatGPT_Image_Jul_14_2026_04_10_01_PM.png",
+        "image": "shopify://shop_images/ChatGPT_Image_Sep_28_2026_08_37_50_PM.png",
         "height": "medium",
         "desktop_image_width": "medium",
         "layout": "text_first",
@@ -422,6 +422,7 @@
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
+        "image": "shopify://shop_images/ChatGPT_Image_Sep_29_2026_09_53_08_AM.png",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
