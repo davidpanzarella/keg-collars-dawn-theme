@@ -474,7 +474,7 @@
           "settings": {
             "title": "<strong>Have Print-Ready Artwork</strong>",
             "text": "<p>Already have your design ready to go? Choose your product and start your order.</p>",
-            "link_label": "Start Your ORder",
+            "link_label": "Start Your Order",
             "link": "shopify://collections/all"
           }
         }
