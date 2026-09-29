@@ -179,19 +179,19 @@
         "column_UNtQGL": {
           "type": "column",
           "settings": {
-            "title": "<strong>Need Help With Design?</strong>",
-            "text": "<p>Get Design Help</p>",
-            "link_label": "",
-            "link": ""
+            "title": "<strong>Download Design Templates</strong>",
+            "text": "<p>Designing it yourself? Start with the correct size and setup for your product.</p>",
+            "link_label": "Download Templates",
+            "link": "shopify://pages/print-guidelines-templates"
           }
         },
         "column_TdAWzj": {
           "type": "column",
           "settings": {
-            "title": "<strong>Have Questions?</strong>",
-            "text": "<p>Talk With Our Team</p>",
-            "link_label": "",
-            "link": ""
+            "title": "<strong>Have Print-Ready Artwork</strong>",
+            "text": "<p>Already have your design ready to go? Choose your product and start your order.</p>",
+            "link_label": "Start Your Order",
+            "link": "shopify://collections/all"
           }
         }
       },
