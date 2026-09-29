@@ -50,7 +50,7 @@
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "image": "shopify://shop_images/ChatGPT_Image_Sep_28_2026_04_07_11_PM.png",
+        "image": "shopify://shop_images/ChatGPT_Image_Sep_28_2026_07_13_28_PM.png",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-left",
@@ -83,7 +83,7 @@
         "text_988JEY": {
           "type": "text",
           "settings": {
-            "text": "<p>Custom printed growler tags make it easy to identify what's inside, communicate important fill information and keep your brand front and center. Choose a completely custom design or start with one of our stock tags and add your logo.</p>"
+            "text": "<p>Custom printed growler tags make it easy to identify what’s inside, communicate important fill information, and keep your brand front and center. Upload your finished artwork, customize one of our templates with your logo, or choose a ready-to-order stock tag with the option to add your logo.</p>"
           }
         }
       },
@@ -105,6 +105,117 @@
         "full_width": true,
         "padding_top": 52,
         "padding_bottom": 52
+      }
+    },
+    "multicolumn_Xgn6Rm": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_cA8LCQ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_Sep_28_2026_09_53_30_PM.png",
+            "title": "Custom Growler Tags",
+            "text": "<p>Have finished artwork? Upload your design and we’ll print it exactly the way you intended</p>",
+            "link_label": "Upload Artwork",
+            "link": ""
+          }
+        },
+        "column_LPYdB3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_Sep_28_2026_10_32_23_PM.png",
+            "title": "Template Growler Tags",
+            "text": "<p>Start with one of our professionally designed layouts, then customize it with your logo and fill information.</p>",
+            "link_label": "Start Here",
+            "link": ""
+          }
+        },
+        "column_aVd87F": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_Sep_28_2026_10_34_21_PM.png",
+            "title": "Stock Growler Tags",
+            "text": "<p>Need something simple and ready to order? Choose a stock design and optionally add your logo.</p>",
+            "link_label": "Shop Stock Tags",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_cA8LCQ",
+        "column_LPYdB3",
+        "column_aVd87F"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "Choose Your Growler Tag",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-6a152767-33f3-4f11-89f5-2b3073014e44",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_E6hDVV": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_emnLJa": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>Have Print-Ready Artwork?</strong>",
+            "text": "<p>Start Your Order</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_UNtQGL": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>Need Help With Design?</strong>",
+            "text": "<p>Get Design Help</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_TdAWzj": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>Have Questions?</strong>",
+            "text": "<p>Talk With Our Team</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_emnLJa",
+        "column_UNtQGL",
+        "column_TdAWzj"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "How Can We Help?",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-b96d41d0-abd3-4109-8296-95b6acc2520c",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "collection_list_MipBxD": {
@@ -169,6 +280,7 @@
         "featured_collection_XVjXHH",
         "featured_collection_thPdkA"
       ],
+      "disabled": true,
       "name": "t:sections.collection-list.presets.name",
       "settings": {
         "title": "Shop by Product",
@@ -189,14 +301,14 @@
         "heading_M8imHX": {
           "type": "heading",
           "settings": {
-            "heading": "Made for Production",
+            "heading": "Custom Growler Tags",
             "heading_size": "h1"
           }
         },
         "text_wJqdPe": {
           "type": "text",
           "settings": {
-            "text": "<p>Keep products identified, organized and ready to move with custom printed essentials made for beverage production.</p>",
+            "text": "<p>Your design. Your branding. Printed your way.</p>",
             "text_style": "body"
           }
         },
@@ -214,20 +326,19 @@
         "text_wJqdPe",
         "button_NBDxtr"
       ],
-      "disabled": true,
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "image": "shopify://shop_images/production_essentials_image.png",
+        "image": "shopify://shop_images/ChatGPT_Image_Sep_28_2026_07_42_11_PM.png",
         "height": "medium",
         "desktop_image_width": "medium",
         "layout": "image_first",
         "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
+        "desktop_content_alignment": "right",
         "content_layout": "no-overlap",
         "color_scheme": "background-2",
         "image_behavior": "none",
         "mobile_content_alignment": "left",
-        "padding_top": 36,
+        "padding_top": 0,
         "padding_bottom": 0
       }
     },
@@ -237,7 +348,7 @@
         "heading_9Viz8h": {
           "type": "heading",
           "settings": {
-            "heading": "Made for the Taproom",
+            "heading": "Logo Growler Tags",
             "heading_size": "h1"
           }
         },
@@ -262,7 +373,6 @@
         "text_mHVYmc",
         "button_DxRreX"
       ],
-      "disabled": true,
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
         "image": "shopify://shop_images/ChatGPT_Image_Jul_14_2026_04_10_01_PM.png",
@@ -279,56 +389,48 @@
         "padding_bottom": 36
       }
     },
-    "multicolumn_E6hDVV": {
-      "type": "multicolumn",
+    "image_with_text_cefUGL": {
+      "type": "image-with-text",
       "blocks": {
-        "column_emnLJa": {
-          "type": "column",
+        "heading_RJc3zi": {
+          "type": "heading",
           "settings": {
-            "title": "<strong>Have Print-Ready Artwork?</strong>",
-            "text": "<p>Start Your Order</p>",
-            "link_label": "",
-            "link": ""
+            "heading": "Stock Growler Tags",
+            "heading_size": "h1"
           }
         },
-        "column_UNtQGL": {
-          "type": "column",
+        "text_PNGVDn": {
+          "type": "text",
           "settings": {
-            "title": "<strong>Need Help With Design?</strong>",
-            "text": "<p>Get Design Help</p>",
-            "link_label": "",
-            "link": ""
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text_style": "body"
           }
         },
-        "column_TdAWzj": {
-          "type": "column",
+        "button_BrtERh": {
+          "type": "button",
           "settings": {
-            "title": "<strong>Have Questions?</strong>",
-            "text": "<p>Talk With Our Team</p>",
-            "link_label": "",
-            "link": ""
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
           }
         }
       },
       "block_order": [
-        "column_emnLJa",
-        "column_UNtQGL",
-        "column_TdAWzj"
+        "heading_RJc3zi",
+        "text_PNGVDn",
+        "button_BrtERh"
       ],
-      "name": "t:sections.multicolumn.presets.name",
+      "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "title": "How Can We Help?",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "left",
-        "background_style": "primary",
-        "button_label": "",
-        "button_link": "",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
         "color_scheme": "",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -455,10 +557,12 @@
   "order": [
     "image_banner_CwRHka",
     "rich_text_zjkaYB",
+    "multicolumn_Xgn6Rm",
+    "multicolumn_E6hDVV",
     "collection_list_MipBxD",
     "image_with_text_iqfwcz",
     "image_with_text_JzPif9",
-    "multicolumn_E6hDVV",
+    "image_with_text_cefUGL",
     "collection_list_JBqYA9",
     "rich_text_zzA6bj",
     "main"
