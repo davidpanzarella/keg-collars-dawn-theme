@@ -151,6 +151,49 @@
         "padding_bottom": 36
       }
     },
+    "rich_text_zYY7tL": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_TB786i": {
+          "type": "heading",
+          "settings": {
+            "heading": "Choose Your Growler Tag Design",
+            "heading_size": "h1"
+          }
+        },
+        "text_b8wDeF": {
+          "type": "text",
+          "settings": {
+            "text": "<p><em>Pick the design that best fits your brand. You’ll confirm your selection and upload your logo in the form below.</em></p><p></p>"
+          }
+        },
+        "button_Wz3DFr": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_TB786i",
+        "text_b8wDeF",
+        "button_Wz3DFr"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 12,
+        "padding_bottom": 12
+      }
+    },
     "multicolumn_E6hDVV": {
       "type": "multicolumn",
       "blocks": {
@@ -192,7 +235,7 @@
       ],
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
-        "title": "Choose Your Design:",
+        "title": "",
         "heading_size": "h2",
         "image_width": "full",
         "image_ratio": "adapt",
@@ -204,7 +247,7 @@
         "color_scheme": "background-1",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
-        "padding_top": 36,
+        "padding_top": 0,
         "padding_bottom": 36
       }
     },
@@ -226,7 +269,7 @@
           "settings": {
             "image": "shopify://shop_images/ChatGPT_Image_Sep_30_2026_03_43_29_PM.png",
             "title": "<strong>Chalkboard</strong>",
-            "text": "<p>A versatile chalkboard-inspired design with a modern taproom feel.</p>",
+            "text": "<p>A modern chalkboard-inspired design with a clean, taproom-ready look.</p>",
             "link_label": "",
             "link": ""
           }
@@ -236,7 +279,7 @@
           "settings": {
             "image": "shopify://shop_images/ChatGPT_Image_Sep_30_2026_03_44_26_PM.png",
             "title": "<strong>Color Match</strong>",
-            "text": "<p>A clean layout that lets your own brand colors and logo take center stage.</p>",
+            "text": "<p>A clean, versatile layout designed to put your logo and brand colors front and center.</p>",
             "link_label": "",
             "link": ""
           }
@@ -263,6 +306,16 @@
         "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "custom_liquid_kxaCiY": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<div class=\"logo-tag-form-wrapper\" id=\"personalize\">\n\n  <div class=\"logo-tag-form-header\">\n    <p class=\"eyebrow\">MAKE IT YOURS</p>\n    <h2>Personalize Your Growler Tags</h2>\n    <p>\n      Choose your design, provide your business information, and tell us how you'd\n      like your tags prepared. We'll send a digital proof before production.\n    </p>\n  </div>\n\n  {% form 'contact', id: 'logo-growler-tag-form' %}\n\n    {{ form.errors | default_errors }}\n\n    {% if form.posted_successfully? %}\n      <div class=\"form-success\">\n        <h3>Request Received!</h3>\n        <p>\n          Thanks for submitting your Logo Growler Tag information.\n          We'll review your details and prepare a proof for approval.\n        </p>\n      </div>\n    {% endif %}\n\n    <div class=\"form-section\">\n      <h3>1. Contact Information</h3>\n\n      <div class=\"form-grid two-column\">\n        <div class=\"field\">\n          <label for=\"first-name\">First Name *</label>\n          <input\n            type=\"text\"\n            id=\"first-name\"\n            name=\"contact[first_name]\"\n            required\n          >\n        </div>\n\n        <div class=\"field\">\n          <label for=\"last-name\">Last Name *</label>\n          <input\n            type=\"text\"\n            id=\"last-name\"\n            name=\"contact[last_name]\"\n            required\n          >\n        </div>\n      </div>\n\n      <div class=\"field\">\n        <label for=\"business-name\">Business Name *</label>\n        <input\n          type=\"text\"\n          id=\"business-name\"\n          name=\"contact[business_name]\"\n          required\n        >\n      </div>\n\n      <div class=\"form-grid two-column\">\n        <div class=\"field\">\n          <label for=\"email\">Email Address *</label>\n          <input\n            type=\"email\"\n            id=\"email\"\n            name=\"contact[email]\"\n            required\n          >\n        </div>\n\n        <div class=\"field\">\n          <label for=\"phone\">Phone Number *</label>\n          <input\n            type=\"tel\"\n            id=\"phone\"\n            name=\"contact[phone]\"\n            required\n          >\n        </div>\n      </div>\n    </div>\n\n    <div class=\"form-section\">\n      <h3>2. Choose Your Design</h3>\n\n      <div class=\"radio-grid design-grid\">\n\n        <label class=\"radio-card\">\n          <input\n            type=\"radio\"\n            name=\"contact[design_selection]\"\n            value=\"Beer Mug\"\n            required\n          >\n          <span>Beer Mug</span>\n        </label>\n\n        <label class=\"radio-card\">\n          <input\n            type=\"radio\"\n            name=\"contact[design_selection]\"\n            value=\"Hops\"\n          >\n          <span>Hops</span>\n        </label>\n\n        <label class=\"radio-card\">\n          <input\n            type=\"radio\"\n            name=\"contact[design_selection]\"\n            value=\"Kraft\"\n          >\n          <span>Kraft</span>\n        </label>\n\n        <label class=\"radio-card\">\n          <input\n            type=\"radio\"\n            name=\"contact[design_selection]\"\n            value=\"Canvas\"\n          >\n          <span>Canvas</span>\n        </label>\n\n        <label class=\"radio-card\">\n          <input\n            type=\"radio\"\n            name=\"contact[design_selection]\"\n            value=\"Chalkboard\"\n          >\n          <span>Chalkboard</span>\n        </label>\n\n        <label class=\"radio-card\">\n          <input\n            type=\"radio\"\n            name=\"contact[design_selection]\"\n            value=\"Color Match\"\n          >\n          <span>Color Match</span>\n        </label>\n\n      </div>\n    </div>\n\n    <div class=\"form-section\">\n      <h3>3. Business Information for the Tag</h3>\n\n      <div class=\"field\">\n        <label for=\"business-address\">Street Address *</label>\n        <input\n          type=\"text\"\n          id=\"business-address\"\n          name=\"contact[business_address]\"\n          required\n        >\n      </div>\n\n      <div class=\"form-grid three-column\">\n        <div class=\"field\">\n          <label for=\"city\">City *</label>\n          <input\n            type=\"text\"\n            id=\"city\"\n            name=\"contact[city]\"\n            required\n          >\n        </div>\n\n        <div class=\"field\">\n          <label for=\"state\">State *</label>\n          <input\n            type=\"text\"\n            id=\"state\"\n            name=\"contact[state]\"\n            required\n          >\n        </div>\n\n        <div class=\"field\">\n          <label for=\"zip\">ZIP *</label>\n          <input\n            type=\"text\"\n            id=\"zip\"\n            name=\"contact[zip]\"\n            required\n          >\n        </div>\n      </div>\n\n      <div class=\"form-grid two-column\">\n        <div class=\"field\">\n          <label for=\"tag-phone\">Phone Number to Print on Tag</label>\n          <input\n            type=\"tel\"\n            id=\"tag-phone\"\n            name=\"contact[tag_phone]\"\n          >\n        </div>\n\n        <div class=\"field\">\n          <label for=\"website\">Website</label>\n          <input\n            type=\"text\"\n            id=\"website\"\n            name=\"contact[website]\"\n          >\n        </div>\n      </div>\n    </div>\n\n    <div class=\"form-section warning-section\">\n      <h3>4. Government Warning</h3>\n\n      <p class=\"section-helper\">\n        Alcoholic beverages generally require the government warning.\n        Non-alcohol beverages such as cold brew may not need it.\n      </p>\n\n      <div class=\"radio-grid warning-options\">\n\n        <label class=\"radio-card\">\n          <input\n            type=\"radio\"\n            name=\"contact[government_warning]\"\n            value=\"Include Government Warning\"\n            required\n          >\n          <span>\n            <strong>Include Warning</strong>\n            <small>For beer, cider, wine and other alcoholic beverages.</small>\n          </span>\n        </label>\n\n        <label class=\"radio-card\">\n          <input\n            type=\"radio\"\n            name=\"contact[government_warning]\"\n            value=\"Do Not Include Government Warning\"\n          >\n          <span>\n            <strong>Do Not Include</strong>\n            <small>For cold brew, kombucha or other non-alcohol beverages.</small>\n          </span>\n        </label>\n\n      </div>\n    </div>\n\n    <div class=\"form-section\">\n      <h3>5. Logo Preference</h3>\n\n      <div class=\"radio-stack\">\n\n        <label>\n          <input\n            type=\"radio\"\n            name=\"contact[logo_preference]\"\n            value=\"Use logo as supplied\"\n            required\n          >\n          Use my logo as supplied\n        </label>\n\n        <label>\n          <input\n            type=\"radio\"\n            name=\"contact[logo_preference]\"\n            value=\"Convert logo to black\"\n          >\n          Convert my logo to black\n        </label>\n\n        <label>\n          <input\n            type=\"radio\"\n            name=\"contact[logo_preference]\"\n            value=\"Convert logo to white\"\n          >\n          Convert my logo to white\n        </label>\n\n        <label>\n          <input\n            type=\"radio\"\n            name=\"contact[logo_preference]\"\n            value=\"Match selected design\"\n          >\n          Match my logo to the selected design\n        </label>\n\n        <label>\n          <input\n            type=\"radio\"\n            name=\"contact[logo_preference]\"\n            value=\"Designer discretion\"\n          >\n          I'm not sure — use what works best\n        </label>\n\n      </div>\n    </div>\n\n    <div class=\"form-section\">\n      <h3>6. Additional Instructions</h3>\n\n      <div class=\"field\">\n        <label for=\"notes\">\n          Anything else we should know?\n        </label>\n\n        <textarea\n          id=\"notes\"\n          name=\"contact[body]\"\n          rows=\"6\"\n          placeholder=\"Color preferences, logo placement, special wording, additional requests, etc.\"\n        ></textarea>\n      </div>\n    </div>\n\n    <div class=\"form-submit\">\n      <button type=\"submit\">\n        Submit My Personalization Request →\n      </button>\n\n      <p>\n        We'll send a digital proof for approval before production.\n      </p>\n    </div>\n\n  {% endform %}\n</div>\n\n\n<style>\n\n.logo-tag-form-wrapper {\n  max-width: 1100px;\n  margin: 0 auto;\n  padding: 70px 30px;\n}\n\n.logo-tag-form-header {\n  text-align: center;\n  max-width: 760px;\n  margin: 0 auto 50px;\n}\n\n.logo-tag-form-header .eyebrow {\n  color: #f59c00;\n  font-weight: 700;\n  letter-spacing: .14em;\n  font-size: 13px;\n  margin-bottom: 8px;\n}\n\n.logo-tag-form-header h2 {\n  font-size: 42px;\n  margin: 0 0 15px;\n}\n\n.logo-tag-form-header p {\n  font-size: 17px;\n  line-height: 1.6;\n  color: #5a5a5a;\n}\n\n.form-section {\n  background: #f8f6f0;\n  border: 1px solid #e3dfd4;\n  border-radius: 12px;\n  padding: 32px;\n  margin-bottom: 24px;\n}\n\n.form-section h3 {\n  font-size: 24px;\n  margin: 0 0 24px;\n}\n\n.form-grid {\n  display: grid;\n  gap: 18px;\n}\n\n.two-column {\n  grid-template-columns: repeat(2, 1fr);\n}\n\n.three-column {\n  grid-template-columns: repeat(3, 1fr);\n}\n\n.field {\n  margin-bottom: 18px;\n}\n\n.field label {\n  display: block;\n  margin-bottom: 7px;\n  font-weight: 600;\n}\n\n.field input,\n.field textarea {\n  width: 100%;\n  border: 1px solid #c9c5bb;\n  border-radius: 6px;\n  padding: 13px 14px;\n  font: inherit;\n  background: white;\n  box-sizing: border-box;\n}\n\n.field input:focus,\n.field textarea:focus {\n  outline: none;\n  border-color: #f59c00;\n  box-shadow: 0 0 0 2px rgba(245,156,0,.15);\n}\n\n.radio-grid {\n  display: grid;\n  gap: 14px;\n}\n\n.design-grid {\n  grid-template-columns: repeat(3, 1fr);\n}\n\n.warning-options {\n  grid-template-columns: repeat(2, 1fr);\n}\n\n.radio-card {\n  display: flex;\n  align-items: flex-start;\n  gap: 12px;\n  background: white;\n  border: 1px solid #d6d1c6;\n  border-radius: 8px;\n  padding: 18px;\n  cursor: pointer;\n}\n\n.radio-card:hover {\n  border-color: #f59c00;\n}\n\n.radio-card input {\n  margin-top: 3px;\n  accent-color: #f59c00;\n}\n\n.radio-card span {\n  font-weight: 600;\n}\n\n.radio-card small {\n  display: block;\n  font-weight: 400;\n  color: #666;\n  margin-top: 4px;\n  line-height: 1.4;\n}\n\n.radio-stack {\n  display: grid;\n  gap: 14px;\n}\n\n.radio-stack label {\n  background: white;\n  border: 1px solid #d6d1c6;\n  border-radius: 7px;\n  padding: 14px 16px;\n}\n\n.radio-stack input {\n  margin-right: 8px;\n  accent-color: #f59c00;\n}\n\n.section-helper {\n  color: #666;\n  margin-top: -10px;\n  margin-bottom: 22px;\n}\n\n.form-submit {\n  text-align: center;\n  padding-top: 10px;\n}\n\n.form-submit button {\n  background: #f59c00;\n  color: #111;\n  border: none;\n  border-radius: 7px;\n  padding: 16px 28px;\n  font-size: 17px;\n  font-weight: 700;\n  cursor: pointer;\n}\n\n.form-submit button:hover {\n  filter: brightness(.95);\n}\n\n.form-submit p {\n  margin-top: 12px;\n  color: #666;\n  font-size: 14px;\n}\n\n.form-success {\n  background: #eef6ec;\n  border: 1px solid #b9d3b3;\n  border-radius: 8px;\n  padding: 22px;\n  margin-bottom: 25px;\n}\n\n@media screen and (max-width: 749px) {\n\n  .logo-tag-form-wrapper {\n    padding: 45px 18px;\n  }\n\n  .logo-tag-form-header h2 {\n    font-size: 32px;\n  }\n\n  .two-column,\n  .three-column,\n  .design-grid,\n  .warning-options {\n    grid-template-columns: 1fr;\n  }\n\n  .form-section {\n    padding: 22px 18px;\n  }\n\n}\n\n</style>",
+        "color_scheme": "",
+        "padding_top": 12,
+        "padding_bottom": 24
       }
     },
     "multicolumn_L6z6M9": {
@@ -379,8 +432,10 @@
     "image_banner_CwRHka",
     "rich_text_xtfUqK",
     "multicolumn_tKwqNK",
+    "rich_text_zYY7tL",
     "multicolumn_E6hDVV",
     "multicolumn_9YU7JJ",
+    "custom_liquid_kxaCiY",
     "multicolumn_L6z6M9",
     "rich_text_zzA6bj",
     "main"
