@@ -211,7 +211,7 @@
         "background_style": "primary",
         "button_label": "",
         "button_link": "",
-        "color_scheme": "scheme-b96d41d0-abd3-4109-8296-95b6acc2520c",
+        "color_scheme": "background-2",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 36,
@@ -298,6 +298,14 @@
     "image_with_text_iqfwcz": {
       "type": "image-with-text",
       "blocks": {
+        "caption_bhyEjz": {
+          "type": "caption",
+          "settings": {
+            "caption": "Your design. Your branding. Printed your way.",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
         "heading_M8imHX": {
           "type": "heading",
           "settings": {
@@ -308,20 +316,21 @@
         "text_wJqdPe": {
           "type": "text",
           "settings": {
-            "text": "<p>Your design. Your branding. Printed your way.</p>",
+            "text": "<p>Upload your finished artwork and we’ll produce professional growler tags built around your brand.</p><p></p>",
             "text_style": "body"
           }
         },
         "button_NBDxtr": {
           "type": "button",
           "settings": {
-            "button_label": "Shop Production Essentials",
-            "button_link": "",
+            "button_label": "Custom Grower Tags",
+            "button_link": "shopify://collections/custom-growler-tags",
             "button_style_secondary": false
           }
         }
       },
       "block_order": [
+        "caption_bhyEjz",
         "heading_M8imHX",
         "text_wJqdPe",
         "button_NBDxtr"
