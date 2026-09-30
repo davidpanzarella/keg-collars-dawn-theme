@@ -170,8 +170,8 @@
         "column_emnLJa": {
           "type": "column",
           "settings": {
-            "title": "<strong>Need Help With Design?</strong>",
-            "text": "<p>Need assistance with your artwork? No problem. We can help bring your growler tag idea to life.</p>",
+            "title": "<strong>Need </strong>Design<strong> Assitance?</strong>",
+            "text": "<p>Not sure where to start? We can help turn your logo, ideas, or existing artwork into a print-ready growler tag.</p>",
             "link_label": "Talk To Our Team",
             "link": "mailto:mike@kegcollars.net"
           }
@@ -180,7 +180,7 @@
           "type": "column",
           "settings": {
             "title": "<strong>Download Design Templates</strong>",
-            "text": "<p>Designing it yourself? Start with the correct size and setup for your product.</p>",
+            "text": "<p>Designing it yourself? Start with the correct dimensions and setup for your growler tag artwork.</p>",
             "link_label": "Download Templates",
             "link": "shopify://pages/print-guidelines-templates"
           }
@@ -188,7 +188,7 @@
         "column_TdAWzj": {
           "type": "column",
           "settings": {
-            "title": "<strong>Have Print-Ready Artwork</strong>",
+            "title": "<strong>Have Questions?</strong>",
             "text": "<p>Already have your design ready to go? Choose your product and start your order.</p>",
             "link_label": "Start Your Order",
             "link": "shopify://collections/all"
