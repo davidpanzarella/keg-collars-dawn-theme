@@ -115,7 +115,7 @@
           "settings": {
             "image": "shopify://shop_images/ChatGPT_Image_Sep_28_2026_09_53_30_PM.png",
             "title": "Custom Growler Tags",
-            "text": "<p>Have finished artwork? Upload your design and we’ll print it exactly the way you intended</p>",
+            "text": "<p>Have finished artwork? Upload your design and we’ll print it exactly the way you intended.</p>",
             "link_label": "Upload Artwork",
             "link": ""
           }
@@ -135,7 +135,7 @@
           "settings": {
             "image": "shopify://shop_images/ChatGPT_Image_Sep_28_2026_10_34_21_PM.png",
             "title": "Stock Growler Tags",
-            "text": "<p>Need something simple and ready to order? Choose a stock design and optionally add your logo.</p>",
+            "text": "<p>Need something simple and ready-to-ship? Browse our collection of multi-purpose, stock growler tags.</p>",
             "link_label": "Shop Stock Tags",
             "link": ""
           }
