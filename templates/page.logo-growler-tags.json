@@ -15,33 +15,21 @@
         "heading_fEJGVn": {
           "type": "heading",
           "settings": {
-            "heading": "Custom Keg Collars for Every Pour",
+            "heading": "Add Your Logo. Make It Yours.",
             "heading_size": "h1"
           }
         },
         "text_h9LVAf": {
           "type": "text",
           "settings": {
-            "text": "Professional keg collars built for breweries of every size. Upload your artwork, customize one of our templates, or grab stock collars when you need them fast.",
+            "text": "Add Your Logo. Make It Yours. Choose from six proven growler tag designs, upload your logo and business information, and we’ll prepare a personalized proof for your approval.",
             "text_style": "body"
-          }
-        },
-        "buttons_EkTe4B": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Have Print-Ready Artwork",
-            "button_link_1": "shopify://collections/custom-design-keg-collars",
-            "button_style_secondary_1": false,
-            "button_label_2": "Customize a Templates",
-            "button_link_2": "shopify://collections/template-keg-collars",
-            "button_style_secondary_2": true
           }
         }
       },
       "block_order": [
         "heading_fEJGVn",
-        "text_h9LVAf",
-        "buttons_EkTe4B"
+        "text_h9LVAf"
       ],
       "custom_css": [
         "@media screen and (min-width: 750px) {.banner__box {max-width: 63rem; }}",
@@ -50,44 +38,36 @@
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "image": "shopify://shop_images/ChatGPT_Image_Sep_28_2026_03_14_52_PM.png",
+        "image": "shopify://shop_images/Sunrise_Valley_Brewing_Hang_Tags.png",
         "image_overlay_opacity": 20,
         "image_height": "small",
         "desktop_content_position": "middle-left",
         "show_text_box": false,
         "desktop_content_alignment": "left",
-        "color_scheme": "inverse",
+        "color_scheme": "background-1",
         "image_behavior": "none",
         "mobile_content_alignment": "left",
         "stack_images_on_mobile": true,
         "show_text_below": true
       }
     },
-    "rich_text_qehtnk": {
+    "rich_text_xtfUqK": {
       "type": "rich-text",
       "blocks": {
-        "caption_VcieYr": {
-          "type": "caption",
-          "settings": {
-            "caption": "multiple shapes and sizes to fit your brand",
-            "text_style": "caption-with-letter-spacing",
-            "text_size": "medium"
-          }
-        },
-        "heading_niJjMB": {
+        "heading_3UBGQK": {
           "type": "heading",
           "settings": {
-            "heading": "<strong>Choose the Keg Collar That's Right for You</strong>",
+            "heading": "Personalized Growler Tags Made Easy",
             "heading_size": "h1"
           }
         },
-        "text_yRHmde": {
+        "text_NCn7kU": {
           "type": "text",
           "settings": {
-            "text": "<h6>Whether your artwork is ready to go or you just need a simple stock collar, we've made ordering easy.</h6>"
+            "text": "<p>Pick your favorite design, send us your branding, and approve your proof before we print.</p>"
           }
         },
-        "button_FQKT7K": {
+        "button_ExUKLV": {
           "type": "button",
           "settings": {
             "button_label": "",
@@ -100,16 +80,15 @@
         }
       },
       "block_order": [
-        "caption_VcieYr",
-        "heading_niJjMB",
-        "text_yRHmde",
-        "button_FQKT7K"
+        "heading_3UBGQK",
+        "text_NCn7kU",
+        "button_ExUKLV"
       ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "color_scheme": "background-2",
+        "color_scheme": "",
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 52
@@ -121,30 +100,30 @@
         "column_fX4cta": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/ChatGPT_Image_Sep_21_2026_11_30_41_AM.png",
-            "title": "<strong>Have Print-Ready Artwork?</strong>",
-            "text": "<p>Upload your finished artwork and we'll take care of the rest. &nbsp;</p>",
-            "link_label": "Custom Keg Collars",
+            "image": "shopify://shop_images/7_a7f3d278-1ed8-411c-80d7-0aa429329294.png",
+            "title": "<strong>Choose A Design</strong>",
+            "text": "<p>Select one of our six proven growler tag layouts.</p>",
+            "link_label": "",
             "link": "shopify://collections/custom-design-keg-collars"
           }
         },
         "column_6t3mww": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/ChatGPT_Image_Sep_17_2026_02_49_16_PM.png",
-            "title": "<strong>Need Help Getting Started?</strong>",
-            "text": "<p>Choose a professionally designed layout and customize it with your brewery name logo and details. &nbsp;</p>",
-            "link_label": "Explore Templates",
+            "image": "shopify://shop_images/Page_Icons_500_x_500_px.png",
+            "title": "<strong>Complete Online Form</strong>",
+            "text": "<p>Upload your logo and provide tag information.</p>",
+            "link_label": "",
             "link": "shopify://collections/template-keg-collars"
           }
         },
         "column_GxThfk": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/ChatGPT_Image_Sep_17_2026_03_09_24_PM.png",
-            "title": "Need Something Quick?",
-            "text": "<p>Ready-to-ship keg collars for identification, distribution and everyday keg management. &nbsp;</p>",
-            "link_label": "Shop Stock",
+            "image": "shopify://shop_images/9.png",
+            "title": "Approve Your Proof",
+            "text": "<p>We’ll prepare and send a digital proof before production.</p>",
+            "link_label": "",
             "link": "shopify://collections/stock-keg-collars"
           }
         }
@@ -157,7 +136,7 @@
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
         "title": "",
-        "heading_size": "h1",
+        "heading_size": "h2",
         "image_width": "full",
         "image_ratio": "adapt",
         "columns_desktop": 3,
@@ -165,285 +144,9 @@
         "background_style": "none",
         "button_label": "",
         "button_link": "",
-        "color_scheme": "",
+        "color_scheme": "background-2",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "image_with_text_HzAUAU": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_xwwVWg": {
-          "type": "heading",
-          "settings": {
-            "heading": "ReOrder Here",
-            "heading_size": "h1"
-          }
-        },
-        "text_mNape4": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Quickly fill out our reorder form and we'll prepare your  order for review and appoval</p>",
-            "text_style": "body"
-          }
-        },
-        "button_A4cWqF": {
-          "type": "button",
-          "settings": {
-            "button_label": "Place ReOrder",
-            "button_link": "shopify://pages/reorder",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_xwwVWg",
-        "text_mNape4",
-        "button_A4cWqF"
-      ],
-      "name": "t:sections.image-with-text.presets.name",
-      "settings": {
-        "image": "shopify://shop_images/ChatGPT_Image_Sep_17_2026_03_25_53_PM.png",
-        "height": "adapt",
-        "desktop_image_width": "large",
-        "layout": "image_first",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "center",
-        "content_layout": "no-overlap",
-        "color_scheme": "inverse",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "padding_top": 12,
-        "padding_bottom": 0
-      }
-    },
-    "rich_text_zjkaYB": {
-      "type": "rich-text",
-      "blocks": {
-        "caption_XWiR8M": {
-          "type": "caption",
-          "settings": {
-            "caption": "small detail. big impact.",
-            "text_style": "caption-with-letter-spacing",
-            "text_size": "medium"
-          }
-        },
-        "heading_ebRmMW": {
-          "type": "heading",
-          "settings": {
-            "heading": "<strong>More Than A Label</strong>",
-            "heading_size": "h1"
-          }
-        },
-        "heading_bLJc64": {
-          "type": "heading",
-          "settings": {
-            "heading": "<strong>Create a Lasting Impression</strong>",
-            "heading_size": "h1"
-          }
-        },
-        "text_988JEY": {
-          "type": "text",
-          "settings": {
-            "text": "<h6>Keg collars do more than indentify your craft beverage. They showcase your brand, tell your story and make your kegs stand out to buyers, and in crowded distribution hubs, coolers and at events.   </h6>"
-          }
-        }
-      },
-      "block_order": [
-        "caption_XWiR8M",
-        "heading_ebRmMW",
-        "heading_bLJc64",
-        "text_988JEY"
-      ],
-      "custom_css": [
-        "h2 {font-size: 42px; line-height: 1.15; margin-top: 0; margin-bottom: 0;}",
-        "h2 + h2 {margin-top: 0;}",
-        "@media screen and (max-width: 749px) {h2 {font-size: 32px; }}"
-      ],
-      "name": "t:sections.rich-text.presets.name",
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "background-2",
-        "full_width": true,
-        "padding_top": 24,
-        "padding_bottom": 24
-      }
-    },
-    "collection_list_MipBxD": {
-      "type": "collection-list",
-      "blocks": {
-        "featured_collection_jbPwHe": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "round-keg-collars"
-          }
-        },
-        "featured_collection_q7ekVe": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "hexagon-keg-collars"
-          }
-        },
-        "featured_collection_76t6Wd": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "dome-keg-collars"
-          }
-        },
-        "featured_collection_x9Eqjx": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "dome-keg-collars-copy"
-          }
-        },
-        "featured_collection_9XXjnD": {
-          "type": "featured_collection",
-          "disabled": true,
-          "settings": {
-            "collection": "menu-printing-restaurant-materials"
-          }
-        },
-        "featured_collection_3KNGbG": {
-          "type": "featured_collection",
-          "disabled": true,
-          "settings": {
-            "collection": "keg-caps"
-          }
-        },
-        "featured_collection_XVjXHH": {
-          "type": "featured_collection",
-          "disabled": true,
-          "settings": {
-            "collection": "keg-wraps"
-          }
-        },
-        "featured_collection_thPdkA": {
-          "type": "featured_collection",
-          "disabled": true,
-          "settings": {
-            "collection": "labels"
-          }
-        }
-      },
-      "block_order": [
-        "featured_collection_jbPwHe",
-        "featured_collection_q7ekVe",
-        "featured_collection_76t6Wd",
-        "featured_collection_x9Eqjx",
-        "featured_collection_9XXjnD",
-        "featured_collection_3KNGbG",
-        "featured_collection_XVjXHH",
-        "featured_collection_thPdkA"
-      ],
-      "name": "t:sections.collection-list.presets.name",
-      "settings": {
-        "title": "<strong>What Shape Fits Your Brand?</strong>",
-        "heading_size": "h1",
-        "image_ratio": "square",
-        "columns_desktop": 4,
-        "color_scheme": "",
-        "show_view_all": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 24,
-        "padding_bottom": 36
-      }
-    },
-    "image_with_text_iqfwcz": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_M8imHX": {
-          "type": "heading",
-          "settings": {
-            "heading": "Made for Production",
-            "heading_size": "h1"
-          }
-        },
-        "text_wJqdPe": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Keep products identified, organized and ready to move with custom printed essentials made for beverage production.</p>",
-            "text_style": "body"
-          }
-        },
-        "button_NBDxtr": {
-          "type": "button",
-          "settings": {
-            "button_label": "Shop Production Essentials",
-            "button_link": "",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_M8imHX",
-        "text_wJqdPe",
-        "button_NBDxtr"
-      ],
-      "disabled": true,
-      "name": "t:sections.image-with-text.presets.name",
-      "settings": {
-        "image": "shopify://shop_images/production_essentials_image.png",
-        "height": "medium",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "background-2",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 0
-      }
-    },
-    "image_with_text_JzPif9": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_9Viz8h": {
-          "type": "heading",
-          "settings": {
-            "heading": "Made for the Taproom",
-            "heading_size": "h1"
-          }
-        },
-        "text_mHVYmc": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Turn all your guest collateral into a brand experience with custom printed essentials made for the taproom and beyond.</p>",
-            "text_style": "body"
-          }
-        },
-        "button_DxRreX": {
-          "type": "button",
-          "settings": {
-            "button_label": "Shop Taproom Essentials",
-            "button_link": "",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_9Viz8h",
-        "text_mHVYmc",
-        "button_DxRreX"
-      ],
-      "disabled": true,
-      "name": "t:sections.image-with-text.presets.name",
-      "settings": {
-        "image": "shopify://shop_images/ChatGPT_Image_Jul_14_2026_04_10_01_PM.png",
-        "height": "medium",
-        "desktop_image_width": "medium",
-        "layout": "text_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "background-2",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
         "padding_top": 0,
         "padding_bottom": 36
       }
@@ -454,28 +157,29 @@
         "column_emnLJa": {
           "type": "column",
           "settings": {
-            "title": "<strong>Need Help With Design?</strong>",
-            "text": "<p>Need assistance with your artwork? No problem. We can help bring your keg collar idea to life.</p>",
-            "link_label": "Talk To Our Team",
+            "image": "shopify://shop_images/ChatGPT_Image_Sep_30_2026_03_31_43_PM.png",
+            "title": "<strong>Beer Mug</strong>",
+            "text": "<p>A warm, beer-inspired design with plenty of room for your branding and beverage details.</p>",
+            "link_label": "",
             "link": "mailto:mike@kegcollars.net"
           }
         },
         "column_UNtQGL": {
           "type": "column",
           "settings": {
-            "title": "<strong>Download Design Templates</strong>",
-            "text": "<p>Designing it yourself? Start with the correct size and setup for your product.</p>",
-            "link_label": "Download Templates",
-            "link": "shopify://pages/print-guidelines-templates"
+            "title": "<strong>Hops</strong>",
+            "text": "<p>A hop-forward design made for breweries and craft beverage brands.</p>",
+            "link_label": "",
+            "link": ""
           }
         },
         "column_TdAWzj": {
           "type": "column",
           "settings": {
-            "title": "<strong>Have Print-Ready Artwork</strong>",
-            "text": "<p>Already have your design ready to go? Choose your product and start your order.</p>",
-            "link_label": "Start Your Order",
-            "link": "shopify://collections/all"
+            "title": "<strong>Kraft</strong>",
+            "text": "<p>A sophisticated kraftboard look with a simple, natural aesthetic.</p>",
+            "link_label": "",
+            "link": ""
           }
         }
       },
@@ -486,16 +190,16 @@
       ],
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
-        "title": "How Can We Help?",
-        "heading_size": "h1",
+        "title": "Choose Your Design:",
+        "heading_size": "h2",
         "image_width": "full",
         "image_ratio": "adapt",
         "columns_desktop": 3,
-        "column_alignment": "left",
-        "background_style": "primary",
+        "column_alignment": "center",
+        "background_style": "none",
         "button_label": "",
         "button_link": "",
-        "color_scheme": "background-2",
+        "color_scheme": "background-1",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 36,
@@ -508,8 +212,8 @@
         "column_BpRwpi": {
           "type": "column",
           "settings": {
-            "title": "<strong>★★★★★</strong>",
-            "text": "<p>Our favorite thing about using kegcollars.net is the ease of ordering, the superior customer service, and most importantly, the quality of the product.<br/>- Upslope Brewing -</p>",
+            "title": "<strong>Canvas</strong>",
+            "text": "<p>A bold dark design with stitched detailing and strong logo visibility.</p>",
             "link_label": "",
             "link": ""
           }
@@ -517,8 +221,8 @@
         "column_VGiwL6": {
           "type": "column",
           "settings": {
-            "title": "<strong>★★★★★</strong>",
-            "text": "<p>We love how simple it is to customize the keg collars to fit our needs. The ability to track our orders as it progresses in production is also really neat.<br/>- Cartel Coffee Lab -</p>",
+            "title": "<strong>Chalkboard</strong>",
+            "text": "<p>A versatile chalkboard-inspired design with a modern taproom feel.</p>",
             "link_label": "",
             "link": ""
           }
@@ -526,17 +230,8 @@
         "column_9CrBab": {
           "type": "column",
           "settings": {
-            "title": "<strong>★★★★★</strong>",
-            "text": "<p>We found out about keg collars.net from seeing the quality of work they’d done for our friends and their breweries. Keg Collars.net makes it quick, easy and effortless to order.<br/>- Goodlife Brewing -</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_VmQpzf": {
-          "type": "column",
-          "settings": {
-            "title": "<strong>★★★★★</strong>",
-            "text": "<p>What we like most about using KegCollars.net is the easy process, great pricing, friendly customer service, very quick responses and turnaround time.</p><p>- Double Shovel Cider Company -</p>",
+            "title": "<strong>Color Match</strong>",
+            "text": "<p>A clean layout that lets your own brand colors and logo take center stage.</p>",
             "link_label": "",
             "link": ""
           }
@@ -545,85 +240,75 @@
       "block_order": [
         "column_BpRwpi",
         "column_VGiwL6",
-        "column_9CrBab",
-        "column_VmQpzf"
+        "column_9CrBab"
       ],
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
-        "title": "Real Brands. Real Results.",
+        "title": "",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
-        "columns_desktop": 4,
+        "columns_desktop": 3,
         "column_alignment": "center",
-        "background_style": "primary",
+        "background_style": "none",
         "button_label": "",
         "button_link": "",
-        "color_scheme": "accent-1",
+        "color_scheme": "background-1",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
       }
     },
-    "collection_list_JBqYA9": {
-      "type": "collection-list",
+    "multicolumn_L6z6M9": {
+      "type": "multicolumn",
       "blocks": {
-        "featured_collection_ytkiC7": {
-          "type": "featured_collection",
+        "column_7CN8Qh": {
+          "type": "column",
           "settings": {
-            "collection": "beer"
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
           }
         },
-        "featured_collection_9EyiJ4": {
-          "type": "featured_collection",
+        "column_4maKqJ": {
+          "type": "column",
           "settings": {
-            "collection": "cider"
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
           }
         },
-        "featured_collection_ewKraR": {
-          "type": "featured_collection",
+        "column_a7qpGy": {
+          "type": "column",
           "settings": {
-            "collection": "kombucha"
-          }
-        },
-        "featured_collection_prrUGn": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "cold-brew-coffee"
-          }
-        },
-        "featured_collection_m3bEVR": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "wine"
-          }
-        },
-        "featured_collection_cg8m7t": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "non-alcoholic-products"
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
           }
         }
       },
       "block_order": [
-        "featured_collection_ytkiC7",
-        "featured_collection_9EyiJ4",
-        "featured_collection_ewKraR",
-        "featured_collection_prrUGn",
-        "featured_collection_m3bEVR",
-        "featured_collection_cg8m7t"
+        "column_7CN8Qh",
+        "column_4maKqJ",
+        "column_a7qpGy"
       ],
-      "disabled": true,
-      "name": "t:sections.collection-list.presets.name",
+      "name": "t:sections.multicolumn.presets.name",
       "settings": {
-        "title": "Shop by Industry",
+        "title": "Multicolumn",
         "heading_size": "h1",
-        "image_ratio": "square",
+        "image_width": "full",
+        "image_ratio": "adapt",
         "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
         "color_scheme": "",
-        "show_view_all": false,
-        "columns_mobile": "2",
+        "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
@@ -687,16 +372,11 @@
   },
   "order": [
     "image_banner_CwRHka",
-    "rich_text_qehtnk",
+    "rich_text_xtfUqK",
     "multicolumn_tKwqNK",
-    "image_with_text_HzAUAU",
-    "rich_text_zjkaYB",
-    "collection_list_MipBxD",
-    "image_with_text_iqfwcz",
-    "image_with_text_JzPif9",
     "multicolumn_E6hDVV",
     "multicolumn_9YU7JJ",
-    "collection_list_JBqYA9",
+    "multicolumn_L6z6M9",
     "rich_text_zzA6bj",
     "main"
   ]
