@@ -167,6 +167,7 @@
         "column_UNtQGL": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_Sep_30_2026_03_35_30_PM.png",
             "title": "<strong>Hops</strong>",
             "text": "<p>A hop-forward design made for breweries and craft beverage brands.</p>",
             "link_label": "",
@@ -176,6 +177,7 @@
         "column_TdAWzj": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_Sep_30_2026_03_39_54_PM.png",
             "title": "<strong>Kraft</strong>",
             "text": "<p>A sophisticated kraftboard look with a simple, natural aesthetic.</p>",
             "link_label": "",
@@ -212,6 +214,7 @@
         "column_BpRwpi": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_Sep_30_2026_03_41_21_PM.png",
             "title": "<strong>Canvas</strong>",
             "text": "<p>A bold dark design with stitched detailing and strong logo visibility.</p>",
             "link_label": "",
@@ -221,6 +224,7 @@
         "column_VGiwL6": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_Sep_30_2026_03_43_29_PM.png",
             "title": "<strong>Chalkboard</strong>",
             "text": "<p>A versatile chalkboard-inspired design with a modern taproom feel.</p>",
             "link_label": "",
@@ -230,6 +234,7 @@
         "column_9CrBab": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_Sep_30_2026_03_44_26_PM.png",
             "title": "<strong>Color Match</strong>",
             "text": "<p>A clean layout that lets your own brand colors and logo take center stage.</p>",
             "link_label": "",
