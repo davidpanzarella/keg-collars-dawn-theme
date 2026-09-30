@@ -344,7 +344,7 @@
         "desktop_content_position": "middle",
         "desktop_content_alignment": "right",
         "content_layout": "no-overlap",
-        "color_scheme": "background-2",
+        "color_scheme": "background-1",
         "image_behavior": "none",
         "mobile_content_alignment": "left",
         "padding_top": 0,
@@ -379,7 +379,7 @@
         "button_DxRreX": {
           "type": "button",
           "settings": {
-            "button_label": "Start Logo Tags Here",
+            "button_label": "Choose A Design",
             "button_link": "",
             "button_style_secondary": false
           }
@@ -400,7 +400,7 @@
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
-        "color_scheme": "background-2",
+        "color_scheme": "background-1",
         "image_behavior": "none",
         "mobile_content_alignment": "left",
         "padding_top": 0,
