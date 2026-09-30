@@ -125,7 +125,7 @@
           "settings": {
             "image": "shopify://shop_images/ChatGPT_Image_Sep_28_2026_10_32_23_PM.png",
             "title": "Template Growler Tags",
-            "text": "<p>Start with one of our professionally designed layouts, then customize it with your logo and fill information.</p>",
+            "text": "<p>Start with one of our professionally designed layouts, then customize it with your logo and information.</p>",
             "link_label": "Start Here",
             "link": ""
           }
