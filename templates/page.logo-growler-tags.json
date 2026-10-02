@@ -321,7 +321,7 @@
         "text_HX8jEX": {
           "type": "text",
           "settings": {
-            "text": "<p>Complete the information fields below and we will process your request and will draft your proof and order for review and approval.&nbsp;</p>"
+            "text": "<p>Complete the information fields below and we will process your request and will draft your proof and order for review and approval.</p>"
           }
         },
         "button_APDj6w": {
@@ -347,8 +347,8 @@
         "content_alignment": "center",
         "color_scheme": "",
         "full_width": true,
-        "padding_top": 24,
-        "padding_bottom": 24
+        "padding_top": 12,
+        "padding_bottom": 12
       }
     },
     "custom_liquid_c3Nkw6": {
