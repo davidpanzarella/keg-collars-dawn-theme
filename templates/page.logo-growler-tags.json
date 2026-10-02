@@ -308,6 +308,49 @@
         "padding_bottom": 36
       }
     },
+    "rich_text_MMVLnm": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_dwY7dx": {
+          "type": "heading",
+          "settings": {
+            "heading": "Order Your Logo Growler Tags",
+            "heading_size": "h1"
+          }
+        },
+        "text_HX8jEX": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Complete the information fields below and we will process your request and will draft your proof and order for review and approval.&nbsp;</p>"
+          }
+        },
+        "button_APDj6w": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_dwY7dx",
+        "text_HX8jEX",
+        "button_APDj6w"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 24,
+        "padding_bottom": 24
+      }
+    },
     "custom_liquid_c3Nkw6": {
       "type": "custom-liquid",
       "name": "t:sections.custom-liquid.presets.name",
@@ -447,6 +490,7 @@
     "rich_text_zYY7tL",
     "multicolumn_E6hDVV",
     "multicolumn_9YU7JJ",
+    "rich_text_MMVLnm",
     "custom_liquid_c3Nkw6",
     "custom_liquid_kxaCiY",
     "multicolumn_L6z6M9",
