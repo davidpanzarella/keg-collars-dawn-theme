@@ -190,8 +190,8 @@
         "content_alignment": "center",
         "color_scheme": "",
         "full_width": true,
-        "padding_top": 12,
-        "padding_bottom": 12
+        "padding_top": 24,
+        "padding_bottom": 24
       }
     },
     "multicolumn_E6hDVV": {
@@ -308,26 +308,26 @@
         "padding_bottom": 36
       }
     },
-    "rich_text_MMVLnm": {
+    "rich_text_6i3MpJ": {
       "type": "rich-text",
       "blocks": {
-        "heading_dwY7dx": {
+        "heading_X8D3xq": {
           "type": "heading",
           "settings": {
-            "heading": "Order Your Logo Growler Tags",
+            "heading": "Order Your Logo Growler Tag",
             "heading_size": "h1"
           }
         },
-        "text_HX8jEX": {
+        "text_97bArq": {
           "type": "text",
           "settings": {
-            "text": "<p>Complete the information fields below and we will process your request and will draft your proof and order for review and approval.</p>"
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
           }
         },
-        "button_APDj6w": {
+        "button_eJzqf4": {
           "type": "button",
           "settings": {
-            "button_label": "",
+            "button_label": "Button label",
             "button_link": "",
             "button_style_secondary": false,
             "button_label_2": "",
@@ -337,9 +337,9 @@
         }
       },
       "block_order": [
-        "heading_dwY7dx",
-        "text_HX8jEX",
-        "button_APDj6w"
+        "heading_X8D3xq",
+        "text_97bArq",
+        "button_eJzqf4"
       ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
@@ -347,11 +347,11 @@
         "content_alignment": "center",
         "color_scheme": "",
         "full_width": true,
-        "padding_top": 12,
-        "padding_bottom": 12
+        "padding_top": 24,
+        "padding_bottom": 24
       }
     },
-    "custom_liquid_c3Nkw6": {
+    "custom_liquid_8hfrP4": {
       "type": "custom-liquid",
       "name": "t:sections.custom-liquid.presets.name",
       "settings": {
@@ -490,8 +490,8 @@
     "rich_text_zYY7tL",
     "multicolumn_E6hDVV",
     "multicolumn_9YU7JJ",
-    "rich_text_MMVLnm",
-    "custom_liquid_c3Nkw6",
+    "rich_text_6i3MpJ",
+    "custom_liquid_8hfrP4",
     "custom_liquid_kxaCiY",
     "multicolumn_L6z6M9",
     "rich_text_zzA6bj",
