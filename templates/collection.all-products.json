@@ -99,6 +99,7 @@
         "column_bUUjk7",
         "column_9X9jaq"
       ],
+      "disabled": true,
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
         "title": "",
