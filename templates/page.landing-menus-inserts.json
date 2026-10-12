@@ -69,7 +69,7 @@
         "caption_VcieYr": {
           "type": "caption",
           "settings": {
-            "caption": "multiple shapes and sizes to fit your brand",
+            "caption": "one trusted printer",
             "text_style": "caption-with-letter-spacing",
             "text_size": "medium"
           }
@@ -77,14 +77,14 @@
         "heading_niJjMB": {
           "type": "heading",
           "settings": {
-            "heading": "<strong>Choose the Keg Collar That's Right for You</strong>",
+            "heading": "Everything Your Taproom Needs",
             "heading_size": "h1"
           }
         },
         "text_yRHmde": {
           "type": "text",
           "settings": {
-            "text": "<h6>Whether your artwork is ready to go or you just need a simple stock collar, we've made ordering easy.</h6>"
+            "text": "<p>Order professional hospitality & marking print materials for breweries, pubs, wineries, restaurants, cafés, coffee shops, and taprooms. Choose from flat menus, folded menus, drink menus, acrylic inserts, kids menus, and activity sheets.</p>"
           }
         },
         "button_FQKT7K": {
