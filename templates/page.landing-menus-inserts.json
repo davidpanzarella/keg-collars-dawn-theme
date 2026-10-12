@@ -32,8 +32,8 @@
             "button_label_1": "SHOP MENUS",
             "button_link_1": "shopify://collections/menu-printing-restaurant-materials",
             "button_style_secondary_1": false,
-            "button_label_2": "REQUEST A QUOTE",
-            "button_link_2": "mailto:mike@kegcollars.net",
+            "button_label_2": "REQUEST SAMPLES",
+            "button_link_2": "shopify://pages/free-sample-pack",
             "button_style_secondary_2": true
           }
         }
@@ -121,8 +121,8 @@
         "column_3BcFAi": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "title": "Flat Menus",
+            "text": "<p>Full Dining Menu, Seasonal Menu, Food Menu, Brunch Menu, Event Menu</p>",
             "link_label": "",
             "link": ""
           }
@@ -131,8 +131,8 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/ChatGPT_Image_Sep_21_2026_11_30_41_AM.png",
-            "title": "<strong>Have Print-Ready Artwork?</strong>",
-            "text": "<p>Upload your finished artwork and we'll take care of the rest. &nbsp;</p>",
+            "title": "<strong>Folded Menus</strong>",
+            "text": "<p>Full Dining Menu, Seasonal Menu, Happy Hour Menu, Wine Program, To-Go Menu</p>",
             "link_label": "Custom Keg Collars",
             "link": "shopify://collections/custom-design-keg-collars"
           }
@@ -141,8 +141,8 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/ChatGPT_Image_Sep_17_2026_02_49_16_PM.png",
-            "title": "<strong>Need Help Getting Started?</strong>",
-            "text": "<p>Choose a professionally designed layout and customize it with your brewery name logo and details. &nbsp;</p>",
+            "title": "<strong>Drink Menus</strong>",
+            "text": "<p>Beer List, Cocktail List, Wine List, Happy Hour Menu, Dining Specials</p>",
             "link_label": "Explore Templates",
             "link": "shopify://collections/template-keg-collars"
           }
@@ -151,8 +151,8 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/ChatGPT_Image_Sep_17_2026_03_09_24_PM.png",
-            "title": "Need Something Quick?",
-            "text": "<p>Ready-to-ship keg collars for identification, distribution and everyday keg management. &nbsp;</p>",
+            "title": "Acrylic Display Inserts",
+            "text": "<p>Tabletop Promotion, QR Displays, Dining Specials, Featured Cocktails</p>",
             "link_label": "Shop Stock",
             "link": "shopify://collections/stock-keg-collars"
           }
@@ -235,7 +235,7 @@
         "caption_XWiR8M": {
           "type": "caption",
           "settings": {
-            "caption": "small detail. big impact.",
+            "caption": "",
             "text_style": "caption-with-letter-spacing",
             "text_size": "medium"
           }
@@ -243,21 +243,21 @@
         "heading_ebRmMW": {
           "type": "heading",
           "settings": {
-            "heading": "<strong>More Than A Label</strong>",
+            "heading": "Why Quality Menus Matter",
             "heading_size": "h1"
           }
         },
         "heading_bLJc64": {
           "type": "heading",
           "settings": {
-            "heading": "<strong>Create a Lasting Impression</strong>",
+            "heading": "",
             "heading_size": "h1"
           }
         },
         "text_988JEY": {
           "type": "text",
           "settings": {
-            "text": "<h6>Keg collars do more than indentify your craft beverage. They showcase your brand, tell your story and make your kegs stand out to buyers, and in crowded distribution hubs, coolers and at events.   </h6>"
+            "text": "<h6>Menus are one of the most touched and most viewed brand assets inside your restaurant. &nbsp;A premium printed menu immediatly communicated professionalism, quality, and attention to detail.&nbsp;</h6>"
           }
         }
       },
@@ -278,8 +278,62 @@
         "content_alignment": "center",
         "color_scheme": "background-2",
         "full_width": true,
-        "padding_top": 24,
-        "padding_bottom": 24
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_DHeBdt": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_3PPmUP": {
+          "type": "column",
+          "settings": {
+            "title": "100# House Paper",
+            "text": "<p>Affordable and lightweight this quality paper is popular for to-go menus, tap lists and display inserts</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_MwMaDV": {
+          "type": "column",
+          "settings": {
+            "title": "100# House Cover",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_nTDUna": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_3PPmUP",
+        "column_MwMaDV",
+        "column_nTDUna"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "collection_list_MipBxD": {
@@ -701,6 +755,7 @@
     "multicolumn_tKwqNK",
     "image_with_text_HzAUAU",
     "rich_text_zjkaYB",
+    "multicolumn_DHeBdt",
     "collection_list_MipBxD",
     "image_with_text_iqfwcz",
     "image_with_text_JzPif9",
