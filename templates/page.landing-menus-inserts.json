@@ -327,10 +327,10 @@
         "image_ratio": "adapt",
         "columns_desktop": 3,
         "column_alignment": "center",
-        "background_style": "primary",
-        "button_label": "Button label",
-        "button_link": "",
-        "color_scheme": "",
+        "background_style": "none",
+        "button_label": "FREE SAMPLE PACK",
+        "button_link": "shopify://pages/free-sample-pack",
+        "color_scheme": "background-2",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 36,
@@ -403,6 +403,7 @@
         "featured_collection_XVjXHH",
         "featured_collection_thPdkA"
       ],
+      "disabled": true,
       "name": "t:sections.collection-list.presets.name",
       "settings": {
         "title": "<strong>What Shape Fits Your Brand?</strong>",
@@ -520,7 +521,7 @@
           "type": "column",
           "settings": {
             "title": "<strong>Need Help With Design?</strong>",
-            "text": "<p>Need assistance with your artwork? No problem. We can help bring your keg collar idea to life.</p>",
+            "text": "<p>Need assistance with your artwork? No problem. We can help bring your menu idea to life.</p>",
             "link_label": "Talk To Our Team",
             "link": "mailto:mike@kegcollars.net"
           }
@@ -540,7 +541,7 @@
             "title": "<strong>Have Print-Ready Artwork</strong>",
             "text": "<p>Already have your design ready to go? Choose your product and start your order.</p>",
             "link_label": "Start Your Order",
-            "link": "shopify://collections/all"
+            "link": "shopify://collections/menu-printing-restaurant-materials"
           }
         }
       },
@@ -560,7 +561,7 @@
         "background_style": "primary",
         "button_label": "",
         "button_link": "",
-        "color_scheme": "background-2",
+        "color_scheme": "accent-1",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 36,
@@ -613,6 +614,7 @@
         "column_9CrBab",
         "column_VmQpzf"
       ],
+      "disabled": true,
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
         "title": "Real Brands. Real Results.",
