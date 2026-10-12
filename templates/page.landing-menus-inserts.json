@@ -15,25 +15,25 @@
         "heading_fEJGVn": {
           "type": "heading",
           "settings": {
-            "heading": "Custom Keg Collars for Every Pour",
+            "heading": "From Tap Lists to Table Menus, We Print It All",
             "heading_size": "h1"
           }
         },
         "text_h9LVAf": {
           "type": "text",
           "settings": {
-            "text": "Professional keg collars built for breweries of every size. Upload your artwork, customize one of our templates, or grab stock collars when you need them fast.",
+            "text": "Simplify your print ordering with one trusted source for custom table menus, happy hour menus, drink menus, tap lists, acrylic inserts, and event signage, all from the same manufacturer trusted with your compliant keg collars & growler tags.",
             "text_style": "body"
           }
         },
         "buttons_EkTe4B": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Have Print-Ready Artwork",
-            "button_link_1": "shopify://collections/custom-design-keg-collars",
+            "button_label_1": "SHOP MENUS",
+            "button_link_1": "shopify://collections/menu-printing-restaurant-materials",
             "button_style_secondary_1": false,
-            "button_label_2": "Customize a Templates",
-            "button_link_2": "shopify://collections/template-keg-collars",
+            "button_label_2": "",
+            "button_link_2": "",
             "button_style_secondary_2": true
           }
         }
@@ -50,7 +50,7 @@
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "image": "shopify://shop_images/ChatGPT_Image_Sep_28_2026_03_14_52_PM.png",
+        "image": "shopify://shop_images/ChatGPT_Image_Jul_14_2026_06_21_49_PM.png",
         "image_overlay_opacity": 20,
         "image_height": "small",
         "desktop_content_position": "middle-left",
