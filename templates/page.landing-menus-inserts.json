@@ -323,10 +323,10 @@
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "color_scheme": "",
+        "color_scheme": "inverse",
         "full_width": true,
         "padding_top": 40,
-        "padding_bottom": 52
+        "padding_bottom": 12
       }
     },
     "multicolumn_AVaFAf": {
@@ -335,8 +335,9 @@
         "column_9cHDcN": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "image": "shopify://shop_images/10_768c7c55-030c-4520-a70e-30e35fffecd0.png",
+            "title": "Resturants",
+            "text": "",
             "link_label": "",
             "link": ""
           }
@@ -344,8 +345,9 @@
         "column_X6dra8": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "image": "shopify://shop_images/11_c923aecd-8bd8-454f-9da1-7064b90309c0.png",
+            "title": "Breweries",
+            "text": "",
             "link_label": "",
             "link": ""
           }
@@ -353,8 +355,29 @@
         "column_bYFEDm": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "image": "shopify://shop_images/12.png",
+            "title": "Hotels & Resorts",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_cjzAhB": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/13.png",
+            "title": "Cafés & Bistros",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_RLGHj3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/14_11c86474-988b-46f9-a6df-92806b1fe764.png",
+            "title": "Country Clubs",
+            "text": "",
             "link_label": "",
             "link": ""
           }
@@ -363,23 +386,25 @@
       "block_order": [
         "column_9cHDcN",
         "column_X6dra8",
-        "column_bYFEDm"
+        "column_bYFEDm",
+        "column_cjzAhB",
+        "column_RLGHj3"
       ],
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
         "title": "",
-        "heading_size": "h1",
+        "heading_size": "h2",
         "image_width": "full",
         "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "left",
-        "background_style": "primary",
-        "button_label": "Button label",
+        "columns_desktop": 5,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
         "button_link": "",
-        "color_scheme": "",
+        "color_scheme": "inverse",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
-        "padding_top": 36,
+        "padding_top": 12,
         "padding_bottom": 36
       }
     },
