@@ -121,6 +121,7 @@
         "column_3BcFAi": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_Jul_14_2026_04_08_38_PM.png",
             "title": "Flat Menus",
             "text": "<p>Full Dining Menu, Seasonal Menu, Food Menu, Brunch Menu, Event Menu</p>",
             "link_label": "",
@@ -130,7 +131,7 @@
         "column_fX4cta": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/ChatGPT_Image_Sep_21_2026_11_30_41_AM.png",
+            "image": "shopify://shop_images/ChatGPT_Image_Jul_14_2026_06_13_26_PM.png",
             "title": "<strong>Folded Menus</strong>",
             "text": "<p>Full Dining Menu, Seasonal Menu, Happy Hour Menu, Wine Program, To-Go Menu</p>",
             "link_label": "Custom Keg Collars",
@@ -140,7 +141,7 @@
         "column_6t3mww": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/ChatGPT_Image_Sep_17_2026_02_49_16_PM.png",
+            "image": "shopify://shop_images/ChatGPT_Image_Jul_14_2026_09_28_08_PM.png",
             "title": "<strong>Drink Menus</strong>",
             "text": "<p>Beer List, Cocktail List, Wine List, Happy Hour Menu, Dining Specials</p>",
             "link_label": "Explore Templates",
@@ -150,7 +151,7 @@
         "column_GxThfk": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/ChatGPT_Image_Sep_17_2026_03_09_24_PM.png",
+            "image": "shopify://shop_images/ChatGPT_Image_Jul_14_2026_10_22_06_PM.png",
             "title": "Acrylic Display Inserts",
             "text": "<p>Tabletop Promotion, QR Displays, Dining Specials, Featured Cocktails</p>",
             "link_label": "Shop Stock",
@@ -169,7 +170,7 @@
         "title": "",
         "heading_size": "h1",
         "image_width": "full",
-        "image_ratio": "adapt",
+        "image_ratio": "square",
         "columns_desktop": 4,
         "column_alignment": "center",
         "background_style": "none",
