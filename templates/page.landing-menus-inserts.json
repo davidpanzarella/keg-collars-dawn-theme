@@ -233,17 +233,25 @@
     "image_with_text_DVgidh": {
       "type": "image-with-text",
       "blocks": {
+        "caption_eRmgRe": {
+          "type": "caption",
+          "settings": {
+            "caption": "Available in 8.5\" × 11\" & 11\" × 17\" sizes.",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
         "heading_xjgpbp": {
           "type": "heading",
           "settings": {
-            "heading": "Kids Menus & Activity Sheets",
+            "heading": "Custom Kids Menus",
             "heading_size": "h1"
           }
         },
         "text_cEqnai": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text": "<p>Add your food and drink options, logo, coloring activities, games, puzzles, or other kid-friendly content to create a menu that feels like part of your brand, not an afterthought.</p>",
             "text_style": "body"
           }
         },
@@ -257,6 +265,7 @@
         }
       },
       "block_order": [
+        "caption_eRmgRe",
         "heading_xjgpbp",
         "text_cEqnai",
         "button_ixhpnF"
@@ -304,7 +313,7 @@
         "text_988JEY": {
           "type": "text",
           "settings": {
-            "text": "<h6>Menus are one of the most touched and most viewed brand assets inside your restaurant. &nbsp;A premium printed menu immediatly communicated professionalism, quality, and attention to detail.&nbsp;</h6>"
+            "text": "<p>Menus are one of the most touched and most viewed brand assets inside your restaurant. &nbsp;A premium printed menu immediatly communicates professionalism, quality, and attention to detail.&nbsp;</p>"
           }
         }
       },
