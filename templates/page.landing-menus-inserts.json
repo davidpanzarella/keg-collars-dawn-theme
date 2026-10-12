@@ -230,6 +230,52 @@
         "padding_bottom": 0
       }
     },
+    "image_with_text_DVgidh": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_xjgpbp": {
+          "type": "heading",
+          "settings": {
+            "heading": "Kids Menus & Activity Sheets",
+            "heading_size": "h1"
+          }
+        },
+        "text_cEqnai": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_ixhpnF": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_xjgpbp",
+        "text_cEqnai",
+        "button_ixhpnF"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "rich_text_zjkaYB": {
       "type": "rich-text",
       "blocks": {
@@ -757,6 +803,7 @@
     "rich_text_qehtnk",
     "multicolumn_tKwqNK",
     "image_with_text_HzAUAU",
+    "image_with_text_DVgidh",
     "rich_text_zjkaYB",
     "multicolumn_DHeBdt",
     "collection_list_MipBxD",
