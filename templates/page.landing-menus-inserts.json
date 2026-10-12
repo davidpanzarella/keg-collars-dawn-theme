@@ -118,6 +118,15 @@
     "multicolumn_tKwqNK": {
       "type": "multicolumn",
       "blocks": {
+        "column_3BcFAi": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
         "column_fX4cta": {
           "type": "column",
           "settings": {
@@ -150,6 +159,7 @@
         }
       },
       "block_order": [
+        "column_3BcFAi",
         "column_fX4cta",
         "column_6t3mww",
         "column_GxThfk"
@@ -160,7 +170,7 @@
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
-        "columns_desktop": 3,
+        "columns_desktop": 4,
         "column_alignment": "center",
         "background_style": "none",
         "button_label": "",
@@ -205,9 +215,9 @@
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "image": "shopify://shop_images/ChatGPT_Image_Sep_17_2026_03_25_53_PM.png",
+        "image": "shopify://shop_images/ChatGPT_Image_Jul_14_2026_04_10_01_PM.png",
         "height": "adapt",
-        "desktop_image_width": "large",
+        "desktop_image_width": "medium",
         "layout": "image_first",
         "desktop_content_position": "middle",
         "desktop_content_alignment": "center",
