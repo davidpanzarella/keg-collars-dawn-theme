@@ -289,7 +289,7 @@
           "type": "column",
           "settings": {
             "title": "100# House Paper",
-            "text": "<p>Affordable and lightweight this quality paper is popular for to-go menus, tap lists and display inserts</p>",
+            "text": "<p>Affordable and lightweight this quality paper is popular for to-go menus, tap lists and display inserts.</p>",
             "link_label": "",
             "link": ""
           }
@@ -298,7 +298,7 @@
           "type": "column",
           "settings": {
             "title": "100# House Cover",
-            "text": "",
+            "text": "<p>Our most popular bright white cover stock is excellent for full dining menus as well as happy hour and drink menus.</p>",
             "link_label": "",
             "link": ""
           }
@@ -306,8 +306,8 @@
         "column_nTDUna": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "title": "100# Select Cover",
+            "text": "<p>Hand selected premium stock brings elegance to any menu. &nbsp;Perfect for dining menus, wine lists & special events.</p>",
             "link_label": "",
             "link": ""
           }
