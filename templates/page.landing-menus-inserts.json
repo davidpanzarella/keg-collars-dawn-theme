@@ -15,7 +15,7 @@
         "heading_fEJGVn": {
           "type": "heading",
           "settings": {
-            "heading": "From Tap Lists to Table Menus, We Print It All",
+            "heading": "Premium Printed Menus for Restaurants, Breweries , Taproooms & Bars",
             "heading_size": "h1"
           }
         },
@@ -32,8 +32,8 @@
             "button_label_1": "SHOP MENUS",
             "button_link_1": "shopify://collections/menu-printing-restaurant-materials",
             "button_style_secondary_1": false,
-            "button_label_2": "",
-            "button_link_2": "",
+            "button_label_2": "REQUEST A QUOTE",
+            "button_link_2": "mailto:mike@kegcollars.net",
             "button_style_secondary_2": true
           }
         }
