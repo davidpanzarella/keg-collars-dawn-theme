@@ -272,6 +272,7 @@
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
+        "image": "shopify://shop_images/ChatGPTImageJun4_2026_12_31_32PM.png",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
@@ -281,6 +282,103 @@
         "color_scheme": "",
         "image_behavior": "none",
         "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_iLXKcf": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_BhhByh": {
+          "type": "heading",
+          "settings": {
+            "heading": "Built For Family-Friendly Businesses&nbsp;",
+            "heading_size": "h1"
+          }
+        },
+        "text_qgpdxm": {
+          "type": "text",
+          "settings": {
+            "text": ""
+          }
+        },
+        "button_qHxPN8": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_BhhByh",
+        "text_qgpdxm",
+        "button_qHxPN8"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "multicolumn_AVaFAf": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_9cHDcN": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_X6dra8": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_bYFEDm": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_9cHDcN",
+        "column_X6dra8",
+        "column_bYFEDm"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -813,6 +911,8 @@
     "multicolumn_tKwqNK",
     "image_with_text_HzAUAU",
     "image_with_text_DVgidh",
+    "rich_text_iLXKcf",
+    "multicolumn_AVaFAf",
     "rich_text_zjkaYB",
     "multicolumn_DHeBdt",
     "collection_list_MipBxD",
