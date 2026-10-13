@@ -295,6 +295,11 @@
       endif
     endfor
 
+    if features == blank and product.metafields.custom.product_features.value != blank
+  assign assigned_feature = product.metafields.custom.product_features.value
+  assign feature_text = assigned_feature.product_features | metafield_tag
+  assign features = features | append: feature_text | append: ','
+endif
     assign faqs = faqs | split: ','
     assign features = features | split: ','
   %}
