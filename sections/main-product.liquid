@@ -281,7 +281,7 @@
     assign features = ''
 
     for relatedFaq in relatedFaqs
-      if relatedFaq.related_product_types.value contains currentTypes
+      if relatedFaq.related_product_types.value contains product.type
         assign faq_question = relatedFaq.question.value
         assign faq_answer = relatedFaq.answer | metafield_tag
         assign faqs = faqs | append: '<h4>' | append: faq_question | append: '</h4>' | append: faq_answer | append: ','
