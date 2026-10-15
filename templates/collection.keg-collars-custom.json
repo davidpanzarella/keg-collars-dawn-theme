@@ -119,6 +119,7 @@
         "column_7hnWBY",
         "column_nKT7FH"
       ],
+      "disabled": true,
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
         "title": "",
