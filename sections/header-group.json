@@ -17,8 +17,8 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "SAVE 10% ON OKTOBERFEST ITEMS | SHOP THE SALE",
-            "link": "shopify://pages/oktoberfest-sale"
+            "text": "Buy Keg Collars. Save 25% on Menus.",
+            "link": "shopify://collections/menu-printing-restaurant-materials"
           }
         }
       },
