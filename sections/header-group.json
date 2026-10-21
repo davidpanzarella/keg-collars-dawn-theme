@@ -14,7 +14,7 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
-        "announcement-bar-0": {
+        "announcement_YHQrGD": {
           "type": "announcement",
           "settings": {
             "text": "Buy Keg Collars. Save 25% on Menus.",
@@ -23,9 +23,8 @@
         }
       },
       "block_order": [
-        "announcement-bar-0"
+        "announcement_YHQrGD"
       ],
-      "disabled": true,
       "settings": {
         "color_scheme": "",
         "show_line_separator": true,
